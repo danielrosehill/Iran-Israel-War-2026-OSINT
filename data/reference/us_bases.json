@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Camp Arifjan",
+    "aliases": ["Arifjan", "Camp Arifjan"],
+    "country_code": "KW",
+    "country_name": "Kuwait",
+    "branch": "US Army",
+    "lat": 28.93,
+    "lon": 48.10
+  },
+  {
+    "name": "Ali Al-Salem Air Base",
+    "aliases": ["Ali Al-Salem", "Ali Al-Salim", "Ali Al Salem"],
+    "country_code": "KW",
+    "country_name": "Kuwait",
+    "branch": "US Air Force",
+    "lat": 29.35,
+    "lon": 47.52
+  },
+  {
+    "name": "Abdullah Al-Mubarak Air Base",
+    "aliases": ["Abdullah Al-Mubarak", "Abdullah Mubarak"],
+    "country_code": "KW",
+    "country_name": "Kuwait",
+    "branch": "Kuwait Air Force / US operations",
+    "lat": 29.24,
+    "lon": 47.97
+  },
+  {
+    "name": "Mohammed Al-Ahmad Naval Base",
+    "aliases": ["Mohammed Al-Ahmad", "Mohammad Al-Ahmad"],
+    "country_code": "KW",
+    "country_name": "Kuwait",
+    "branch": "Kuwait Navy / US Navy",
+    "lat": 28.73,
+    "lon": 48.39
+  },
+  {
+    "name": "Sheikh Isa Air Base",
+    "aliases": ["Sheikh Isa", "Shaikh Isa"],
+    "country_code": "BH",
+    "country_name": "Bahrain",
+    "branch": "US Navy / US Air Force",
+    "lat": 25.92,
+    "lon": 50.59
+  },
+  {
+    "name": "Mina Salman Naval Base",
+    "aliases": ["Mina Salman", "NSA Bahrain"],
+    "country_code": "BH",
+    "country_name": "Bahrain",
+    "branch": "US Navy (NAVCENT / Fifth Fleet)",
+    "lat": 26.21,
+    "lon": 50.60
+  },
+  {
+    "name": "Al-Udeid Air Base",
+    "aliases": ["Al-Udeid", "Al Udeid"],
+    "country_code": "QA",
+    "country_name": "Qatar",
+    "branch": "US Air Force (AFCENT / CENTCOM Forward HQ)",
+    "lat": 25.12,
+    "lon": 51.31
+  },
+  {
+    "name": "Al Minhad Air Base",
+    "aliases": ["Al Minhad", "Al-Minhad"],
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "branch": "US Air Force / Coalition",
+    "lat": 25.03,
+    "lon": 55.37
+  },
+  {
+    "name": "Harir Air Base",
+    "aliases": ["Harir", "Harir base"],
+    "country_code": "IQ",
+    "country_name": "Iraq",
+    "branch": "US Military / Coalition",
+    "lat": 36.54,
+    "lon": 44.38
+  }
+]
