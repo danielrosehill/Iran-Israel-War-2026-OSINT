@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-API_KEY = os.environ.get("OPENROUTER_API_KEY", "REDACTED_OPENROUTER_KEY")
+API_KEY = os.environ["OPENROUTER_API_KEY"]
 BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 PROMPT_FILE = Path(__file__).parent.parent / "prompts" / "waves.md"
