@@ -1,0 +1,762 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Operation True Promise 4 — Attack Waves</name>
+    <description>OSINT dataset: Iranian missile/drone attack waves against Israel and US/coalition targets. Feb 28 – Mar 4, 2026. Operation True Promise 4.</description>
+    <Style id="launch">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="target">
+      <IconStyle>
+        <color>ffff0000</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Style id="arc">
+      <LineStyle>
+        <color>ff00ffff</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
+    <Folder>
+      <name>Launch Points</name>
+      <Placemark>
+        <name>Wave 1 Launch — Multiple sites in western Iran including Kermanshah and Tabriz regions</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T18:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Emad and Ghadr ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Multiple sites in western Iran including Kermanshah and Tabriz regions&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 2 Launch — Western Iran</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T21:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Launch — Western and southwestern Iran</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 4 Launch — Western Iran</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T01:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 5 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6 Launch — Western Iran</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 8 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 8&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T18:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 9 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 9&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T22:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 10 Launch — Central Iran (Isfahan region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 10&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Kheibar Shekan maneuvering ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Central Iran (Isfahan region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 150</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>52.0,33.5,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 12 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 12&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T14:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 26 attack drones, 5 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 13 Launch — IRGC positions (unspecified)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 13&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T19:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; UAVs/drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; IRGC positions (unspecified)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 250</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>48.5,33.5,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 14 Launch — Persian Gulf (IRGC Navy)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 14&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-03T02:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 20 drones, 3 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Persian Gulf (IRGC Navy)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 300</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>53.0,26.5,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 17 Launch — Western Iran (Kermanshah region)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 17&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; Sacred: O Messenger of Allah&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T09:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 40+ ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Precision Km:&lt;/b&gt; 100</description>
+        <styleUrl>#launch</styleUrl>
+        <Point>
+          <coordinates>47.07,34.31,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Target Points</name>
+      <Placemark>
+        <name>Wave 1 Target — Nevatim Airbase</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T18:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Emad and Ghadr ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Nevatim Airbase&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; air_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.82,31.21,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 1 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T18:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Emad and Ghadr ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 2 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T21:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Target — Ramat David Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ramat David Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; air_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>35.18,32.67,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Target — HaKirya</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; HaKirya&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_hq&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.79,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Target — Haifa Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Haifa Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; naval_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>35.0,32.82,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Target — Abdullah Al-Mubarak Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Abdullah Al-Mubarak Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>47.97,29.24,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3 Target — Harir Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Harir Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IQ</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>44.38,36.54,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 4 Target — Beit Shams Military-Industrial Complex</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T01:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Beit Shams Military-Industrial Complex&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_industrial&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.98,31.75,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 4 Target — Ashdod Military-Industrial Complex</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T01:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ashdod Military-Industrial Complex&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_industrial&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.65,31.8,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 5 Target — Abdullah Al-Mubarak Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Abdullah Al-Mubarak Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>47.97,29.24,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6 Target — Tel Nof Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Nof Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; air_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.82,31.84,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6 Target — HaKirya</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; HaKirya&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_hq&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.79,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6 Target — Haifa Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Haifa Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; naval_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>35.0,32.82,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7 Target — Ali Al-Salem Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ali Al-Salem Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>47.52,29.35,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7 Target — Mohammed Al-Ahmad Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Mohammed Al-Ahmad Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>48.39,28.73,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7 Target — Mina Salman Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Mina Salman Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; BH</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>50.6,26.21,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 10 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 10&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Kheibar Shekan maneuvering ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 10 Target — East Jerusalem</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 10&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Kheibar Shekan maneuvering ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; East Jerusalem&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>35.24,31.78,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11 Target — Beersheba Army Communications Complex</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Beersheba Army Communications Complex&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_comms&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.79,31.25,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11 Target — West Jerusalem</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; West Jerusalem&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>35.21,31.78,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11 Target — Galilee (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Galilee (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; region&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>35.5,32.85,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 12 Target — Camp Arifjan</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 12&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T14:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 26 attack drones, 5 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Camp Arifjan&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>48.1,28.93,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 12 Target — Al Minhad Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 12&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T14:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 26 attack drones, 5 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Al Minhad Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; AE</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>55.37,25.03,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 13 Target — Camp Arifjan</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 13&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T19:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; UAVs/drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Camp Arifjan&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>48.1,28.93,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 13 Target — Ali Al-Salem Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 13&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T19:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; UAVs/drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ali Al-Salem Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>47.52,29.35,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 14 Target — Sheikh Isa Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 14&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-03T02:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 20 drones, 3 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Sheikh Isa Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; BH</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>50.59,25.92,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 15 Target — Al-Udeid Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 15&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-03T16:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Al-Udeid Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; QA</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>51.31,25.12,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16 Target — HaKirya</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; HaKirya&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_hq&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.79,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16 Target — Bnei Brak Strategic Infrastructure</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Bnei Brak Strategic Infrastructure&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; infrastructure&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.83,32.08,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16 Target — Beit Hakfa Military Targets</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Beit Hakfa Military Targets&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.85,32.1,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16 Target — Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#target</styleUrl>
+        <Point>
+          <coordinates>34.77,32.07,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Attack Arcs</name>
+      <Placemark>
+        <name>Wave 1: Multiple sites in western Iran including Kermanshah and Tabriz regions → Nevatim Airbase</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T18:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Emad and Ghadr ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Multiple sites in western Iran including Kermanshah and Tabriz regions&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Nevatim Airbase&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; air_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.82,31.21,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 1: Multiple sites in western Iran including Kermanshah and Tabriz regions → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T18:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Emad and Ghadr ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Multiple sites in western Iran including Kermanshah and Tabriz regions&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 2: Western Iran → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T21:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 1&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, Shahed-136 drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3: Western and southwestern Iran → Ramat David Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ramat David Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; air_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 35.18,32.67,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3: Western and southwestern Iran → HaKirya</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; HaKirya&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_hq&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.79,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3: Western and southwestern Iran → Haifa Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Haifa Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; naval_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 35.0,32.82,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3: Western and southwestern Iran → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3: Western and southwestern Iran → Abdullah Al-Mubarak Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Abdullah Al-Mubarak Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 47.97,29.24,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 3: Western and southwestern Iran → Harir Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-02-28T23:45:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Advanced ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western and southwestern Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Harir Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IQ</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 44.38,36.54,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 4: Western Iran → Beit Shams Military-Industrial Complex</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T01:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Beit Shams Military-Industrial Complex&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_industrial&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.98,31.75,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 4: Western Iran → Ashdod Military-Industrial Complex</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T01:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ashdod Military-Industrial Complex&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_industrial&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.65,31.8,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 5: Western Iran (Kermanshah region) → Abdullah Al-Mubarak Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Abdullah Al-Mubarak Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 47.97,29.24,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6: Western Iran → Tel Nof Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Nof Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; air_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.82,31.84,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6: Western Iran → HaKirya</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; HaKirya&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_hq&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.79,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6: Western Iran → Haifa Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Haifa Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; naval_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 35.0,32.82,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 6: Western Iran → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 6&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T08:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7: Western Iran (Kermanshah region) → Ali Al-Salem Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ali Al-Salem Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 47.52,29.35,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7: Western Iran (Kermanshah region) → Mohammed Al-Ahmad Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Mohammed Al-Ahmad Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 48.39,28.73,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 7: Western Iran (Kermanshah region) → Mina Salman Naval Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 7&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-01T14:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 2&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Ballistic missiles, drones, cruise missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Mina Salman Naval Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; BH</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 50.6,26.21,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 10: Central Iran (Isfahan region) → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 10&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Kheibar Shekan maneuvering ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Central Iran (Isfahan region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>52.0,33.5,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 10: Central Iran (Isfahan region) → East Jerusalem</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 10&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T04:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Kheibar Shekan maneuvering ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Central Iran (Isfahan region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; East Jerusalem&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>52.0,33.5,0 35.24,31.78,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11: Western Iran (Kermanshah region) → Beersheba Army Communications Complex</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Beersheba Army Communications Complex&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_comms&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.79,31.25,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11: Western Iran (Kermanshah region) → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11: Western Iran (Kermanshah region) → West Jerusalem</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; West Jerusalem&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 35.21,31.78,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 11: Western Iran (Kermanshah region) → Galilee (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 11&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T10:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; Missiles, drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Galilee (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; region&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 35.5,32.85,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 12: Western Iran (Kermanshah region) → Camp Arifjan</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 12&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T14:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 26 attack drones, 5 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Camp Arifjan&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 48.1,28.93,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 12: Western Iran (Kermanshah region) → Al Minhad Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 12&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T14:30:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 26 attack drones, 5 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Al Minhad Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; AE</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 55.37,25.03,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 13: IRGC positions (unspecified) → Camp Arifjan</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 13&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T19:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; UAVs/drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; IRGC positions (unspecified)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Camp Arifjan&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>48.5,33.5,0 48.1,28.93,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 13: IRGC positions (unspecified) → Ali Al-Salem Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 13&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-02T19:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 3&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; UAVs/drones&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; IRGC positions (unspecified)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Ali Al-Salem Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; KW</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>48.5,33.5,0 47.52,29.35,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 14: Persian Gulf (IRGC Navy) → Sheikh Isa Air Base</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 14&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-03T02:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 4&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 20 drones, 3 ballistic missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Persian Gulf (IRGC Navy)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Sheikh Isa Air Base&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; us_base&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; BH</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>53.0,26.5,0 50.59,25.92,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16: Western Iran (Kermanshah region) → HaKirya</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; HaKirya&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military_hq&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.79,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16: Western Iran (Kermanshah region) → Bnei Brak Strategic Infrastructure</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Bnei Brak Strategic Infrastructure&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; infrastructure&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.83,32.08,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16: Western Iran (Kermanshah region) → Beit Hakfa Military Targets</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Beit Hakfa Military Targets&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; military&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.85,32.1,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wave 16: Western Iran (Kermanshah region) → Tel Aviv (general)</name>
+        <description>&lt;b&gt;Wave Number:&lt;/b&gt; 16&lt;br/&gt;&lt;b&gt;Wave Codename:&lt;/b&gt; True Promise 4&lt;br/&gt;&lt;b&gt;Announced Utc:&lt;/b&gt; 2026-03-04T06:00:00Z&lt;br/&gt;&lt;b&gt;Conflict Day:&lt;/b&gt; 5&lt;br/&gt;&lt;b&gt;Payload:&lt;/b&gt; 230 attack drones, missiles&lt;br/&gt;&lt;b&gt;Drones Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Ballistic Missiles Used:&lt;/b&gt; True&lt;br/&gt;&lt;b&gt;Cruise Missiles Used:&lt;/b&gt; False&lt;br/&gt;&lt;b&gt;Launch Label:&lt;/b&gt; Western Iran (Kermanshah region)&lt;br/&gt;&lt;b&gt;Target Name:&lt;/b&gt; Tel Aviv (general)&lt;br/&gt;&lt;b&gt;Target Type:&lt;/b&gt; city_area&lt;br/&gt;&lt;b&gt;Target Country:&lt;/b&gt; IL</description>
+        <styleUrl>#arc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>47.07,34.31,0 34.77,32.07,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

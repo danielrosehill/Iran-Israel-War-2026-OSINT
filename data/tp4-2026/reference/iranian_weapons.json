@@ -1,0 +1,335 @@
+[
+  {
+    "id": "emad",
+    "system_name": "Emad",
+    "aliases": ["Emad-1"],
+    "type_key": "emad_used",
+    "classification": "Medium-Range Ballistic Missile (MRBM)",
+    "propulsion": "liquid-fuel",
+    "stages": 1,
+    "range_km": 1700,
+    "warhead_kg": 750,
+    "launch_weight_kg": 17000,
+    "length_m": 16.0,
+    "diameter_m": 1.25,
+    "guidance": "Inertial with MaRV terminal corrections",
+    "CEP_m": 500,
+    "marv": true,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": true,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": true,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "first_unveiled": 2015,
+    "first_combat_use": "2024-04-13",
+    "lineage": "Shahab-3 derivative",
+    "key_features": [
+      "Iran's first precision-guided MRBM",
+      "MaRV with fin-guided reentry vehicle",
+      "Redesigned nose cone for trajectory adjustment"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/emad/",
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/emad/"
+    ]
+  },
+  {
+    "id": "ghadr",
+    "system_name": "Ghadr",
+    "aliases": ["Ghadr-1", "Ghadr-101", "Ghadr-110", "Qadr S", "Qadr H", "Qadr F"],
+    "type_key": "ghadr_used",
+    "classification": "Medium-Range Ballistic Missile (MRBM)",
+    "propulsion": "liquid-fuel",
+    "stages": 1,
+    "range_km": {
+      "min": 1350,
+      "max": 1950,
+      "notes": "Variant-dependent: Qadr S ~1350 km, Qadr H ~1650 km, Qadr F ~1950 km"
+    },
+    "warhead_kg": 750,
+    "launch_weight_kg": 17000,
+    "length_m": 16.0,
+    "diameter_m": 1.25,
+    "guidance": "Strap-down INS with GPS correction",
+    "CEP_m": 300,
+    "marv": true,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": true,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": true,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "launch_prep_minutes": 30,
+    "first_operational_year": 2007,
+    "first_combat_use": "2025-06",
+    "lineage": "Shahab-3 derivative (stretched tanks)",
+    "key_features": [
+      "Baby bottle reentry vehicle nose cone",
+      "30-minute setup time (faster than Shahab-3)",
+      "Road-mobile on wheeled TEL"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/emad/",
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/ghadr-110/",
+      "https://en.wikipedia.org/wiki/Ghadr-110"
+    ]
+  },
+  {
+    "id": "sejjil",
+    "system_name": "Sejjil",
+    "aliases": ["Sejjil-1", "Sejjil-2", "Ashura"],
+    "type_key": "sejjil_used",
+    "classification": "Medium-Range Ballistic Missile (MRBM)",
+    "propulsion": "solid-fuel",
+    "stages": 2,
+    "range_km": 2000,
+    "warhead_kg": 700,
+    "launch_weight_kg": 23600,
+    "length_m": 18.0,
+    "diameter_m": 1.25,
+    "guidance": "Strap-down INS; upgraded guidance from 2021",
+    "CEP_m": null,
+    "marv": false,
+    "marv_notes": "Unconfirmed by CSIS/IISS; some reports claim MaRV but not corroborated",
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "first_test_year": 2008,
+    "first_combat_use": "2025-06",
+    "lineage": "Indigenous Iranian design (not foreign copy)",
+    "key_features": [
+      "Iran's first two-stage solid-fuel MRBM",
+      "Longest-range solid-fuel missile in Iranian inventory",
+      "Faster launch prep than liquid-fuel predecessors"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/sejjil/",
+      "https://en.wikipedia.org/wiki/Sejjil"
+    ]
+  },
+  {
+    "id": "kheibar_shekan",
+    "system_name": "Kheibar Shekan",
+    "name_translation": "Kheibar Breaker",
+    "aliases": ["Kheibar Shekan MaRV"],
+    "type_key": "kheibar_shekan_used",
+    "classification": "Medium-Range Ballistic Missile (MRBM)",
+    "propulsion": "solid-fuel",
+    "stages": 1,
+    "range_km": 1450,
+    "warhead_kg": 550,
+    "launch_weight_kg": 5400,
+    "length_m": 11.4,
+    "diameter_m": 0.76,
+    "guidance": "Satellite-aided INS; fin-guided MaRV terminal phase",
+    "CEP_m": null,
+    "marv": true,
+    "hypersonic": {
+      "iran_claims": true,
+      "western_assessment": false,
+      "terminal_mach_claimed": "7-10",
+      "notes": "Terminal ballistic velocity, not sustained hypersonic flight or HGV"
+    },
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": true,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile; dual-launch TEL on commercial 10-wheel truck",
+    "first_unveiled": "2022-02-09",
+    "first_combat_use": "2024-04-13",
+    "lineage": "Third-generation IRGC ballistic missile",
+    "key_features": [
+      "Smallest and most concealable Iranian MRBM",
+      "One-third the weight of comparable MRBMs",
+      "Tri-conic reentry vehicle for terminal maneuver stability",
+      "Stored/launched from underground tunnel bases"
+    ],
+    "sources": [
+      "https://www.globalsecurity.org/wmd/world/iran/kheibar-shekan.htm",
+      "https://en.wikipedia.org/wiki/Kheibar_Shekan"
+    ]
+  },
+  {
+    "id": "fattah_1",
+    "system_name": "Fattah-1",
+    "name_translation": "Conqueror",
+    "aliases": ["Fattah"],
+    "type_key": "fattah_used",
+    "classification": "MRBM with Maneuverable Reentry Vehicle (MaRV)",
+    "propulsion": "solid-fuel",
+    "stages": 2,
+    "range_km": 1400,
+    "warhead_kg": 500,
+    "launch_weight_kg": 4300,
+    "length_m": 11.5,
+    "diameter_m": 0.80,
+    "guidance": "Hybrid INS + GNSS (GPS/GLONASS); MaRV with TVC",
+    "CEP_m": {
+      "estimate": "10-25",
+      "notes": "If confirmed, highest precision in Iranian MRBM inventory"
+    },
+    "marv": true,
+    "hypersonic": {
+      "iran_claims": true,
+      "IISS_assessment": false,
+      "notes": "Sustains >Mach 5 in terminal phase but lacks glide vehicle; IISS classifies as MaRV-MRBM"
+    },
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": true,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "first_unveiled": "2023-06-06",
+    "first_combat_use": "2025-06",
+    "key_features": [
+      "MaRV capable of evasive maneuvers up to 100 km before impact",
+      "Thrust vector control via moveable nozzle",
+      "Second-stage sustainer based on Arash-24 design"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fattah-1",
+      "https://www.armyrecognition.com/military-products/army/missiles/hypersonic-missiles/fattah-1-hypersonic-missile"
+    ]
+  },
+  {
+    "id": "fattah_2",
+    "system_name": "Fattah-2",
+    "name_translation": "Conqueror",
+    "aliases": [],
+    "type_key": "fattah_used",
+    "classification": "Hypersonic Glide Vehicle (HGV) system",
+    "propulsion": "solid-fuel booster + unpowered HGV",
+    "stages": 2,
+    "range_km": 1400,
+    "warhead_kg": 200,
+    "launch_weight_kg": 4100,
+    "length_m": 12.0,
+    "diameter_m": null,
+    "guidance": "INS + GNSS; HGV maneuvers in pitch and yaw throughout glide phase",
+    "CEP_m": null,
+    "marv": false,
+    "hgv": true,
+    "hypersonic": {
+      "iran_claims": true,
+      "western_assessment": true,
+      "notes": "Genuine HGV second stage sustaining Mach 5+ glide with lateral maneuvering; Mach 15 claim unverified",
+      "claimed_speed_mach": 15
+    },
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": true
+    },
+    "basing": "Road-mobile (TEL)",
+    "first_unveiled": "2023-11",
+    "first_combat_use": "2026-03-01",
+    "key_features": [
+      "Iran's first true HGV weapon system",
+      "Unpredictable approach vector via glide maneuvering",
+      "Lower payload than Fattah-1 due to HGV mass constraints"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fattah-2",
+      "https://militarywatchmagazine.com/article/iran-launches-first-hypersonic-glide-strike-fattah2"
+    ]
+  },
+  {
+    "id": "shahed_136",
+    "system_name": "Shahed-136",
+    "manufacturer": "HESA / Shahed Aviation Industries",
+    "aliases": ["Geran-2"],
+    "type_key": "shahed_136_used",
+    "classification": "Loitering munition / one-way attack UAV",
+    "propulsion": "piston engine (Mado MD-550); RATO launch",
+    "speed_kmh": 185,
+    "range_km": {
+      "conservative": 970,
+      "commonly_cited": 1800,
+      "high_estimate": 2500
+    },
+    "warhead_kg": 50,
+    "total_weight_kg": 200,
+    "length_m": 3.5,
+    "wingspan_m": 2.5,
+    "guidance": "INS + civilian GNSS (GPS/GLONASS); pre-programmed coordinates",
+    "CEP_m": "5-10",
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "launch_method": "Truck-mounted multiple-rail RATO launcher; fired in salvos",
+    "unit_cost_usd": "20000-50000",
+    "first_combat_use": "2019-09",
+    "first_combat_use_notes": "Abqaiq-Khurais attack; major use in Ukraine from Sept 2022",
+    "key_features": [
+      "Very low unit cost enables saturation tactics",
+      "Delta-wing configuration with pusher propeller",
+      "Widely proliferated to Russia, Houthis, Hezbollah",
+      "Slow speed (~185 km/h) but complicates cost-exchange ratio for defenders"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/country/iran/",
+      "https://en.wikipedia.org/wiki/HESA_Shahed_136",
+      "https://www.rusi.org/explore-our-research/publications/commentary/russias-iranian-made-uavs-technical-profile"
+    ]
+  },
+  {
+    "id": "shahed_238",
+    "system_name": "Shahed-238",
+    "manufacturer": "HESA / Shahed Aviation Industries",
+    "aliases": ["Geran-3"],
+    "type_key": "shahed_238_used",
+    "classification": "Jet-powered loitering munition / one-way attack UAV",
+    "propulsion": "turbojet (PBS TJ150 / Toloue-10)",
+    "speed_kmh": {
+      "cruise": 500,
+      "max_impact": 700
+    },
+    "range_km": 1200,
+    "endurance_hours": 2,
+    "ceiling_m": 9144,
+    "warhead_kg": 50,
+    "length_m": 3.5,
+    "wingspan_m": 3.0,
+    "guidance": {
+      "baseline": "INS + GNSS",
+      "ir_variant": "Infrared terminal seeker",
+      "rf_variant": "Radio-frequency terminal seeker"
+    },
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_unveiled": "2023-11",
+    "first_combat_use_notes": "Used by Russia against Ukraine; used by Iran in 2026 operations",
+    "key_features": [
+      "~2.7x faster than Shahed-136",
+      "Three seeker variants (GPS, IR, RF) for different target types",
+      "Shared airframe with Shahed-136 simplifies logistics",
+      "Flight ceiling comparable to combat aircraft"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shahed_238",
+      "https://en.defence-ua.com/analysis/jet_driven_shahed_238_disassembled_engine_from_chechia_satellite_navigation_tools_from_canada_photo-9437.html"
+    ]
+  }
+]

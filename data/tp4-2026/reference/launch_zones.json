@@ -1,0 +1,52 @@
+[
+  {
+    "id": "western_iran",
+    "description_patterns": ["Western Iran", "western Iran", "Western and southwestern Iran"],
+    "label": "Western Iran (Kermanshah region)",
+    "type": "land",
+    "lat": 34.31,
+    "lon": 47.07,
+    "precision_km": 100,
+    "notes": "Approximate centroid of IRGC missile bases in Kermanshah/Lorestan provinces"
+  },
+  {
+    "id": "central_iran",
+    "description_patterns": ["Central Iran", "central Iran"],
+    "label": "Central Iran (Isfahan region)",
+    "type": "land",
+    "lat": 33.50,
+    "lon": 52.00,
+    "precision_km": 150,
+    "notes": "Approximate centroid of IRGC facilities in Isfahan/Semnan area"
+  },
+  {
+    "id": "central_western_iran",
+    "description_patterns": ["Central/western Iran"],
+    "label": "Central-Western Iran",
+    "type": "land",
+    "lat": 33.90,
+    "lon": 49.50,
+    "precision_km": 200,
+    "notes": "Midpoint between central and western launch zones"
+  },
+  {
+    "id": "persian_gulf_naval",
+    "description_patterns": ["IRGC naval positions", "IRGC naval", "naval positions"],
+    "label": "Persian Gulf (IRGC Navy)",
+    "type": "naval",
+    "lat": 26.50,
+    "lon": 53.00,
+    "precision_km": 300,
+    "notes": "Approximate IRGC Navy operating area in central Persian Gulf"
+  },
+  {
+    "id": "irgc_positions",
+    "description_patterns": ["IRGC positions", "IRGC ground force positions"],
+    "label": "IRGC positions (unspecified)",
+    "type": "mixed",
+    "lat": 33.50,
+    "lon": 48.50,
+    "precision_km": 250,
+    "notes": "Generic IRGC launch positions when no specific region given"
+  }
+]

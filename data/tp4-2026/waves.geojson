@@ -1,0 +1,2362 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "operation": "Operation True Promise 4",
+    "crs": "EPSG:4326",
+    "generated_from": "waves.json + reference data",
+    "feature_types": [
+      "launch_point",
+      "target_point",
+      "attack_arc"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 1,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "wave_number": 1,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Nevatim Airbase",
+        "target_type": "air_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.82,
+            31.21
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 1,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
+        "target_name": "Nevatim Airbase",
+        "target_type": "air_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 1,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 1,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 2,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T21:00:00Z",
+        "conflict_day": 1,
+        "payload": "Ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 2,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T21:00:00Z",
+        "conflict_day": 1,
+        "payload": "Ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 2,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T21:00:00Z",
+        "conflict_day": 1,
+        "payload": "Ballistic missiles, Shahed-136 drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "launch_point",
+        "launch_label": "Western and southwestern Iran",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.18,
+          32.67
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Ramat David Air Base",
+        "target_type": "air_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            35.18,
+            32.67
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western and southwestern Iran",
+        "target_name": "Ramat David Air Base",
+        "target_type": "air_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.79,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "HaKirya",
+        "target_type": "military_hq",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.79,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western and southwestern Iran",
+        "target_name": "HaKirya",
+        "target_type": "military_hq",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Haifa Naval Base",
+        "target_type": "naval_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            35.0,
+            32.82
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western and southwestern Iran",
+        "target_name": "Haifa Naval Base",
+        "target_type": "naval_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western and southwestern Iran",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.97,
+          29.24
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Abdullah Al-Mubarak Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            47.97,
+            29.24
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western and southwestern Iran",
+        "target_name": "Abdullah Al-Mubarak Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.38,
+          36.54
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Harir Air Base",
+        "target_type": "us_base",
+        "target_country": "IQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            44.38,
+            36.54
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 3,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "conflict_day": 2,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western and southwestern Iran",
+        "target_name": "Harir Air Base",
+        "target_type": "us_base",
+        "target_country": "IQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 4,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T01:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.98,
+          31.75
+        ]
+      },
+      "properties": {
+        "wave_number": 4,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T01:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Beit Shams Military-Industrial Complex",
+        "target_type": "military_industrial",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.98,
+            31.75
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 4,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T01:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "Beit Shams Military-Industrial Complex",
+        "target_type": "military_industrial",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.65,
+          31.8
+        ]
+      },
+      "properties": {
+        "wave_number": 4,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T01:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Ashdod Military-Industrial Complex",
+        "target_type": "military_industrial",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.65,
+            31.8
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 4,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T01:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "Ashdod Military-Industrial Complex",
+        "target_type": "military_industrial",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 5,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T04:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.97,
+          29.24
+        ]
+      },
+      "properties": {
+        "wave_number": 5,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T04:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Abdullah Al-Mubarak Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            47.97,
+            29.24
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 5,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T04:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Abdullah Al-Mubarak Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.84
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Nof Air Base",
+        "target_type": "air_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.82,
+            31.84
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "Tel Nof Air Base",
+        "target_type": "air_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.79,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "HaKirya",
+        "target_type": "military_hq",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.79,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "HaKirya",
+        "target_type": "military_hq",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Haifa Naval Base",
+        "target_type": "naval_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            35.0,
+            32.82
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "Haifa Naval Base",
+        "target_type": "naval_base",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 6,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.52,
+          29.35
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            47.52,
+            29.35
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.39,
+          28.73
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Mohammed Al-Ahmad Naval Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            48.39,
+            28.73
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Mohammed Al-Ahmad Naval Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.6,
+          26.21
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "target_point",
+        "target_name": "Mina Salman Naval Base",
+        "target_type": "us_base",
+        "target_country": "BH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            50.6,
+            26.21
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 7,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Mina Salman Naval Base",
+        "target_type": "us_base",
+        "target_country": "BH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 8,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T18:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 9,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-01T22:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.0,
+          33.5
+        ]
+      },
+      "properties": {
+        "wave_number": 10,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "total_munitions": null,
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Central Iran (Isfahan region)",
+        "precision_km": 150
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 10,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "total_munitions": null,
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            52.0,
+            33.5
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 10,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "total_munitions": null,
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Central Iran (Isfahan region)",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "wave_number": 10,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "total_munitions": null,
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "East Jerusalem",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            52.0,
+            33.5
+          ],
+          [
+            35.24,
+            31.78
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 10,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "total_munitions": null,
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Central Iran (Isfahan region)",
+        "target_name": "East Jerusalem",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.79,
+          31.25
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Beersheba Army Communications Complex",
+        "target_type": "military_comms",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.79,
+            31.25
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Beersheba Army Communications Complex",
+        "target_type": "military_comms",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.21,
+          31.78
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "West Jerusalem",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            35.21,
+            31.78
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "West Jerusalem",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Galilee (general)",
+        "target_type": "region",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            35.5,
+            32.85
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 11,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Galilee (general)",
+        "target_type": "region",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 12,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T14:30:00Z",
+        "conflict_day": 3,
+        "payload": "26 attack drones, 5 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1,
+          28.93
+        ]
+      },
+      "properties": {
+        "wave_number": 12,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T14:30:00Z",
+        "conflict_day": 3,
+        "payload": "26 attack drones, 5 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            48.1,
+            28.93
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 12,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T14:30:00Z",
+        "conflict_day": 3,
+        "payload": "26 attack drones, 5 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37,
+          25.03
+        ]
+      },
+      "properties": {
+        "wave_number": 12,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T14:30:00Z",
+        "conflict_day": 3,
+        "payload": "26 attack drones, 5 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Al Minhad Air Base",
+        "target_type": "us_base",
+        "target_country": "AE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            55.37,
+            25.03
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 12,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T14:30:00Z",
+        "conflict_day": 3,
+        "payload": "26 attack drones, 5 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Al Minhad Air Base",
+        "target_type": "us_base",
+        "target_country": "AE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "wave_number": 13,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T19:00:00Z",
+        "conflict_day": 3,
+        "payload": "UAVs/drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "IRGC positions (unspecified)",
+        "precision_km": 250
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1,
+          28.93
+        ]
+      },
+      "properties": {
+        "wave_number": 13,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T19:00:00Z",
+        "conflict_day": 3,
+        "payload": "UAVs/drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            48.5,
+            33.5
+          ],
+          [
+            48.1,
+            28.93
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 13,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T19:00:00Z",
+        "conflict_day": 3,
+        "payload": "UAVs/drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "IRGC positions (unspecified)",
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.52,
+          29.35
+        ]
+      },
+      "properties": {
+        "wave_number": 13,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T19:00:00Z",
+        "conflict_day": 3,
+        "payload": "UAVs/drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            48.5,
+            33.5
+          ],
+          [
+            47.52,
+            29.35
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 13,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-02T19:00:00Z",
+        "conflict_day": 3,
+        "payload": "UAVs/drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "IRGC positions (unspecified)",
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_country": "KW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.0,
+          26.5
+        ]
+      },
+      "properties": {
+        "wave_number": 14,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-03T02:00:00Z",
+        "conflict_day": 4,
+        "payload": "20 drones, 3 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Persian Gulf (IRGC Navy)",
+        "precision_km": 300
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.59,
+          25.92
+        ]
+      },
+      "properties": {
+        "wave_number": 14,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-03T02:00:00Z",
+        "conflict_day": 4,
+        "payload": "20 drones, 3 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Sheikh Isa Air Base",
+        "target_type": "us_base",
+        "target_country": "BH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            53.0,
+            26.5
+          ],
+          [
+            50.59,
+            25.92
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 14,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-03T02:00:00Z",
+        "conflict_day": 4,
+        "payload": "20 drones, 3 ballistic missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Persian Gulf (IRGC Navy)",
+        "target_name": "Sheikh Isa Air Base",
+        "target_type": "us_base",
+        "target_country": "BH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.31,
+          25.12
+        ]
+      },
+      "properties": {
+        "wave_number": 15,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-03T16:00:00Z",
+        "conflict_day": 4,
+        "payload": "Missiles, drones",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Al-Udeid Air Base",
+        "target_type": "us_base",
+        "target_country": "QA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.79,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "HaKirya",
+        "target_type": "military_hq",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.79,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "HaKirya",
+        "target_type": "military_hq",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.83,
+          32.08
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Bnei Brak Strategic Infrastructure",
+        "target_type": "infrastructure",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.83,
+            32.08
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Bnei Brak Strategic Infrastructure",
+        "target_type": "infrastructure",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.85,
+          32.1
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Beit Hakfa Military Targets",
+        "target_type": "military",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.85,
+            32.1
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Beit Hakfa Military Targets",
+        "target_type": "military",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "target_point",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            47.07,
+            34.31
+          ],
+          [
+            34.77,
+            32.07
+          ]
+        ]
+      },
+      "properties": {
+        "wave_number": 16,
+        "wave_codename": "True Promise 4",
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "total_munitions": null,
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "attack_arc",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "target_name": "Tel Aviv (general)",
+        "target_type": "city_area",
+        "target_country": "IL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
+      "properties": {
+        "wave_number": 17,
+        "wave_codename": "Sacred: O Messenger of Allah",
+        "announced_utc": "2026-03-04T09:00:00Z",
+        "conflict_day": 5,
+        "payload": "40+ ballistic missiles",
+        "total_munitions": null,
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "feature_type": "launch_point",
+        "launch_label": "Western Iran (Kermanshah region)",
+        "precision_km": 100
+      }
+    }
+  ]
+}

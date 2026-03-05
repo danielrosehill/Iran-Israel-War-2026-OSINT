@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Nevatim Airbase",
+    "aliases": ["Nevatim", "Nevatim airbase"],
+    "type": "air_base",
+    "region": "Negev",
+    "lat": 31.21,
+    "lon": 34.82
+  },
+  {
+    "name": "Tel Nof Air Base",
+    "aliases": ["Tel Nof", "Tel Nof Air Base"],
+    "type": "air_base",
+    "region": "Central",
+    "lat": 31.84,
+    "lon": 34.82
+  },
+  {
+    "name": "Ramat David Air Base",
+    "aliases": ["Ramat David", "Ramat David Air Base"],
+    "type": "air_base",
+    "region": "North",
+    "lat": 32.67,
+    "lon": 35.18
+  },
+  {
+    "name": "HaKirya",
+    "aliases": ["HaKirya", "Ministry of War", "IDF general staff", "Israeli Defense Ministry", "military command"],
+    "type": "military_hq",
+    "region": "Tel Aviv",
+    "lat": 32.07,
+    "lon": 34.79
+  },
+  {
+    "name": "Haifa Naval Base",
+    "aliases": ["Haifa naval base", "Israeli Navy base Haifa", "Haifa military naval yard", "naval base in Haifa", "warship dock in Haifa", "Haifa naval yard"],
+    "type": "naval_base",
+    "region": "Haifa",
+    "lat": 32.82,
+    "lon": 35.00
+  },
+  {
+    "name": "Beit Shams Military-Industrial Complex",
+    "aliases": ["Beit Shams", "Beit Shams military-industrial complex"],
+    "type": "military_industrial",
+    "region": "Central",
+    "lat": 31.75,
+    "lon": 34.98
+  },
+  {
+    "name": "Ashdod Military-Industrial Complex",
+    "aliases": ["Ishtod", "Ishtod military-industrial complex", "Ashdod military-industrial"],
+    "type": "military_industrial",
+    "region": "South-Central",
+    "lat": 31.80,
+    "lon": 34.65
+  },
+  {
+    "name": "Beersheba Army Communications Complex",
+    "aliases": ["Beersheba army communications complex", "army communications complex Beersheba"],
+    "type": "military_comms",
+    "region": "Negev",
+    "lat": 31.25,
+    "lon": 34.79
+  },
+  {
+    "name": "Bnei Brak Strategic Infrastructure",
+    "aliases": ["Bnei Brak", "strategic infrastructure Bnei Brak"],
+    "type": "infrastructure",
+    "region": "Tel Aviv",
+    "lat": 32.08,
+    "lon": 34.83
+  },
+  {
+    "name": "Beit Hakfa Military Targets",
+    "aliases": ["Beit Hakfa", "military targets Beit Hakfa"],
+    "type": "military",
+    "region": "Unknown",
+    "lat": 32.10,
+    "lon": 34.85
+  },
+  {
+    "name": "Tel Aviv (general)",
+    "aliases": ["Tel Aviv"],
+    "type": "city_area",
+    "region": "Tel Aviv",
+    "lat": 32.07,
+    "lon": 34.77
+  },
+  {
+    "name": "East Jerusalem",
+    "aliases": ["East Jerusalem"],
+    "type": "city_area",
+    "region": "Jerusalem",
+    "lat": 31.78,
+    "lon": 35.24
+  },
+  {
+    "name": "West Jerusalem",
+    "aliases": ["West Jerusalem"],
+    "type": "city_area",
+    "region": "Jerusalem",
+    "lat": 31.78,
+    "lon": 35.21
+  },
+  {
+    "name": "Galilee (general)",
+    "aliases": ["Galilee"],
+    "type": "region",
+    "region": "North",
+    "lat": 32.85,
+    "lon": 35.50
+  }
+]

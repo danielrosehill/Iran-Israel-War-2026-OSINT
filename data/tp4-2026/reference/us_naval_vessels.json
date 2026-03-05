@@ -1,0 +1,20 @@
+[
+  {
+    "name": "USS Abraham Lincoln",
+    "aliases": ["Abraham Lincoln", "USS Abraham Lincoln"],
+    "type": "Aircraft carrier (CVN-72)",
+    "class": "Nimitz-class",
+    "branch": "US Navy",
+    "fleet": "Fifth Fleet",
+    "notes": "Carrier strike group operating in Persian Gulf / Arabian Sea region"
+  },
+  {
+    "name": "Athens Nova",
+    "aliases": ["Athens Nova"],
+    "type": "Fuel tanker",
+    "class": "Commercial vessel",
+    "branch": "Civilian",
+    "fleet": null,
+    "notes": "Oil tanker struck by IRGC drones in Strait of Hormuz; reported still burning after wave 12 attack"
+  }
+]
