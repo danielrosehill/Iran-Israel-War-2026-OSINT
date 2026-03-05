@@ -16,6 +16,14 @@
     "CEP_m": 500,
     "marv": true,
     "hypersonic": false,
+    "peak_speed_mach": 10,
+    "flight_time_minutes": {
+      "from_kermanshah": 6.5,
+      "from_tabriz": 6.9,
+      "from_isfahan": 8.8,
+      "from_semnan": 9.8,
+      "notes": "Estimated avg ground speed ~3.0 km/s; target: Tel Aviv"
+    },
     "categories": {
       "bm_liquid_fueled": true,
       "bm_solid_fueled": false,
@@ -57,6 +65,14 @@
     "CEP_m": 300,
     "marv": true,
     "hypersonic": false,
+    "peak_speed_mach": 10,
+    "flight_time_minutes": {
+      "from_kermanshah": 6.5,
+      "from_tabriz": 6.9,
+      "from_isfahan": 8.8,
+      "from_semnan": 9.8,
+      "notes": "Estimated avg ground speed ~3.0 km/s; target: Tel Aviv"
+    },
     "categories": {
       "bm_liquid_fueled": true,
       "bm_solid_fueled": false,
@@ -97,6 +113,14 @@
     "marv": false,
     "marv_notes": "Unconfirmed by CSIS/IISS; some reports claim MaRV but not corroborated",
     "hypersonic": false,
+    "peak_speed_mach": 14,
+    "flight_time_minutes": {
+      "from_kermanshah": 5.6,
+      "from_tabriz": 5.9,
+      "from_isfahan": 7.6,
+      "from_semnan": 8.4,
+      "notes": "Estimated avg ground speed ~3.5 km/s; target: Tel Aviv"
+    },
     "categories": {
       "bm_liquid_fueled": false,
       "bm_solid_fueled": true,
@@ -139,6 +163,14 @@
       "western_assessment": false,
       "terminal_mach_claimed": "7-10",
       "notes": "Terminal ballistic velocity, not sustained hypersonic flight or HGV"
+    },
+    "peak_speed_mach": 10,
+    "flight_time_minutes": {
+      "from_kermanshah": 5.1,
+      "from_tabriz": 5.4,
+      "from_isfahan": 7.0,
+      "from_semnan": 7.7,
+      "notes": "Estimated avg ground speed ~3.8 km/s; target: Tel Aviv"
     },
     "categories": {
       "bm_liquid_fueled": false,
@@ -186,6 +218,14 @@
       "IISS_assessment": false,
       "notes": "Sustains >Mach 5 in terminal phase but lacks glide vehicle; IISS classifies as MaRV-MRBM"
     },
+    "peak_speed_mach": 13,
+    "flight_time_minutes": {
+      "from_kermanshah": 5.1,
+      "from_tabriz": 5.4,
+      "from_isfahan": 7.0,
+      "from_semnan": 7.7,
+      "notes": "Estimated avg ground speed ~3.8 km/s; target: Tel Aviv"
+    },
     "categories": {
       "bm_liquid_fueled": false,
       "bm_solid_fueled": true,
@@ -229,6 +269,14 @@
       "notes": "Genuine HGV second stage sustaining Mach 5+ glide with lateral maneuvering; Mach 15 claim unverified",
       "claimed_speed_mach": 15
     },
+    "peak_speed_mach": 15,
+    "flight_time_minutes": {
+      "from_kermanshah": 4.3,
+      "from_tabriz": 4.6,
+      "from_isfahan": 5.9,
+      "from_semnan": 6.5,
+      "notes": "Estimated avg ground speed ~4.5 km/s; target: Tel Aviv"
+    },
     "categories": {
       "bm_liquid_fueled": false,
       "bm_solid_fueled": true,
@@ -246,6 +294,43 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Fattah-2",
       "https://militarywatchmagazine.com/article/iran-launches-first-hypersonic-glide-strike-fattah2"
+    ]
+  },
+  {
+    "id": "shahed_131",
+    "system_name": "Shahed-131",
+    "manufacturer": "HESA / Shahed Aviation Industries",
+    "aliases": ["Geran-1"],
+    "type_key": "shahed_131_used",
+    "classification": "Loitering munition / one-way attack UAV",
+    "propulsion": "Serat-1 Wankel engine (38 hp), copy of MDR-208; RATO launch",
+    "speed_kmh": 185,
+    "range_km": 900,
+    "warhead_kg": 15,
+    "total_weight_kg": 135,
+    "length_m": 2.6,
+    "wingspan_m": 2.2,
+    "guidance": "INS + civilian GNSS; Iridium satellite link for mid-flight path alteration",
+    "CEP_m": null,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "launch_method": "Truck-mounted multiple-rail RATO launcher; fired in salvos alongside Shahed-136",
+    "unit_cost_usd": "10000-20000",
+    "first_combat_use": "2022-09",
+    "first_combat_use_notes": "First used by Russia in Ukraine (Sept 2022); used in mixed swarms with Shahed-136 in TP3 and TP4",
+    "key_features": [
+      "Smaller companion to Shahed-136 in mixed swarms",
+      "Vertical stabilizers extend only upward from wing tips",
+      "Iridium satellite link enables mid-flight re-targeting",
+      "Lower warhead weight trades payload for numbers in saturation attacks"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shahed_131",
+      "https://osmp.ngo/collection/shahed-131-136-uavs-a-visual-guide/"
     ]
   },
   {
@@ -291,6 +376,42 @@
     ]
   },
   {
+    "id": "shahed_107",
+    "system_name": "Shahed-107",
+    "manufacturer": "HESA / Shahed Aviation Industries",
+    "aliases": [],
+    "type_key": "shahed_107_used",
+    "classification": "Loitering munition / one-way attack UAV",
+    "propulsion": "Compact piston engine",
+    "speed_kmh": null,
+    "range_km": 1500,
+    "warhead_kg": 15,
+    "total_weight_kg": null,
+    "length_m": 2.5,
+    "wingspan_m": 3.0,
+    "guidance": "INS + satellite navigation; anti-jamming systems; possible live video feed",
+    "CEP_m": null,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_revealed": "2024",
+    "first_combat_use": "2026-03",
+    "first_combat_use_notes": "Intercepted by UAE Air Force F-16s and Mirage 2000-9s during TP4",
+    "key_features": [
+      "X-shaped tail assembly",
+      "Carbon-fiber composite airframe with aluminum alloy structural elements",
+      "Combat-tested in Ukraine before TP4 deployment",
+      "Anti-jamming capable navigation"
+    ],
+    "sources": [
+      "https://militarnyi.com/en/news/iran-introduces-new-shahed-107-kamikaze-drone-here-s-what-sets-it-apart/",
+      "https://www.armyrecognition.com/news/aerospace-news/2026/uae-reveals-combat-interception-of-iranian-shahed-136-and-shahed-107-one-way-attack-drones"
+    ]
+  },
+  {
     "id": "shahed_238",
     "system_name": "Shahed-238",
     "manufacturer": "HESA / Shahed Aviation Industries",
@@ -330,6 +451,84 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Shahed_238",
       "https://en.defence-ua.com/analysis/jet_driven_shahed_238_disassembled_engine_from_chechia_satellite_navigation_tools_from_canada_photo-9437.html"
+    ]
+  },
+  {
+    "id": "shahed_129",
+    "system_name": "Shahed-129",
+    "manufacturer": "HESA / Shahed Aviation Industries",
+    "aliases": [],
+    "type_key": "shahed_129_used",
+    "classification": "Medium-Altitude Long-Endurance (MALE) UCAV",
+    "propulsion": "Rotax 914 four-cylinder engine",
+    "speed_kmh": {
+      "cruise": 150,
+      "max": 200
+    },
+    "range_km": 1700,
+    "endurance_hours": 24,
+    "ceiling_m": 7300,
+    "warhead_kg": null,
+    "payload_kg": 400,
+    "total_weight_kg": null,
+    "length_m": 8.0,
+    "wingspan_m": 16.0,
+    "guidance": "Chin-mounted gimbal EO/IR; datalink ~200-400 km effective range",
+    "hardpoints": 4,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_combat_use": null,
+    "first_combat_use_notes": "At least one documented loss on the ground during 2026 conflict (OSINT); primary role is reconnaissance/strike comparable to MQ-1 Predator",
+    "key_features": [
+      "Iran's primary MALE reconnaissance/strike platform",
+      "24-hour endurance for persistent surveillance",
+      "4 hardpoints for up to 8 bombs or 4 missiles",
+      "Retractable landing gear; conventional runway operations"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shahed_129"
+    ]
+  },
+  {
+    "id": "mohajer_6",
+    "system_name": "Mohajer-6",
+    "manufacturer": "Qods Aviation Industries",
+    "aliases": [],
+    "type_key": "mohajer_6_used",
+    "classification": "Tactical armed UCAV",
+    "propulsion": "Pusher-prop piston engine",
+    "speed_kmh": {
+      "cruise": 150,
+      "max": 200
+    },
+    "range_km": 200,
+    "endurance_hours": 12,
+    "ceiling_m": 5500,
+    "payload_kg": 40,
+    "length_m": 5.6,
+    "wingspan_m": 10.0,
+    "guidance": "EO/IR targeting pod; GPS/INS navigation; line-of-sight datalink",
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_combat_use": "2016",
+    "first_combat_use_notes": "Used in Syria; present aboard IRIS Shahid Bagheri drone carrier (sunk Feb 28, 2026); land-based operations likely in TP4",
+    "key_features": [
+      "Iran's most widely exported armed UCAV",
+      "Carries Qaem-series precision-guided munitions",
+      "Proliferated to Russia, Houthis, Hezbollah, Iraqi PMF",
+      "Rail-launched or conventional runway capable"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mohajer-6",
+      "https://en.wikipedia.org/wiki/IRIS_Shahid_Bagheri"
     ]
   }
 ]

@@ -1,64 +1,74 @@
 ![Banner](docs/banner.png)
 
-# Iran-Israel War 2026 — OSINT Dataset
+# Iran-Israel War — OSINT Dataset
 
-Open-source intelligence dataset tracking **Operation True Promise 4** (عملیات وعده صادق ۴) — the Iranian missile and drone attack waves against Israel and US/coalition targets beginning February 28, 2026.
+Open-source intelligence dataset tracking Iranian missile and drone attack waves against Israel and US/coalition targets across multiple operations:
 
-## Overview
+- **Operation True Promise 3** (Jun 13–24, 2025) — "Twelve-Day War", 22 waves
+- **Operation True Promise 4** (Feb 28–ongoing, 2026) — 17+ waves, expanded to US/coalition targets across the Gulf and Mediterranean
 
-This repository collects and structures publicly available information about the attack waves launched by Iran during the ongoing conflict. Data is cross-referenced across multiple sources and organized into a machine-readable format suitable for analysis and visualization.
-
-- **18 attack waves** documented (Feb 28 – Mar 4, 2026)
-- **75+ data fields** per wave covering timing, weapons, targets, interception, and escalation
-- Canonical data format: nested JSON with CSV source
-- Enrichment pipelines for solar/timezone data, temporal patterns, missile categorization, and US base targeting
+> **Data Quality Disclaimer**: This dataset was assembled using a combination of AI-assisted research (multi-model LLM queries), news reporting, and publicly available OSINT sources. **It may contain inaccuracies, gaps, or errors.** Timestamps are approximate for many events. Munitions counts and casualty figures vary across sources and should be treated as estimates. Iranian state media claims (PressTV, Tasnim, IRGC statements) are preserved but often unverifiable. This data is provided for research and educational purposes only — always cross-reference against primary sources before drawing conclusions.
 
 ## Dataset
 
-The primary dataset is [`data/waves.json`](data/waves.json), containing structured records for each attack wave. Each wave includes:
+### True Promise 4 (2026)
+
+Primary dataset: [`data/tp4-2026/waves.json`](data/tp4-2026/waves.json)
+
+- **17 attack waves** documented (Feb 28 – Mar 4, 2026)
+- **75+ data fields** per wave covering timing, weapons, targets, interception, and escalation
+- Countries targeted: Israel, Kuwait, Bahrain, UAE, Qatar, Saudi Arabia, Iraq, Oman, Cyprus, Jordan
+- Reference data for US/coalition bases and naval vessels in [`data/tp4-2026/reference/`](data/tp4-2026/reference/)
+
+### True Promise 3 / Twelve-Day War (2025)
+
+Dataset: [`data/tp3-2025/waves.json`](data/tp3-2025/waves.json)
+
+- **22 attack waves** documented (Jun 13–24, 2025)
+- Same JSON schema as TP4
+- Countries targeted: Israel (only — TP3 did not target US/coalition bases)
+- Data quality is lower than TP4; many waves have partial or missing detail
+
+### Analysis
+
+**Comparative report:** [`analysis/report.pdf`](analysis/report.pdf) — 15-page PDF analyzing attack pattern evolution between TP3 and TP4, including flight time breakdowns, weapon mix shifts, geographic expansion, and escalation trends. Generated 05/03/26 by Anthropic Claude Opus 4.6 — all facts require independent verification.
+
+Visualizations in [`analysis/`](analysis/) covering timing patterns, weapon evolution, targeting geography, and operational tempo.
 
 | Category | Fields |
 |----------|--------|
 | **Timing** | UTC timestamps, local times (Israel/Iran), solar phase, conflict day, tempo between waves |
 | **Weapons** | Payload descriptions, missile/drone types (Emad, Ghadr, Sejjil, Fattah, Shahed-136/238, etc.), fuel and warhead categories |
-| **Targets** | Israeli locations, US/coalition bases, naval vessels |
+| **Targets** | Israeli locations, US/coalition bases, naval vessels, country-level targeting |
 | **Interception** | Systems used (Iron Dome, Arrow, David's Sling, THAAD, Aegis), interception rates |
 | **Impact** | Casualties, infrastructure damage, military vs. civilian impact |
 | **Escalation** | Escalation flags, proxy involvement, cumulative munitions tracking |
-
-Reference data for US/coalition bases and naval vessels is in [`data/reference/`](data/reference/).
-
-## Data Pipeline
-
-```
-LLM queries (multi-model) → CSV → csv_to_json.py → enrich_*.py → waves.json
-```
-
-1. Raw data collected via multi-model LLM queries with source grounding
-2. CSV converted to nested JSON structure
-3. Enrichment scripts add computed fields (solar phases, temporal patterns, missile categories, base matching)
 
 ## Repository Structure
 
 ```
 data/
-  waves.csv                # Original flat CSV (75+ columns)
-  waves.json               # Canonical nested JSON
-  reference/
-    us_bases.json           # US/coalition bases with coordinates and aliases
-    us_naval_vessels.json   # Tracked naval vessels
-scripts/
-  csv_to_json.py            # CSV → JSON conversion
-  enrich_solar.py           # Solar/timezone enrichment
-  enrich_tempo.py           # Temporal/escalation enrichment
-  enrich_categories.py      # Missile categories + location targeting
-  enrich_us_bases.py        # US base/vessel matching
-  query_models.py           # Multi-model LLM data collection
-  query_gemini_grounded.py  # Gemini with Google Search grounding
+  tp3-2025/
+    waves.json               # TP3 wave data (22 waves, Jun 2025)
+  tp4-2026/
+    waves.csv                # Original flat CSV (75+ columns)
+    waves.json               # Canonical nested JSON (17 waves)
+    waves.geojson            # GeoJSON export
+    waves.kml                # KML export
+    reference/
+      us_bases.json          # US/coalition bases with coordinates and aliases
+      us_naval_vessels.json  # Tracked naval vessels
+      iranian_weapons.json   # Iranian missile + drone specs
+      armed_forces.json      # Armed groups/forces in conflict
+analysis/
+  report.typ                 # Typst source for comparative analysis
+  report.pdf                 # 15-page TP3 vs TP4 comparative report (AI-generated)
+  report_*.png               # Report-specific charts
+  *.png                      # Generated visualizations
 prompts/
-  waves.md                  # Schema documentation / LLM extraction prompt
+  waves.md                   # Schema documentation / LLM extraction prompt
 docs/
-  data-dictionary.md        # Full field reference
+  data-dictionary.md         # Full field reference
 ```
 
 ## Potential Use Cases
@@ -67,26 +77,7 @@ docs/
 - **Geovisualization** — mapping launch sites, targets, and interception zones
 - **Weapons tracking** — categorizing and tracking Iranian missile/drone inventory usage
 - **Interception analysis** — comparing defense system performance across waves
-- **Conflict timeline** — reconstructing the operational tempo of the campaign
-
-## Getting Started
-
-```bash
-git clone https://github.com/danielrosehill/Iran-Israel-War-2026-Data.git
-cd Iran-Israel-War-2026-Data
-
-# Set up Python environment (optional, only needed for enrichment scripts)
-uv venv .venv
-source .venv/bin/activate
-uv pip install astral  # Required only by enrich_solar.py
-
-# Run enrichment pipeline
-python scripts/csv_to_json.py
-python scripts/enrich_solar.py
-python scripts/enrich_tempo.py
-python scripts/enrich_categories.py
-python scripts/enrich_us_bases.py
-```
+- **Cross-operation comparison** — TP3 vs TP4 tactical evolution
 
 ## Data Conventions
 
@@ -95,12 +86,13 @@ python scripts/enrich_us_bases.py
 - **Booleans**: Native JSON `true`/`false`
 - **Missing values**: `null`
 - **Arrays**: Native JSON arrays for country codes, interception systems, sources
+- **Country codes**: ISO 3166-1 alpha-2
 
 See [`docs/data-dictionary.md`](docs/data-dictionary.md) for the full field reference.
 
 ## Methodology
 
-Data is gathered from publicly available sources including official military announcements, verified news reporting, and satellite imagery analysis. Information is cross-checked across multiple sources wherever possible. Iranian nomenclature (operation names, wave codenames) is preserved alongside English translations.
+Data is gathered from publicly available sources including official military announcements, verified news reporting, Wikipedia timelines, and satellite imagery analysis. AI tools (multi-model LLM queries with source grounding) are used to accelerate data collection and structuring. Information is cross-checked across multiple sources wherever possible. Iranian nomenclature (operation names, wave codenames) is preserved alongside English translations.
 
 This is an independent open-source research project. All data should be treated as provisional and subject to revision as new information becomes available.
 

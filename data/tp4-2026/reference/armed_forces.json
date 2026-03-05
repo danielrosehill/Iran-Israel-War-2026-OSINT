@@ -3,20 +3,32 @@
     "id": "idf",
     "name": "Israel Defense Forces",
     "abbreviation": "IDF",
-    "aliases": ["IDF", "Tzahal", "צה\"ל"],
+    "aliases": [
+      "IDF",
+      "Tzahal",
+      "צה\"ל"
+    ],
     "country_code": "IL",
     "country_name": "Israel",
     "side": "Israel / Coalition",
     "type": "Combined armed forces",
     "parent": null,
-    "branches": ["Ground Forces", "Air Force", "Navy"],
+    "branches": [
+      "Ground Forces",
+      "Air Force",
+      "Navy"
+    ],
     "notes": "Unified military of Israel; overall command of Israeli defensive and offensive operations"
   },
   {
     "id": "iaf",
     "name": "Israeli Air Force",
     "abbreviation": "IAF",
-    "aliases": ["IAF", "Heyl HaAvir", "חיל האוויר"],
+    "aliases": [
+      "IAF",
+      "Heyl HaAvir",
+      "חיל האוויר"
+    ],
     "country_code": "IL",
     "country_name": "Israel",
     "side": "Israel / Coalition",
@@ -28,7 +40,10 @@
     "id": "israeli_navy",
     "name": "Israeli Navy",
     "abbreviation": null,
-    "aliases": ["Heyl HaYam", "חיל הים"],
+    "aliases": [
+      "Heyl HaYam",
+      "חיל הים"
+    ],
     "country_code": "IL",
     "country_name": "Israel",
     "side": "Israel / Coalition",
@@ -37,23 +52,68 @@
     "notes": "Operates Sa'ar-class corvettes with Barak-8 naval air defense"
   },
   {
+    "id": "mossad",
+    "name": "Institute for Intelligence and Special Operations",
+    "abbreviation": "Mossad",
+    "aliases": [
+      "Mossad",
+      "HaMossad",
+      "המוסד למודיעין ולתפקידים מיוחדים"
+    ],
+    "country_code": "IL",
+    "country_name": "Israel",
+    "side": "Israel / Coalition",
+    "type": "Intelligence agency",
+    "parent": null,
+    "notes": "Israel's national intelligence agency; conducted ground operations inside Iran during TP3 (per Al Arabiya); HQ reportedly targeted by Iran in TP2"
+  },
+  {
+    "id": "shin_bet",
+    "name": "Israel Security Agency",
+    "abbreviation": "Shin Bet",
+    "aliases": [
+      "Shin Bet",
+      "Shabak",
+      "שירות הביטחון הכללי"
+    ],
+    "country_code": "IL",
+    "country_name": "Israel",
+    "side": "Israel / Coalition",
+    "type": "Internal security agency",
+    "parent": null,
+    "notes": "Israel's internal security service"
+  },
+  {
     "id": "irgc",
     "name": "Islamic Revolutionary Guard Corps",
     "abbreviation": "IRGC",
-    "aliases": ["IRGC", "Sepah", "Pasdaran", "سپاه پاسداران انقلاب اسلامی"],
+    "aliases": [
+      "IRGC",
+      "Sepah",
+      "Pasdaran",
+      "سپاه پاسداران انقلاب اسلامی"
+    ],
     "country_code": "IR",
     "country_name": "Iran",
     "side": "Iran / Axis of Resistance",
     "type": "Military branch (parallel to regular armed forces)",
     "parent": null,
-    "branches": ["IRGC Ground Forces", "IRGC Aerospace Force", "IRGC Navy", "Quds Force"],
+    "branches": [
+      "IRGC Ground Forces",
+      "IRGC Aerospace Force",
+      "IRGC Navy",
+      "Quds Force"
+    ],
     "notes": "Controls Iran's ballistic missile program and drone operations; primary force conducting strikes in this conflict"
   },
   {
     "id": "irgc_asf",
     "name": "IRGC Aerospace Force",
     "abbreviation": "IRGC-ASF",
-    "aliases": ["IRGC Aerospace Force", "نیروی هوافضای سپاه"],
+    "aliases": [
+      "IRGC Aerospace Force",
+      "نیروی هوافضای سپاه"
+    ],
     "country_code": "IR",
     "country_name": "Iran",
     "side": "Iran / Axis of Resistance",
@@ -65,7 +125,10 @@
     "id": "irgc_navy",
     "name": "IRGC Navy",
     "abbreviation": "IRGCN",
-    "aliases": ["IRGC Naval Forces", "نیروی دریایی سپاه"],
+    "aliases": [
+      "IRGC Naval Forces",
+      "نیروی دریایی سپاه"
+    ],
     "country_code": "IR",
     "country_name": "Iran",
     "side": "Iran / Axis of Resistance",
@@ -77,20 +140,32 @@
     "id": "artesh",
     "name": "Islamic Republic of Iran Army",
     "abbreviation": "Artesh",
-    "aliases": ["Artesh", "IRIA", "ارتش جمهوری اسلامی ایران"],
+    "aliases": [
+      "Artesh",
+      "IRIA",
+      "ارتش جمهوری اسلامی ایران"
+    ],
     "country_code": "IR",
     "country_name": "Iran",
     "side": "Iran / Axis of Resistance",
     "type": "Regular armed forces",
     "parent": null,
-    "branches": ["Ground Forces", "Air Force (IRIAF)", "Navy (IRIN)", "Air Defense Force"],
+    "branches": [
+      "Ground Forces",
+      "Air Force (IRIAF)",
+      "Navy (IRIN)",
+      "Air Defense Force"
+    ],
     "notes": "Iran's conventional military; distinct from IRGC. Air Defense Force operates radar networks and SAM systems"
   },
   {
     "id": "iriaf",
     "name": "Islamic Republic of Iran Air Force",
     "abbreviation": "IRIAF",
-    "aliases": ["IRIAF", "نیروی هوایی ارتش جمهوری اسلامی ایران"],
+    "aliases": [
+      "IRIAF",
+      "نیروی هوایی ارتش جمهوری اسلامی ایران"
+    ],
     "country_code": "IR",
     "country_name": "Iran",
     "side": "Iran / Axis of Resistance",
@@ -102,7 +177,10 @@
     "id": "iran_air_defense",
     "name": "Islamic Republic of Iran Air Defense Force",
     "abbreviation": null,
-    "aliases": ["Khatam al-Anbiya Air Defense", "قرارگاه پدافند هوایی خاتم‌الانبیاء"],
+    "aliases": [
+      "Khatam al-Anbiya Air Defense",
+      "قرارگاه پدافند هوایی خاتم‌الانبیاء"
+    ],
     "country_code": "IR",
     "country_name": "Iran",
     "side": "Iran / Axis of Resistance",
@@ -114,7 +192,10 @@
     "id": "us_navy",
     "name": "United States Navy",
     "abbreviation": "USN",
-    "aliases": ["US Navy", "USN"],
+    "aliases": [
+      "US Navy",
+      "USN"
+    ],
     "country_code": "US",
     "country_name": "United States",
     "side": "Israel / Coalition",
@@ -126,7 +207,10 @@
     "id": "us_air_force",
     "name": "United States Air Force",
     "abbreviation": "USAF",
-    "aliases": ["US Air Force", "USAF"],
+    "aliases": [
+      "US Air Force",
+      "USAF"
+    ],
     "country_code": "US",
     "country_name": "United States",
     "side": "Israel / Coalition",
@@ -138,7 +222,10 @@
     "id": "us_centcom",
     "name": "United States Central Command",
     "abbreviation": "CENTCOM",
-    "aliases": ["CENTCOM", "USCENTCOM"],
+    "aliases": [
+      "CENTCOM",
+      "USCENTCOM"
+    ],
     "country_code": "US",
     "country_name": "United States",
     "side": "Israel / Coalition",
@@ -150,7 +237,10 @@
     "id": "raf",
     "name": "Royal Air Force",
     "abbreviation": "RAF",
-    "aliases": ["RAF", "Royal Air Force"],
+    "aliases": [
+      "RAF",
+      "Royal Air Force"
+    ],
     "country_code": "GB",
     "country_name": "United Kingdom",
     "side": "Israel / Coalition",
@@ -162,7 +252,10 @@
     "id": "royal_navy",
     "name": "Royal Navy",
     "abbreviation": "RN",
-    "aliases": ["Royal Navy", "RN"],
+    "aliases": [
+      "Royal Navy",
+      "RN"
+    ],
     "country_code": "GB",
     "country_name": "United Kingdom",
     "side": "Israel / Coalition",
@@ -174,7 +267,10 @@
     "id": "french_air_force",
     "name": "French Air and Space Force",
     "abbreviation": "AAE",
-    "aliases": ["Armée de l'Air et de l'Espace", "French Air Force"],
+    "aliases": [
+      "Armée de l'Air et de l'Espace",
+      "French Air Force"
+    ],
     "country_code": "FR",
     "country_name": "France",
     "side": "Israel / Coalition",
@@ -186,7 +282,10 @@
     "id": "rjaf",
     "name": "Royal Jordanian Air Force",
     "abbreviation": "RJAF",
-    "aliases": ["RJAF", "Royal Jordanian Air Force"],
+    "aliases": [
+      "RJAF",
+      "Royal Jordanian Air Force"
+    ],
     "country_code": "JO",
     "country_name": "Jordan",
     "side": "Israel / Coalition",
@@ -198,7 +297,11 @@
     "id": "hezbollah",
     "name": "Hezbollah",
     "abbreviation": null,
-    "aliases": ["Hezbollah", "Hizballah", "حزب‌الله"],
+    "aliases": [
+      "Hezbollah",
+      "Hizballah",
+      "حزب‌الله"
+    ],
     "country_code": "LB",
     "country_name": "Lebanon",
     "side": "Iran / Axis of Resistance",
@@ -210,7 +313,11 @@
     "id": "houthis",
     "name": "Ansar Allah (Houthis)",
     "abbreviation": null,
-    "aliases": ["Houthis", "Ansar Allah", "أنصار الله"],
+    "aliases": [
+      "Houthis",
+      "Ansar Allah",
+      "أنصار الله"
+    ],
     "country_code": "YE",
     "country_name": "Yemen",
     "side": "Iran / Axis of Resistance",
@@ -222,7 +329,11 @@
     "id": "iraqi_militias",
     "name": "Islamic Resistance in Iraq",
     "abbreviation": null,
-    "aliases": ["Iraqi militias", "Islamic Resistance in Iraq", "Iran-backed Iraqi groups"],
+    "aliases": [
+      "Iraqi militias",
+      "Islamic Resistance in Iraq",
+      "Iran-backed Iraqi groups"
+    ],
     "country_code": "IQ",
     "country_name": "Iraq",
     "side": "Iran / Axis of Resistance",
@@ -234,7 +345,10 @@
     "id": "rsaf",
     "name": "Royal Saudi Air Force",
     "abbreviation": "RSAF",
-    "aliases": ["RSAF", "Royal Saudi Air Force"],
+    "aliases": [
+      "RSAF",
+      "Royal Saudi Air Force"
+    ],
     "country_code": "SA",
     "country_name": "Saudi Arabia",
     "side": "Israel / Coalition",

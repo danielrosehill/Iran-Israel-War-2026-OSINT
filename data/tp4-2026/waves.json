@@ -2,20 +2,34 @@
   "metadata": {
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
-    "version": "2.0",
+    "version": "2.1",
     "wave_count": 18,
     "date_range": {
       "start": "2026-02-28",
       "end": "2026-03-04"
     },
     "canonical_format": "json",
-    "source_csv_columns": 75
+    "source_csv_columns": 75,
+    "countries_targeted": [
+      "AE",
+      "BH",
+      "CY",
+      "IL",
+      "IO",
+      "IQ",
+      "JO",
+      "KW",
+      "OM",
+      "QA",
+      "SA",
+      "TR"
+    ]
   },
   "waves": [
     {
       "wave_number": 1,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-02-28T18:30:00Z",
         "announcement_source": "IRGC",
@@ -42,7 +56,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": true,
@@ -54,10 +72,15 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Nevatim airbase, Tel Aviv, US military facilities in Persian Gulf",
+        "targets": "Nevatim airbase, Tel Aviv, US military facilities in Persian Gulf; USN Fifth Fleet HQ Bahrain; Port Jebel Ali UAE; Duqm port Oman (2 drones, 1 injured); Tankers off Oman coast",
         "landings_countries": [
           "IL",
-          "IQ"
+          "IQ",
+          "BH",
+          "AE",
+          "QA",
+          "JO",
+          "OM"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -138,8 +161,8 @@
     },
     {
       "wave_number": 2,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-02-28T21:00:00Z",
         "announcement_source": "IRGC",
@@ -166,7 +189,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": true,
@@ -257,8 +284,8 @@
     },
     {
       "wave_number": 3,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-02-28T23:45:00Z",
         "announcement_source": "IRGC",
@@ -285,7 +312,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -297,12 +328,15 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Israeli naval base in Haifa, warship dock in Haifa, Ramat David Air Base, HaKirya (Ministry of War) Tel Aviv, Abdullah Al-Mubarak Air Base Kuwait, Harir base Iraq, Prince Sultan Air Base Saudi Arabia",
+        "targets": "Israeli naval base in Haifa, warship dock in Haifa, Ramat David Air Base, HaKirya (Ministry of War) Tel Aviv, Abdullah Al-Mubarak Air Base Kuwait, Harir base Iraq, Prince Sultan Air Base Saudi Arabia; Crowne Plaza Hotel Manama Bahrain; Etihad Towers Abu Dhabi (drone intercepted, debris damage); French base Camp de la Paix Abu Dhabi; Al-Salam Naval Base Abu Dhabi; Saudi oil refinery",
         "landings_countries": [
           "IL",
           "KW",
           "IQ",
-          "SA"
+          "SA",
+          "BH",
+          "AE",
+          "JO"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -384,8 +418,8 @@
     },
     {
       "wave_number": 4,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-01T01:00:00Z",
         "announcement_source": "IRGC",
@@ -412,7 +446,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -504,8 +542,8 @@
     },
     {
       "wave_number": 5,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-01T04:00:00Z",
         "announcement_source": "IRGC",
@@ -532,7 +570,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -544,10 +586,11 @@
       "targets": {
         "israel_targeted": false,
         "us_bases_targeted": true,
-        "targets": "American vessels in Indian Ocean, Abdullah Mubarak naval base Kuwait",
+        "targets": "American vessels in Indian Ocean, Abdullah Mubarak naval base Kuwait; Two missiles fired towards British bases on Cyprus (denied by Cyprus MoD)",
         "landings_countries": [
           "KW",
-          "IO"
+          "IO",
+          "CY"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
@@ -625,8 +668,8 @@
     },
     {
       "wave_number": 6,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-01T08:00:00Z",
         "announcement_source": "IRGC",
@@ -653,7 +696,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -743,8 +790,8 @@
     },
     {
       "wave_number": 7,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-01T14:00:00Z",
         "announcement_source": "IRGC / Tasnim News Agency",
@@ -771,7 +818,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -783,12 +834,14 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "US/British oil tankers in Persian Gulf/Strait of Hormuz, Ali Al-Salem naval base Kuwait, Mohammed Al-Ahmad Naval Base Kuwait, Mina Salman US naval base Bahrain, USS Abraham Lincoln",
+        "targets": "US/British oil tankers in Persian Gulf/Strait of Hormuz, Ali Al-Salem naval base Kuwait, Mohammed Al-Ahmad Naval Base Kuwait, Mina Salman US naval base Bahrain, USS Abraham Lincoln; Prince Sultan Airbase and King Khalid International Airport Saudi Arabia (intercepted); AWS data center UAE",
         "landings_countries": [
           "IL",
           "KW",
           "BH",
-          "IO"
+          "IO",
+          "SA",
+          "AE"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
@@ -879,8 +932,8 @@
     },
     {
       "wave_number": 8,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-01T18:00:00Z",
         "announcement_source": "IRGC / Tasnim News Agency",
@@ -907,7 +960,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -996,8 +1053,8 @@
     },
     {
       "wave_number": 9,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-01T22:00:00Z",
         "announcement_source": "IRGC",
@@ -1024,7 +1081,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1036,12 +1097,13 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "US naval assets, Israeli defense systems, drones across multiple regions",
+        "targets": "US naval assets, Israeli defense systems, drones across multiple regions; RAF Akrotiri Cyprus (1 drone hit airfield, 5 intercepted, minor damage)",
         "landings_countries": [
           "IL",
           "KW",
           "BH",
-          "QA"
+          "QA",
+          "CY"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -1117,8 +1179,8 @@
     },
     {
       "wave_number": 10,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-02T04:00:00Z",
         "announcement_source": "IRGC",
@@ -1145,7 +1207,11 @@
           "kheibar_shekan_used": true,
           "fattah_used": false,
           "shahed_136_used": false,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1234,8 +1300,8 @@
     },
     {
       "wave_number": 11,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-02T10:00:00Z",
         "announcement_source": "IRGC",
@@ -1262,7 +1328,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1274,12 +1344,17 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "US intelligence centers and military support warehouses in Persian Gulf, Israeli army communications complex Beersheba, 20+ sites in Tel Aviv/West Jerusalem/Galilee",
+        "targets": "US intelligence centers and military support warehouses in Persian Gulf, Israeli army communications complex Beersheba, 20+ sites in Tel Aviv/West Jerusalem/Galilee; Paphos Airport Cyprus (evacuated); Akrotiri Cyprus (sirens); Aramco Ras Tanura Saudi Arabia (refinery fire); Qatar LNG facilities; Mina Salman port Bahrain; Duqm/Oman maritime targets; US-Jordanian embassy evacuated",
         "landings_countries": [
           "IL",
           "KW",
           "BH",
-          "AE"
+          "AE",
+          "CY",
+          "SA",
+          "QA",
+          "JO",
+          "OM"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -1352,8 +1427,8 @@
     },
     {
       "wave_number": 12,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-02T14:30:00Z",
         "announcement_source": "IRGC Navy",
@@ -1380,7 +1455,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1392,12 +1471,13 @@
       "targets": {
         "israel_targeted": false,
         "us_bases_targeted": true,
-        "targets": "US Arifjan base Kuwait, US Al Minhad command center UAE, US naval facilities Bahrain, fuel tanker Athens Nova in Strait of Hormuz",
+        "targets": "US Arifjan base Kuwait, US Al Minhad command center UAE, US naval facilities Bahrain, fuel tanker Athens Nova in Strait of Hormuz; Port Fujairah UAE; Dubai UAE (ballistic missile); Sulaymaniyah Iraqi Kurdistan; Erbil Iraq",
         "landings_countries": [
           "KW",
           "AE",
           "BH",
-          "IO"
+          "IO",
+          "IQ"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
@@ -1484,8 +1564,8 @@
     },
     {
       "wave_number": 13,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-02T19:00:00Z",
         "announcement_source": "IRGC Navy drone unit",
@@ -1512,7 +1592,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1608,8 +1692,8 @@
     },
     {
       "wave_number": 14,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-03T02:00:00Z",
         "announcement_source": "IRGC Navy",
@@ -1636,7 +1720,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1648,9 +1736,10 @@
       "targets": {
         "israel_targeted": false,
         "us_bases_targeted": true,
-        "targets": "US air base Sheikh Isa area Bahrain",
+        "targets": "US air base Sheikh Isa area Bahrain; US embassy Riyadh Saudi Arabia (2 drones, fire); CIA headquarters Riyadh (drone hit); Saudi Arabia downed 9 drones",
         "landings_countries": [
-          "BH"
+          "BH",
+          "SA"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
@@ -1728,8 +1817,8 @@
     },
     {
       "wave_number": 15,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-03T16:00:00Z",
         "announcement_source": "IRGC",
@@ -1756,7 +1845,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1768,10 +1861,13 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Al-Udeid Air Base Qatar, Israeli positions",
+        "targets": "Al-Udeid Air Base Qatar, Israeli positions; US Consulate Al Seef Dubai (drones, fire); Fujairah Oil Industry Zone UAE; Hamad International Airport Qatar (intercepted); AWS facilities UAE and Bahrain",
         "landings_countries": [
           "IL",
-          "QA"
+          "QA",
+          "AE",
+          "SA",
+          "BH"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -1851,8 +1947,8 @@
     },
     {
       "wave_number": 16,
-      "wave_codename_farsi": "وعده صادق ۴",
-      "wave_codename_english": "True Promise 4",
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
       "timing": {
         "announced_utc": "2026-03-04T06:00:00Z",
         "announcement_source": "IRGC",
@@ -1879,7 +1975,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": true,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -1891,9 +1991,15 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "HaKirya (IDF general staff and Ministry of War) Tel Aviv, strategic infrastructure Bnei Brak, military targets Beit Hakfa",
+        "targets": "HaKirya (IDF general staff and Ministry of War) Tel Aviv, strategic infrastructure Bnei Brak, military targets Beit Hakfa; Kuwait, Iraq, Saudi Arabia, UAE (hundreds of drones); Greek F-16s intercept Shahed drones near Cyprus; Turkish air defences intercept missiles over Hatay",
         "landings_countries": [
-          "IL"
+          "IL",
+          "KW",
+          "IQ",
+          "SA",
+          "AE",
+          "CY",
+          "TR"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -1994,7 +2100,11 @@
           "kheibar_shekan_used": false,
           "fattah_used": false,
           "shahed_136_used": false,
-          "shahed_238_used": false
+          "shahed_238_used": false,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
@@ -2109,7 +2219,11 @@
           "kheibar_shekan_used": null,
           "fattah_used": null,
           "shahed_136_used": null,
-          "shahed_238_used": null
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
         },
         "categories": {
           "bm_liquid_fueled": true,
