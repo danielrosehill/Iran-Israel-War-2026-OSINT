@@ -2912,8 +2912,8 @@
     {
       "operation": "tp4",
       "wave_number": 20,
-      "wave_codename_farsi": null,
-      "wave_codename_english": null,
+      "wave_codename_farsi": "يا معزّ المؤمنين",
+      "wave_codename_english": "Ya Mo'izz al-Mu'minin",
       "timing": {
         "announced_utc": "2026-03-05T00:00:00Z",
         "announcement_source": "IRGC",
@@ -2929,7 +2929,7 @@
         "wave_duration_minutes": null
       },
       "weapons": {
-        "payload": "Ballistic missiles with cluster munition warheads (~20 submunitions per warhead, ~2.5 kg explosive each, ~8 km dispersal radius), drones",
+        "payload": "Kheibar Shekan ballistic missiles with cluster munition warheads (~20 submunitions per warhead, ~2.5 kg explosive each, ~8 km dispersal radius), drones",
         "drones_used": true,
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
@@ -2937,7 +2937,7 @@
           "emad_used": null,
           "ghadr_used": null,
           "sejjil_used": null,
-          "kheibar_shekan_used": null,
+          "kheibar_shekan_used": true,
           "fattah_used": null,
           "shahed_136_used": null,
           "shahed_238_used": null,
@@ -2947,15 +2947,15 @@
           "mohajer_6_used": null
         },
         "categories": {
-          "bm_liquid_fueled": null,
-          "bm_solid_fueled": null,
+          "bm_liquid_fueled": false,
+          "bm_solid_fueled": true,
           "bm_marv_equipped": null,
           "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
         "cluster_warhead": {
           "confirmed": true,
-          "carrier_missile": null,
+          "carrier_missile": "Kheibar Shekan",
           "submunition_count": 20,
           "submunition_explosive_kg": 2.5,
           "dispersal_radius_km": 8.0,
@@ -3034,7 +3034,8 @@
           "https://x.com/FirsttripR",
           "https://www.timesofisrael.com/liveblog_entry/police-say-iran-shot-cluster-bomb-in-recent-impact-in-central-israel/",
           "https://www.timesofisrael.com/irans-cluster-missiles-scattering-bombs-and-destruction-across-israel/",
-          "https://www.haaretz.com/israel-news/israel-security/2026-03-05/ty-article/.premium/iran-has-fired-at-least-six-cluster-missiles-at-israel-since-the-war-began/0000019c-b94e-db5a-a99f-b94ff6f20000"
+          "https://www.haaretz.com/israel-news/israel-security/2026-03-05/ty-article/.premium/iran-has-fired-at-least-six-cluster-missiles-at-israel-since-the-war-began/0000019c-b94e-db5a-a99f-b94ff6f20000",
+          "https://x.com/Osint613"
         ]
       },
       "description": "Twentieth wave of Operation True Promise 4. Small number of ballistic missiles with cluster munition warheads and drones launched at central Israel. Eighth Iranian attack since midnight. Sirens sounded in Tel Aviv and surrounding area. Police confirmed cluster bomb warhead; missile fragments and submunitions impacted several areas. One impact in a central town sparked a fire. No immediate injuries reported. IDF Home Front Command cleared shelters after attack. Iran has fired at least six cluster missiles at Israel since the war began per Haaretz reporting.",
@@ -3052,7 +3053,7 @@
           "url": null
         }
       },
-      "iranian_media_claims": null
+      "iranian_media_claims": "IRGC Public Relations announced the twentieth wave of Operation Promised Truth 4 began with a combined missile and drone operation along with a barrage of Khaibar-breaking (Kheibar Shekan) missiles against targets in the heart of Tel Aviv on the evening of the birth of Imam Hasan al-Mujtaba, with the code 'Ya Mo'izz al-Mu'minin'."
     }
   ]
 }
