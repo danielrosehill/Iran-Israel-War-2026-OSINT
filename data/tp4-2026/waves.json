@@ -4,7 +4,7 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "wave_count": 19,
+    "wave_count": 20,
     "date_range": {
       "start": "2026-02-28",
       "end": "2026-03-05"
@@ -2867,6 +2867,142 @@
         "centcom": {
           "statement": "Operation Epic Fury is laser-focused on destroying Iranian offensive missiles. The Iranian regime is using mobile launchers to indiscriminately fire missiles. U.S. forces are hunting these threats down and taking them out.",
           "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/"
+        }
+      },
+      "iranian_media_claims": null
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 20,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "timing": {
+        "announced_utc": "2026-03-05T00:00:00Z",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": null,
+        "launch_time_israel": null,
+        "launch_time_iran": null,
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 6,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Ballistic missiles with cluster munition warheads (~20 submunitions per warhead, ~2.5 kg explosive each, ~8 km dispersal radius), drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": false
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": null,
+        "targets": "Tel Aviv and surrounding area, central Israel. Sirens sounded across central Israel. Eighth Iranian attack since midnight.",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.0853,
+          "lon": 34.7818
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": null
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null,
+        "small_number_of_missiles": true
+      },
+      "impact": {
+        "damage": "Missile fragments and submunitions from cluster bomb warhead impacted several areas in central Israel, causing damage. One impact site in a central town sparked a fire. Police confirmed cluster bomb warhead. Each submunition carries ~2.5 kg explosive, ~20 submunitions per warhead, dispersal radius ~8 km. Submunitions designed to explode on impact; unexploded submunitions pose landmine-like hazard.",
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": "IDF Home Front Command cleared civilians to leave shelters but advised remaining close. No immediate injuries reported by medics.",
+        "urls": [
+          "https://x.com/i_am_razazkhan",
+          "https://x.com/FirsttripR",
+          "https://www.timesofisrael.com/liveblog_entry/police-say-iran-shot-cluster-bomb-in-recent-impact-in-central-israel/",
+          "https://www.timesofisrael.com/irans-cluster-missiles-scattering-bombs-and-destruction-across-israel/",
+          "https://www.haaretz.com/israel-news/israel-security/2026-03-05/ty-article/.premium/iran-has-fired-at-least-six-cluster-missiles-at-israel-since-the-war-began/0000019c-b94e-db5a-a99f-b94ff6f20000"
+        ]
+      },
+      "description": "Twentieth wave of Operation True Promise 4. Small number of ballistic missiles with cluster munition warheads and drones launched at central Israel. Eighth Iranian attack since midnight. Sirens sounded in Tel Aviv and surrounding area. Police confirmed cluster bomb warhead; missile fragments and submunitions impacted several areas. One impact in a central town sparked a fire. No immediate injuries reported. IDF Home Front Command cleared shelters after attack. Iran has fired at least six cluster missiles at Israel since the war began per Haaretz reporting.",
+      "reactions": {
+        "idf": {
+          "statement": "IDF Home Front Command says civilians in areas where sirens sounded can leave bomb shelters but should remain close. No immediate injuries reported.",
+          "url": "https://www.timesofisrael.com/liveblog_entry/police-say-iran-shot-cluster-bomb-in-recent-impact-in-central-israel/"
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
         }
       },
       "iranian_media_claims": null
