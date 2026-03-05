@@ -1,0 +1,186 @@
+[
+  {
+    "id": "arrow_3",
+    "system_name": "Arrow-3",
+    "aliases": ["Hetz-3"],
+    "operator": "Israel (IAF)",
+    "classification": "Exoatmospheric anti-ballistic missile",
+    "intercept_phase": "exoatmospheric",
+    "intercept_altitude_km": {
+      "min": 100,
+      "max": 300
+    },
+    "range_km": 2400,
+    "kill_mechanism": "Hit-to-kill (kinetic)",
+    "targets": ["MRBM", "IRBM", "ICBM"],
+    "developer": "IAI / Boeing",
+    "first_operational": 2017,
+    "first_combat_use": "2024-04-13",
+    "notes": "Top-tier layer of Israeli BMD; intercepts in space before reentry. Used against Iranian MRBMs in True Promise operations.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/arrow-3/",
+      "https://en.wikipedia.org/wiki/Arrow_3"
+    ]
+  },
+  {
+    "id": "arrow_2",
+    "system_name": "Arrow-2",
+    "aliases": ["Hetz-2"],
+    "operator": "Israel (IAF)",
+    "classification": "Endo/exoatmospheric anti-ballistic missile",
+    "intercept_phase": "upper-endoatmospheric",
+    "intercept_altitude_km": {
+      "min": 10,
+      "max": 50
+    },
+    "range_km": 90,
+    "kill_mechanism": "Blast fragmentation warhead",
+    "targets": ["MRBM", "SRBM"],
+    "developer": "IAI / Boeing",
+    "first_operational": 2000,
+    "first_combat_use": "2024-04-13",
+    "notes": "Primary Israeli BMD interceptor for medium-range threats. Complements Arrow-3 by catching missiles that penetrate the exoatmospheric layer.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/arrow-2/",
+      "https://en.wikipedia.org/wiki/Arrow_(missile_family)"
+    ]
+  },
+  {
+    "id": "davids_sling",
+    "system_name": "David's Sling",
+    "aliases": ["Magic Wand", "Sharvit Ksamim"],
+    "operator": "Israel (IAF)",
+    "classification": "Medium-range air defense",
+    "intercept_phase": "endoatmospheric",
+    "intercept_altitude_km": {
+      "min": 1,
+      "max": 15
+    },
+    "range_km": 300,
+    "interceptor": "Stunner (SkyCeptor)",
+    "kill_mechanism": "Hit-to-kill (kinetic)",
+    "targets": ["SRBM", "cruise_missile", "large_rocket", "aircraft"],
+    "developer": "Rafael / Raytheon",
+    "first_operational": 2017,
+    "first_combat_use": "2023-05",
+    "notes": "Middle layer between Iron Dome and Arrow. Stunner interceptor uses dual-pulse motor and multi-mode seeker (IIR + active radar).",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/davids-sling/",
+      "https://en.wikipedia.org/wiki/David%27s_Sling"
+    ]
+  },
+  {
+    "id": "iron_dome",
+    "system_name": "Iron Dome",
+    "aliases": ["Kipat Barzel"],
+    "operator": "Israel (IAF)",
+    "classification": "Short-range air defense",
+    "intercept_phase": "endoatmospheric (terminal)",
+    "intercept_altitude_km": {
+      "min": 0.1,
+      "max": 10
+    },
+    "range_km": 70,
+    "interceptor": "Tamir",
+    "kill_mechanism": "Proximity-fused fragmentation",
+    "targets": ["short_range_rocket", "mortar", "UAV", "cruise_missile"],
+    "developer": "Rafael",
+    "first_operational": 2011,
+    "first_combat_use": "2011-04",
+    "notes": "Lowest layer of Israeli air defense. Uses EL/M-2084 radar for tracking. Each battery has 3-4 launchers with 20 Tamir interceptors each.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/iron-dome/",
+      "https://en.wikipedia.org/wiki/Iron_Dome"
+    ]
+  },
+  {
+    "id": "thaad",
+    "system_name": "THAAD",
+    "aliases": ["Terminal High Altitude Area Defense"],
+    "operator": "United States (US Army)",
+    "classification": "Terminal-phase anti-ballistic missile",
+    "intercept_phase": "upper-endoatmospheric / exoatmospheric",
+    "intercept_altitude_km": {
+      "min": 40,
+      "max": 150
+    },
+    "range_km": 200,
+    "kill_mechanism": "Hit-to-kill (kinetic)",
+    "targets": ["MRBM", "SRBM", "IRBM"],
+    "developer": "Lockheed Martin",
+    "first_operational": 2008,
+    "first_combat_use": "2024-04-13",
+    "notes": "Deployed to Israel Oct 2024. Operates alongside Arrow to provide redundant exo/endo intercept capability. AN/TPY-2 radar has ~1000km detection range.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/thaad/",
+      "https://en.wikipedia.org/wiki/Terminal_High_Altitude_Area_Defense"
+    ]
+  },
+  {
+    "id": "patriot_pac3",
+    "system_name": "Patriot PAC-3",
+    "aliases": ["Patriot", "MIM-104 Patriot"],
+    "operator": "United States / Saudi Arabia / Kuwait / others",
+    "classification": "Medium-range air and missile defense",
+    "intercept_phase": "endoatmospheric (terminal)",
+    "intercept_altitude_km": {
+      "min": 3,
+      "max": 35
+    },
+    "range_km": 160,
+    "kill_mechanism": "Hit-to-kill (PAC-3) / blast-frag (PAC-2 GEM+)",
+    "targets": ["SRBM", "cruise_missile", "aircraft", "UAV"],
+    "developer": "Raytheon / Lockheed Martin",
+    "first_operational": 2002,
+    "first_combat_use": "2003 (Iraq War)",
+    "notes": "Primary US Army air defense. PAC-3 MSE variant extends range and altitude. Deployed at US Gulf bases and in Israel.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/patriot/",
+      "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    ]
+  },
+  {
+    "id": "aegis_sm3",
+    "system_name": "Aegis BMD / SM-3",
+    "aliases": ["SM-3", "Standard Missile-3", "Aegis Ballistic Missile Defense"],
+    "operator": "United States (US Navy)",
+    "classification": "Sea-based exoatmospheric anti-ballistic missile",
+    "intercept_phase": "exoatmospheric",
+    "intercept_altitude_km": {
+      "min": 70,
+      "max": 500
+    },
+    "range_km": 700,
+    "kill_mechanism": "Hit-to-kill (kinetic warhead)",
+    "targets": ["MRBM", "IRBM", "SRBM"],
+    "developer": "Raytheon / Aerojet Rocketdyne",
+    "first_operational": 2004,
+    "first_combat_use": "2024-04-13",
+    "notes": "Ship-launched from Aegis-equipped destroyers (Arleigh Burke-class) and cruisers (Ticonderoga-class). SM-3 Block IIA has extended range. Used by USS Carney and other ships against Iranian BMs.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/aegis/",
+      "https://en.wikipedia.org/wiki/RIM-161_Standard_Missile_3"
+    ]
+  },
+  {
+    "id": "aegis_sm2",
+    "system_name": "Aegis / SM-2",
+    "aliases": ["SM-2", "Standard Missile-2"],
+    "operator": "United States (US Navy)",
+    "classification": "Sea-based medium-range air defense",
+    "intercept_phase": "endoatmospheric",
+    "intercept_altitude_km": {
+      "min": 0.01,
+      "max": 24
+    },
+    "range_km": 170,
+    "kill_mechanism": "Blast fragmentation",
+    "targets": ["cruise_missile", "aircraft", "UAV", "SRBM_terminal"],
+    "developer": "Raytheon",
+    "first_operational": 1981,
+    "notes": "Primary fleet air defense missile. Used to engage drones and cruise missiles. Semi-active radar homing with Aegis illumination.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/RIM-66_Standard"
+    ]
+  }
+]

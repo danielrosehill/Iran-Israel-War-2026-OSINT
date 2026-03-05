@@ -1,0 +1,253 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wave.schema.json",
+  "title": "Iran-Israel War Wave Data",
+  "description": "Schema for attack wave data in Operation True Promise datasets",
+  "type": "object",
+  "required": ["metadata", "waves"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["operation_name", "wave_count", "date_range"],
+      "properties": {
+        "operation": {
+          "type": "string",
+          "enum": ["tp3", "tp4"],
+          "description": "Operation identifier for cross-operation queries"
+        },
+        "operation_name": { "type": "string" },
+        "operation_name_farsi": { "type": "string" },
+        "version": { "type": "string" },
+        "wave_count": { "type": "integer", "minimum": 1 },
+        "date_range": {
+          "type": "object",
+          "properties": {
+            "start": { "type": "string", "format": "date" },
+            "end": { "type": "string", "format": "date" }
+          }
+        },
+        "canonical_format": { "type": "string" },
+        "countries_targeted": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+        }
+      }
+    },
+    "waves": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/wave" }
+    }
+  },
+  "$defs": {
+    "wave": {
+      "type": "object",
+      "required": ["wave_number", "timing", "weapons", "targets"],
+      "properties": {
+        "operation": {
+          "type": "string",
+          "enum": ["tp3", "tp4"],
+          "description": "Operation identifier for cross-operation queries"
+        },
+        "wave_number": { "type": "integer", "minimum": 1 },
+        "wave_codename_farsi": { "type": ["string", "null"] },
+        "wave_codename_english": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "timing": { "$ref": "#/$defs/timing" },
+        "weapons": { "$ref": "#/$defs/weapons" },
+        "targets": { "$ref": "#/$defs/targets" },
+        "launch_site": { "$ref": "#/$defs/launch_site" },
+        "interception": { "$ref": "#/$defs/interception" },
+        "munitions": { "$ref": "#/$defs/munitions" },
+        "impact": { "$ref": "#/$defs/impact" },
+        "escalation": { "$ref": "#/$defs/escalation" },
+        "proxy": { "$ref": "#/$defs/proxy" },
+        "sources": { "$ref": "#/$defs/sources" }
+      }
+    },
+    "timing": {
+      "type": "object",
+      "properties": {
+        "announced_utc": { "type": ["string", "null"], "format": "date-time" },
+        "announcement_source": { "type": ["string", "null"] },
+        "announcement_x_url": { "type": ["string", "null"], "format": "uri" },
+        "probable_launch_time": { "type": ["string", "null"], "format": "date-time" },
+        "launch_time_israel": { "type": ["string", "null"] },
+        "launch_time_iran": { "type": ["string", "null"] },
+        "solar_phase_launch_site": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5,
+          "description": "0=Night, 1=Astro twilight, 2=Nautical, 3=Civil, 4=Low sun, 5=Daylight"
+        },
+        "solar_phase_target": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "maximum": 5
+        },
+        "conflict_day": { "type": ["integer", "null"], "minimum": 1 },
+        "hours_since_last_wave": { "type": ["number", "null"] },
+        "time_between_waves_minutes": { "type": ["number", "null"] },
+        "wave_duration_minutes": { "type": ["number", "null"] }
+      }
+    },
+    "weapons": {
+      "type": "object",
+      "properties": {
+        "payload": { "type": ["string", "null"] },
+        "drones_used": { "type": ["boolean", "null"] },
+        "ballistic_missiles_used": { "type": ["boolean", "null"] },
+        "cruise_missiles_used": { "type": ["boolean", "null"] },
+        "types": {
+          "type": "object",
+          "description": "Boolean flags for specific weapon systems used",
+          "patternProperties": {
+            "^[a-z_]+_used$": { "type": ["boolean", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "categories": {
+          "type": "object",
+          "properties": {
+            "bm_liquid_fueled": { "type": "boolean" },
+            "bm_solid_fueled": { "type": "boolean" },
+            "bm_marv_equipped": { "type": "boolean" },
+            "bm_hypersonic": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "targets": {
+      "type": "object",
+      "properties": {
+        "israel_targeted": { "type": ["boolean", "null"] },
+        "us_bases_targeted": { "type": ["boolean", "null"] },
+        "targets": { "type": ["string", "null"], "description": "Free-text target description" },
+        "landings_countries": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+        },
+        "israeli_locations": {
+          "type": "object",
+          "properties": {
+            "targeted_tel_aviv": { "type": "boolean" },
+            "targeted_jerusalem": { "type": "boolean" },
+            "targeted_haifa": { "type": "boolean" },
+            "targeted_negev_beersheba": { "type": "boolean" },
+            "targeted_northern_periphery": { "type": "boolean" },
+            "targeted_eilat": { "type": "boolean" }
+          }
+        },
+        "us_bases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "country_code": { "type": "string", "pattern": "^[A-Z]{2}$" }
+            },
+            "required": ["name", "country_code"]
+          }
+        },
+        "us_naval_vessels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "type": "string" }
+            },
+            "required": ["name", "type"]
+          }
+        },
+        "target_coordinates": {
+          "type": "object",
+          "properties": {
+            "lat": { "type": ["number", "null"] },
+            "lon": { "type": ["number", "null"] }
+          }
+        }
+      }
+    },
+    "launch_site": {
+      "type": "object",
+      "properties": {
+        "description": { "type": ["string", "null"] },
+        "lat": { "type": ["number", "null"] },
+        "lon": { "type": ["number", "null"] }
+      }
+    },
+    "interception": {
+      "type": "object",
+      "properties": {
+        "intercepted": { "type": ["boolean", "null"] },
+        "interception_systems": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "intercepted_by": {
+          "type": "object",
+          "properties": {
+            "israel": { "type": ["boolean", "null"] },
+            "us": { "type": ["boolean", "null"] },
+            "uk": { "type": ["boolean", "null"] },
+            "jordan": { "type": ["boolean", "null"] },
+            "other": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "estimated_intercept_count": { "type": ["integer", "null"] },
+        "estimated_intercept_rate": { "type": ["number", "null"] },
+        "exoatmospheric_interception": { "type": ["boolean", "null"] },
+        "endoatmospheric_interception": { "type": ["boolean", "null"] },
+        "interception_report": { "type": ["string", "null"] }
+      }
+    },
+    "munitions": {
+      "type": "object",
+      "properties": {
+        "estimated_munitions_count": { "type": ["integer", "null"] },
+        "munitions_targeting_israel": { "type": ["integer", "null"] },
+        "munitions_targeting_us_bases": { "type": ["integer", "null"] },
+        "cumulative_total": { "type": ["integer", "null"] }
+      }
+    },
+    "impact": {
+      "type": "object",
+      "properties": {
+        "damage": { "type": ["string", "null"] },
+        "fatalities": { "type": ["integer", "null"] },
+        "injuries": { "type": ["integer", "null"] },
+        "civilian_casualties": { "type": ["integer", "null"] },
+        "military_casualties": { "type": ["integer", "null"] },
+        "sirens_activated": { "type": ["boolean", "null"] },
+        "sirens_locations": { "type": ["string", "null"] }
+      }
+    },
+    "escalation": {
+      "type": "object",
+      "properties": {
+        "new_country_targeted": { "type": "boolean" },
+        "new_weapon_first_use": { "type": "boolean" }
+      }
+    },
+    "proxy": {
+      "type": "object",
+      "properties": {
+        "involvement": { "type": ["boolean", "null"] },
+        "description": { "type": ["string", "null"] }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "idf_statement": { "type": ["string", "null"] },
+        "urls": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

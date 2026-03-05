@@ -1,5 +1,6 @@
 {
   "metadata": {
+    "operation": "tp4",
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
@@ -27,6 +28,7 @@
   },
   "waves": [
     {
+      "operation": "tp4",
       "wave_number": 1,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -90,11 +92,16 @@
           "targeted_northern_periphery": false,
           "targeted_eilat": false
         },
-        "us_bases": [],
+        "us_bases": [
+          {
+            "name": "Mina Salman Naval Base",
+            "country_code": "BH"
+          }
+        ],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": 31.07
+          "lat": 31.07,
+          "lon": null
         }
       },
       "launch_site": {
@@ -141,7 +148,7 @@
         "civilian_casualties": null,
         "military_casualties": 1,
         "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "sirens_locations": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -152,14 +159,13 @@
         "description": null
       },
       "sources": {
-        "idf_statement": null,
-        "urls": [
-          "IDF reports high interception rate in coordination with allies; minor damage to one base"
-        ]
+        "idf_statement": "IDF reports high interception rate in coordination with allies; minor damage to one base",
+        "urls": []
       },
       "description": "First wave of Operation True Promise 4; large-scale coordinated attack with drones to saturate defenses followed by ballistic missiles. Launched hours after US-Israeli Operation Epic Fury/Roaring Lion strikes on Iran."
     },
     {
+      "operation": "tp4",
       "wave_number": 2,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -283,6 +289,7 @@
       "description": "Second wave continuing initial retaliatory barrage on Feb 28; 2-4 missiles per salvo pattern observed."
     },
     {
+      "operation": "tp4",
       "wave_number": 3,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -400,7 +407,7 @@
         "civilian_casualties": null,
         "military_casualties": null,
         "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "sirens_locations": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -417,6 +424,7 @@
       "description": "Third wave; IRGC announced using more advanced missiles than True Promise 3. Expanded targeting to Gulf logistics infrastructure."
     },
     {
+      "operation": "tp4",
       "wave_number": 4,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -541,6 +549,7 @@
       "description": "Fourth wave; continued expansion of targeting to military-industrial sites in Israel and Gulf bases."
     },
     {
+      "operation": "tp4",
       "wave_number": 5,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -667,6 +676,7 @@
       "description": "Fifth wave; shift to maritime and Gulf targets. IRGC Navy involvement. MSP and MST logistics vessels in Indian Ocean reportedly struck (unverified)."
     },
     {
+      "operation": "tp4",
       "wave_number": 6,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -789,6 +799,7 @@
       "description": "Sixth wave; escalation to targeting Israeli political-military command infrastructure in dense urban Tel Aviv. IRGC signaling ability to strike leadership centers."
     },
     {
+      "operation": "tp4",
       "wave_number": 7,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -931,6 +942,7 @@
       "description": "Seventh wave; massive expansion to maritime targets. IRGC claims 4 ballistic missiles fired at USS Abraham Lincoln carrier. Three oil tankers struck. Major Gulf base attacks."
     },
     {
+      "operation": "tp4",
       "wave_number": 8,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1035,7 +1047,7 @@
         "civilian_casualties": null,
         "military_casualties": null,
         "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "sirens_locations": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1052,6 +1064,7 @@
       "description": "Eighth wave; continuation of wave 7 operations. IRGC claims massive US casualties (560 killed/wounded - unverified). Large-scale drone deployments."
     },
     {
+      "operation": "tp4",
       "wave_number": 9,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1178,6 +1191,7 @@
       "description": "Ninth wave; IRGC claims 700+ drones and hundreds of missiles launched since operation began. Cluster munition warhead used against Tel Aviv area (12 injuries)."
     },
     {
+      "operation": "tp4",
       "wave_number": 10,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1238,8 +1252,8 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": 32.09
+          "lat": 32.09,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1280,7 +1294,7 @@
         "civilian_casualties": null,
         "military_casualties": null,
         "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "sirens_locations": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1291,14 +1305,13 @@
         "description": "FALSE"
       },
       "sources": {
-        "idf_statement": null,
-        "urls": [
-          "IDF assessing damage from advanced missile strikes"
-        ]
+        "idf_statement": "IDF assessing damage from advanced missile strikes",
+        "urls": []
       },
       "description": "Tenth wave; featured advanced Kheibar Shekan maneuvering missiles (MaRV-equipped, Mach 8, 500-1500kg warhead). IRGC stated it 'opened the great gates of fire upon the occupied territories.'"
     },
     {
+      "operation": "tp4",
       "wave_number": 11,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1364,7 +1377,12 @@
           "targeted_northern_periphery": true,
           "targeted_eilat": false
         },
-        "us_bases": [],
+        "us_bases": [
+          {
+            "name": "Mina Salman Naval Base",
+            "country_code": "BH"
+          }
+        ],
         "us_naval_vessels": [],
         "target_coordinates": {
           "lat": null,
@@ -1409,7 +1427,7 @@
         "civilian_casualties": null,
         "military_casualties": null,
         "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "sirens_locations": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -1426,6 +1444,7 @@
       "description": "Eleventh wave; naval and aerospace IRGC units. Targeted communications and intelligence infrastructure. IRGC claims 500 sites targeted in preceding 48 hours."
     },
     {
+      "operation": "tp4",
       "wave_number": 12,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1563,6 +1582,7 @@
       "description": "Twelfth wave; IRGC Navy-led maritime campaign. 26 drones and 5 ballistic missiles targeting US assets in three Gulf countries plus Strait of Hormuz maritime target."
     },
     {
+      "operation": "tp4",
       "wave_number": 13,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1691,6 +1711,7 @@
       "description": "Thirteenth wave; IRGC Navy drone unit targeting Kuwaiti-based US Marine installations. Marked first clear indication of different IRGC branches coordinating successive waves under unified command."
     },
     {
+      "operation": "tp4",
       "wave_number": 14,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1816,6 +1837,7 @@
       "description": "Fourteenth wave; IRGC Navy large-scale attack on US air base in Bahrain with drones and missiles."
     },
     {
+      "operation": "tp4",
       "wave_number": 15,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1946,6 +1968,7 @@
       "description": "Fifteenth wave; continued geographic expansion. Also targeted 10 key points at Sheikh Isa Air Base Bahrain. Air raid sirens in central Israel. IRGC claims to have shot down 7 Israeli drones."
     },
     {
+      "operation": "tp4",
       "wave_number": 16,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2071,6 +2094,7 @@
       "description": "Sixteenth wave; critical shift - IRGC Ground Forces entered the battlefield with three simultaneous operations and 230 attack drones. Multi-domain offensive. Aerospace Division also struck 'heart and northern parts of occupied territories.'"
     },
     {
+      "operation": "tp4",
       "wave_number": 17,
       "wave_codename_farsi": "مقدس: یا رسول الله",
       "wave_codename_english": "Sacred: O Messenger of Allah",
@@ -2190,6 +2214,7 @@
       "description": "Seventeenth wave; codename 'Sacred: O Messenger of Allah.' 40+ ballistic missiles fired by IRGC Aerospace Force. Religious-nationalist messaging increasingly prominent."
     },
     {
+      "operation": "tp4",
       "wave_number": 18,
       "wave_codename_farsi": "یا امام حسن مجتبی",
       "wave_codename_english": "Ya Imam Hassan Mojtaba",

@@ -1,5 +1,6 @@
 {
   "metadata": {
+    "operation": "tp3",
     "operation_name": "Operation True Promise 3",
     "operation_name_farsi": "عملیات وعده صادق ۳",
     "version": "1.1",
@@ -67,6 +68,7 @@
   },
   "waves": [
     {
+      "operation": "tp3",
       "wave_number": 1,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -107,7 +109,7 @@
         }
       },
       "targets": {
-        "description": "Military centers, air bases",
+        "targets": "Military centers, air bases",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -120,6 +122,12 @@
           "targeted_negev_beersheba": true,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -135,17 +143,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": 100,
         "munitions_targeting_israel": 100,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Serious damage to sensitive military centers in Tel Aviv area",
@@ -155,16 +167,20 @@
         "military_casualties": null
       },
       "escalation": {
-        "new_country_targeted": false,
+        "new_country_targeted": true,
         "new_weapon_first_use": true
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 2,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -205,7 +221,7 @@
         }
       },
       "targets": {
-        "description": "Haifa, Galilee",
+        "targets": "Haifa, Galilee",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -218,6 +234,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": true,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -233,17 +255,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "State of emergency declared across Israel",
@@ -257,12 +283,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 3,
       "wave_codename_farsi": "يا علي بن أبي طالب",
       "wave_codename_english": "Ya Ali ibn Abi Talib",
@@ -303,7 +333,7 @@
         }
       },
       "targets": {
-        "description": "Occupied territories — penetrated multiple defense layers",
+        "targets": "Occupied territories — penetrated multiple defense layers",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -316,6 +346,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -331,17 +367,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -355,12 +395,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 4,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -401,7 +445,7 @@
         }
       },
       "targets": {
-        "description": "Tel Aviv, Haifa, other cities",
+        "targets": "Tel Aviv, Haifa, other cities",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -414,6 +458,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -429,17 +479,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Continued escalation — strikes on urban areas",
@@ -453,12 +507,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 5,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -499,7 +557,7 @@
         }
       },
       "targets": {
-        "description": "Haifa oil refinery, military targets",
+        "targets": "Haifa oil refinery, military targets",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -512,6 +570,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -527,17 +591,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Haifa oil refinery directly hit and shut down",
@@ -551,12 +619,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": true,
-        "proxy_description": "Houthis joined from Yemen with coordinated launches"
+        "involvement": true,
+        "description": "Houthis joined from Yemen with coordinated launches"
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 6,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -597,7 +669,7 @@
         }
       },
       "targets": {
-        "description": "Israeli C2 centers, Haifa, Tel Aviv; Bat Yam struck",
+        "targets": "Israeli C2 centers, Haifa, Tel Aviv; Bat Yam struck",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -610,6 +682,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -625,17 +703,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Bat Yam residential building struck — 9 killed (incl. 5 Ukrainian nationals), 200+ injured, 61 buildings damaged. Worst single incident of the war.",
@@ -649,12 +731,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": true,
-        "proxy_description": "Coordinated Houthi/Yemen simultaneous launch"
+        "involvement": true,
+        "description": "Coordinated Houthi/Yemen simultaneous launch"
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 7,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -695,7 +781,7 @@
         }
       },
       "targets": {
-        "description": "Tel Aviv, Haifa — enhanced intelligence-guided targeting",
+        "targets": "Tel Aviv, Haifa — enhanced intelligence-guided targeting",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -708,6 +794,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -723,17 +815,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -747,12 +843,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": true,
-        "proxy_description": "Continued Houthi coordination"
+        "involvement": true,
+        "description": "Continued Houthi coordination"
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 8,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -793,7 +893,7 @@
         }
       },
       "targets": {
-        "description": "Strategic/sensitive targets in Tel Aviv, Haifa — C2 systems targeted",
+        "targets": "Strategic/sensitive targets in Tel Aviv, Haifa — C2 systems targeted",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -806,6 +906,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -821,17 +927,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Targeted command and control systems",
@@ -845,12 +955,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 9,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -891,7 +1005,7 @@
         }
       },
       "targets": {
-        "description": "Haifa, Tel Aviv — continued bombardment",
+        "targets": "Haifa, Tel Aviv — continued bombardment",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -904,6 +1018,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -919,17 +1039,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -943,12 +1067,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 10,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -989,7 +1117,7 @@
         }
       },
       "targets": {
-        "description": "Israeli airbases from which jets attacked Iran",
+        "targets": "Israeli airbases from which jets attacked Iran",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1002,6 +1130,12 @@
           "targeted_negev_beersheba": true,
           "targeted_northern_periphery": true,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1017,17 +1151,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Nevatim Airbase absorbed ~32 MRBMs; direct hit on hardened F-35I shelter (IDF claimed no aircraft damaged). Glilot intel base hit. Tel Nof base hit. Kirya HQ damaged.",
@@ -1041,14 +1179,18 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": [
-        "https://www.tehrantimes.com/news/514571/IRGC-targets-Israeli-airbases-in-tenth-wave-of-True-Promise-III"
-      ]
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.tehrantimes.com/news/514571/IRGC-targets-Israeli-airbases-in-tenth-wave-of-True-Promise-III"
+        ]
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 11,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1089,7 +1231,7 @@
         }
       },
       "targets": {
-        "description": "Air defense radars, military targets — Fattah used to destroy radar systems, clearing path for follow-on missiles",
+        "targets": "Air defense radars, military targets — Fattah used to destroy radar systems, clearing path for follow-on missiles",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1102,6 +1244,12 @@
           "targeted_negev_beersheba": true,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1116,17 +1264,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Fattah-1 used to destroy air defense radar systems",
@@ -1140,12 +1292,16 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 12,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1186,7 +1342,7 @@
         }
       },
       "targets": {
-        "description": "Tel Aviv — ultra-heavy, long-range, two-stage Sejjil missiles",
+        "targets": "Tel Aviv — ultra-heavy, long-range, two-stage Sejjil missiles",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1199,6 +1355,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1213,17 +1375,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": 8,
         "munitions_targeting_israel": 8,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1237,14 +1403,18 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": [
-        "https://english.almayadeen.net/news/politics/op--true-promise-3--wave-12-launched--sejjil-deployed-in-fir"
-      ]
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://english.almayadeen.net/news/politics/op--true-promise-3--wave-12-launched--sejjil-deployed-in-fir"
+        ]
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 13,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1285,7 +1455,7 @@
         }
       },
       "targets": {
-        "description": "Military sites, military industry in Haifa/Tel Aviv",
+        "targets": "Military sites, military industry in Haifa/Tel Aviv",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1298,6 +1468,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1312,17 +1488,21 @@
           "Arrow-3",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1336,12 +1516,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 14,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1382,7 +1566,7 @@
         }
       },
       "targets": {
-        "description": "Military/industrial facilities",
+        "targets": "Military/industrial facilities",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1395,6 +1579,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1409,17 +1599,21 @@
           "Arrow-3",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1433,12 +1627,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 15,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1479,7 +1677,7 @@
         }
       },
       "targets": {
-        "description": "Military targets — new phase of campaign",
+        "targets": "Military targets — new phase of campaign",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1492,6 +1690,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1506,17 +1710,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1530,14 +1738,18 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": [
-        "https://www.tehrantimes.com/news/514649/IRGC-launches-fifteenth-wave-of-Operation-True-Promise-III"
-      ]
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.tehrantimes.com/news/514649/IRGC-launches-fifteenth-wave-of-Operation-True-Promise-III"
+        ]
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 16,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1578,7 +1790,7 @@
         }
       },
       "targets": {
-        "description": "Military targets",
+        "targets": "Military targets",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1591,6 +1803,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1605,17 +1823,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1629,12 +1851,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 17,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1675,7 +1901,7 @@
         }
       },
       "targets": {
-        "description": "Military/strategic targets",
+        "targets": "Military/strategic targets",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1688,6 +1914,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1702,17 +1934,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1726,12 +1962,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 18,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1772,7 +2012,7 @@
         }
       },
       "targets": {
-        "description": "14 strategic military sites: Hadera power plant, Haifa oil refinery, Ovda airbase (cyber command), Kiryat Gat semiconductor zone, Rafael center Haifa",
+        "targets": "14 strategic military sites: Hadera power plant, Haifa oil refinery, Ovda airbase (cyber command), Kiryat Gat semiconductor zone, Rafael center Haifa",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1785,6 +2025,12 @@
           "targeted_negev_beersheba": true,
           "targeted_northern_periphery": true,
           "targeted_eilat": true
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1800,17 +2046,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "14 strategic military sites targeted including Hadera power plant, Haifa oil refinery, Ovda airbase (cyber command), Kiryat Gat semiconductor zone, Rafael center Haifa. Bazan Oil Refinery struck (3 killed, refinery shut down). Haifa Power Plant struck (fire).",
@@ -1824,14 +2074,18 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": [
-        "https://www.presstv.ir/Detail/2025/06/21/750020/irgc-14-strategic-military-sites-hit-18th-phase-true-promiseiii"
-      ]
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.presstv.ir/Detail/2025/06/21/750020/irgc-14-strategic-military-sites-hit-18th-phase-true-promiseiii"
+        ]
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 19,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1872,7 +2126,7 @@
         }
       },
       "targets": {
-        "description": "Strategic targets — large combined operation",
+        "targets": "Strategic targets — large combined operation",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1885,6 +2139,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1900,17 +2160,21 @@
           "THAAD",
           "Iron Dome"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -1924,12 +2188,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 20,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1970,7 +2238,7 @@
         }
       },
       "targets": {
-        "description": "Ben Gurion Airport, biological research centers, C2 facilities",
+        "targets": "Ben Gurion Airport, biological research centers, C2 facilities",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -1983,6 +2251,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -1997,10 +2271,13 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true,
         "interception_report": "10 of 27 ballistic missiles hit Israel — highest single-wave penetration rate (~37%)"
@@ -2008,7 +2285,8 @@
       "munitions": {
         "estimated_munitions_count": 40,
         "munitions_targeting_israel": 40,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Ben Gurion Airport temporarily shut down; flight diversions for 36 hours",
@@ -2022,14 +2300,18 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": [
-        "https://www.newsonair.gov.in/iran-launches-true-promise-3-wave-20-missile-strike-on-israel-targeting-ben-gurion-airport-military-facilities/"
-      ]
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.newsonair.gov.in/iran-launches-true-promise-3-wave-20-missile-strike-on-israel-targeting-ben-gurion-airport-military-facilities/"
+        ]
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 21,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2070,7 +2352,7 @@
         }
       },
       "targets": {
-        "description": "Military/strategic targets — new tactics for precision and destructiveness",
+        "targets": "Military/strategic targets — new tactics for precision and destructiveness",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -2083,6 +2365,12 @@
           "targeted_negev_beersheba": false,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -2097,17 +2385,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -2121,12 +2413,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": []
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      }
     },
     {
+      "operation": "tp3",
       "wave_number": 22,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2167,7 +2463,7 @@
         }
       },
       "targets": {
-        "description": "Military and logistical centers — final wave minutes before US-brokered ceasefire",
+        "targets": "Military and logistical centers — final wave minutes before US-brokered ceasefire",
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landings_countries": [
@@ -2180,6 +2476,12 @@
           "targeted_negev_beersheba": true,
           "targeted_northern_periphery": false,
           "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
         }
       },
       "launch_site": {
@@ -2194,17 +2496,21 @@
           "Arrow-3",
           "THAAD"
         ],
-        "intercepted_by_israel": true,
-        "intercepted_by_us": true,
-        "intercepted_by_uk": false,
-        "intercepted_by_jordan": false,
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true
       },
       "munitions": {
         "estimated_munitions_count": 14,
         "munitions_targeting_israel": 14,
-        "munitions_targeting_us_bases": 0
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Beersheba residential building struck at 5:40am IST. 4 killed, 20 injured. Final missiles until 7:10am. IRGC called it a 'historic lesson'.",
@@ -2218,13 +2524,16 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "proxy_involvement": false,
-        "proxy_description": null
+        "involvement": false,
+        "description": null
       },
-      "sources": [
-        "https://www.presstv.co.uk/Detail/2025/06/24/750102/last-wave-op-true-promiseiii-delivered-historic-lesson-zionist-enemy-irgc",
-        "https://english.almayadeen.net/news/politics/irgc--22nd-wave-of-operation-true-promise-3-taught--israel"
-      ]
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.presstv.co.uk/Detail/2025/06/24/750102/last-wave-op-true-promiseiii-delivered-historic-lesson-zionist-enemy-irgc",
+          "https://english.almayadeen.net/news/politics/irgc--22nd-wave-of-operation-true-promise-3-taught--israel"
+        ]
+      }
     }
   ]
 }

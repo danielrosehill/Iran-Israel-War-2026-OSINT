@@ -2,10 +2,15 @@
 
 Each entry in `waves[]` has the following structure. Fields marked **enriched** are computed by scripts; all others are **primary** (LLM-extracted or manually entered).
 
+Both TP3 (`data/tp3-2025/waves.json`) and TP4 (`data/tp4-2026/waves.json`) follow this schema. See "TP3-specific extensions" below for additional weapon type fields in the TP3 dataset.
+
+Validated against `data/schema/wave.schema.json`.
+
 ## Top-Level
 
 | Path | Type | Description | Example | Source |
 |------|------|-------------|---------|--------|
+| `operation` | string | Operation identifier (`"tp3"` or `"tp4"`) | `"tp4"` | primary |
 | `wave_number` | int | Sequential wave identifier | `1` | primary |
 | `wave_codename_farsi` | string\|null | Farsi codename from IRGC | `"وعده صادق ۴"` | primary |
 | `wave_codename_english` | string\|null | English translation of codename | `"True Promise 4"` | primary |
@@ -48,6 +53,17 @@ Each entry in `waves[]` has the following structure. Fields marked **enriched** 
 | `weapons.types.fattah_used` | bool\|null | Fattah hypersonic missile | primary |
 | `weapons.types.shahed_136_used` | bool\|null | Shahed-136 loitering munition | primary |
 | `weapons.types.shahed_238_used` | bool\|null | Shahed-238 jet-powered drone | primary |
+
+#### TP3-specific weapon types
+
+These fields appear only in `data/tp3-2025/waves.json`:
+
+| Path | Type | Description | Source |
+|------|------|-------------|--------|
+| `weapons.types.shahed_131_used` | bool\|null | Shahed-131 loitering munition (lighter Shahed-136 variant) | primary |
+| `weapons.types.shahed_107_used` | bool\|null | Shahed-107 UAV | primary |
+| `weapons.types.shahed_129_used` | bool\|null | Shahed-129 UCAV | primary |
+| `weapons.types.mohajer_6_used` | bool\|null | Mohajer-6 reconnaissance/strike UAV | primary |
 
 ### weapons.categories
 
@@ -178,3 +194,39 @@ Source: enriched (us_bases), matched against `data/reference/us_naval_vessels.js
 |------|------|-------------|--------|
 | `sources.idf_statement` | string\|null | IDF statement summary | primary |
 | `sources.urls` | string[] | Source URLs | primary |
+
+---
+
+## Reference Data
+
+### `data/reference/iranian_weapons.json`
+
+Array of Iranian weapon system specs. Each entry includes `id`, `system_name`, `type_key` (matches `weapons.types.*_used`), `classification`, `propulsion`, `range_km`, `warhead_kg`, `guidance`, `marv`, `hypersonic`, `categories`, `first_combat_use`, and `sources`.
+
+### `data/reference/defense_systems.json`
+
+Array of air defense / BMD systems used by coalition forces. Each entry includes `id`, `system_name`, `operator`, `classification`, `intercept_phase` (exoatmospheric/endoatmospheric), `intercept_altitude_km`, `range_km`, `kill_mechanism`, `targets`, and `sources`. Systems covered: Arrow-2, Arrow-3, David's Sling, Iron Dome, THAAD, Patriot PAC-3, Aegis SM-3, Aegis SM-2.
+
+### `data/reference/us_bases.json`
+
+Array of US/coalition military bases in the region. Each entry: `name`, `aliases`, `country_code`, `country_name`, `branch`, `lat`, `lon`.
+
+### `data/reference/us_naval_vessels.json`
+
+Array of naval vessels relevant to the conflict. Each entry: `name`, `aliases`, `type`, `class`, `branch`, `fleet`.
+
+### `data/reference/armed_forces.json`
+
+Array of armed forces and non-state groups. Each entry: `id`, `name`, `abbreviation`, `aliases`, `country_code`, `side`, `type`, `parent`, `notes`.
+
+### `data/tp4-2026/reference/israeli_targets.json`
+
+Array of Israeli target sites. Each entry: `name`, `aliases`, `type`, `region`, `lat`, `lon`.
+
+### `data/tp4-2026/reference/launch_zones.json`
+
+Array of Iranian launch zones with approximate centroids. Each entry: `id`, `description_patterns`, `label`, `type`, `lat`, `lon`, `precision_km`.
+
+## Validation
+
+JSON Schema: `data/schema/wave.schema.json` — validates both TP3 and TP4 wave files.

@@ -331,5 +331,100 @@
       "https://en.wikipedia.org/wiki/Shahed_238",
       "https://en.defence-ua.com/analysis/jet_driven_shahed_238_disassembled_engine_from_chechia_satellite_navigation_tools_from_canada_photo-9437.html"
     ]
+  },
+  {
+    "id": "shahed_131",
+    "system_name": "Shahed-131",
+    "aliases": ["Geran-1"],
+    "type_key": "shahed_131_used",
+    "classification": "Loitering munition / one-way attack UAV",
+    "propulsion": "piston engine; RATO launch",
+    "speed_kmh": 185,
+    "range_km": 900,
+    "warhead_kg": 15,
+    "total_weight_kg": 135,
+    "length_m": 3.0,
+    "wingspan_m": 2.5,
+    "guidance": "INS + GNSS",
+    "CEP_m": "10-15",
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_combat_use": "2022-09",
+    "first_combat_use_notes": "Ukraine",
+    "key_features": [
+      "Lighter/shorter-range variant of Shahed-136",
+      "Used in saturation attacks alongside Shahed-136",
+      "Known as Geran-1 in Russian service"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/HESA_Shahed_136"
+    ]
+  },
+  {
+    "id": "mohajer_6",
+    "system_name": "Mohajer-6",
+    "aliases": ["Mohajer-6 UCAV"],
+    "type_key": "mohajer_6_used",
+    "classification": "Medium-altitude reconnaissance/strike UAV",
+    "propulsion": "piston engine (pusher)",
+    "speed_kmh": 200,
+    "range_km": 200,
+    "range_notes": "operational radius",
+    "endurance_hours": 12,
+    "warhead_kg": 100,
+    "warhead_notes": "payload capacity, can carry Qaem-series PGMs",
+    "total_weight_kg": 670,
+    "length_m": 5.7,
+    "wingspan_m": 10.0,
+    "guidance": "Autonomous/remote pilot with EO/IR sensor suite",
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_combat_use": "2016",
+    "first_combat_use_notes": "Syria/Iraq",
+    "key_features": [
+      "Iran's primary ISR/strike UAV",
+      "Can carry 2x Qaem precision-guided munitions",
+      "Exported to Ethiopia and used extensively in regional conflicts"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mohajer-6"
+    ]
+  },
+  {
+    "id": "paveh",
+    "system_name": "Paveh",
+    "aliases": ["Paveh cruise missile"],
+    "type_key": "cruise_missile_used",
+    "classification": "Ground-launched cruise missile (GLCM)",
+    "propulsion": "turbojet",
+    "speed_kmh": 900,
+    "range_km": 1650,
+    "warhead_kg": 450,
+    "length_m": 8.0,
+    "guidance": "INS + TERCOM + GNSS",
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "first_combat_use": "2024-04-13",
+    "first_combat_use_notes": "True Promise 1",
+    "key_features": [
+      "Iran's longest-range cruise missile",
+      "Terrain-following flight profile",
+      "Used alongside ballistic missiles in True Promise 1"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/paveh/"
+    ]
   }
 ]
