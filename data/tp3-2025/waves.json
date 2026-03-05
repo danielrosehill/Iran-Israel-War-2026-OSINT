@@ -105,8 +105,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military centers, air bases",
@@ -231,8 +233,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Haifa, Galilee",
@@ -357,8 +361,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Occupied territories — penetrated multiple defense layers",
@@ -483,8 +489,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Tel Aviv, Haifa, other cities",
@@ -609,8 +617,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Haifa oil refinery, military targets",
@@ -735,8 +745,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Israeli C2 centers, Haifa, Tel Aviv; Bat Yam struck",
@@ -861,8 +873,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Tel Aviv, Haifa — enhanced intelligence-guided targeting",
@@ -987,8 +1001,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Strategic/sensitive targets in Tel Aviv, Haifa — C2 systems targeted",
@@ -1113,8 +1129,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Haifa, Tel Aviv — continued bombardment",
@@ -1239,8 +1257,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Israeli airbases from which jets attacked Iran",
@@ -1367,8 +1387,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": true
-        }
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Air defense radars, military targets — Fattah used to destroy radar systems, clearing path for follow-on missiles",
@@ -1492,8 +1514,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Tel Aviv — ultra-heavy, long-range, two-stage Sejjil missiles",
@@ -1619,8 +1643,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military sites, military industry in Haifa/Tel Aviv",
@@ -1744,8 +1770,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military/industrial facilities",
@@ -1869,8 +1897,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military targets — new phase of campaign",
@@ -1996,8 +2026,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military targets",
@@ -2121,8 +2153,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military/strategic targets",
@@ -2246,8 +2280,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "14 strategic military sites: Hadera power plant, Haifa oil refinery, Ovda airbase (cyber command), Kiryat Gat semiconductor zone, Rafael center Haifa",
@@ -2374,8 +2410,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Strategic targets — large combined operation",
@@ -2500,8 +2538,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Ben Gurion Airport, biological research centers, C2 facilities",
@@ -2628,8 +2668,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military/strategic targets — new tactics for precision and destructiveness",
@@ -2753,8 +2795,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "targets": "Military and logistical centers — final wave minutes before US-brokered ceasefire",

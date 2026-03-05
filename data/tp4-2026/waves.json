@@ -68,8 +68,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -218,8 +220,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -355,8 +359,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -503,8 +509,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -641,8 +649,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": false,
@@ -786,8 +796,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -922,8 +934,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -1097,8 +1111,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -1246,8 +1262,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -1382,8 +1400,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -1536,8 +1556,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -1704,8 +1726,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
           "bm_marv_equipped": false,
-          "bm_hypersonic": true
-        }
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": false,
@@ -1875,8 +1899,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": false,
@@ -2046,8 +2072,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": false,
@@ -2181,8 +2209,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -2323,8 +2353,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -2462,8 +2494,10 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -2625,8 +2659,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": null,
@@ -2755,8 +2791,10 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
@@ -2912,7 +2950,16 @@
           "bm_liquid_fueled": null,
           "bm_solid_fueled": null,
           "bm_marv_equipped": null,
-          "bm_hypersonic": false
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": null,
+          "submunition_count": 20,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 8.0,
+          "dispersal_altitude_ft": 23000
         }
       },
       "targets": {

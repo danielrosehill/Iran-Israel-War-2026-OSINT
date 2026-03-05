@@ -112,7 +112,20 @@
             "bm_liquid_fueled": { "type": "boolean" },
             "bm_solid_fueled": { "type": "boolean" },
             "bm_marv_equipped": { "type": "boolean" },
-            "bm_hypersonic": { "type": "boolean" }
+            "bm_hypersonic": { "type": "boolean" },
+            "bm_cluster_warhead": { "type": ["boolean", "null"], "description": "Warhead carried cluster submunitions" }
+          }
+        },
+        "cluster_warhead": {
+          "type": ["object", "null"],
+          "description": "Details when cluster munition warhead confirmed. Null when not applicable.",
+          "properties": {
+            "confirmed": { "type": "boolean", "description": "Cluster warhead use confirmed by IDF/police/OSINT" },
+            "carrier_missile": { "type": ["string", "null"], "description": "Missile type delivering the cluster warhead" },
+            "submunition_count": { "type": ["integer", "null"], "description": "Estimated number of submunitions per warhead" },
+            "submunition_explosive_kg": { "type": ["number", "null"], "description": "Explosive weight per submunition in kg" },
+            "dispersal_radius_km": { "type": ["number", "null"], "description": "Estimated dispersal radius in km" },
+            "dispersal_altitude_ft": { "type": ["integer", "null"], "description": "Altitude at which warhead dispersed submunitions (feet)" }
           }
         }
       }

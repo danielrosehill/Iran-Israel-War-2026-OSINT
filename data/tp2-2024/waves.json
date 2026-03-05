@@ -18,14 +18,16 @@
       "https://www.npr.org/2024/10/04/nx-s1-5140058/satellite-images-dozens-iranian-missiles-struck-near-israeli-air-base",
       "https://defensemirror.com/news/37814/Iran_Releases_Info_on_Missiles_Used_in____Operation_True_Promise_II____against_Israel"
     ],
-    "countries_targeted": ["IL"],
+    "countries_targeted": [
+      "IL"
+    ],
     "aggregate_stats": {
       "total_ballistic_missiles": 200,
       "total_cruise_missiles": 0,
       "total_drones": 0,
       "total_munitions_estimate": 200,
       "interception_rate_claimed_israel": 0.99,
-      "interception_rate_claimed_iran": 0.90,
+      "interception_rate_claimed_iran": 0.9,
       "total_killed": 2,
       "total_wounded": 8,
       "interceptor_systems": [
@@ -93,14 +95,20 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": false,
         "targets": "Nevatim Airbase (primary), Tel Nof Airbase, Hatzerim Airbase",
-        "landings_countries": ["IL", "PS", "JO"],
+        "landings_countries": [
+          "IL",
+          "PS",
+          "JO"
+        ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
           "targeted_jerusalem": false,
@@ -123,13 +131,19 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": ["Arrow-2", "Arrow-3", "David's Sling"],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "David's Sling"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": true,
           "uk": true,
           "jordan": true,
-          "other": ["France"]
+          "other": [
+            "France"
+          ]
         },
         "estimated_intercept_count": null,
         "estimated_intercept_rate": null,
@@ -207,14 +221,20 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": true
-        }
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": false,
         "targets": "Mossad/Unit 8200 HQ at Glilot (north Tel Aviv), Nevatim Airbase, Tel Nof Airbase",
-        "landings_countries": ["IL", "PS", "JO"],
+        "landings_countries": [
+          "IL",
+          "PS",
+          "JO"
+        ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
           "targeted_jerusalem": false,
@@ -237,7 +257,11 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": ["Arrow-2", "Arrow-3", "David's Sling"],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "David's Sling"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": true,

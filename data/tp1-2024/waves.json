@@ -18,7 +18,9 @@
       "https://iranprimer.usip.org/blog/2024/apr/15/iran%E2%80%99s-unprecedented-attack-israel",
       "https://www.iranwatch.org/our-publications/articles-reports/irans-missile-attack-against-israel"
     ],
-    "countries_targeted": ["IL"],
+    "countries_targeted": [
+      "IL"
+    ],
     "aggregate_stats": {
       "total_ballistic_missiles": 120,
       "total_cruise_missiles": 30,
@@ -40,7 +42,11 @@
         "IL": "0 killed, 32 wounded (1 serious — 7-year-old Bedouin girl; 31 minor injuries/anxiety)"
       },
       "proxy_coordination": true,
-      "proxy_participants": ["Hezbollah (Lebanon)", "Islamic Resistance in Iraq", "Ansar Allah (Houthis, Yemen)"],
+      "proxy_participants": [
+        "Hezbollah (Lebanon)",
+        "Islamic Resistance in Iraq",
+        "Ansar Allah (Houthis, Yemen)"
+      ],
       "key_impacts": [
         "Minor damage to Nevatim Airbase (remained operational)",
         "Debris fell in Arad region and Golan Heights",
@@ -91,14 +97,18 @@
           "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": false,
         "targets": "Nevatim Airbase, sites in Negev desert and Israeli-occupied Golan Heights",
-        "landings_countries": ["IL"],
+        "landings_countries": [
+          "IL"
+        ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
           "targeted_jerusalem": false,
@@ -121,13 +131,20 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": ["Iron Dome", "David's Sling", "Patriot", "SM-3"],
+        "interception_systems": [
+          "Iron Dome",
+          "David's Sling",
+          "Patriot",
+          "SM-3"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": true,
           "uk": true,
           "jordan": true,
-          "other": ["France"]
+          "other": [
+            "France"
+          ]
         },
         "estimated_intercept_count": null,
         "estimated_intercept_rate": 0.99,
@@ -206,14 +223,18 @@
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
-          "bm_hypersonic": false
-        }
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
       },
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": false,
         "targets": "Nevatim Airbase (primary), Ramon Airbase area, sites in Negev desert and Golan Heights",
-        "landings_countries": ["IL"],
+        "landings_countries": [
+          "IL"
+        ],
         "israeli_locations": {
           "targeted_tel_aviv": false,
           "targeted_jerusalem": false,
@@ -236,7 +257,12 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": ["Arrow-2", "Arrow-3", "SM-3", "Patriot"],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "SM-3",
+          "Patriot"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": true,

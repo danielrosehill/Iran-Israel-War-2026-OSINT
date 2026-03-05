@@ -73,6 +73,20 @@ These fields appear only in `data/tp3-2025/waves.json`:
 | `weapons.categories.bm_solid_fueled` | bool | Sejjil, Kheibar Shekan, or Fattah | enriched (categories) |
 | `weapons.categories.bm_marv_equipped` | bool | Kheibar Shekan or Fattah (MaRV) | enriched (categories) |
 | `weapons.categories.bm_hypersonic` | bool | Fattah only | enriched (categories) |
+| `weapons.categories.bm_cluster_warhead` | bool\|null | Warhead carried cluster submunitions. `true` = confirmed, `null` = not reported, `false` = ruled out | primary |
+
+### weapons.cluster_warhead
+
+Present (as object) when cluster warhead use is confirmed; `null` otherwise. Added 2026-03-05.
+
+| Path | Type | Description | Source |
+|------|------|-------------|--------|
+| `weapons.cluster_warhead.confirmed` | bool | Cluster warhead use confirmed by IDF/police/OSINT | primary |
+| `weapons.cluster_warhead.carrier_missile` | string\|null | Missile type delivering the cluster warhead (e.g. Khorramshahr-4) | primary |
+| `weapons.cluster_warhead.submunition_count` | int\|null | Estimated submunitions per warhead (~20 per IDF) | primary |
+| `weapons.cluster_warhead.submunition_explosive_kg` | float\|null | Explosive weight per submunition in kg (~2.5 kg per IDF) | primary |
+| `weapons.cluster_warhead.dispersal_radius_km` | float\|null | Estimated dispersal radius in km (~8 km per IDF) | primary |
+| `weapons.cluster_warhead.dispersal_altitude_ft` | int\|null | Altitude at which warhead dispersed submunitions (feet) (~23,000 ft per TWZ) | primary |
 
 ## targets
 
@@ -241,3 +255,14 @@ Array of Iranian launch zones with approximate centroids. Each entry: `id`, `des
 ## Validation
 
 JSON Schema: `data/schema/wave.schema.json` — validates both TP3 and TP4 wave files.
+
+---
+
+## Schema Changelog
+
+Track schema evolution as new fields are added or modified.
+
+| Date | Field(s) Added/Changed | Reason |
+|------|----------------------|--------|
+| 2026-03-05 | `weapons.categories.bm_cluster_warhead` (bool\|null) | Track confirmed cluster warhead use per wave |
+| 2026-03-05 | `weapons.cluster_warhead` (object\|null) | Structured cluster munition details: carrier missile, submunition count, explosive weight, dispersal radius, dispersal altitude |
