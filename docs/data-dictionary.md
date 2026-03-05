@@ -2,7 +2,7 @@
 
 Each entry in `waves[]` has the following structure. Fields marked **enriched** are computed by scripts; all others are **primary** (LLM-extracted or manually entered).
 
-Both TP3 (`data/tp3-2025/waves.json`) and TP4 (`data/tp4-2026/waves.json`) follow this schema. See "TP3-specific extensions" below for additional weapon type fields in the TP3 dataset.
+All four operations follow this schema: TP1 (`data/tp1-2024/waves.json`), TP2 (`data/tp2-2024/waves.json`), TP3 (`data/tp3-2025/waves.json`), and TP4 (`data/tp4-2026/waves.json`). See "TP3-specific extensions" below for additional weapon type fields in the TP3 dataset.
 
 Validated against `data/schema/wave.schema.json`.
 
@@ -10,7 +10,7 @@ Validated against `data/schema/wave.schema.json`.
 
 | Path | Type | Description | Example | Source |
 |------|------|-------------|---------|--------|
-| `operation` | string | Operation identifier (`"tp3"` or `"tp4"`) | `"tp4"` | primary |
+| `operation` | string | Operation identifier (`"tp1"`, `"tp2"`, `"tp3"`, or `"tp4"`) | `"tp4"` | primary |
 | `wave_number` | int | Sequential wave identifier | `1` | primary |
 | `wave_codename_farsi` | string\|null | Farsi codename from IRGC | `"وعده صادق ۴"` | primary |
 | `wave_codename_english` | string\|null | English translation of codename | `"True Promise 4"` | primary |

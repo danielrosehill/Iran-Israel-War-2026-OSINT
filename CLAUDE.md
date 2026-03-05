@@ -4,52 +4,40 @@ OSINT dataset tracking Iranian missile/drone attack waves against Israel and US/
 
 ## Operations Covered
 
+- **True Promise 1** (Apr 13–14, 2024) — First direct Iranian attack on Israel, 2 waves, ~320 munitions
+- **True Promise 2** (Oct 1, 2024) — Ballistic-missile-only strike, 2 waves, ~200 munitions
 - **True Promise 3** (Jun 13–24, 2025) — "Twelve-Day War", 22 waves, ~1,600-1,800 munitions
-- **True Promise 4** (Feb 28–ongoing, 2026) — 17+ waves, expanded to US/coalition targets in Gulf
+- **True Promise 4** (Feb 28–ongoing, 2026) — 19+ waves, expanded to US/coalition targets in Gulf
 
-## File Structure
+## Data Access
+
+### SQLite Database (preferred for queries)
+
+`data/iran_israel_war.db` — single queryable database with all wave data, reference tables, and junction tables. Rebuild with `python3 build_db.py`.
+
+Key tables: `operations` (4), `waves` (45 rows, 76 columns), `wave_landing_countries`, `wave_interception_systems`, `wave_us_bases_targeted`, `iranian_weapons`, `defense_systems`, `armed_forces`, `us_bases`, `us_naval_vessels`.
+
+### JSON Source Files
 
 ```
 data/
-  tp3-2025/
-    waves.json             # TP3 wave data (22 waves, Jun 2025)
-  tp4-2026/
-    waves.csv              # Original flat CSV (75+ columns)
-    waves.json             # Canonical nested JSON (18 waves)
-    waves.geojson          # GeoJSON export
-    waves.kml              # KML export
-    reference/
-      israeli_targets.json # Israeli target sites with coords
-      us_bases.json        # US/coalition bases (TP4-specific)
-      us_naval_vessels.json # Tracked naval vessels (TP4-specific)
-      launch_zones.json    # Iranian launch zone centroids
-  reference/               # Shared reference data
-    iranian_weapons.json   # Iranian missile + drone specs
-    defense_systems.json   # Coalition BMD / air defense systems
-    armed_forces.json      # Armed groups/forces in conflict
-    us_bases.json          # US/coalition bases with aliases, coords
-    us_naval_vessels.json  # Tracked naval vessels
-  schema/
-    wave.schema.json       # JSON Schema for validation
-  waves.json               # Legacy root copy (prefer tp4-2026/)
-  waves.csv                # Legacy root copy (prefer tp4-2026/)
-report/
-  report.pdf               # TP3 vs TP4 comparative analysis
-  report.typ               # Typst source
-  report_*.png             # Report charts
-analysis/
-  charts/                  # Standalone visualizations
-prompts/
-  waves.md                 # Schema documentation / LLM extraction prompt
-docs/
-  data-dictionary.md       # Full field reference
+  iran_israel_war.db       # SQLite database (all data combined)
+  tp1-2024/waves.json      # TP1 (2 waves, Apr 2024)
+  tp2-2024/waves.json      # TP2 (2 waves, Oct 2024)
+  tp3-2025/waves.json      # TP3 (22 waves, Jun 2025)
+  tp4-2026/waves.json      # TP4 (19 waves, Feb-Mar 2026)
+  tp4-2026/reference/      # TP4-specific reference (targets, bases, vessels, launch zones)
+  reference/               # Shared reference data (weapons, defense systems, armed forces, bases)
+  schema/wave.schema.json  # JSON Schema for validation
 ```
 
-Note: `scripts/` is git-ignored. Processing scripts are kept locally only — this repo shares findings, not methodology. `data/waves.json` and `data/waves.csv` at root level are legacy copies — canonical files live in `tp3-2025/` and `tp4-2026/`.
+### GitHub Pages Site
+
+Live at: https://danielrosehill.github.io/Iran-Israel-War-2026-OSINT/
 
 ## JSON Structure
 
-Both TP3 and TP4 use the same schema. Each wave is nested into: `timing`, `weapons` (with `types` + `categories`), `targets` (with `israeli_locations`, `us_bases`, `us_naval_vessels`), `launch_site`, `interception` (with `intercepted_by`), `munitions`, `impact`, `escalation`, `proxy`, `sources`.
+All four operations (TP1–TP4) use the same schema. Each wave is nested into: `timing`, `weapons` (with `types` + `categories`), `targets` (with `israeli_locations`, `us_bases`, `us_naval_vessels`), `launch_site`, `interception` (with `intercepted_by`), `munitions`, `impact`, `escalation`, `proxy`, `sources`.
 
 ## Conventions
 

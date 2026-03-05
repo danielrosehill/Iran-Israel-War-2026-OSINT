@@ -12,7 +12,7 @@
       "properties": {
         "operation": {
           "type": "string",
-          "enum": ["tp3", "tp4"],
+          "enum": ["tp1", "tp2", "tp3", "tp4"],
           "description": "Operation identifier for cross-operation queries"
         },
         "operation_name": { "type": "string" },
@@ -45,7 +45,7 @@
       "properties": {
         "operation": {
           "type": "string",
-          "enum": ["tp3", "tp4"],
+          "enum": ["tp1", "tp2", "tp3", "tp4"],
           "description": "Operation identifier for cross-operation queries"
         },
         "wave_number": { "type": "integer", "minimum": 1 },
