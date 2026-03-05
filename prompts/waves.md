@@ -68,8 +68,6 @@ Your task is to return a CSV array containing the following data for each wave s
 - **civilian_casualties** — Integer count of confirmed civilian fatalities (subset of fatalities). Leave empty if breakdown unknown.
 - **military_casualties** — Integer count of confirmed military fatalities (subset of fatalities). Leave empty if breakdown unknown.
 - **injuries** — Integer count of confirmed injuries from this wave. Leave empty if unknown.
-- **sirens_activated** — Boolean (`TRUE`/`FALSE`). Whether air raid sirens were activated in target areas.
-- **sirens_locations** — Free-text description of where sirens sounded (e.g. "Central Israel, Jerusalem, Negev"). Leave empty if unknown.
 - **targeted_tel_aviv** — Boolean (`TRUE`/`FALSE`). Whether the Tel Aviv metropolitan area was targeted (includes Bnei Brak, Petah Tikva, HaKirya, Tel Nof, Beit Shams, central Israel).
 - **targeted_jerusalem** — Boolean (`TRUE`/`FALSE`). Whether Jerusalem or East Jerusalem was targeted.
 - **targeted_haifa** — Boolean (`TRUE`/`FALSE`). Whether the Haifa area was targeted.

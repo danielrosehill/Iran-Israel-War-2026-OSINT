@@ -116,9 +116,7 @@
         "fatalities": 1,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": 1,
-        "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "military_casualties": 1
       },
       "escalation": {
         "new_country_targeted": true,
@@ -235,9 +233,7 @@
         "fatalities": 0,
         "injuries": 0,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": true,
-        "sirens_locations": "Central Israel"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -364,9 +360,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -481,9 +475,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": true,
-        "sirens_locations": "Central Israel, Southern Israel"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -605,9 +597,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "FALSE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -721,9 +711,7 @@
         "fatalities": 0,
         "injuries": 0,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": true,
-        "sirens_locations": "Central Israel, Tel Aviv, Haifa"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -859,9 +847,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "FALSE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -976,9 +962,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1094,9 +1078,7 @@
         "fatalities": 0,
         "injuries": 12,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": true,
-        "sirens_locations": "Central Israel, Tel Aviv"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -1212,9 +1194,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1332,9 +1312,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "TRUE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": true,
@@ -1464,9 +1442,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": 31,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "0"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1588,9 +1564,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "FALSE"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1708,9 +1682,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": 23,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "0"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1831,9 +1803,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": null
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1946,9 +1916,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": 0,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": "0"
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2061,9 +2029,7 @@
         "fatalities": 0,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": null
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2170,9 +2136,7 @@
         "fatalities": null,
         "injuries": null,
         "civilian_casualties": null,
-        "military_casualties": null,
-        "sirens_activated": null,
-        "sirens_locations": null
+        "military_casualties": null
       },
       "escalation": {
         "new_country_targeted": null,

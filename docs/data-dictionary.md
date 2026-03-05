@@ -171,8 +171,6 @@ Source: enriched (us_bases), matched against `data/reference/us_naval_vessels.js
 | `impact.injuries` | int\|null | Confirmed injuries | `21` | primary |
 | `impact.civilian_casualties` | int\|null | Civilian fatalities subset | | primary |
 | `impact.military_casualties` | int\|null | Military fatalities subset | | primary |
-| `impact.sirens_activated` | bool\|null | Air raid sirens activated | `true` | primary |
-| `impact.sirens_locations` | string\|null | Where sirens sounded | `"Central Israel, Negev"` | primary |
 
 ## escalation
 

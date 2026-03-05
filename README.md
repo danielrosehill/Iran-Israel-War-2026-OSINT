@@ -1,4 +1,4 @@
-![Banner](docs/banner.png)
+![Banner](images/banner-sm.png)
 
 # Iran-Israel War — OSINT Dataset
 

@@ -220,9 +220,7 @@
         "fatalities": { "type": ["integer", "null"] },
         "injuries": { "type": ["integer", "null"] },
         "civilian_casualties": { "type": ["integer", "null"] },
-        "military_casualties": { "type": ["integer", "null"] },
-        "sirens_activated": { "type": ["boolean", "null"] },
-        "sirens_locations": { "type": ["string", "null"] }
+        "military_casualties": { "type": ["integer", "null"] }
       }
     },
     "escalation": {

@@ -25,7 +25,21 @@
       "WebFetch(domain:turdef.com)",
       "WebFetch(domain:www.army-technology.com)",
       "WebFetch(domain:jinsa.org)",
-      "WebFetch(domain:defensefeeds.com)"
+      "WebFetch(domain:defensefeeds.com)",
+      "Bash(git remote:*)",
+      "Bash(git status:*)",
+      "WebFetch(domain:time.com)",
+      "WebFetch(domain:www.aljazeera.com)",
+      "Read(//home/daniel/Desktop/**)",
+      "Read(//home/daniel/private/**)",
+      "Bash(python3:*)",
+      "Bash(typst:*)",
+      "Bash(grep:*)",
+      "Bash(fc-list:*)",
+      "Bash(pdfinfo:*)",
+      "Bash(git pull:*)",
+      "Bash(git:*)",
+      "Bash(do echo:*)"
     ]
   }
 }
