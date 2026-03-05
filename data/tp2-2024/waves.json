@@ -122,6 +122,16 @@
         "target_coordinates": {
           "lat": 30.89,
           "lon": 34.78
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -134,7 +144,8 @@
         "interception_systems": [
           "Arrow-2",
           "Arrow-3",
-          "David's Sling"
+          "David's Sling",
+          "Aegis BMD / SM-3"
         ],
         "intercepted_by": {
           "israel": true,
@@ -248,6 +259,16 @@
         "target_coordinates": {
           "lat": 32.15,
           "lon": 34.79
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {

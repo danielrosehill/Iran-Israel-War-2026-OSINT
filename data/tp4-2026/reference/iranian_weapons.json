@@ -2,7 +2,9 @@
   {
     "id": "emad",
     "system_name": "Emad",
-    "aliases": ["Emad-1"],
+    "aliases": [
+      "Emad-1"
+    ],
     "type_key": "emad_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "liquid-fuel",
@@ -47,7 +49,14 @@
   {
     "id": "ghadr",
     "system_name": "Ghadr",
-    "aliases": ["Ghadr-1", "Ghadr-101", "Ghadr-110", "Qadr S", "Qadr H", "Qadr F"],
+    "aliases": [
+      "Ghadr-1",
+      "Ghadr-101",
+      "Ghadr-110",
+      "Qadr S",
+      "Qadr H",
+      "Qadr F"
+    ],
     "type_key": "ghadr_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "liquid-fuel",
@@ -98,7 +107,11 @@
   {
     "id": "sejjil",
     "system_name": "Sejjil",
-    "aliases": ["Sejjil-1", "Sejjil-2", "Ashura"],
+    "aliases": [
+      "Sejjil-1",
+      "Sejjil-2",
+      "Ashura"
+    ],
     "type_key": "sejjil_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "solid-fuel",
@@ -145,7 +158,9 @@
     "id": "kheibar_shekan",
     "system_name": "Kheibar Shekan",
     "name_translation": "Kheibar Breaker",
-    "aliases": ["Kheibar Shekan MaRV"],
+    "aliases": [
+      "Kheibar Shekan MaRV"
+    ],
     "type_key": "kheibar_shekan_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "solid-fuel",
@@ -197,7 +212,9 @@
     "id": "fattah_1",
     "system_name": "Fattah-1",
     "name_translation": "Conqueror",
-    "aliases": ["Fattah"],
+    "aliases": [
+      "Fattah"
+    ],
     "type_key": "fattah_used",
     "classification": "MRBM with Maneuverable Reentry Vehicle (MaRV)",
     "propulsion": "solid-fuel",
@@ -206,7 +223,7 @@
     "warhead_kg": 500,
     "launch_weight_kg": 4300,
     "length_m": 11.5,
-    "diameter_m": 0.80,
+    "diameter_m": 0.8,
     "guidance": "Hybrid INS + GNSS (GPS/GLONASS); MaRV with TVC",
     "CEP_m": {
       "estimate": "10-25",
@@ -300,7 +317,9 @@
     "id": "shahed_131",
     "system_name": "Shahed-131",
     "manufacturer": "HESA / Shahed Aviation Industries",
-    "aliases": ["Geran-1"],
+    "aliases": [
+      "Geran-1"
+    ],
     "type_key": "shahed_131_used",
     "classification": "Loitering munition / one-way attack UAV",
     "propulsion": "Serat-1 Wankel engine (38 hp), copy of MDR-208; RATO launch",
@@ -337,7 +356,9 @@
     "id": "shahed_136",
     "system_name": "Shahed-136",
     "manufacturer": "HESA / Shahed Aviation Industries",
-    "aliases": ["Geran-2"],
+    "aliases": [
+      "Geran-2"
+    ],
     "type_key": "shahed_136_used",
     "classification": "Loitering munition / one-way attack UAV",
     "propulsion": "piston engine (Mado MD-550); RATO launch",
@@ -415,7 +436,9 @@
     "id": "shahed_238",
     "system_name": "Shahed-238",
     "manufacturer": "HESA / Shahed Aviation Industries",
-    "aliases": ["Geran-3"],
+    "aliases": [
+      "Geran-3"
+    ],
     "type_key": "shahed_238_used",
     "classification": "Jet-powered loitering munition / one-way attack UAV",
     "propulsion": "turbojet (PBS TJ150 / Toloue-10)",
@@ -530,5 +553,54 @@
       "https://en.wikipedia.org/wiki/Mohajer-6",
       "https://en.wikipedia.org/wiki/IRIS_Shahid_Bagheri"
     ]
+  },
+  {
+    "id": "khorramshahr_4",
+    "system_name": "Khorramshahr-4",
+    "name_translation": "Khorramshahr (city name)",
+    "aliases": [
+      "Khorramshahr-4"
+    ],
+    "type_key": "khorramshahr_4_used",
+    "classification": "Medium-Range Ballistic Missile (MRBM)",
+    "propulsion": "liquid-fuel",
+    "stages": 1,
+    "range_km": 2000,
+    "warhead_kg": 1000,
+    "launch_weight_kg": null,
+    "length_m": 16.0,
+    "diameter_m": 1.25,
+    "guidance": "Strap-down INS with satellite correction",
+    "CEP_m": null,
+    "marv": true,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": true,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": true,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "first_unveiled": "2023-05-25",
+    "first_combat_use": "2026-03-05",
+    "lineage": "Khorramshahr family; Shahab-3 lineage via BM-25 Musudan technology",
+    "key_features": [
+      "Heaviest warhead (1 ton) in Iranian MRBM inventory",
+      "MIRV-capable (4th generation claimed by IRGC)",
+      "Longest-range liquid-fuel MRBM in active Iranian service",
+      "First combat use in TP4 wave 19"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/khorramshahr/",
+      "https://en.wikipedia.org/wiki/Khorramshahr_(missile)"
+    ],
+    "peak_speed_mach": 10,
+    "flight_time_minutes": {
+      "from_kermanshah": 6.5,
+      "from_tabriz": 6.9,
+      "from_isfahan": 8.8,
+      "from_semnan": 9.8,
+      "notes": "Estimated avg ground speed ~3.0 km/s; target: Tel Aviv; similar to Emad/Ghadr class"
+    }
   }
 ]

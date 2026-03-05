@@ -43,7 +43,7 @@
         "solar_phase_target": 0,
         "conflict_day": 1,
         "hours_since_last_wave": null,
-        "time_between_waves_minutes": 35.01,
+        "time_between_waves_minutes": null,
         "wave_duration_minutes": null
       },
       "weapons": {
@@ -103,7 +103,17 @@
         "us_naval_vessels": [],
         "target_coordinates": {
           "lat": 31.07,
-          "lon": null
+          "lon": 34.79
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": true,
+          "targeted_port": true,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -117,9 +127,9 @@
           "Arrow-2",
           "Arrow-3",
           "Iron Dome",
-          "SM-3",
+          "Aegis BMD / SM-3",
           "THAAD",
-          "Patriot"
+          "Patriot PAC-3"
         ],
         "intercepted_by": {
           "israel": true,
@@ -246,6 +256,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -259,7 +279,7 @@
           "Arrow-2",
           "Arrow-3",
           "Iron Dome",
-          "Patriot"
+          "Patriot PAC-3"
         ],
         "intercepted_by": {
           "israel": true,
@@ -332,7 +352,7 @@
         "launch_time_iran": "2026-03-01T03:00:00+0330",
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
-        "conflict_day": 2,
+        "conflict_day": 1,
         "hours_since_last_wave": 3.0,
         "time_between_waves_minutes": null,
         "wave_duration_minutes": null
@@ -343,11 +363,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -399,6 +419,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": true,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -411,7 +441,7 @@
         "interception_systems": [
           "Arrow-2",
           "Iron Dome",
-          "Patriot"
+          "Patriot PAC-3"
         ],
         "intercepted_by": {
           "israel": true,
@@ -536,6 +566,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": true,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -548,7 +588,7 @@
         "interception_systems": [
           "Arrow-2",
           "Iron Dome",
-          "Patriot"
+          "Patriot PAC-3"
         ],
         "intercepted_by": {
           "israel": true,
@@ -633,11 +673,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -690,6 +730,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -780,11 +830,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -821,6 +871,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -853,7 +913,7 @@
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
         "munitions_targeting_us_bases": null,
-        "cumulative_total": 35
+        "cumulative_total": null
       },
       "impact": {
         "damage": "IRGC claims hits on Tel Nof Air Base, HaKirya HQ, and Haifa naval installations",
@@ -918,11 +978,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -982,6 +1042,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": true,
+          "targeted_energy": true,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -1095,11 +1165,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -1138,6 +1208,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -1246,11 +1326,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -1291,6 +1371,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -1375,7 +1465,7 @@
         "solar_phase_target": 2,
         "conflict_day": 3,
         "hours_since_last_wave": 6.0,
-        "time_between_waves_minutes": 34.78,
+        "time_between_waves_minutes": 360.0,
         "wave_duration_minutes": null
       },
       "weapons": {
@@ -1425,7 +1515,17 @@
         "us_naval_vessels": [],
         "target_coordinates": {
           "lat": 32.09,
-          "lon": null
+          "lon": 34.78
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": true,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -1540,11 +1640,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -1594,6 +1694,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": true,
+          "targeted_energy": true,
+          "targeted_port": true,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": true,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -1769,6 +1879,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": true,
+          "targeted_port": true,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -1933,6 +2053,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2056,11 +2186,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -2103,6 +2233,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": true,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2193,11 +2333,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -2247,6 +2387,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": true,
+          "targeted_energy": true,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": true,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2328,7 +2478,7 @@
         "solar_phase_target": 5,
         "conflict_day": 5,
         "hours_since_last_wave": 14.0,
-        "time_between_waves_minutes": 32.09,
+        "time_between_waves_minutes": 840.0,
         "wave_duration_minutes": null
       },
       "weapons": {
@@ -2337,11 +2487,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -2384,6 +2534,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2393,29 +2553,25 @@
       },
       "interception": {
         "intercepted": null,
-        "interception_systems": [
-          "TRUE"
-        ],
+        "interception_systems": [],
         "intercepted_by": {
           "israel": null,
           "us": true,
           "uk": true,
           "jordan": false,
-          "other": [
-            "FALSE"
-          ]
+          "other": []
         },
         "estimated_intercept_count": null,
         "estimated_intercept_rate": null,
         "exoatmospheric_interception": null,
         "endoatmospheric_interception": true,
-        "interception_report": "TRUE"
+        "interception_report": null
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": 230,
         "munitions_targeting_us_bases": 230,
-        "cumulative_total": 35
+        "cumulative_total": null
       },
       "impact": {
         "damage": "IRGC claims strikes on HaKirya (IDF general staff and Ministry of War), strategic infrastructure in Bnei Brak, military targets in Beit Hakfa",
@@ -2430,10 +2586,10 @@
       },
       "proxy": {
         "involvement": null,
-        "description": "FALSE"
+        "description": null
       },
       "sources": {
-        "idf_statement": "34.78",
+        "idf_statement": null,
         "urls": []
       },
       "description": "Sixteenth wave; critical shift - IRGC Ground Forces entered the battlefield with three simultaneous operations and 230 attack drones. Multi-domain offensive. Aerospace Division also struck 'heart and northern parts of occupied territories.'",
@@ -2478,11 +2634,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": false,
-          "ghadr_used": false,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
           "shahed_136_used": false,
           "shahed_238_used": false,
           "shahed_131_used": null,
@@ -2507,7 +2663,7 @@
           "IL"
         ],
         "israeli_locations": {
-          "targeted_tel_aviv": false,
+          "targeted_tel_aviv": true,
           "targeted_jerusalem": false,
           "targeted_haifa": false,
           "targeted_negev_beersheba": false,
@@ -2519,6 +2675,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": true,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2528,29 +2694,25 @@
       },
       "interception": {
         "intercepted": null,
-        "interception_systems": [
-          "TRUE"
-        ],
+        "interception_systems": [],
         "intercepted_by": {
           "israel": null,
           "us": true,
           "uk": true,
           "jordan": false,
-          "other": [
-            "FALSE"
-          ]
+          "other": []
         },
         "estimated_intercept_count": null,
         "estimated_intercept_rate": null,
         "exoatmospheric_interception": null,
         "endoatmospheric_interception": true,
-        "interception_report": "TRUE"
+        "interception_report": null
       },
       "munitions": {
         "estimated_munitions_count": null,
         "munitions_targeting_israel": 40,
         "munitions_targeting_us_bases": null,
-        "cumulative_total": 35
+        "cumulative_total": null
       },
       "impact": {
         "damage": null,
@@ -2565,7 +2727,7 @@
       },
       "proxy": {
         "involvement": null,
-        "description": "FALSE"
+        "description": null
       },
       "sources": {
         "idf_statement": null,
@@ -2682,6 +2844,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2785,7 +2957,8 @@
           "shahed_131_used": null,
           "shahed_107_used": null,
           "shahed_129_used": null,
-          "mohajer_6_used": null
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
         },
         "categories": {
           "bm_liquid_fueled": true,
@@ -2838,6 +3011,16 @@
         "target_coordinates": {
           "lat": null,
           "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": true,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -2982,6 +3165,16 @@
         "target_coordinates": {
           "lat": 32.0853,
           "lon": 34.7818
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
         }
       },
       "launch_site": {
@@ -3009,8 +3202,7 @@
         "estimated_munitions_count": null,
         "munitions_targeting_israel": null,
         "munitions_targeting_us_bases": null,
-        "cumulative_total": null,
-        "small_number_of_missiles": true
+        "cumulative_total": null
       },
       "impact": {
         "damage": "Missile fragments and submunitions from cluster bomb warhead impacted several areas in central Israel, causing damage. One impact site in a central town sparked a fire. Police confirmed cluster bomb warhead. Each submunition carries ~2.5 kg explosive, ~20 submunitions per warhead, dispersal radius ~8 km. Submunitions designed to explode on impact; unexploded submunitions pose landmine-like hazard.",

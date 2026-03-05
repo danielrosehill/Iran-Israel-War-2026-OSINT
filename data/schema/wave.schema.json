@@ -173,6 +173,20 @@
             "required": ["name", "type"]
           }
         },
+        "critical_infrastructure": {
+          "type": "object",
+          "description": "Boolean flags for critical civilian/dual-use infrastructure targeting",
+          "properties": {
+            "targeted_airport": { "type": ["boolean", "null"], "description": "Civilian airport (e.g. Ben Gurion, Hamad Intl)" },
+            "targeted_energy": { "type": ["boolean", "null"], "description": "Power plants, oil refineries, fuel infrastructure" },
+            "targeted_port": { "type": ["boolean", "null"], "description": "Civilian/commercial port or maritime terminal" },
+            "targeted_government": { "type": ["boolean", "null"], "description": "Government buildings, ministries, leadership offices" },
+            "targeted_industrial": { "type": ["boolean", "null"], "description": "Defense industry, semiconductor, military-industrial complexes" },
+            "targeted_telecom_data": { "type": ["boolean", "null"], "description": "Communications infrastructure, data centers, cyber facilities" },
+            "targeted_diplomatic": { "type": ["boolean", "null"], "description": "Embassies, consulates, diplomatic compounds" },
+            "targeted_research": { "type": ["boolean", "null"], "description": "Research institutions, biological/nuclear facilities" }
+          }
+        },
         "target_coordinates": {
           "type": "object",
           "properties": {
