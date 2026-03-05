@@ -31,9 +31,32 @@ data/
   schema/wave.schema.json  # JSON Schema for validation
 ```
 
-### GitHub Pages Site
+## Website Repository
 
-Live at: https://danielrosehill.github.io/Iran-Israel-War-2026-OSINT/
+The OSINT analysis site is in a separate repo:
+
+- **Repo:** `~/repos/github/Iran-Israel-OSINT-Site/` (private, GitHub: `danielrosehill/Iran-Israel-OSINT-Site`)
+- **Deployment:** Vercel at `iranisrael26.danielrosehill.com`
+- **Data pipeline:** The site repo has `sync-data.sh` which pulls JSON from this repo's raw GitHub URLs
+
+### Publishing Workflow
+
+After validating and gathering new data in this repo:
+
+1. Commit and push data changes to this repo
+2. Run `cd ~/repos/github/Iran-Israel-OSINT-Site && bash sync-data.sh` to pull fresh data into the site
+3. Commit and push the site repo — Vercel auto-deploys on push
+
+This should be done automatically after any data update (new waves added, corrections applied, reference data changed).
+
+## SITREP Format
+
+All SITREPs must follow the template in `docs/sitrep-template.md`:
+- **SITREP** is always fully capitalised
+- All times in UTC with local times (Israel IST, Iran IRST) in parentheses
+- DTG format: `DD HHMM(Z) MON YYYY`
+- Sections: BLUF, Situation Overview, Enemy Forces (wave-by-wave), Friendly Forces (interception), Casualties & Damage, Escalation Indicators, Outlook
+- SITREPs are narrative documents, not just data tables
 
 ## JSON Structure
 
