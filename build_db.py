@@ -299,6 +299,22 @@ def create_schema(cur):
         fleet       TEXT,
         notes       TEXT
     );
+
+    -- ══════════════════════════════════════════════════════════════
+    -- X post snippets (OSINT social media sources)
+    -- ══════════════════════════════════════════════════════════════
+    CREATE TABLE IF NOT EXISTS x_post_snippets (
+        id              INTEGER PRIMARY KEY AUTOINCREMENT,
+        operation       TEXT NOT NULL,
+        wave_number     INTEGER NOT NULL,
+        source_type     TEXT NOT NULL DEFAULT 'x_post',
+        author          TEXT,
+        handle          TEXT,
+        post_date       TEXT,
+        text            TEXT NOT NULL,
+        image_file      TEXT,
+        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+    );
     """)
 
 
@@ -602,12 +618,36 @@ def load_us_naval_vessels(cur):
         ))
 
 
+SNIPPET_FILES = [
+    os.path.join(REPO, 'data', 'tp4-2026', 'x_post_snippets.json'),
+]
+
+
+def load_x_post_snippets(cur):
+    for path in SNIPPET_FILES:
+        if not os.path.exists(path):
+            continue
+        with open(path) as f:
+            data = json.load(f)
+        for s in data.get('snippets', []):
+            cur.execute("""
+                INSERT INTO x_post_snippets
+                    (operation, wave_number, source_type, author, handle, post_date, text, image_file)
+                VALUES (?,?,?,?,?,?,?,?)
+            """, (
+                s['operation'], s['wave_number'], 'x_post',
+                s.get('author'), s.get('handle'), s.get('date'),
+                s['text'], s.get('image_file'),
+            ))
+
+
 def print_summary(cur):
     print("\n=== Database Summary ===")
     for table in ['operations', 'waves', 'wave_landing_countries',
                    'wave_interception_systems', 'wave_us_bases_targeted',
                    'wave_sources', 'iranian_weapons', 'defense_systems',
-                   'armed_forces', 'us_bases', 'us_naval_vessels']:
+                   'armed_forces', 'us_bases', 'us_naval_vessels',
+                   'x_post_snippets']:
         cur.execute(f"SELECT COUNT(*) FROM {table}")
         print(f"  {table}: {cur.fetchone()[0]} rows")
 
@@ -664,6 +704,7 @@ def main():
     load_armed_forces(cur)
     load_us_bases(cur)
     load_us_naval_vessels(cur)
+    load_x_post_snippets(cur)
 
     conn.commit()
     print_summary(cur)

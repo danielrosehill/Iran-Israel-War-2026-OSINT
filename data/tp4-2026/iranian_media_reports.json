@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "description": "Scraped reporting from pro-Iranian and regional media on TP4 attack waves. Content is likely biased and reflects Iranian state/aligned narratives. Included for OSINT cross-referencing of claimed launches, weapons, and targets.",
+    "bias_warning": "These sources are Iranian state media, Hezbollah-affiliated media, or sympathetic regional outlets. Claims about damage inflicted and targets hit are unverified and likely exaggerated. Weapons specifications and launch details may contain useful OSINT signals.",
+    "scraped_date": "2026-03-05",
+    "total_articles": 9,
+    "failed_urls_note": "Several URLs (Al Mayadeen, Defapress, ABNA24, Palestine Chronicle) could not be scraped due to geo-blocking or anti-bot measures."
+  },
+  "articles": [
+    {
+      "url": "https://www.egyptindependent.com/iran-fires-40-missiles-in-17th-wave-of-true-promise-4-campaign/",
+      "source_domain": "www.egyptindependent.com",
+      "title": "Iran fires 40 missiles in 17th wave of 'Operation True Promise 4' retaliatory campaign - Egypt Independent",
+      "wave_references": [
+        17
+      ],
+      "text": "Iran fires 40 missiles in 17th wave of 'Operation True Promise 4' retaliatory campaign\nIranian Missile Strikes on Israel \nThe Iranian Revolutionary Guard Corps (IRGC) intensified its retaliatory campaign early Wednesday, launching the 17th wave of Operation True Promise 4.\nAccording to the Tasnim news agency, the IRGC’s Aerospace Force deployed more than 40 missiles targeting joint US-Israeli positions.\nThe IRGC’s public relations wing confirmed the strike in an official statement.\nIt emphasized that these strikes are a direct response to the massive US-Israeli offensive that began on Saturday—a campaign that resulted in the death of Supreme Leader Ali Khamenei, his wife, and several high-ranking military commanders.\nA response to ‘Operation Epic Fury’\nThe current conflict, which began on February 28, was initiated by a joint US-Israeli operation designated by the Pentagon as Operation Epic Fury.\nUS President Donald Trump characterized the offensive as “massive and ongoing,” aimed at dismantling Iran’s nuclear ambitions and missile capabilities.\nParallel to the military action, Israeli Prime Minister Benjamin Netanyahu framed the offensive as a mission to eliminate an “existential threat,” while calling on the Iranian public to seize the moment to destabilize the current regime.\nDiplomatic collapse\nThis escalation follows the total breakdown of Omani-mediated nuclear negotiations.\nTensions reached a breaking point after President Trump expressed dissatisfaction with the diplomatic pace, leading to the largest military confrontation in the region since the 12-day war in June 2025.\nBack to top button",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://www.newsonair.gov.in/irans-irgc-launches-its-17th-wave-of-strikes-against-us-israeli-targets-press-tv-reported/",
+      "source_domain": "www.newsonair.gov.in",
+      "title": "Iran’s IRGC launches its 17th wave of strikes against US, Israeli targets, Press TV reported  | DD News On Air",
+      "wave_references": [
+        17
+      ],
+      "text": "Iran’s IRGC launches its 17th wave of strikes against US, Israeli targets, Press TV reported\nIran’s Islamic Revolution Guards Corps (IRGC) today launched its 17th wave of strikes against US and Israeli targets, Press TV reported. According to the IRGC, the Ground Force of the IRGC responded to the Israeli-US strikes against Iran with 3 major operations. Announcing another phase of Operation True Promise 4 today, the IRGC’s Public Relations stated that immediately after the joint Israeli-US strikes, its ground forces launched more than 230 assault drones towards targets in the Occupied Lands and US bases in the region. It said that the IRGC is firing dozens of drones in several waves towards the US military bases in Erbil and Kuwait and destroying several terrorist groups’ headquarters in northern Iraq, which were the first actions of brave soldiers of the IRGC against child-killing aggressors.\nThe IRGC further claimed that a fresh wave of Iranian retaliatory strikes has crippled a major US air base in Bahrain, with strikes destroying command centres. According to the IRGC, Iran’s retaliatory strikes left more than 680 casualties for American troops in various US bases in the first two days of the war. Iranian officials have stressed that targeting US military bases in the region constitutes “legitimate self-defence”.",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://wanaen.com/details-of-the-tenth-wave-of-operation-true-promise-4/",
+      "source_domain": "wanaen.com",
+      "title": "Details of the Tenth Wave of Operation True Promise 4 - WANA",
+      "wave_references": [10],
+      "text": "Details of the Tenth Wave of Operation True Promise 4\nWANA (Mar 2) – In its ninth statement regarding Operation True Promise 4, the Public Relations Office of the Islamic Revolutionary Guard Corps (IRGC) emphasised that the targeted strike on the Israeli government complex in Tel Aviv, attacks on military and security centres in Haifa, and strikes on East Jerusalem were among the objectives of the tenth wave.\nIn Statement No. 9, the IRGC declared that “the tenth wave of Operation True Promise 4, featuring the manoeuvring of Kheibar missiles, opened the great gates of fire upon the occupied territories,” and warned residents of the occupied territories to stay away from military bases, security and government centres, and to leave the occupied territories immediately.\nThe statement reads: “The tenth wave of Operation True Promise 4, with the manoeuvring of Kheibar missiles, opened the great gates of fire upon the occupied territories.\nThe targeted strike on the Israeli regime’s government complex in Tel Aviv, the attack on military and security centres in Haifa, and the strike on East Jerusalem were among the objectives of this wave.\nWe had previously warned of the expansion of attacks against the bases and occupied territories of the aggressor enemies and declared that the sound of sirens in Israel would never cease.\nWe now advise residents of the occupied territories to distance themselves from military bases, security and government centres, and to leave the occupied territories immediately.”",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://www.shafaq.com/en/Middle-East/Iran-launches-wave-11-of-True-Promise-4-operation",
+      "source_domain": "www.shafaq.com",
+      "title": "Iran launches wave 12 of True Promise 4 operation - Shafaq News",
+      "wave_references": [11, 12],
+      "text": "Iran launches wave 12 of True Promise 4 operation\n2026-03-02T17:39:04+00:00 \nShafaq News- Tehran\nIran’s Islamic Revolutionary Guard Corps (IRGC) kicked off the 12th wave of its operation True Promise 4, the group said on Monday.\nEarlier today, the IRGC noted that the eleventh wave struck US military support information centers and storage facilities, as well as an Israeli army communications complex, claiming that 500 sites were targeted over the past 48 hours.\nAccording to Iran’s Khatam al-Anbiya Central Headquarters, which oversees operational planning and coordination among the armed forces, Tehran struck multiple US military sites and vessels in the Gulf and rendered the US Ali Al-Salem Air Base in Kuwait inoperative, destroyed three US naval facilities in Kuwait, and targeted the aircraft carrier USS Abraham Lincoln, forcing it to withdraw from its position.",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://english.almanar.com.lb/article/29352/",
+      "source_domain": "english.almanar.com.lb",
+      "title": "IRGC: 11th wave of Operation True Promise 4 included firing rockets and drones at Beersheba – Al-Manar TV Lebanon",
+      "wave_references": [
+        11
+      ],
+      "text": "11th wave of Operation True Promise 4 included firing rockets and drones at Beersheba – Al-Manar TV Lebanon\nThursday, 05/03/2026 \nBeirut 18:59",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://caspianpost.com/iran/iran-fires-10th-wave-of-missile-strikes-on-israel",
+      "source_domain": "caspianpost.com",
+      "title": "Iran Fires 10th Wave of Missile Strikes on Israel - Caspianpost.com",
+      "wave_references": [
+        10
+      ],
+      "text": "Iran Fires 10th Wave of Missile Strikes on Israel\nPhoto credit: Iranian MoD \nIran Fires 10th Wave of Missile Strikes on Israel \n02 Mar, 14:49 \nIran \nIran’s Islamic Revolutionary Guard Corps (IRGC) said it carried out fresh strikes against Israeli targets as part of the tenth wave of its “True Promise 4” operation, claiming it hit a government complex in Tel Aviv and a site in East Jerusalem.\nIn a statement released by its public relations department, the IRGC said several Khaybar missiles were used in the latest phase of the operation, describing the assault as having “opened doors to a massive inferno” in Israeli territory, The Caspian Post reports, citing Al Jazeera.\nAccording to the statement, the targeted locations included the Israeli government complex in Tel Aviv, military and security facilities in Haifa, and areas in East Jerusalem.\nThe IRGC also warned residents of Israeli territories to immediately evacuate areas near military bases, security centers, and government facilities.\nThe group had previously signaled its intention to intensify attacks on Israel.\nMost read \nDrone Strikes King Fahd Causeway Connecting Bahrain, Saudi Arabia \n03 Mar, 18:01 12844 \nIran Closes Strait of Hormuz, Halting Ship Traffic \n28 Feb, 20:24 12050 \nMedia: Israel Assesses Khamenei May Be Dead \n28 Feb, 18:17 11210 \nFormer Iranian President Ahmadinejad Reportedly Killed \n01 Mar, 17:27 10973 \nIran Strikes Israeli Command Center with Hypersonic Fattah-2 Missile \n04 Mar, 12:00 10106 \nIran’s IRGC Claims Strike on Netanyahu’s Office in “Surprise” Attack \n02 Mar, 14:45 8994 \nIran Launches Hypersonic Fattah Missiles in Response to US, Israeli Strikes \n28 Feb, 21:55 8080 \nIran’s Islamic Revolutionary Guard Corps (IRGC) said it carried out fresh strikes against Israeli targets as part of the tenth wave of its “True Promise 4” operation, claiming it hit a government complex in Tel Aviv and a site in East Jerusalem.",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://www.tasnimnews.ir/en/news/2026/03/01/3528612/irgc-launches-7th-and-8th-waves-of-operations-in-retaliation-against-israel-strikes",
+      "source_domain": "www.tasnimnews.ir",
+      "title": "IRGC Launches 7th and 8th Waves of Operations in Retaliation against Israel Strikes - Defense news - Tasnim News Agency",
+      "wave_references": [7, 8],
+      "text": "IRGC Launches 7th and 8th Waves of Operations in Retaliation against Israel Strikes - Defense news\n\"From moments ago, large-scale retaliatory strikes have begun against enemy targets,\" the IRGC said in a statement at around 4:00 PM local time.\nFurther details—including images and updates—will be released shortly by Iranian officials.\nIranian retaliation follows two days of aggressions against the country, which have martyred over 200 people, including more than 145 children in a strike on an elementary school in Hormozgan Province as well as Iranian officials, according to the Red Crescent Society.\nIn response, the IRGC has conducted four major waves of precision strikes against military sites in occupied territories—including Tel Aviv and Haifa—and forced Israeli settlers into underground shelters. Reports indicate that senior officials, including prime minister Benjamin Netanyahu, have taken refuge in fortified bunkers due to heightened threats.\nThe IRGC also targeted US-operated bases across West Asia, including the Fifth Fleet in Bahrain, along with key installations in Qatar and the UAE for their role in supporting aggression against Iran.\nThis escalation occurs amid indirect nuclear negotiations between Tehran and Washington, mediated by Oman. The latest round of talks, held in Geneva on Thursday, concluded with both sides acknowledging \"significant progress\"—a diplomatic effort now overshadowed by intensified military actions.",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://ina.iq/en/international/45951-irg-announces-the-wave-11-ongoing-targeting-beersheba.html",
+      "source_domain": "ina.iq",
+      "title": "IRGC announces the Wave 11 ongoing targeting Beersheba » Iraqi News Agency",
+      "wave_references": [
+        11
+      ],
+      "text": "IRGC announces the Wave 11 ongoing targeting Beersheba\nINA - SOURCES\nThe Iranian Revolutionary Guard Corps (IRGC) announced on Monday that the 11th wave of Operation True Promise 4 continues targeting sites in Beersheba.\nIRGC stated, \"The 11th wave of Operation True Promise 4 continues targeting sites in Beersheba.\"\nSubscribe to our Telegram channel to receive more news",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    },
+    {
+      "url": "https://ilkha.com/english/world/iran-launches-13th-wave-of-%E2%80%9Ctrue-promise-4%E2%80%9D-attacks-targets-us-military-assets-515492",
+      "source_domain": "ilkha.com",
+      "title": "Iran launches 13th wave of “True Promise 4” attacks, targets US military assets - [İLKHA] Ilke News Agency",
+      "wave_references": [
+        13
+      ],
+      "text": "Iran launches 13th wave of “True Promise 4” attacks, targets US military assets\nIran launches 13th wave of “True Promise 4” attacks, targets US military assets \nIslamic Revolutionary Guard Corps (IRGC) announced Monday the launch of the 13th wave of operations under “Operation True Promise 4,” stating that one-way attack drones were used to strike yhe enemy positions amid ongoing regional escalation.\nThe IRGC said the latest wave targeted the United States Marine Corps base at Camp Arifjan, describing the strike as part of Iran’s response to the ongoing US-Israeli aggression against the country.\nThe operation was also framed as retaliation following the targeting of the Leader of the Islamic Revolution, referred to in the statement as martyr Sayyed Ali Khamenei.\nThe IRGC further stated that facilities linked to the US naval fleet in Bahrain were targeted by six one-way attack drones and destroyed.\nIn addition, the corps reported that the fuel tanker Athens Nova remains ablaze in the Strait of Hormuz after being struck by two drones. The Strait of Hormuz is one of the world’s most strategically vital maritime corridors for global energy shipments.\nSeparately, the IRGC’s public relations office announced that air defenses of its naval forces (IRGC-N) in Bushehr shot down the 21st Hermes-type drone over the southern Iranian city.\nOn Sunday, the Iranian Army said it had intercepted 10 advanced drones, most of them Hermes-type systems, through its integrated air defense network across multiple regions. According to the statement, the total number of downed drones since the start of the hostilities had reached 22 as of Sunday.\nIranian air defenses were also reported to have downed US-operated MQ-9 drones and an IAI Eitan (Heron TP) drone during the course of the confrontation.\nThe latest developments mark a continued escalation in military exchanges across the region, as Tehran and its adversaries remain locked in an intensifying cycle of strikes and counterstrikes. (ILKHA)",
+      "scraped_utc": "2026-03-05T17:25:25Z"
+    }
+  ]
+}

@@ -174,7 +174,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -310,7 +311,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -457,7 +459,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -479,7 +482,7 @@
         "wave_duration_minutes": null
       },
       "weapons": {
-        "payload": "Ballistic missiles, drones",
+        "payload": "Kheibar Shekan ballistic missiles, drones",
         "drones_used": true,
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
@@ -487,7 +490,7 @@
           "emad_used": false,
           "ghadr_used": false,
           "sejjil_used": false,
-          "kheibar_shekan_used": false,
+          "kheibar_shekan_used": true,
           "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
@@ -498,7 +501,7 @@
         },
         "categories": {
           "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
+          "bm_solid_fueled": true,
           "bm_marv_equipped": false,
           "bm_hypersonic": false
         }
@@ -594,7 +597,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -663,7 +667,16 @@
             "country_code": "KW"
           }
         ],
-        "us_naval_vessels": [],
+        "us_naval_vessels": [
+          {
+            "name": "MSP ammunition ship",
+            "type": "ammunition_supply"
+          },
+          {
+            "name": "MST fuel support ship",
+            "type": "fuel_supply"
+          }
+        ],
         "target_coordinates": {
           "lat": null,
           "lon": null
@@ -729,7 +742,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -864,7 +878,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -1015,6 +1030,30 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "unconfirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "tasnimnews.ir"
+        ],
+        "claimed_targets": [
+          "US Fifth Fleet in Bahrain",
+          "Installations in Qatar",
+          "Installations in UAE",
+          "Military sites in Tel Aviv",
+          "Military sites in Haifa"
+        ],
+        "claimed_effects": [
+          "Forced Israeli settlers into underground shelters",
+          "Netanyahu took refuge in fortified bunker"
+        ],
+        "claimed_timing": "Approximately 4:00 PM local time (Iran)",
+        "irgc_statement_number": null,
+        "notable_claims": [
+          "Combined 7th and 8th wave announcement"
+        ]
       }
     },
     {
@@ -1145,6 +1184,25 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "unconfirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "tasnimnews.ir"
+        ],
+        "claimed_targets": [
+          "US-operated bases across West Asia",
+          "US Fifth Fleet in Bahrain",
+          "Installations in Qatar",
+          "Installations in UAE"
+        ],
+        "claimed_effects": [],
+        "irgc_statement_number": null,
+        "notable_claims": [
+          "Combined announcement with wave 7"
+        ]
       }
     },
     {
@@ -1280,7 +1338,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -1329,9 +1388,10 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": false,
-        "targets": "Israeli government complex Tel Aviv, military/security centers Haifa, East Jerusalem",
+        "targets": "Israeli government complex Tel Aviv, military/security centers Haifa, East Jerusalem; Netanyahu's office (Tel Aviv); Saudi Aramco facility",
         "landings_countries": [
-          "IL"
+          "IL",
+          "SA"
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
@@ -1408,6 +1468,31 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "partially_confirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "wanaen.com",
+          "caspianpost.com"
+        ],
+        "claimed_weapons": [
+          "Kheibar missiles"
+        ],
+        "claimed_targets": [
+          "Israeli government complex in Tel Aviv",
+          "Military and security centres in Haifa",
+          "East Jerusalem"
+        ],
+        "claimed_effects": [
+          "Opened 'great gates of fire' upon occupied territories"
+        ],
+        "irgc_statement_number": 9,
+        "notable_claims": [
+          "Kheibar missile use confirmed by multiple sources",
+          "IRGC issued evacuation warning to residents near military bases"
+        ]
       }
     },
     {
@@ -1549,6 +1634,33 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "unconfirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "ina.iq",
+          "english.almanar.com.lb",
+          "shafaq.com"
+        ],
+        "claimed_weapons": [
+          "Rockets",
+          "Drones"
+        ],
+        "claimed_targets": [
+          "Beersheba (ongoing)",
+          "US military support information centers",
+          "US storage facilities",
+          "Israeli army communications complex"
+        ],
+        "claimed_effects": [
+          "500 sites targeted over past 48 hours (cumulative waves 1-11)"
+        ],
+        "irgc_statement_number": null,
+        "notable_claims": [
+          "Cumulative 500 sites claimed targeted in 48 hours"
+        ]
       }
     },
     {
@@ -1571,7 +1683,7 @@
         "wave_duration_minutes": null
       },
       "weapons": {
-        "payload": "26 attack drones, 5 ballistic missiles",
+        "payload": "26 attack drones, 5 ballistic missiles, Fattah-2 hypersonic missile",
         "drones_used": true,
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
@@ -1580,7 +1692,7 @@
           "ghadr_used": false,
           "sejjil_used": false,
           "kheibar_shekan_used": false,
-          "fattah_used": false,
+          "fattah_used": true,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
@@ -1590,9 +1702,9 @@
         },
         "categories": {
           "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
+          "bm_solid_fueled": true,
           "bm_marv_equipped": false,
-          "bm_hypersonic": false
+          "bm_hypersonic": true
         }
       },
       "targets": {
@@ -1671,7 +1783,7 @@
       },
       "escalation": {
         "new_country_targeted": false,
-        "new_weapon_first_use": false
+        "new_weapon_first_use": true
       },
       "proxy": {
         "involvement": false,
@@ -1695,6 +1807,31 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "unconfirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "shafaq.com"
+        ],
+        "claimed_targets": [
+          "Multiple US military sites in Gulf",
+          "US vessels in Gulf",
+          "Ali Al-Salem Air Base (Kuwait)",
+          "Three US naval facilities in Kuwait",
+          "USS Abraham Lincoln"
+        ],
+        "claimed_effects": [
+          "Ali Al-Salem Air Base rendered inoperative",
+          "Three US naval facilities destroyed",
+          "USS Abraham Lincoln forced to withdraw from position"
+        ],
+        "irgc_statement_number": null,
+        "notable_claims": [
+          "Claimed carrier forced withdrawal - highly dubious",
+          "Ali Al-Salem inoperability claim"
+        ]
       }
     },
     {
@@ -1832,6 +1969,40 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "unconfirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "ilkha.com"
+        ],
+        "claimed_weapons": [
+          "One-way attack drones (6 against Bahrain naval facilities)"
+        ],
+        "claimed_targets": [
+          "Camp Arifjan (US Marine Corps base)",
+          "US naval fleet facilities in Bahrain",
+          "Fuel tanker Athens Nova (Strait of Hormuz)"
+        ],
+        "claimed_effects": [
+          "US naval fleet facilities in Bahrain destroyed",
+          "Athens Nova ablaze after two drone strikes"
+        ],
+        "claimed_iranian_air_defense": {
+          "drones_downed_this_wave": "21st Hermes-type drone shot down over Bushehr by IRGC-N",
+          "cumulative_drones_downed": 22,
+          "types_claimed_downed": [
+            "Hermes-type",
+            "US MQ-9",
+            "IAI Eitan (Heron TP)"
+          ]
+        },
+        "irgc_statement_number": null,
+        "notable_claims": [
+          "Athens Nova tanker fire in Strait of Hormuz",
+          "Iranian air defense claims against coalition drones"
+        ]
       }
     },
     {
@@ -1966,13 +2137,14 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
       "wave_number": 15,
-      "wave_codename_farsi": null,
-      "wave_codename_english": null,
+      "wave_codename_farsi": "یا فاطمه الزهرا",
+      "wave_codename_english": "Ya Fatimah Al-Zahra",
       "timing": {
         "announced_utc": "2026-03-03T16:00:00Z",
         "announcement_source": "IRGC",
@@ -2107,7 +2279,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -2245,13 +2418,14 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
       "wave_number": 17,
-      "wave_codename_farsi": "مقدس: یا رسول الله",
-      "wave_codename_english": "Sacred: O Messenger of Allah",
+      "wave_codename_farsi": "یا رسول الله",
+      "wave_codename_english": "Rasul Allah (Messenger of Allah)",
       "timing": {
         "announced_utc": "2026-03-04T09:00:00Z",
         "announcement_source": "IRGC Aerospace Force / Tasnim News Agency",
@@ -2294,7 +2468,7 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "American and Israeli targets",
+        "targets": "American and Israeli targets; Israeli Ministry of Defense building (Tel Aviv); Ben Gurion Airport; 7+ advanced US radars destroyed",
         "landings_countries": [
           "IL"
         ],
@@ -2377,6 +2551,37 @@
           "statement": null,
           "url": null
         }
+      },
+      "iranian_media_claims": {
+        "verification_status": "unconfirmed",
+        "source_category": "iranian_state_and_aligned_media",
+        "bias_warning": "Pro-Iranian sources; damage/casualty claims likely exaggerated",
+        "sources": [
+          "egyptindependent.com",
+          "newsonair.gov.in"
+        ],
+        "claimed_weapons": [
+          "40+ missiles",
+          "230+ assault drones (IRGC Ground Force)"
+        ],
+        "claimed_targets": [
+          "Joint US-Israeli positions",
+          "US military bases in Erbil",
+          "US military bases in Kuwait",
+          "Groups headquarters in northern Iraq",
+          "Major US air base in Bahrain"
+        ],
+        "claimed_effects": [
+          "US air base in Bahrain crippled, command centres destroyed",
+          "680+ US troop casualties across various bases in first two days",
+          "Several groups headquarters in northern Iraq destroyed"
+        ],
+        "irgc_statement_number": null,
+        "notable_claims": [
+          "680+ US casualty claim - extremely dubious, likely major exaggeration",
+          "230 assault drones launched by IRGC Ground Force specifically",
+          "US military bases as legitimate self-defence"
+        ]
       }
     },
     {
@@ -2506,7 +2711,8 @@
           "statement": null,
           "url": null
         }
-      }
+      },
+      "iranian_media_claims": null
     },
     {
       "operation": "tp4",
@@ -2662,7 +2868,8 @@
           "statement": "Operation Epic Fury is laser-focused on destroying Iranian offensive missiles. The Iranian regime is using mobile launchers to indiscriminately fire missiles. U.S. forces are hunting these threats down and taking them out.",
           "url": "https://www.centcom.mil/MEDIA/PRESS-RELEASES/"
         }
-      }
+      },
+      "iranian_media_claims": null
     }
   ]
 }
