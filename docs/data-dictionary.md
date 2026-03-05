@@ -193,6 +193,19 @@ Source: enriched (us_bases), matched against `data/reference/us_naval_vessels.js
 | `sources.idf_statement` | string\|null | IDF statement summary | primary |
 | `sources.urls` | string[] | Source URLs | primary |
 
+## reactions
+
+Official statements and reactions from key parties, with links to source material.
+
+| Path | Type | Description | Source |
+|------|------|-------------|--------|
+| `reactions.idf.statement` | string\|null | IDF spokesperson statement summary | primary |
+| `reactions.idf.url` | string\|null | Link to IDF statement | primary |
+| `reactions.us_government.statement` | string\|null | US government reaction summary | primary |
+| `reactions.us_government.url` | string\|null | Link to US government statement | primary |
+| `reactions.centcom.statement` | string\|null | CENTCOM statement summary | primary |
+| `reactions.centcom.url` | string\|null | Link to CENTCOM statement | primary |
+
 ---
 
 ## Reference Data

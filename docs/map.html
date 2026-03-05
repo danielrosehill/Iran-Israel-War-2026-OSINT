@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map — Iran-Israel War 2026 Data</title>
+  <meta name="description" content="Interactive map of Iranian missile/drone launch sites, Israeli targets, and US/coalition bases.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    body { overflow: hidden; }
+    #map-container { height: calc(100vh - 56px); display: flex; flex-direction: column; }
+    #map-toolbar {
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    #map { flex: 1; background: #0d1117; }
+
+    .toolbar-sep {
+      width: 1px;
+      height: 24px;
+      background: var(--border);
+      margin: 0 4px;
+      flex-shrink: 0;
+    }
+
+    .toolbar-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    /* Legend */
+    .map-legend {
+      position: absolute;
+      bottom: 32px;
+      right: 12px;
+      z-index: 1000;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      min-width: 180px;
+      font-size: 12px;
+    }
+    .map-legend h4 {
+      font-size: 10px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+      color: var(--text-secondary);
+    }
+    .legend-item:last-child { margin-bottom: 0; }
+    .legend-circle {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      border: 2px solid;
+      flex-shrink: 0;
+    }
+    .legend-diamond {
+      width: 10px; height: 10px;
+      transform: rotate(45deg);
+      border: 2px solid;
+      flex-shrink: 0;
+    }
+
+    /* Wave panel */
+    #wave-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 320px;
+      max-height: calc(100% - 40px);
+      overflow-y: auto;
+      background: var(--bg-card);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-bottom-right-radius: var(--radius-md);
+      display: none;
+    }
+    #wave-panel.open { display: block; }
+    #wave-panel-header {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: var(--bg-secondary);
+      z-index: 1;
+    }
+    #wave-panel-header h3 { font-size: 13px; color: var(--text-primary); }
+    #wave-panel-close {
+      background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 18px; line-height: 1;
+      padding: 0 4px;
+    }
+    #wave-panel-close:hover { color: var(--text-primary); }
+    #wave-panel-body { padding: 14px 16px; }
+    .wave-detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 12px;
+    }
+    .wave-detail-row:last-child { border-bottom: none; }
+    .wave-detail-row .key { color: var(--text-muted); font-family: var(--font-mono); font-size: 11px; }
+    .wave-detail-row .val { color: var(--text-primary); text-align: right; max-width: 180px; word-break: break-word; }
+
+    .info-btn {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 1000;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .info-btn:hover { border-color: var(--border-light); color: var(--text-primary); }
+
+    /* Leaflet dark tile overrides */
+    .leaflet-tile-pane { filter: brightness(0.6) saturate(0.4); }
+    .leaflet-container { background: #0d1117; }
+
+    /* Loading overlay */
+    #map-loading {
+      position: absolute;
+      inset: 0;
+      background: rgba(10,13,18,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-muted);
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon" aria-hidden="true">&#x2604;</span>
+      Iran-Israel War 2026 Data
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="map-container">
+  <!-- Toolbar -->
+  <div id="map-toolbar" role="toolbar" aria-label="Map layer controls">
+    <span class="toolbar-title">Layers:</span>
+
+    <button class="layer-btn active launch" id="btn-launch" onclick="toggleLayer('launch')" aria-pressed="true">
+      <span class="dot dot-red" aria-hidden="true"></span> Launch Zones
+    </button>
+    <button class="layer-btn active il-targets" id="btn-il-targets" onclick="toggleLayer('il-targets')" aria-pressed="true">
+      <span class="dot dot-blue" aria-hidden="true"></span> Israeli Targets
+    </button>
+    <button class="layer-btn active us-bases" id="btn-us-bases" onclick="toggleLayer('us-bases')" aria-pressed="true">
+      <span class="dot dot-green" aria-hidden="true"></span> US/Coalition Bases
+    </button>
+
+    <div class="toolbar-sep" aria-hidden="true"></div>
+
+    <button class="layer-btn active" id="btn-tp3" onclick="toggleOp('TP3')" style="border-color: var(--iran-orange);" aria-pressed="true">
+      <span class="dot dot-orange" aria-hidden="true"></span> TP3 Waves
+    </button>
+    <button class="layer-btn active" id="btn-tp4" onclick="toggleOp('TP4')" style="border-color: var(--iran-red);" aria-pressed="true">
+      <span class="dot dot-red" aria-hidden="true"></span> TP4 Waves
+    </button>
+
+    <div class="toolbar-sep" aria-hidden="true"></div>
+
+    <button class="layer-btn" onclick="fitBounds()" aria-label="Reset map view">Reset View</button>
+  </div>
+
+  <!-- Map -->
+  <div id="map" aria-label="Interactive conflict map"></div>
+
+  <!-- Loading indicator -->
+  <div id="map-loading">
+    <div class="spinner"></div>
+    Loading map data&hellip;
+  </div>
+
+  <!-- Legend -->
+  <div class="map-legend" role="note" aria-label="Map legend">
+    <h4>Legend</h4>
+    <div class="legend-item">
+      <div class="legend-circle" style="background: rgba(204,41,54,0.2); border-color: #cc2936;"></div>
+      Iranian Launch Zone
+    </div>
+    <div class="legend-item">
+      <div class="legend-circle" style="background: rgba(74,144,217,0.2); border-color: #4a90d9;"></div>
+      Israeli Target
+    </div>
+    <div class="legend-item">
+      <div class="legend-circle" style="background: rgba(45,164,78,0.2); border-color: #2da44e;"></div>
+      US/Coalition Base
+    </div>
+    <div class="legend-item">
+      <div class="legend-diamond" style="background: rgba(232,102,26,0.2); border-color: var(--iran-orange);"></div>
+      TP3 Wave (orange)
+    </div>
+    <div class="legend-item">
+      <div class="legend-diamond" style="background: rgba(204,41,54,0.2); border-color: var(--iran-red);"></div>
+      TP4 Wave (red)
+    </div>
+  </div>
+
+  <!-- Wave info panel -->
+  <div id="wave-panel" role="complementary" aria-label="Wave details">
+    <div id="wave-panel-header">
+      <h3 id="wave-panel-title">Wave Details</h3>
+      <button id="wave-panel-close" onclick="closeWavePanel()" aria-label="Close panel">&times;</button>
+    </div>
+    <div id="wave-panel-body"></div>
+  </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN2GqB0=" crossorigin=""></script>
+<script src="js/data.js"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>

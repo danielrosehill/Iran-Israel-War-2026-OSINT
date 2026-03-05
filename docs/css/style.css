@@ -1,0 +1,728 @@
+/* ============================================================
+   Iran-Israel War 2026 Data — Site Stylesheet
+   Dark military/intel aesthetic
+   ============================================================ */
+
+:root {
+  --bg-primary:    #0a0d12;
+  --bg-secondary:  #111620;
+  --bg-card:       #161c28;
+  --bg-card-hover: #1d2535;
+  --border:        #2a3348;
+  --border-light:  #374560;
+
+  /* Accent palette */
+  --iran-red:      #cc2936;
+  --iran-orange:   #e8661a;
+  --iran-amber:    #f0a500;
+  --israel-blue:   #4a90d9;
+  --israel-light:  #7ab8f5;
+  --us-green:      #2da44e;
+  --us-teal:       #1abc9c;
+  --neutral-gray:  #8899aa;
+  --text-primary:  #e8edf5;
+  --text-secondary:#9aaabb;
+  --text-muted:    #5a6a7e;
+
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  --font-sans: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --transition: 0.2s ease;
+}
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: var(--israel-light); text-decoration: none; }
+a:hover { color: #fff; text-decoration: underline; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Navigation ---- */
+.site-nav {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.nav-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 56px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 32px;
+}
+.nav-brand:hover { text-decoration: none; color: #fff; }
+
+.nav-brand .brand-icon {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--iran-red), var(--iran-orange));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  flex: 1;
+}
+
+.nav-links a {
+  display: block;
+  padding: 8px 14px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  text-decoration: none;
+}
+.nav-links a:hover { color: var(--text-primary); background: var(--bg-card); }
+.nav-links a.active { color: var(--israel-light); background: rgba(74, 144, 217, 0.1); }
+
+.nav-badge {
+  margin-left: auto;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--us-teal);
+  background: rgba(26, 188, 156, 0.1);
+  border: 1px solid rgba(26, 188, 156, 0.25);
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+/* ---- Main Layout ---- */
+main {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Full-width override for map page */
+main.full-width {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* ---- Hero / Page Header ---- */
+.page-header {
+  margin-bottom: 40px;
+}
+
+.page-header .label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--iran-orange);
+  margin-bottom: 10px;
+}
+
+.page-header h1 {
+  font-size: clamp(24px, 4vw, 40px);
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.page-header p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 700px;
+}
+
+/* ---- Stat Cards ---- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.stat-card:hover { border-color: var(--border-light); transform: translateY(-1px); }
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--accent-color, var(--iran-orange));
+}
+
+.stat-card .stat-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.stat-card .stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--accent-color, var(--iran-orange));
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-card .stat-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ---- Section / Card ---- */
+.section { margin-bottom: 48px; }
+.section-title {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-title .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--iran-orange);
+  display: inline-block;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+/* ---- Operation Summary Cards ---- */
+.ops-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.op-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: border-color var(--transition);
+}
+.op-card:hover { border-color: var(--border-light); }
+
+.op-card .op-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.op-card .op-badge {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 8px;
+  border-radius: 20px;
+  border: 1px solid;
+}
+.op-badge.tp3 { color: var(--iran-orange); border-color: var(--iran-orange); background: rgba(232,102,26,0.08); }
+.op-badge.tp4 { color: var(--iran-red); border-color: var(--iran-red); background: rgba(204,41,54,0.08); }
+
+.op-card h3 { font-size: 17px; color: #fff; margin-bottom: 4px; }
+.op-card .op-dates { font-size: 12px; color: var(--text-muted); font-family: var(--font-mono); }
+
+.op-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.op-stat-item .val { font-size: 22px; font-weight: 700; font-family: var(--font-mono); }
+.op-stat-item .lbl { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+.tp3-color { color: var(--iran-orange); }
+.tp4-color { color: var(--iran-red); }
+
+.op-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+/* ---- Impact Highlights List ---- */
+.impact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.impact-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--iran-red);
+}
+.impact-list li::before { content: '//'; color: var(--iran-red); font-family: var(--font-mono); font-size: 11px; flex-shrink: 0; margin-top: 1px; }
+
+/* ---- Map Page ---- */
+#map-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 56px);
+}
+
+#map-toolbar {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#map-toolbar .toolbar-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 4px;
+}
+
+.layer-btn {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.layer-btn:hover { border-color: var(--border-light); color: var(--text-primary); }
+.layer-btn.active { color: #fff; }
+.layer-btn.active.launch { border-color: var(--iran-red); background: rgba(204,41,54,0.15); color: var(--iran-red); }
+.layer-btn.active.il-targets { border-color: var(--israel-blue); background: rgba(74,144,217,0.12); color: var(--israel-light); }
+.layer-btn.active.us-bases { border-color: var(--us-green); background: rgba(45,164,78,0.12); color: var(--us-teal); }
+
+.layer-btn .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  display: inline-block; flex-shrink: 0;
+}
+.dot-red { background: var(--iran-red); }
+.dot-blue { background: var(--israel-blue); }
+.dot-green { background: var(--us-green); }
+.dot-orange { background: var(--iran-orange); }
+
+#map { flex: 1; }
+
+/* Leaflet popup overrides */
+.leaflet-popup-content-wrapper {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  color: var(--text-primary) !important;
+}
+.leaflet-popup-tip { background: var(--bg-card) !important; }
+.leaflet-popup-content { margin: 14px 16px !important; }
+
+.popup-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+.popup-type { font-size: 10px; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px; }
+.popup-type.launch { color: var(--iran-red); }
+.popup-type.il-target { color: var(--israel-light); }
+.popup-type.us-base { color: var(--us-teal); }
+.popup-row { font-size: 12px; color: var(--text-secondary); margin-bottom: 3px; }
+.popup-row span { color: var(--text-muted); }
+
+/* ---- Timeline ---- */
+.timeline-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.filter-btn {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.filter-btn:hover { border-color: var(--border-light); color: var(--text-primary); }
+.filter-btn.active { background: var(--iran-orange); border-color: var(--iran-orange); color: #fff; }
+.filter-btn.active.tp3 { background: var(--iran-orange); border-color: var(--iran-orange); }
+.filter-btn.active.tp4 { background: var(--iran-red); border-color: var(--iran-red); }
+
+.timeline-container { display: flex; flex-direction: column; gap: 8px; }
+
+.wave-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: 80px 60px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.wave-card:hover { border-color: var(--border-light); background: var(--bg-card-hover); transform: translateX(2px); }
+.wave-card.tp3 { border-left: 3px solid var(--iran-orange); }
+.wave-card.tp4 { border-left: 3px solid var(--iran-red); }
+
+.wave-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.wave-num .num {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+
+.wave-op-badge {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 7px;
+  border-radius: var(--radius-sm);
+}
+.wave-op-badge.tp3 { background: rgba(232,102,26,0.15); color: var(--iran-orange); }
+.wave-op-badge.tp4 { background: rgba(204,41,54,0.15); color: var(--iran-red); }
+
+.wave-info h4 { font-size: 14px; color: var(--text-primary); margin-bottom: 3px; }
+.wave-info .wave-meta { font-size: 12px; color: var(--text-muted); font-family: var(--font-mono); }
+.wave-info .wave-targets { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+
+.wave-munitions {
+  text-align: right;
+  min-width: 80px;
+}
+.wave-munitions .count {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--iran-amber);
+}
+.wave-munitions .count-label { font-size: 10px; color: var(--text-muted); }
+
+.weapon-pills {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.pill {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 2px 7px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.pill.bm { border-color: rgba(204,41,54,0.4); color: var(--iran-red); background: rgba(204,41,54,0.08); }
+.pill.drone { border-color: rgba(240,165,0,0.4); color: var(--iran-amber); background: rgba(240,165,0,0.08); }
+.pill.cm { border-color: rgba(74,144,217,0.4); color: var(--israel-light); background: rgba(74,144,217,0.08); }
+
+/* ---- Data Table Page ---- */
+.table-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 200px;
+  max-width: 360px;
+  padding: 9px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: var(--font-sans);
+  outline: none;
+  transition: border-color var(--transition);
+}
+.search-box:focus { border-color: var(--border-light); }
+.search-box::placeholder { color: var(--text-muted); }
+
+.select-filter {
+  padding: 9px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: var(--font-sans);
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.select-filter:focus { border-color: var(--border-light); }
+.select-filter option { background: var(--bg-card); }
+
+.table-wrap {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead { background: var(--bg-secondary); }
+thead th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: color var(--transition);
+}
+thead th:hover { color: var(--text-primary); }
+thead th.sort-asc::after { content: ' ↑'; color: var(--iran-orange); }
+thead th.sort-desc::after { content: ' ↓'; color: var(--iran-orange); }
+
+tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: var(--bg-card-hover); }
+
+tbody td { padding: 11px 14px; vertical-align: top; }
+
+.td-wave { font-family: var(--font-mono); font-size: 13px; font-weight: 600; color: var(--text-secondary); }
+.td-op .badge-tp3 { color: var(--iran-orange); font-family: var(--font-mono); font-size: 11px; font-weight: 700; }
+.td-op .badge-tp4 { color: var(--iran-red); font-family: var(--font-mono); font-size: 11px; font-weight: 700; }
+.td-time { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); white-space: nowrap; }
+.td-munitions { font-family: var(--font-mono); font-size: 15px; font-weight: 700; color: var(--iran-amber); }
+.td-targets { font-size: 12px; color: var(--text-secondary); max-width: 260px; }
+.td-intercept { font-family: var(--font-mono); font-size: 12px; }
+.intercept-yes { color: var(--us-teal); }
+.intercept-no { color: var(--neutral-gray); }
+
+/* ---- About Page ---- */
+.about-content {
+  max-width: 760px;
+}
+.about-content h2 { font-size: 22px; color: #fff; margin: 32px 0 14px; }
+.about-content h2:first-child { margin-top: 0; }
+.about-content h3 { font-size: 16px; color: var(--text-primary); margin: 20px 0 10px; }
+.about-content p { color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 12px; }
+.about-content ul { color: var(--text-secondary); font-size: 14px; padding-left: 20px; margin-bottom: 12px; }
+.about-content li { margin-bottom: 6px; line-height: 1.6; }
+
+.schema-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 16px 0;
+}
+.schema-table th {
+  text-align: left;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.schema-table td {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+.schema-table code {
+  background: var(--bg-secondary);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--israel-light);
+}
+
+/* ---- Code & Mono blocks ---- */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--bg-secondary);
+  padding: 1px 5px;
+  border-radius: var(--radius-sm);
+  color: var(--israel-light);
+}
+
+.callout {
+  background: rgba(232,102,26,0.08);
+  border: 1px solid rgba(232,102,26,0.25);
+  border-left: 3px solid var(--iran-orange);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 16px 0;
+}
+.callout strong { color: var(--iran-orange); }
+
+/* ---- Footer ---- */
+.site-footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.site-footer a { color: var(--text-secondary); }
+.site-footer a:hover { color: #fff; }
+
+/* ---- Loading Spinner ---- */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 60px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+.spinner {
+  width: 20px; height: 20px;
+  border: 2px solid var(--border);
+  border-top-color: var(--iran-orange);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---- Utility ---- */
+.text-muted { color: var(--text-muted); }
+.text-orange { color: var(--iran-orange); }
+.text-red { color: var(--iran-red); }
+.text-blue { color: var(--israel-light); }
+.text-green { color: var(--us-teal); }
+.mono { font-family: var(--font-mono); }
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mb-8 { margin-bottom: 8px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-24 { margin-bottom: 24px; }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .nav-inner { padding: 0 16px; }
+  .nav-badge { display: none; }
+  main { padding: 20px 16px; }
+  .ops-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .wave-card { grid-template-columns: 60px 1fr auto; }
+  .wave-op-badge { display: none; }
+  .table-controls { gap: 8px; }
+  .search-box { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .wave-card { grid-template-columns: 1fr; gap: 8px; }
+}

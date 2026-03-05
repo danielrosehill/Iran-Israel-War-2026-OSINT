@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iran-Israel War 2026 Data — OSINT Dataset</title>
+  <meta name="description" content="Open-source OSINT dataset tracking Iranian missile and drone attack waves against Israel and US/coalition targets across Operations True Promise 3 and 4.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+    .hero-kicker {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--iran-red);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-kicker::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background: var(--iran-red);
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      color: #fff;
+      margin-bottom: 16px;
+      max-width: 700px;
+    }
+    .hero h1 em { color: var(--iran-orange); font-style: normal; }
+    .hero p {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 620px;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition);
+      text-decoration: none;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--iran-orange);
+      color: #fff;
+    }
+    .btn-primary:hover { background: #f07820; color: #fff; text-decoration: none; }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .btn-outline:hover { border-color: var(--border-light); color: var(--text-primary); text-decoration: none; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 48px; }
+    @media (max-width: 900px) { .two-col { grid-template-columns: 1fr; } }
+
+    .status-dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--us-teal);
+      box-shadow: 0 0 0 3px rgba(26,188,156,0.2);
+      animation: pulse 2s ease-in-out infinite;
+      margin-right: 6px;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 3px rgba(26,188,156,0.2); }
+      50% { box-shadow: 0 0 0 6px rgba(26,188,156,0.05); }
+    }
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 48px;
+    }
+    .quick-link-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-decoration: none;
+      transition: all var(--transition);
+      display: block;
+    }
+    .quick-link-card:hover {
+      border-color: var(--border-light);
+      background: var(--bg-card-hover);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+    .quick-link-card .ql-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .quick-link-card .ql-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .quick-link-card .ql-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .data-quality-tag {
+      font-size: 10px;
+      font-family: var(--font-mono);
+      padding: 2px 7px;
+      border-radius: 3px;
+      background: rgba(240,165,0,0.12);
+      color: var(--iran-amber);
+      border: 1px solid rgba(240,165,0,0.3);
+      margin-left: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon" aria-hidden="true">&#x2604;</span>
+      Iran-Israel War 2026 Data
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="nav-badge"><span class="status-dot"></span> LIVE DATASET</span>
+  </div>
+</nav>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-kicker">OSINT Dataset</div>
+    <h1>Iran-Israel War <em>2026</em> Data</h1>
+    <p>
+      Structured OSINT data tracking Iranian missile and drone attack waves against
+      Israel and US/coalition targets across two operations — True Promise 3 (June 2025)
+      and True Promise 4 (February 2026 — ongoing).
+    </p>
+    <div class="hero-actions">
+      <a href="map.html" class="btn btn-primary">View Interactive Map</a>
+      <a href="timeline.html" class="btn btn-outline">Wave Timeline</a>
+      <a href="https://github.com/danielrosehill/Iran-Israel-War-2026-Data" class="btn btn-outline" target="_blank" rel="noopener">
+        GitHub Repo
+      </a>
+    </div>
+  </section>
+
+  <!-- Quick stats (loaded dynamically) -->
+  <div class="stats-grid" id="stats-grid">
+    <div class="stat-card" style="--accent-color: var(--iran-orange);">
+      <div class="stat-label">Total Waves</div>
+      <div class="stat-value" id="stat-waves">—</div>
+      <div class="stat-sub">Across both operations</div>
+    </div>
+    <div class="stat-card" style="--accent-color: var(--iran-red);">
+      <div class="stat-label">TP3 Munitions Est.</div>
+      <div class="stat-value">1,700+</div>
+      <div class="stat-sub">Jun 2025 (12-Day War)</div>
+    </div>
+    <div class="stat-card" style="--accent-color: var(--israel-blue);">
+      <div class="stat-label">TP3 Interception Rate</div>
+      <div class="stat-value">86%</div>
+      <div class="stat-sub">Israeli/coalition claimed</div>
+    </div>
+    <div class="stat-card" style="--accent-color: var(--us-teal);">
+      <div class="stat-label">Countries Targeted</div>
+      <div class="stat-value">12</div>
+      <div class="stat-sub">In TP4 alone</div>
+    </div>
+    <div class="stat-card" style="--accent-color: var(--iran-amber);">
+      <div class="stat-label">TP3 Casualties</div>
+      <div class="stat-value">33</div>
+      <div class="stat-sub">Killed in Israel; 3,238 wounded</div>
+    </div>
+    <div class="stat-card" style="--accent-color: var(--us-green);">
+      <div class="stat-label">Data Version</div>
+      <div class="stat-value mono" style="font-size:20px;">v2.1</div>
+      <div class="stat-sub">Schema v1.1 / v2.1</div>
+    </div>
+  </div>
+
+  <!-- Quick nav cards -->
+  <section class="section">
+    <div class="section-title"><span class="dot"></span> Explore the Data</div>
+    <div class="quick-links">
+      <a href="map.html" class="quick-link-card">
+        <span class="ql-icon" aria-hidden="true">&#x1F5FA;</span>
+        <div class="ql-title">Interactive Map</div>
+        <div class="ql-desc">Launch sites, Israeli targets, and US/coalition bases plotted on a Leaflet map with layer controls.</div>
+      </a>
+      <a href="timeline.html" class="quick-link-card">
+        <span class="ql-icon" aria-hidden="true">&#x23F1;</span>
+        <div class="ql-title">Wave Timeline</div>
+        <div class="ql-desc">Browse all 41 waves chronologically. Filter by operation, weapon type, or target type.</div>
+      </a>
+      <a href="data.html" class="quick-link-card">
+        <span class="ql-icon" aria-hidden="true">&#x1F4CA;</span>
+        <div class="ql-title">Data Table</div>
+        <div class="ql-desc">Searchable, sortable table of all wave records with key fields. Export-friendly layout.</div>
+      </a>
+      <a href="about.html" class="quick-link-card">
+        <span class="ql-icon" aria-hidden="true">&#x1F4D6;</span>
+        <div class="ql-title">About &amp; Schema</div>
+        <div class="ql-desc">Data dictionary, methodology notes, source list, and JSON schema documentation.</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Operation summaries -->
+  <section class="section">
+    <div class="section-title"><span class="dot"></span> Operations</div>
+    <div class="ops-grid">
+
+      <!-- TP3 -->
+      <div class="op-card">
+        <div class="op-header">
+          <div>
+            <h3>Operation True Promise 3</h3>
+            <div class="op-dates mono">Jun 13 – Jun 24, 2025</div>
+          </div>
+          <span class="op-badge tp3">TP3</span>
+        </div>
+        <div class="op-stats">
+          <div class="op-stat-item">
+            <div class="val tp3-color">22</div>
+            <div class="lbl">Waves</div>
+          </div>
+          <div class="op-stat-item">
+            <div class="val tp3-color">1,700+</div>
+            <div class="lbl">Munitions</div>
+          </div>
+          <div class="op-stat-item">
+            <div class="val tp3-color">86%</div>
+            <div class="lbl">Intercept Rate</div>
+          </div>
+        </div>
+        <p>
+          Iran's response to Israeli Operation Rising Lion strikes on Iranian nuclear facilities.
+          Also known as the "Twelve-Day War." Waves targeted Israeli military bases, critical
+          infrastructure (Haifa refinery, power stations), and IDF command centers.
+          Houthi forces coordinated with proxy attacks.
+        </p>
+        <ul class="impact-list mt-16">
+          <li>Bat Yam residential strike: 9 killed, 200+ injured</li>
+          <li>Bazan Oil Refinery Haifa: 3 killed, refinery shut down</li>
+          <li>Weizmann Institute Rehovot: $500M–$1B estimated damage</li>
+          <li>Glilot intelligence base: direct missile hit (satellite confirmed)</li>
+        </ul>
+      </div>
+
+      <!-- TP4 -->
+      <div class="op-card">
+        <div class="op-header">
+          <div>
+            <h3>Operation True Promise 4</h3>
+            <div class="op-dates mono">Feb 28, 2026 — Ongoing</div>
+          </div>
+          <span class="op-badge tp4">TP4</span>
+        </div>
+        <div class="op-stats">
+          <div class="op-stat-item">
+            <div class="val tp4-color">19</div>
+            <div class="lbl">Waves</div>
+          </div>
+          <div class="op-stat-item">
+            <div class="val tp4-color">12</div>
+            <div class="lbl">Countries Hit</div>
+          </div>
+          <div class="op-stat-item">
+            <div class="val tp4-color">Multi</div>
+            <div class="lbl">Coalition Defense</div>
+          </div>
+        </div>
+        <p>
+          Dramatically expanded scope vs. TP3 — targeting US military facilities across
+          the Persian Gulf (Bahrain, Qatar, Kuwait, UAE, Oman), coalition naval vessels,
+          and Israeli targets simultaneously. Launched in response to US-Israeli
+          Operation Epic Fury / Roaring Lion strikes on Iran.
+        </p>
+        <ul class="impact-list mt-16">
+          <li>USN Fifth Fleet HQ Bahrain targeted in Wave 1</li>
+          <li>Port Jebel Ali, UAE and Duqm port, Oman struck by drones</li>
+          <li>Tel Aviv impacts: 1 fatality, 21 injuries in Wave 1</li>
+          <li>Multi-layered coalition response: US, UK, France, Jordan, UAE</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Key TP3 impacts -->
+  <section class="section">
+    <div class="section-title"><span class="dot"></span> Notable TP3 Impacts (Twelve-Day War)</div>
+    <div class="card">
+      <ul class="impact-list" id="tp3-impacts">
+        <li>Tamra residential building: 4 Arab Israelis killed</li>
+        <li>Petah Tikva 20-story building: 4 killed (including Holocaust survivor)</li>
+        <li>Bnei Brak: 1 killed</li>
+        <li>Rishon LeZion: 2 killed, 17 injured</li>
+        <li>Ramat Gan residential: 1 killed, 9 buildings destroyed</li>
+        <li>Beersheba final wave (Jun 24): 4 killed, 20 injured</li>
+        <li>Haifa Power Plant: 2 missiles, damage and fire</li>
+        <li>Soroka Medical Center Beersheba: struck, 80 injured</li>
+        <li>Kirya IDF HQ Tel Aviv: ballistic missile damage confirmed</li>
+        <li>Tel Nof airbase: missile hit confirmed by satellite</li>
+        <li>Eshkol Power Station Ashdod: struck, power outages</li>
+        <li>US Embassy Branch Office Tel Aviv: shockwave damage</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Data note -->
+  <section class="section">
+    <div class="callout">
+      <strong>Data Quality Notice:</strong> TP3 wave-level munitions counts are incomplete for most waves;
+      timing is approximate and cross-referenced against Wikipedia and open-source reporting.
+      TP4 data is actively updated. Coordinates are approximate centroids — not exact launch points.
+      All data is sourced from open-source / OSINT reporting only.
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>
+    Iran-Israel War 2026 Data &mdash; Open OSINT dataset &mdash;
+    <a href="https://github.com/danielrosehill/Iran-Israel-War-2026-Data" target="_blank" rel="noopener">GitHub Repository</a>
+    &mdash; Data current as of March 2026
+  </p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  // Update total wave count dynamically
+  (async () => {
+    try {
+      const { allWaves } = await loadAllWaves();
+      document.getElementById('stat-waves').textContent = allWaves.length;
+    } catch (e) {
+      document.getElementById('stat-waves').textContent = '41';
+    }
+  })();
+</script>
+
+</body>
+</html>

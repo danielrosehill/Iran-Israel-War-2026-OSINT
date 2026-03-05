@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Table — Iran-Israel War 2026 Data</title>
+  <meta name="description" content="Searchable, sortable table of all documented attack waves across True Promise 3 and True Promise 4.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .export-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .export-bar span {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+    }
+    .export-btn {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all var(--transition);
+      text-decoration: none;
+    }
+    .export-btn:hover { border-color: var(--border-light); color: var(--text-primary); }
+
+    .table-summary {
+      font-size: 12px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .td-impact { font-size: 12px; color: var(--text-secondary); max-width: 220px; }
+    .td-launch { font-size: 12px; color: var(--text-muted); max-width: 180px; }
+    .td-intercept-systems { font-size: 11px; color: var(--text-muted); max-width: 150px; }
+
+    .no-results {
+      padding: 40px;
+      text-align: center;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+
+    .col-header { display: flex; align-items: center; gap: 4px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon" aria-hidden="true">&#x2604;</span>
+      Iran-Israel War 2026 Data
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="label">Wave Records</div>
+    <h1>Data Table</h1>
+    <p>All documented attack waves. Click column headers to sort. Use the search box to filter rows.</p>
+  </div>
+
+  <!-- Controls -->
+  <div class="table-controls" role="toolbar" aria-label="Table controls">
+    <input type="search" class="search-box" id="search-box"
+           placeholder="Search targets, weapons, impact..."
+           aria-label="Search wave records" oninput="applyFilters()">
+    <select class="select-filter" id="op-filter" onchange="applyFilters()" aria-label="Filter by operation">
+      <option value="">All Operations</option>
+      <option value="TP3">True Promise 3 (TP3)</option>
+      <option value="TP4">True Promise 4 (TP4)</option>
+    </select>
+    <select class="select-filter" id="weapon-filter" onchange="applyFilters()" aria-label="Filter by weapon type">
+      <option value="">All Weapons</option>
+      <option value="bm">Ballistic Missiles</option>
+      <option value="drone">Drones</option>
+      <option value="cm">Cruise Missiles</option>
+    </select>
+    <select class="select-filter" id="target-filter" onchange="applyFilters()" aria-label="Filter by target type">
+      <option value="">All Targets</option>
+      <option value="il">Israel Targeted</option>
+      <option value="us">US Bases Targeted</option>
+    </select>
+  </div>
+
+  <!-- Export bar -->
+  <div class="export-bar">
+    <span>Export:</span>
+    <a href="data/tp3-waves.json" download class="export-btn">TP3 JSON</a>
+    <a href="data/tp4-waves.json" download class="export-btn">TP4 JSON</a>
+    <button class="export-btn" onclick="exportCSV()">CSV (filtered)</button>
+  </div>
+
+  <div class="table-summary" id="table-summary" role="status" aria-live="polite">Loading&hellip;</div>
+
+  <!-- Table -->
+  <div class="table-wrap" role="region" aria-label="Wave data table" aria-live="polite">
+    <table id="wave-table" aria-label="Attack wave records">
+      <thead>
+        <tr>
+          <th onclick="sortBy('wave_number')" aria-sort="none" tabindex="0" role="columnheader">
+            <div class="col-header">Wave</div>
+          </th>
+          <th onclick="sortBy('_operation')" aria-sort="none" tabindex="0" role="columnheader">
+            <div class="col-header">Op</div>
+          </th>
+          <th onclick="sortBy('conflict_day')" aria-sort="none" tabindex="0" role="columnheader">
+            <div class="col-header">Day</div>
+          </th>
+          <th onclick="sortBy('launch_time')" aria-sort="none" tabindex="0" role="columnheader">
+            <div class="col-header">Launch Time (UTC)</div>
+          </th>
+          <th onclick="sortBy('munitions')" aria-sort="none" tabindex="0" role="columnheader">
+            <div class="col-header">Munitions</div>
+          </th>
+          <th role="columnheader">Weapons</th>
+          <th role="columnheader">Targets</th>
+          <th role="columnheader">Launch Site</th>
+          <th onclick="sortBy('intercepted')" aria-sort="none" tabindex="0" role="columnheader">
+            <div class="col-header">Intercepted</div>
+          </th>
+          <th role="columnheader">Intercept Systems</th>
+          <th role="columnheader">Impact</th>
+        </tr>
+      </thead>
+      <tbody id="wave-table-body">
+        <tr><td colspan="11" class="no-results">
+          <div class="loading"><div class="spinner"></div> Loading&hellip;</div>
+        </td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>
+    Iran-Israel War 2026 Data &mdash; Open OSINT dataset &mdash;
+    <a href="https://github.com/danielrosehill/Iran-Israel-War-2026-Data" target="_blank" rel="noopener">GitHub Repository</a>
+  </p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  let allWavesRaw = [];
+  let sortKey = 'launch_time';
+  let sortDir = 1; // 1 = asc, -1 = desc
+
+  async function init() {
+    const { allWaves } = await loadAllWaves();
+    allWavesRaw = allWaves;
+    applyFilters();
+  }
+
+  function getRowValue(wave, key) {
+    switch (key) {
+      case 'wave_number': return wave.wave_number ?? 0;
+      case '_operation': return wave._operation ?? '';
+      case 'conflict_day': return wave.timing?.conflict_day ?? 999;
+      case 'launch_time': return wave.timing?.probable_launch_time ?? '';
+      case 'munitions': return getMunitionsCount(wave) ?? -1;
+      case 'intercepted': return wave.interception?.intercepted ? 1 : 0;
+      default: return '';
+    }
+  }
+
+  function sortBy(key) {
+    // Update sort dir
+    if (sortKey === key) {
+      sortDir *= -1;
+    } else {
+      sortKey = key;
+      sortDir = 1;
+    }
+    // Update header aria-sort
+    document.querySelectorAll('thead th').forEach(th => th.removeAttribute('aria-sort'));
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const search = document.getElementById('search-box').value.toLowerCase();
+    const opF = document.getElementById('op-filter').value;
+    const weaponF = document.getElementById('weapon-filter').value;
+    const targetF = document.getElementById('target-filter').value;
+
+    let filtered = allWavesRaw.filter(w => {
+      if (opF && w._operation !== opF) return false;
+      if (weaponF === 'bm' && !w.weapons?.ballistic_missiles_used) return false;
+      if (weaponF === 'drone' && !w.weapons?.drones_used) return false;
+      if (weaponF === 'cm' && !w.weapons?.cruise_missiles_used) return false;
+      if (targetF === 'il' && !w.targets?.israel_targeted) return false;
+      if (targetF === 'us' && !w.targets?.us_bases_targeted) return false;
+      if (search) {
+        const searchable = [
+          getTargetSummary(w),
+          getWeaponSummary(w),
+          w.impact?.damage || '',
+          w.launch_site?.description || '',
+          w.weapons?.payload || '',
+        ].join(' ').toLowerCase();
+        if (!searchable.includes(search)) return false;
+      }
+      return true;
+    });
+
+    // Sort
+    filtered.sort((a, b) => {
+      const av = getRowValue(a, sortKey);
+      const bv = getRowValue(b, sortKey);
+      if (av < bv) return -sortDir;
+      if (av > bv) return sortDir;
+      return 0;
+    });
+
+    renderTable(filtered);
+  }
+
+  function renderTable(waves) {
+    const tbody = document.getElementById('wave-table-body');
+    const summary = document.getElementById('table-summary');
+
+    summary.textContent = `Showing ${waves.length} of ${allWavesRaw.length} waves`;
+
+    if (waves.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="11" class="no-results">No waves match the current filters.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = waves.map(wave => {
+      const op = wave._operation;
+      const munitions = getMunitionsCount(wave);
+      const weapons = getWeaponSummary(wave);
+      const targets = getTargetSummary(wave);
+      const launchSite = wave.launch_site?.description || '—';
+      const intercepted = wave.interception?.intercepted;
+      const interceptRate = wave.interception?.estimated_intercept_rate;
+      const interceptSystems = (wave.interception?.interception_systems || []).slice(0, 3).join(', ') || '—';
+      const damage = wave.impact?.damage || '—';
+      const time = formatDate(wave.timing?.probable_launch_time);
+      const day = wave.timing?.conflict_day ?? '—';
+
+      const pills = getWeaponPills(wave).map(p =>
+        `<span class="pill ${p.cls}">${p.label}</span>`
+      ).join(' ');
+
+      const interceptCell = intercepted
+        ? `<span class="intercept-yes">${interceptRate != null ? (interceptRate*100).toFixed(0)+'%' : 'Yes'}</span>`
+        : intercepted === false
+          ? '<span class="intercept-no">No</span>'
+          : '<span class="intercept-no">—</span>';
+
+      return `<tr>
+        <td class="td-wave">${wave.wave_number}</td>
+        <td class="td-op"><span class="badge-${op.toLowerCase()}">${op}</span></td>
+        <td class="td-wave" style="font-size:13px;">${day}</td>
+        <td class="td-time">${time}</td>
+        <td class="td-munitions">${munitions !== null ? munitions : '—'}</td>
+        <td><div class="weapon-pills">${pills}</div></td>
+        <td class="td-targets">${targets}</td>
+        <td class="td-launch">${launchSite}</td>
+        <td class="td-intercept">${interceptCell}</td>
+        <td class="td-intercept-systems">${interceptSystems}</td>
+        <td class="td-impact">${damage.slice(0, 100)}${damage.length > 100 ? '…' : ''}</td>
+      </tr>`;
+    }).join('');
+  }
+
+  function exportCSV() {
+    const search = document.getElementById('search-box').value.toLowerCase();
+    const opF = document.getElementById('op-filter').value;
+    const weaponF = document.getElementById('weapon-filter').value;
+    const targetF = document.getElementById('target-filter').value;
+
+    let filtered = allWavesRaw.filter(w => {
+      if (opF && w._operation !== opF) return false;
+      if (weaponF === 'bm' && !w.weapons?.ballistic_missiles_used) return false;
+      if (weaponF === 'drone' && !w.weapons?.drones_used) return false;
+      if (weaponF === 'cm' && !w.weapons?.cruise_missiles_used) return false;
+      if (targetF === 'il' && !w.targets?.israel_targeted) return false;
+      if (targetF === 'us' && !w.targets?.us_bases_targeted) return false;
+      if (search) {
+        const searchable = [getTargetSummary(w), getWeaponSummary(w), w.impact?.damage || ''].join(' ').toLowerCase();
+        if (!searchable.includes(search)) return false;
+      }
+      return true;
+    });
+
+    const headers = ['operation','wave_number','conflict_day','launch_time_utc','munitions_est',
+                     'weapons','targets','launch_site','intercepted','intercept_rate','impact'];
+    const rows = filtered.map(w => [
+      w._operation,
+      w.wave_number,
+      w.timing?.conflict_day ?? '',
+      w.timing?.probable_launch_time ?? '',
+      getMunitionsCount(w) ?? '',
+      getWeaponSummary(w),
+      getTargetSummary(w),
+      w.launch_site?.description ?? '',
+      w.interception?.intercepted ?? '',
+      w.interception?.estimated_intercept_rate ?? '',
+      (w.impact?.damage ?? '').replace(/"/g, '""'),
+    ].map(v => `"${v}"`).join(','));
+
+    const csv = [headers.join(','), ...rows].join('\n');
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'iran-israel-war-waves.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  init().catch(err => {
+    document.getElementById('wave-table-body').innerHTML =
+      `<tr><td colspan="11" class="no-results" style="color:var(--iran-red);">Error: ${err.message}</td></tr>`;
+  });
+</script>
+
+</body>
+</html>

@@ -61,7 +61,8 @@
         "impact": { "$ref": "#/$defs/impact" },
         "escalation": { "$ref": "#/$defs/escalation" },
         "proxy": { "$ref": "#/$defs/proxy" },
-        "sources": { "$ref": "#/$defs/sources" }
+        "sources": { "$ref": "#/$defs/sources" },
+        "reactions": { "$ref": "#/$defs/reactions" }
       }
     },
     "timing": {
@@ -245,6 +246,22 @@
           "type": "array",
           "items": { "type": "string" }
         }
+      }
+    },
+    "reactions": {
+      "type": "object",
+      "description": "Official reactions/statements from IDF, US government, and CENTCOM",
+      "properties": {
+        "idf": { "$ref": "#/$defs/reaction_entry" },
+        "us_government": { "$ref": "#/$defs/reaction_entry" },
+        "centcom": { "$ref": "#/$defs/reaction_entry" }
+      }
+    },
+    "reaction_entry": {
+      "type": "object",
+      "properties": {
+        "statement": { "type": ["string", "null"], "description": "Summary of official statement" },
+        "url": { "type": ["string", "null"], "format": "uri", "description": "Link to statement or source" }
       }
     }
   }

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Timeline — Iran-Israel War 2026 Data</title>
+  <meta name="description" content="Chronological timeline of all Iranian missile/drone attack waves across TP3 and TP4 operations.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .timeline-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .wave-count-badge {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+    }
+
+    /* Expanded wave detail */
+    .wave-expanded {
+      display: none;
+      grid-column: 1 / -1;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      padding: 16px 20px;
+      margin-top: 0;
+    }
+    .wave-card.is-open .wave-expanded { display: block; }
+    .wave-card.is-open { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+    .expanded-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .expanded-col h5 {
+      font-size: 10px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .expanded-col p, .expanded-col li {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+      line-height: 1.5;
+    }
+    .expanded-col ul { list-style: none; padding: 0; }
+    .expanded-col li::before { content: '→ '; color: var(--text-muted); }
+    .expand-arrow { transition: transform 0.2s; margin-left: 4px; display: inline-block; }
+    .wave-card.is-open .expand-arrow { transform: rotate(180deg); }
+
+    /* Day separator */
+    .day-separator {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      padding: 14px 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .day-separator::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Weapon type filter group */
+    .filter-group { display: flex; align-items: center; gap: 8px; }
+    .filter-group-label {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    /* Stats mini bar */
+    .timeline-stats {
+      display: flex;
+      gap: 24px;
+      padding: 12px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .tstat { font-size: 12px; }
+    .tstat .tv { font-family: var(--font-mono); font-size: 18px; font-weight: 700; color: var(--iran-orange); }
+    .tstat .tl { color: var(--text-muted); font-size: 11px; }
+    .tstat.tp4 .tv { color: var(--iran-red); }
+    .tstat.blue .tv { color: var(--israel-light); }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon" aria-hidden="true">&#x2604;</span>
+      Iran-Israel War 2026 Data
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="label">Chronological Timeline</div>
+    <h1>Attack Wave Timeline</h1>
+    <p>All documented waves across Operations True Promise 3 (Jun 2025) and True Promise 4 (Feb–Mar 2026). Click any wave for details.</p>
+  </div>
+
+  <!-- Controls -->
+  <div class="timeline-controls" role="toolbar" aria-label="Filter controls">
+    <div class="filter-group">
+      <span class="filter-group-label">Operation:</span>
+      <button class="filter-btn active" id="filter-all" onclick="setOpFilter('all')">All</button>
+      <button class="filter-btn tp3" id="filter-tp3" onclick="setOpFilter('TP3')">TP3</button>
+      <button class="filter-btn tp4" id="filter-tp4" onclick="setOpFilter('TP4')">TP4</button>
+    </div>
+
+    <div class="filter-group" style="margin-left: auto;">
+      <span class="filter-group-label">Weapons:</span>
+      <button class="filter-btn" id="filter-bm" onclick="toggleWeaponFilter('bm')" aria-pressed="false">Ballistic</button>
+      <button class="filter-btn" id="filter-drone" onclick="toggleWeaponFilter('drone')" aria-pressed="false">Drone</button>
+      <button class="filter-btn" id="filter-cm" onclick="toggleWeaponFilter('cm')" aria-pressed="false">Cruise</button>
+    </div>
+
+    <div class="filter-group">
+      <span class="filter-group-label">Target:</span>
+      <button class="filter-btn" id="filter-il" onclick="toggleTargetFilter('il')" aria-pressed="false">Israel</button>
+      <button class="filter-btn" id="filter-us" onclick="toggleTargetFilter('us')" aria-pressed="false">US Bases</button>
+    </div>
+  </div>
+
+  <!-- Summary stats -->
+  <div class="timeline-stats" id="timeline-stats" role="status" aria-live="polite">
+    <div class="loading"><div class="spinner"></div> Loading&hellip;</div>
+  </div>
+
+  <!-- Wave list -->
+  <div class="timeline-header-bar">
+    <div class="section-title" style="margin:0; border:none; padding:0;">
+      <span class="dot"></span> Waves
+    </div>
+    <span class="wave-count-badge" id="wave-count-badge">Loading&hellip;</span>
+  </div>
+
+  <div class="timeline-container" id="timeline-container" role="list" aria-label="Attack wave timeline">
+    <div class="loading"><div class="spinner"></div> Loading wave data&hellip;</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>
+    Iran-Israel War 2026 Data &mdash; Open OSINT dataset &mdash;
+    <a href="https://github.com/danielrosehill/Iran-Israel-War-2026-Data" target="_blank" rel="noopener">GitHub Repository</a>
+  </p>
+</footer>
+
+<script src="js/data.js"></script>
+<script>
+  let allWavesData = [];
+  let currentOpFilter = 'all';
+  const weaponFilters = { bm: false, drone: false, cm: false };
+  const targetFilters = { il: false, us: false };
+
+  async function init() {
+    const { allWaves, tp3, tp4 } = await loadAllWaves();
+    allWavesData = allWaves;
+    renderStats(tp3, tp4, allWaves);
+    renderTimeline(allWaves);
+  }
+
+  function renderStats(tp3, tp4, all) {
+    const tp3waves = all.filter(w => w._operation === 'TP3');
+    const tp4waves = all.filter(w => w._operation === 'TP4');
+    const totalMunitions = all.reduce((s, w) => s + (getMunitionsCount(w) || 0), 0);
+    const withBM = all.filter(w => w.weapons?.ballistic_missiles_used).length;
+    const withDrone = all.filter(w => w.weapons?.drones_used).length;
+    const withUS = all.filter(w => w.targets?.us_bases_targeted).length;
+
+    document.getElementById('timeline-stats').innerHTML = `
+      <div class="tstat"><div class="tv">${tp3waves.length}</div><div class="tl">TP3 Waves</div></div>
+      <div class="tstat tp4"><div class="tv">${tp4waves.length}</div><div class="tl">TP4 Waves</div></div>
+      <div class="tstat blue"><div class="tv">${all.length}</div><div class="tl">Total Waves</div></div>
+      <div class="tstat"><div class="tv" style="color:var(--iran-amber)">${totalMunitions > 0 ? totalMunitions.toLocaleString() + '+' : '—'}</div><div class="tl">Documented Munitions</div></div>
+      <div class="tstat"><div class="tv" style="color:var(--iran-red)">${withBM}</div><div class="tl">Waves w/ Ballistic Ms</div></div>
+      <div class="tstat"><div class="tv" style="color:var(--iran-amber)">${withDrone}</div><div class="tl">Waves w/ Drones</div></div>
+      <div class="tstat"><div class="tv" style="color:var(--us-teal)">${withUS}</div><div class="tl">Waves vs US Bases</div></div>
+    `;
+  }
+
+  function getFilteredWaves() {
+    return allWavesData.filter(w => {
+      if (currentOpFilter !== 'all' && w._operation !== currentOpFilter) return false;
+      if (weaponFilters.bm && !w.weapons?.ballistic_missiles_used) return false;
+      if (weaponFilters.drone && !w.weapons?.drones_used) return false;
+      if (weaponFilters.cm && !w.weapons?.cruise_missiles_used) return false;
+      if (targetFilters.il && !w.targets?.israel_targeted) return false;
+      if (targetFilters.us && !w.targets?.us_bases_targeted) return false;
+      return true;
+    });
+  }
+
+  function renderTimeline(waves) {
+    const container = document.getElementById('timeline-container');
+    const badge = document.getElementById('wave-count-badge');
+    badge.textContent = `${waves.length} wave${waves.length !== 1 ? 's' : ''} shown`;
+
+    if (waves.length === 0) {
+      container.innerHTML = '<div class="loading" style="color:var(--text-muted);">No waves match the current filters.</div>';
+      return;
+    }
+
+    let lastDay = null;
+    let lastOp = null;
+    let html = '';
+
+    waves.forEach((wave, idx) => {
+      const op = wave._operation;
+      const day = wave.timing?.conflict_day;
+      const time = formatDate(wave.timing?.probable_launch_time);
+      const munitions = getMunitionsCount(wave);
+      const pills = getWeaponPills(wave);
+      const targets = getTargetSummary(wave);
+      const launchSite = wave.launch_site?.description || '—';
+      const interceptSystems = (wave.interception?.interception_systems || []).join(', ') || '—';
+      const interceptedBy = wave.interception?.intercepted_by;
+      const byList = interceptedBy ? Object.entries(interceptedBy)
+        .filter(([k, v]) => v === true && k !== 'other')
+        .map(([k]) => k.charAt(0).toUpperCase() + k.slice(1))
+        .concat(interceptedBy.other || [])
+        .join(', ') : '—';
+
+      // Day separator
+      if (day !== lastDay || op !== lastOp) {
+        const opLabel = op === 'TP3' ? 'True Promise 3' : 'True Promise 4';
+        html += `<div class="day-separator">${opLabel} — Day ${day ?? '?'}</div>`;
+        lastDay = day;
+        lastOp = op;
+      }
+
+      const pillsHtml = pills.map(p => `<span class="pill ${p.cls}" role="img" aria-label="${p.label}">${p.label}</span>`).join('');
+      const usTargeted = wave.targets?.us_bases_targeted;
+      const usBasesHit = (wave.targets?.us_bases || []).map(b => b.name).join(', ');
+
+      html += `
+        <div class="wave-card ${op.toLowerCase()}" role="listitem" tabindex="0"
+             onclick="toggleWave(this)" onkeydown="if(event.key==='Enter')toggleWave(this)"
+             aria-expanded="false" data-wave-idx="${idx}">
+          <div class="wave-num">
+            <div class="mono" style="font-size:10px;color:var(--text-muted);">WAVE</div>
+            <div class="num">${wave.wave_number}</div>
+          </div>
+          <span class="wave-op-badge ${op.toLowerCase()}">${op}</span>
+          <div class="wave-info">
+            <h4>${getTargetSummary(wave)}</h4>
+            <div class="wave-meta">${time}</div>
+            <div class="wave-targets">${launchSite}</div>
+            <div class="weapon-pills">${pillsHtml}</div>
+          </div>
+          <div class="wave-munitions">
+            <div class="count">${munitions !== null ? munitions : '—'}</div>
+            <div class="count-label">munitions</div>
+            <div style="margin-top:4px;"><span class="expand-arrow" aria-hidden="true">▾</span></div>
+          </div>
+
+          <div class="wave-expanded" role="region" aria-label="Wave ${wave.wave_number} details">
+            <div class="expanded-grid">
+              <div class="expanded-col">
+                <h5>Weapons</h5>
+                <ul>
+                  ${wave.weapons?.ballistic_missiles_used ? '<li>Ballistic Missiles</li>' : ''}
+                  ${wave.weapons?.cruise_missiles_used ? '<li>Cruise Missiles</li>' : ''}
+                  ${wave.weapons?.drones_used ? '<li>Drones (Shahed)</li>' : ''}
+                  ${wave.weapons?.payload ? `<li style="color:var(--text-muted);font-style:italic;">${wave.weapons.payload.slice(0,80)}</li>` : ''}
+                </ul>
+              </div>
+              <div class="expanded-col">
+                <h5>Interception</h5>
+                <p>Systems: ${interceptSystems}</p>
+                <p>By: ${byList}</p>
+                ${wave.interception?.estimated_intercept_rate != null ? `<p>Rate: ${(wave.interception.estimated_intercept_rate*100).toFixed(0)}%</p>` : ''}
+                ${wave.interception?.interception_report ? `<p style="color:var(--text-muted);font-size:11px;margin-top:4px;">${wave.interception.interception_report.slice(0,100)}…</p>` : ''}
+              </div>
+              <div class="expanded-col">
+                <h5>Impact</h5>
+                ${wave.impact?.fatalities != null ? `<p>Fatalities: ${wave.impact.fatalities}</p>` : ''}
+                ${wave.impact?.injuries != null ? `<p>Injuries: ${wave.impact.injuries}</p>` : ''}
+                ${wave.impact?.damage ? `<p>${wave.impact.damage.slice(0,140)}${wave.impact.damage.length > 140 ? '…' : ''}</p>` : '<p>—</p>'}
+              </div>
+              ${usTargeted ? `<div class="expanded-col">
+                <h5>US Targets</h5>
+                <p>${usBasesHit || 'US facilities targeted'}</p>
+              </div>` : ''}
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  function toggleWave(el) {
+    const isOpen = el.classList.contains('is-open');
+    // Close all
+    document.querySelectorAll('.wave-card.is-open').forEach(c => {
+      c.classList.remove('is-open');
+      c.setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      el.classList.add('is-open');
+      el.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  function setOpFilter(op) {
+    currentOpFilter = op;
+    document.querySelectorAll('#filter-all, #filter-tp3, #filter-tp4').forEach(b => b.classList.remove('active'));
+    document.getElementById(`filter-${op === 'all' ? 'all' : op.toLowerCase()}`).classList.add('active');
+    renderTimeline(getFilteredWaves());
+  }
+
+  function toggleWeaponFilter(type) {
+    weaponFilters[type] = !weaponFilters[type];
+    const btn = document.getElementById(`filter-${type}`);
+    btn.classList.toggle('active', weaponFilters[type]);
+    btn.setAttribute('aria-pressed', weaponFilters[type]);
+    renderTimeline(getFilteredWaves());
+  }
+
+  function toggleTargetFilter(type) {
+    targetFilters[type] = !targetFilters[type];
+    const btn = document.getElementById(`filter-${type}`);
+    btn.classList.toggle('active', targetFilters[type]);
+    btn.setAttribute('aria-pressed', targetFilters[type]);
+    renderTimeline(getFilteredWaves());
+  }
+
+  init().catch(err => {
+    document.getElementById('timeline-container').innerHTML =
+      `<div class="loading" style="color:var(--iran-red);">Error loading data: ${err.message}</div>`;
+  });
+</script>
+
+</body>
+</html>

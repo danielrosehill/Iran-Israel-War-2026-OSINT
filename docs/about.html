@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Iran-Israel War 2026 Data</title>
+  <meta name="description" content="About the Iran-Israel War 2026 OSINT dataset: methodology, data dictionary, schema reference, and sources.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .schema-section { margin: 32px 0; }
+    .field-group { margin-bottom: 28px; }
+    .field-group-title {
+      font-size: 13px;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--iran-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    .source-link {
+      display: block;
+      font-size: 13px;
+      color: var(--israel-light);
+      margin-bottom: 6px;
+      word-break: break-all;
+    }
+    .source-link:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="brand-icon" aria-hidden="true">&#x2604;</span>
+      Iran-Israel War 2026 Data
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="map.html">Map</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="data.html">Data</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="label">Documentation</div>
+    <h1>About This Dataset</h1>
+    <p>Methodology, data dictionary, schema reference, and source documentation.</p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1fr 280px; gap: 32px; align-items: start;">
+
+    <!-- Main content -->
+    <div class="about-content">
+
+      <h2>Overview</h2>
+      <p>
+        This dataset is an open-source OSINT (Open Source Intelligence) collection tracking
+        Iranian missile and drone attack waves against Israel and US/coalition targets across
+        two major operations in the 2025–2026 Iran-Israel conflict.
+      </p>
+      <p>
+        Data is collected from open-source reporting, official military statements, satellite
+        imagery analysis, and verified social media. It is structured in a consistent JSON schema
+        to facilitate analysis, visualization, and cross-referencing.
+      </p>
+
+      <div class="callout">
+        <strong>Disclaimer:</strong> This is an OSINT dataset based on publicly available information.
+        Exact munitions counts, coordinates, and casualty figures may be incomplete or approximate.
+        Data quality notes are included in the metadata of each JSON file.
+      </div>
+
+      <h2>Operations Covered</h2>
+
+      <h3>True Promise 3 (TP3)</h3>
+      <p>
+        <strong>Dates:</strong> June 13–24, 2025 (12 days)<br>
+        <strong>Also known as:</strong> "Twelve-Day War"<br>
+        <strong>Waves:</strong> 22 documented<br>
+        <strong>Estimated munitions:</strong> 1,600–1,800+<br>
+        <strong>Israeli interception rate (claimed):</strong> 86%
+      </p>
+      <p>
+        Iran's response to Israeli Operation Rising Lion, which struck Iranian nuclear facilities.
+        Primarily targeted Israeli military infrastructure, air bases, IDF command centers,
+        and critical civilian infrastructure (power plants, refineries). Houthi forces coordinated
+        proxy attacks. Total Israeli casualties: 33 killed, 3,238 wounded.
+      </p>
+
+      <h3>True Promise 4 (TP4)</h3>
+      <p>
+        <strong>Start date:</strong> February 28, 2026 (ongoing)<br>
+        <strong>Waves documented:</strong> 19+<br>
+        <strong>Countries targeted:</strong> 12 (AE, BH, CY, IL, IO, IQ, JO, KW, OM, QA, SA, TR)
+      </p>
+      <p>
+        Dramatically expanded scope compared to TP3. Targets include US military facilities
+        across the Persian Gulf (USN Fifth Fleet HQ Bahrain, Al-Udeid, Camp Arifjan, etc.),
+        Israeli targets, and commercial shipping. Launched in response to US-Israeli
+        Operation Epic Fury / Roaring Lion strikes. Multi-national coalition defense involving
+        US, UK, France, Jordan, UAE, and others.
+      </p>
+
+      <h2>Data Dictionary</h2>
+
+      <div class="schema-section">
+        <p>Each wave record contains the following top-level fields:</p>
+
+        <div class="field-group">
+          <div class="field-group-title">timing</div>
+          <table class="schema-table" aria-label="Timing fields">
+            <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><code>announced_utc</code></td><td>ISO 8601</td><td>IRGC announcement timestamp</td></tr>
+              <tr><td><code>probable_launch_time</code></td><td>ISO 8601</td><td>Estimated actual launch time</td></tr>
+              <tr><td><code>launch_time_israel</code></td><td>ISO 8601+tz</td><td>Local time in Israel</td></tr>
+              <tr><td><code>launch_time_iran</code></td><td>ISO 8601+tz</td><td>Local time in Iran</td></tr>
+              <tr><td><code>conflict_day</code></td><td>integer</td><td>Day within the operation (1-indexed)</td></tr>
+              <tr><td><code>solar_phase_launch_site</code></td><td>0/1</td><td>0=night, 1=day at launch site</td></tr>
+              <tr><td><code>hours_since_last_wave</code></td><td>float | null</td><td>Time gap since prior wave</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="field-group">
+          <div class="field-group-title">weapons</div>
+          <table class="schema-table" aria-label="Weapons fields">
+            <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><code>payload</code></td><td>string</td><td>Free-text payload description</td></tr>
+              <tr><td><code>ballistic_missiles_used</code></td><td>boolean</td><td>Any ballistic missile type fired</td></tr>
+              <tr><td><code>cruise_missiles_used</code></td><td>boolean</td><td>Any cruise missile type fired</td></tr>
+              <tr><td><code>drones_used</code></td><td>boolean</td><td>Any drone type fired</td></tr>
+              <tr><td><code>types.emad_used</code></td><td>boolean | null</td><td>Emad liquid-fuel MRBM</td></tr>
+              <tr><td><code>types.ghadr_used</code></td><td>boolean | null</td><td>Ghadr liquid-fuel MRBM</td></tr>
+              <tr><td><code>types.sejjil_used</code></td><td>boolean | null</td><td>Sejjil solid-fuel MRBM</td></tr>
+              <tr><td><code>types.kheibar_shekan_used</code></td><td>boolean | null</td><td>Kheibar Shekan solid-fuel</td></tr>
+              <tr><td><code>types.fattah_used</code></td><td>boolean | null</td><td>Fattah-1 hypersonic glide vehicle</td></tr>
+              <tr><td><code>types.shahed_136_used</code></td><td>boolean | null</td><td>Shahed-136 loitering munition</td></tr>
+              <tr><td><code>types.shahed_131_used</code></td><td>boolean | null</td><td>Shahed-131 loitering munition</td></tr>
+              <tr><td><code>categories.bm_hypersonic</code></td><td>boolean</td><td>Hypersonic weapon involved</td></tr>
+              <tr><td><code>categories.bm_marv_equipped</code></td><td>boolean</td><td>Maneuverable reentry vehicle</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="field-group">
+          <div class="field-group-title">targets</div>
+          <table class="schema-table" aria-label="Target fields">
+            <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><code>israel_targeted</code></td><td>boolean</td><td>Israeli territory included in targeting</td></tr>
+              <tr><td><code>us_bases_targeted</code></td><td>boolean</td><td>US/coalition bases included</td></tr>
+              <tr><td><code>targets</code></td><td>string</td><td>Free-text target description</td></tr>
+              <tr><td><code>landings_countries</code></td><td>string[]</td><td>ISO country codes of impact/landing countries</td></tr>
+              <tr><td><code>israeli_locations.*</code></td><td>boolean</td><td>Flags for specific Israeli regions targeted</td></tr>
+              <tr><td><code>us_bases[]</code></td><td>object[]</td><td>Named US/coalition base targets (name, country_code)</td></tr>
+              <tr><td><code>us_naval_vessels[]</code></td><td>object[]</td><td>Named naval vessel targets</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="field-group">
+          <div class="field-group-title">munitions</div>
+          <table class="schema-table" aria-label="Munitions fields">
+            <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><code>estimated_munitions_count</code></td><td>integer | null</td><td>Total munitions fired in this wave</td></tr>
+              <tr><td><code>munitions_targeting_israel</code></td><td>integer | null</td><td>Subset targeting Israeli territory</td></tr>
+              <tr><td><code>munitions_targeting_us_bases</code></td><td>integer | null</td><td>Subset targeting US/coalition facilities</td></tr>
+              <tr><td><code>cumulative_total</code></td><td>integer | null</td><td>Running total across waves</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="field-group">
+          <div class="field-group-title">interception</div>
+          <table class="schema-table" aria-label="Interception fields">
+            <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><code>intercepted</code></td><td>boolean | null</td><td>Interception occurred</td></tr>
+              <tr><td><code>interception_systems</code></td><td>string[]</td><td>Systems used (Arrow-2, Arrow-3, THAAD, SM-3, Iron Dome, Patriot)</td></tr>
+              <tr><td><code>intercepted_by.israel/us/uk/jordan</code></td><td>boolean</td><td>Per-country interception participation</td></tr>
+              <tr><td><code>estimated_intercept_count</code></td><td>integer | null</td><td>Munitions intercepted</td></tr>
+              <tr><td><code>estimated_intercept_rate</code></td><td>float | null</td><td>Fraction intercepted (0.0–1.0)</td></tr>
+              <tr><td><code>exoatmospheric_interception</code></td><td>boolean</td><td>Arrow-3 or THAAD exo-atm intercept</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="field-group">
+          <div class="field-group-title">impact</div>
+          <table class="schema-table" aria-label="Impact fields">
+            <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+            <tbody>
+              <tr><td><code>damage</code></td><td>string | null</td><td>Free-text damage description</td></tr>
+              <tr><td><code>fatalities</code></td><td>integer | null</td><td>Confirmed fatalities</td></tr>
+              <tr><td><code>injuries</code></td><td>integer | null</td><td>Confirmed injuries</td></tr>
+              <tr><td><code>civilian_casualties</code></td><td>boolean | null</td><td>Civilian casualties confirmed</td></tr>
+              <tr><td><code>military_casualties</code></td><td>integer | null</td><td>Military casualties count</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h2>File Structure</h2>
+      <p>The canonical data files are:</p>
+      <ul>
+        <li><code>data/tp3-2025/waves.json</code> — TP3 wave data (schema v1.1, 22 waves)</li>
+        <li><code>data/tp4-2026/waves.json</code> — TP4 wave data (schema v2.1, 19+ waves)</li>
+        <li><code>data/tp4-2026/waves.geojson</code> — GeoJSON export of TP4 waves</li>
+        <li><code>data/tp4-2026/waves.kml</code> — KML export</li>
+        <li><code>data/tp4-2026/reference/israeli_targets.json</code> — Israeli targets with coords</li>
+        <li><code>data/tp4-2026/reference/us_bases.json</code> — US/coalition bases with coords</li>
+        <li><code>data/tp4-2026/reference/launch_zones.json</code> — Iranian launch zone centroids</li>
+        <li><code>data/reference/iranian_weapons.json</code> — Weapon system specifications</li>
+        <li><code>data/reference/defense_systems.json</code> — BMD/air defense system specs</li>
+        <li><code>data/schema/wave.schema.json</code> — JSON Schema for validation</li>
+      </ul>
+
+      <h2>Sources</h2>
+      <p>Data is cross-referenced from the following open sources:</p>
+      <a class="source-link" href="https://en.wikipedia.org/wiki/June_2025_Iranian_strikes_on_Israel" target="_blank" rel="noopener">Wikipedia: June 2025 Iranian strikes on Israel</a>
+      <a class="source-link" href="https://en.wikipedia.org/wiki/Casualties_of_the_Twelve-Day_War" target="_blank" rel="noopener">Wikipedia: Casualties of the Twelve-Day War</a>
+      <a class="source-link" href="https://www.fpri.org/article/2025/10/shallow-ramparts-air-and-missile-defenses-in-the-june-2025-israel-iran-war/" target="_blank" rel="noopener">FPRI: Shallow Ramparts — Air and Missile Defenses in the June 2025 War</a>
+      <a class="source-link" href="https://www.timesofisrael.com/the-israel-iran-war-by-the-numbers-after-12-days-of-fighting/" target="_blank" rel="noopener">Times of Israel: The Israel-Iran war by the numbers</a>
+      <a class="source-link" href="https://en.abna24.com/news/1702689/Paper-A-look-at-22-waves-of-Iran-s-operation-True-Promise-III" target="_blank" rel="noopener">ABNA24: A look at 22 waves of Iran's Operation True Promise III</a>
+
+      <h2>Contributing</h2>
+      <p>
+        This dataset is maintained on GitHub. Corrections, additions, and source citations
+        are welcome via pull request or issue. The schema documentation in
+        <code>data/schema/wave.schema.json</code> and <code>prompts/waves.md</code>
+        describes the data extraction methodology.
+      </p>
+      <p>
+        <a href="https://github.com/danielrosehill/Iran-Israel-War-2026-Data" target="_blank" rel="noopener">
+          github.com/danielrosehill/Iran-Israel-War-2026-Data
+        </a>
+      </p>
+
+    </div>
+
+    <!-- Sidebar -->
+    <aside style="position: sticky; top: 80px;">
+      <div class="card" style="margin-bottom: 16px;">
+        <div class="section-title" style="margin-bottom: 16px; padding-bottom: 10px; font-size: 14px;">
+          <span class="dot"></span> Quick Stats
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div>
+            <div style="font-size: 10px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Schema Version</div>
+            <div style="font-family: var(--font-mono); color: var(--iran-orange); font-weight: 700;">v1.1 / v2.1</div>
+          </div>
+          <div>
+            <div style="font-size: 10px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">TP3 Wave Count</div>
+            <div style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 700;">22</div>
+          </div>
+          <div>
+            <div style="font-size: 10px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">TP4 Wave Count</div>
+            <div style="font-family: var(--font-mono); color: var(--text-primary); font-weight: 700;">19+</div>
+          </div>
+          <div>
+            <div style="font-size: 10px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Coordinates</div>
+            <div style="font-size: 12px; color: var(--text-secondary);">Decimal degrees (WGS84)</div>
+          </div>
+          <div>
+            <div style="font-size: 10px; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">Timestamps</div>
+            <div style="font-size: 12px; color: var(--text-secondary);">ISO 8601 with TZ offset</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title" style="margin-bottom: 16px; padding-bottom: 10px; font-size: 14px;">
+          <span class="dot"></span> Downloads
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a href="data/tp3-waves.json" download class="export-btn" style="display:block; padding:8px 12px; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:12px; font-family:var(--font-mono); color:var(--text-secondary); text-align:center;">
+            TP3 waves.json
+          </a>
+          <a href="data/tp4-waves.json" download class="export-btn" style="display:block; padding:8px 12px; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:12px; font-family:var(--font-mono); color:var(--text-secondary); text-align:center;">
+            TP4 waves.json
+          </a>
+          <a href="data/israeli_targets.json" download class="export-btn" style="display:block; padding:8px 12px; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:12px; font-family:var(--font-mono); color:var(--text-secondary); text-align:center;">
+            Israeli Targets
+          </a>
+          <a href="data/us_bases.json" download class="export-btn" style="display:block; padding:8px 12px; border:1px solid var(--border); border-radius:var(--radius-sm); font-size:12px; font-family:var(--font-mono); color:var(--text-secondary); text-align:center;">
+            US/Coalition Bases
+          </a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>
+    Iran-Israel War 2026 Data &mdash; Open OSINT dataset &mdash;
+    <a href="https://github.com/danielrosehill/Iran-Israel-War-2026-Data" target="_blank" rel="noopener">GitHub Repository</a>
+    &mdash; Data current as of March 2026
+  </p>
+</footer>
+
+<script src="js/data.js"></script>
+
+</body>
+</html>
