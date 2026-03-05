@@ -5,3 +5,4 @@ planning/
 scripts/
 kaggle.json
 kaggle/
+.claude/agent-memory/
