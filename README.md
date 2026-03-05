@@ -205,6 +205,8 @@ The most geographically expansive operation. For the first time, Iran directly t
 
 ## Charts & Analysis
 
+Generated charts are stored in **date-stamped subfolders** using `DDMM` format (e.g. `report/0503/` for March 5). This ensures each generation run is timestamped and prior outputs are preserved. Run `python3 gen_charts.py` to regenerate into today's subfolder.
+
 ### Weapon System Heatmap (TP3 vs TP4)
 
 ![Weapon Heatmap](report/report_05_weapon_heatmap.png)
@@ -275,7 +277,9 @@ build_db.py                  # Rebuild SQLite from JSON sources
 report/
   report.pdf                 # TP3 vs TP4 comparative analysis (15 pages)
   report.typ                 # Typst source
-  report_*.png               # Report charts
+  report_*.png               # Report charts (legacy, root level)
+  DDMM/                      # Date-stamped chart outputs (e.g. 0503/ for Mar 5)
+    report_*.png
 analysis/
   charts/                    # Standalone visualizations
     01_inter_wave_timing.png
