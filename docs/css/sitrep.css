@@ -1,0 +1,237 @@
+/* ============================================================
+   Sitrep-specific styles
+   ============================================================ */
+
+/* AI-generated banner */
+.ai-banner {
+  background: rgba(204, 41, 54, 0.12);
+  border: 1px solid rgba(204, 41, 54, 0.35);
+  border-left: 4px solid var(--iran-red);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  margin-bottom: 28px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ai-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: var(--iran-red);
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* BLUF card */
+.bluf-card {
+  border-left: 3px solid var(--iran-orange);
+}
+.bluf-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+.bluf-card strong {
+  color: var(--text-primary);
+}
+
+/* Sitrep wave cards */
+.sitrep-waves {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sitrep-wave-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  transition: border-color var(--transition);
+}
+.sitrep-wave-card:hover {
+  border-color: var(--border-light);
+}
+.sitrep-wave-card.tp3 {
+  border-left: 3px solid var(--iran-orange);
+}
+.sitrep-wave-card.tp4 {
+  border-left: 3px solid var(--iran-red);
+}
+
+.wave-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.wave-id {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.wave-time {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.wave-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.detail-row {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.detail-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-right: 6px;
+}
+
+/* Sitrep navigation */
+.sitrep-nav {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  border: none;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+.btn-outline:hover {
+  border-color: var(--border-light);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+/* Sitrep index page */
+.sitrep-index {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sitrep-index-card {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.sitrep-index-card:hover {
+  border-color: var(--border-light);
+  background: var(--bg-card-hover);
+  transform: translateX(2px);
+  text-decoration: none;
+}
+
+.sitrep-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sitrep-day {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--iran-orange);
+  line-height: 1;
+}
+
+.sitrep-month {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.sitrep-dow {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.sitrep-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sitrep-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.sitrep-summary {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.sitrep-badge-col {
+  display: flex;
+  gap: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sitrep-index-card {
+    grid-template-columns: 70px 1fr;
+  }
+  .sitrep-badge-col {
+    display: none;
+  }
+  .ai-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
