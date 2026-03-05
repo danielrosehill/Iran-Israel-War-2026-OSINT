@@ -6,9 +6,9 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 
 > **Data Quality Disclaimer**: This dataset was assembled using a combination of AI-assisted research (multi-model LLM queries), news reporting, and publicly available OSINT sources. **It may contain inaccuracies, gaps, or errors.** Timestamps are approximate for many events. Munitions counts and casualty figures vary across sources and should be treated as estimates. Iranian state media claims (PressTV, Tasnim, IRGC statements) are preserved but often unverifiable. This data is provided for research and educational purposes only — always cross-reference against primary sources before drawing conclusions.
 
-**[Interactive Map & Dashboard](https://iranisrael26.danielrosehill.com)** | **[TP3 vs TP4 Analysis Report (PDF)](report/report.pdf)** | **[Kaggle Dataset](https://www.kaggle.com/datasets/danielrosehill/iran-israel-war-2026)** | **[Hugging Face Dataset](https://huggingface.co/datasets/danielrosehill/Iran-Israel-War-2026)**
+**[Interactive Map & Dashboard](https://iranisrael.danielrosehill.com)** | **[TP3 vs TP4 Analysis Report (PDF)](report/report.pdf)** | **[Kaggle Dataset](https://www.kaggle.com/datasets/danielrosehill/iran-israel-war-2026)** | **[Hugging Face Dataset](https://huggingface.co/datasets/danielrosehill/Iran-Israel-War-2026)**
 
-> This repository is the upstream data source for the OSINT analysis site at [iranisrael26.danielrosehill.com](https://iranisrael26.danielrosehill.com). JSON data from this repo is synced into the site's pipeline automatically.
+> This repository is the upstream data source for the OSINT analysis site at [iranisrael.danielrosehill.com](https://iranisrael.danielrosehill.com). JSON data from this repo is synced into the site's pipeline automatically.
 
 ---
 
