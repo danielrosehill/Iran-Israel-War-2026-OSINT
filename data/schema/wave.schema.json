@@ -43,6 +43,11 @@
       "type": "object",
       "required": ["wave_number", "timing", "weapons", "targets"],
       "properties": {
+        "uuid": {
+          "type": ["string", "null"],
+          "format": "uuid",
+          "description": "Unique identifier for this wave (UUID v4). Auto-generated at build time if not provided."
+        },
         "operation": {
           "type": "string",
           "enum": ["tp1", "tp2", "tp3", "tp4"],
@@ -62,7 +67,12 @@
         "escalation": { "$ref": "#/$defs/escalation" },
         "proxy": { "$ref": "#/$defs/proxy" },
         "sources": { "$ref": "#/$defs/sources" },
-        "reactions": { "$ref": "#/$defs/reactions" }
+        "reactions": { "$ref": "#/$defs/reactions" },
+        "events": {
+          "type": "array",
+          "description": "Granular interception and strike events within this wave",
+          "items": { "$ref": "#/$defs/event" }
+        }
       }
     },
     "timing": {
@@ -289,6 +299,216 @@
       "properties": {
         "statement": { "type": ["string", "null"], "description": "Summary of official statement" },
         "url": { "type": ["string", "null"], "format": "uri", "description": "Link to statement or source" }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": ["event_type", "location_name"],
+      "properties": {
+        "uuid": {
+          "type": ["string", "null"],
+          "format": "uuid",
+          "description": "Unique identifier for this event (UUID v4). Auto-generated at build time if not provided."
+        },
+        "event_type": {
+          "type": "string",
+          "enum": ["interception", "strike", "impact"],
+          "description": "interception = confirmed shoot-down; strike = confirmed warhead hit on target; impact = ground-level event where nature is disputed or unclear (could be debris, near-miss, or contested hit)"
+        },
+        "outcome_status": {
+          "type": "string",
+          "enum": ["confirmed", "disputed", "unverified"],
+          "description": "confirmed = both sides broadly agree on what happened; disputed = Iran and Israel make contradictory claims about this event; unverified = insufficient independent evidence to determine outcome"
+        },
+        "location_name": {
+          "type": "string",
+          "description": "Human-readable location: 'Tel Aviv', 'over Dead Sea', 'Nevatim Airbase', etc."
+        },
+        "lat": { "type": ["number", "null"], "description": "Latitude in decimal degrees if known" },
+        "lon": { "type": ["number", "null"], "description": "Longitude in decimal degrees if known" },
+        "country_code": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Z]{2}$",
+          "description": "ISO 3166-1 alpha-2 country code"
+        },
+        "weapon_type": {
+          "type": ["string", "null"],
+          "description": "Weapon system involved if known (e.g. 'emad', 'fattah_1', 'shahed_136')"
+        },
+        "defense_system": {
+          "type": ["string", "null"],
+          "description": "Defense system that performed the interception (interception events only)"
+        },
+        "interception_method": {
+          "type": ["string", "null"],
+          "enum": ["surface_to_air_missile", "air_to_air_missile", "air_to_air_gun", "directed_energy", "electronic_warfare", null],
+          "description": "How the interception was carried out: surface_to_air_missile = ground/ship-launched interceptor (Arrow, Iron Dome, SM-3, Patriot, THAAD); air_to_air_missile = fighter-launched missile (AIM-120, AIM-9); air_to_air_gun = fighter cannon kill; directed_energy = laser/HPM; electronic_warfare = jamming/spoofing causing loss of control"
+        },
+        "interceptor_munition": {
+          "type": ["string", "null"],
+          "description": "Specific interceptor missile/round fired (e.g. 'Tamir', 'Arrow-3 interceptor', 'SM-3 Block IIA', 'PAC-3 MSE', 'AIM-120C AMRAAM', 'ASRAAM', 'Stunner', 'THAAD interceptor'). Distinct from defense_system which is the platform/battery."
+        },
+        "intercept_phase": {
+          "type": ["string", "null"],
+          "enum": ["exoatmospheric", "endoatmospheric", null],
+          "description": "Phase of interception if known"
+        },
+        "intercepting_force": {
+          "type": ["string", "null"],
+          "description": "Country/force that performed the interception (e.g. 'Israel', 'US', 'Jordan', 'UK RAF')"
+        },
+        "fatalities": {
+          "type": ["integer", "null"],
+          "description": "Number of fatalities at this location (strike events only)"
+        },
+        "injuries": {
+          "type": ["integer", "null"],
+          "description": "Number of injuries at this location (strike events only)"
+        },
+        "damage_description": {
+          "type": ["string", "null"],
+          "description": "Free-text description of damage or interception outcome"
+        },
+        "target_type": {
+          "type": ["string", "null"],
+          "enum": ["military", "civilian", "dual_use", "infrastructure", null],
+          "description": "Classification of the target/impact site"
+        },
+        "source_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "OSINT source for this specific event"
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["confirmed", "probable", "unconfirmed"],
+          "description": "Confidence level based on available OSINT"
+        },
+        "iranian_claim": {
+          "type": ["string", "null"],
+          "description": "What Iran/IRGC claimed about this event (e.g. 'direct hit on Mossad HQ', 'air defense radar destroyed')"
+        },
+        "israeli_claim": {
+          "type": ["string", "null"],
+          "description": "What Israel/IDF claimed about this event (e.g. 'missile intercepted', 'no damage to base')"
+        },
+        "us_claim": {
+          "type": ["string", "null"],
+          "description": "What the US/CENTCOM claimed about this event, if applicable"
+        },
+        "bda": {
+          "type": ["object", "null"],
+          "description": "Post-battle damage assessment from independent/third-party sources",
+          "properties": {
+            "source_type": {
+              "type": "string",
+              "enum": ["satellite_imagery", "ground_photo", "video", "media_report", "government_report", "multiple"],
+              "description": "Type of evidence the BDA is based on"
+            },
+            "source_name": {
+              "type": ["string", "null"],
+              "description": "Organization or analyst who produced the assessment (e.g. 'Planet Labs', 'Maxar', 'AP', 'ISW')"
+            },
+            "source_url": {
+              "type": ["string", "null"],
+              "format": "uri",
+              "description": "Link to the BDA source material"
+            },
+            "assessment_date": {
+              "type": ["string", "null"],
+              "format": "date",
+              "description": "Date the assessment was published or imagery captured"
+            },
+            "assessment": {
+              "type": "string",
+              "description": "Summary of what the independent assessment found"
+            },
+            "damage_confirmed": {
+              "type": ["boolean", "null"],
+              "description": "Whether independent sources confirmed damage at this location"
+            },
+            "impact_count": {
+              "type": ["integer", "null"],
+              "description": "Number of distinct impact craters/points identified (from SATINT or ground survey)"
+            },
+            "satint": {
+              "type": ["object", "null"],
+              "description": "Satellite imagery intelligence observations specific to this event",
+              "properties": {
+                "imagery_provider": {
+                  "type": ["string", "null"],
+                  "description": "Satellite imagery provider (e.g. 'Planet Labs', 'Maxar', 'Airbus Defence', 'Sentinel-2')"
+                },
+                "capture_date": {
+                  "type": ["string", "null"],
+                  "format": "date",
+                  "description": "Date the satellite image was captured"
+                },
+                "resolution_m": {
+                  "type": ["number", "null"],
+                  "description": "Spatial resolution of the imagery in meters per pixel"
+                },
+                "observations": {
+                  "type": "string",
+                  "description": "Detailed description of what is visible in the imagery (crater count, structural damage, burn marks, debris fields, vehicle displacement, etc.)"
+                },
+                "before_after_available": {
+                  "type": ["boolean", "null"],
+                  "description": "Whether before/after comparison imagery is available"
+                },
+                "imagery_url": {
+                  "type": ["string", "null"],
+                  "format": "uri",
+                  "description": "Direct link to the satellite imagery or analysis"
+                }
+              },
+              "required": ["observations"]
+            }
+          },
+          "required": ["source_type", "assessment"]
+        },
+        "narrative": {
+          "type": ["string", "null"],
+          "description": "Extended narrative description of this event in Markdown format. Can be blog-post length — covers context, sequence of events, significance, and analysis. Supports full Markdown including headings, lists, links, and embedded image references."
+        },
+        "thumbnail": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL to a representative thumbnail image for this event (for previews, cards, listings)"
+        },
+        "images": {
+          "type": "array",
+          "description": "Collection of images associated with this event (satellite imagery, ground photos, damage photos, maps)",
+          "items": {
+            "type": "object",
+            "required": ["url"],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "URL to the image file"
+              },
+              "caption": {
+                "type": ["string", "null"],
+                "description": "Descriptive caption for the image"
+              },
+              "source": {
+                "type": ["string", "null"],
+                "description": "Attribution/source of the image (e.g. 'Planet Labs', 'IDF Spokesperson', 'Reuters')"
+              },
+              "image_type": {
+                "type": ["string", "null"],
+                "enum": ["satellite", "ground_photo", "damage_photo", "map", "diagram", "screenshot", "video_still", null],
+                "description": "Classification of the image content"
+              },
+              "date_taken": {
+                "type": ["string", "null"],
+                "format": "date",
+                "description": "Date the image was captured"
+              }
+            }
+          }
+        }
       }
     }
   }

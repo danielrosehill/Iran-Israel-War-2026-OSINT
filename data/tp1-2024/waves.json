@@ -189,7 +189,81 @@
           "https://en.wikipedia.org/wiki/April_2024_Iranian_strikes_on_Israel",
           "https://www.aljazeera.com/news/2024/4/14/true-promise-why-and-how-did-iran-launch-a-historic-attack-on-israel"
         ]
-      }
+      },
+      "events": [
+        {
+          "event_type": "interception",
+          "location_name": "Over Jordanian airspace",
+          "lat": null,
+          "lon": null,
+          "country_code": "JO",
+          "weapon_type": "shahed_136",
+          "defense_system": null,
+          "interception_method": "air_to_air_missile",
+          "intercept_phase": "endoatmospheric",
+          "intercepting_force": "Jordan",
+          "fatalities": null,
+          "injuries": null,
+          "damage_description": "Jordanian Air Force intercepted drones transiting Jordanian airspace",
+          "target_type": null,
+          "source_url": null,
+          "confidence": "confirmed"
+        },
+        {
+          "event_type": "interception",
+          "location_name": "Over Jordanian airspace",
+          "lat": null,
+          "lon": null,
+          "country_code": "JO",
+          "weapon_type": "shahed_136",
+          "defense_system": null,
+          "interception_method": "air_to_air_missile",
+          "intercept_phase": "endoatmospheric",
+          "intercepting_force": "UK RAF",
+          "fatalities": null,
+          "injuries": null,
+          "damage_description": "UK RAF Typhoons intercepted drones over Jordan",
+          "target_type": null,
+          "source_url": null,
+          "confidence": "confirmed"
+        },
+        {
+          "event_type": "interception",
+          "location_name": "Over Iraq and eastern Jordan",
+          "lat": null,
+          "lon": null,
+          "country_code": null,
+          "weapon_type": "shahed_136",
+          "defense_system": null,
+          "interception_method": "air_to_air_missile",
+          "intercept_phase": "endoatmospheric",
+          "intercepting_force": "US",
+          "fatalities": null,
+          "injuries": null,
+          "damage_description": "US CENTCOM reported destroying more than 80 one-way attack drones and at least 6 ballistic missiles",
+          "target_type": null,
+          "source_url": null,
+          "confidence": "confirmed"
+        },
+        {
+          "event_type": "interception",
+          "location_name": "Over France-assigned sector",
+          "lat": null,
+          "lon": null,
+          "country_code": null,
+          "weapon_type": "shahed_136",
+          "defense_system": null,
+          "interception_method": "air_to_air_missile",
+          "intercept_phase": "endoatmospheric",
+          "intercepting_force": "France",
+          "fatalities": null,
+          "injuries": null,
+          "damage_description": "France contributed to interception efforts",
+          "target_type": null,
+          "source_url": null,
+          "confidence": "confirmed"
+        }
+      ]
     },
     {
       "operation": "tp1",
@@ -324,7 +398,79 @@
           "https://besacenter.org/operation-true-promise-irans-missile-attack-on-israel/",
           "https://www.iranwatch.org/our-publications/articles-reports/irans-missile-attack-against-israel"
         ]
-      }
+      },
+      "events": [
+        {
+          "event_type": "interception",
+          "location_name": "Over Israeli airspace (exoatmospheric)",
+          "lat": null,
+          "lon": null,
+          "country_code": "IL",
+          "weapon_type": null,
+          "defense_system": "Arrow-3",
+          "interception_method": "surface_to_air_missile",
+          "intercept_phase": "exoatmospheric",
+          "intercepting_force": "Israel",
+          "fatalities": null,
+          "injuries": null,
+          "damage_description": "Arrow-3 performed first confirmed exoatmospheric combat interceptions",
+          "target_type": null,
+          "source_url": null,
+          "confidence": "confirmed"
+        },
+        {
+          "event_type": "interception",
+          "location_name": "Eastern Mediterranean / Jordan",
+          "lat": null,
+          "lon": null,
+          "country_code": null,
+          "weapon_type": null,
+          "defense_system": "Aegis BMD / SM-3",
+          "interception_method": "surface_to_air_missile",
+          "intercept_phase": "exoatmospheric",
+          "intercepting_force": "US",
+          "fatalities": null,
+          "injuries": null,
+          "damage_description": "SM-3 from US Navy destroyers used in combat for the first time against ballistic missiles",
+          "target_type": null,
+          "source_url": null,
+          "confidence": "confirmed"
+        },
+        {
+          "event_type": "strike",
+          "location_name": "Nevatim Airbase",
+          "lat": 31.208,
+          "lon": 35.012,
+          "country_code": "IL",
+          "weapon_type": null,
+          "defense_system": null,
+          "intercept_phase": null,
+          "intercepting_force": null,
+          "fatalities": 0,
+          "injuries": 0,
+          "damage_description": "Minor damage to Nevatim Airbase; base remained fully operational",
+          "target_type": "military",
+          "source_url": null,
+          "confidence": "confirmed"
+        },
+        {
+          "event_type": "strike",
+          "location_name": "Arad region (debris)",
+          "lat": 31.26,
+          "lon": 35.21,
+          "country_code": "IL",
+          "weapon_type": null,
+          "defense_system": null,
+          "intercept_phase": null,
+          "intercepting_force": null,
+          "fatalities": 0,
+          "injuries": 1,
+          "damage_description": "Missile debris fell in Arad region; 7-year-old Bedouin girl seriously injured by debris",
+          "target_type": "civilian",
+          "source_url": null,
+          "confidence": "confirmed"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,351 @@
+[
+  {
+    "id": "tamir",
+    "name": "Tamir",
+    "parent_system": "iron_dome",
+    "type": "blast_fragmentation",
+    "min_intercept_alt_km": 0.1,
+    "max_intercept_alt_km": 10,
+    "min_range_km": 4,
+    "max_range_km": 70,
+    "speed_mach": 2.2,
+    "length_m": 3.0,
+    "diameter_m": 0.16,
+    "weight_kg": 90,
+    "guidance": "Electro-optical + active radar seeker",
+    "warhead_type": "Proximity-fused blast fragmentation",
+    "kill_mechanism": "blast_fragmentation",
+    "targets": ["short_range_rocket", "mortar", "UAV", "cruise_missile"],
+    "unit_cost_usd": {
+      "estimate": 50000,
+      "range": "40000-100000",
+      "notes": "Widely cited $50k figure; some sources estimate higher for latest variants"
+    },
+    "developer": "Rafael Advanced Defense Systems",
+    "country": "IL",
+    "first_operational": 2011,
+    "first_combat_use": "2011-04",
+    "notes": "Primary Iron Dome interceptor. Steered by four moving fins. Each Iron Dome battery carries 60-80 Tamirs across 3-4 launchers.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/iron-dome/",
+      "https://en.wikipedia.org/wiki/Tamir_(interceptor)"
+    ]
+  },
+  {
+    "id": "stunner",
+    "name": "Stunner (SkyCeptor)",
+    "parent_system": "davids_sling",
+    "type": "kinetic_kill",
+    "min_intercept_alt_km": 1,
+    "max_intercept_alt_km": 15,
+    "min_range_km": 40,
+    "max_range_km": 300,
+    "speed_mach": null,
+    "length_m": 4.6,
+    "diameter_m": 0.16,
+    "weight_kg": 400,
+    "guidance": "Multi-mode seeker: IIR + active RF radar; dual-pulse motor",
+    "warhead_type": "Hit-to-kill (no warhead)",
+    "kill_mechanism": "kinetic_kill",
+    "targets": ["SRBM", "cruise_missile", "large_rocket", "aircraft"],
+    "unit_cost_usd": {
+      "estimate": 1000000,
+      "range": "1000000-3500000",
+      "notes": "Estimated $1M per round; export variant SkyCeptor may differ"
+    },
+    "developer": "Rafael / Raytheon",
+    "country": "IL",
+    "first_operational": 2017,
+    "first_combat_use": "2023-05",
+    "notes": "Two-stage interceptor with dual-pulse rocket motor. Uses 3-color IIR seeker plus active radar for all-weather capability. Also marketed as SkyCeptor for export.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/davids-sling/",
+      "https://en.wikipedia.org/wiki/Stunner_(missile)"
+    ]
+  },
+  {
+    "id": "arrow_2_interceptor",
+    "name": "Arrow-2 interceptor",
+    "parent_system": "arrow_2",
+    "type": "blast_fragmentation",
+    "min_intercept_alt_km": 10,
+    "max_intercept_alt_km": 50,
+    "min_range_km": 10,
+    "max_range_km": 90,
+    "speed_mach": 9,
+    "length_m": 6.9,
+    "diameter_m": 0.5,
+    "weight_kg": 1300,
+    "guidance": "Command-guided midcourse; active radar terminal seeker",
+    "warhead_type": "Directional high-explosive blast fragmentation",
+    "kill_mechanism": "blast_fragmentation",
+    "targets": ["MRBM", "SRBM"],
+    "unit_cost_usd": {
+      "estimate": 3000000,
+      "range": "2000000-3000000",
+      "notes": "Estimated cost per interceptor"
+    },
+    "developer": "IAI / Boeing",
+    "country": "IL",
+    "first_operational": 2000,
+    "first_combat_use": "2024-04-13",
+    "notes": "Two-stage solid-fuel interceptor. Carries directional fragmentation warhead. Guided by Green Pine (EL/M-2080) phased-array radar.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/arrow-2/",
+      "https://en.wikipedia.org/wiki/Arrow_(missile_family)"
+    ]
+  },
+  {
+    "id": "arrow_3_interceptor",
+    "name": "Arrow-3 interceptor",
+    "parent_system": "arrow_3",
+    "type": "kinetic_kill",
+    "min_intercept_alt_km": 100,
+    "max_intercept_alt_km": 300,
+    "min_range_km": null,
+    "max_range_km": 2400,
+    "speed_mach": null,
+    "length_m": 7.0,
+    "diameter_m": 0.5,
+    "weight_kg": 2700,
+    "guidance": "Two-stage booster + detachable exoatmospheric kill vehicle (EKV) with IIR seeker",
+    "warhead_type": "Hit-to-kill (no warhead)",
+    "kill_mechanism": "kinetic_kill",
+    "targets": ["MRBM", "IRBM", "ICBM"],
+    "unit_cost_usd": {
+      "estimate": 3000000,
+      "range": "2000000-3500000",
+      "notes": "Comparable to Arrow-2 per unit; exoatmospheric kill vehicle adds complexity"
+    },
+    "developer": "IAI / Boeing",
+    "country": "IL",
+    "first_operational": 2017,
+    "first_combat_use": "2024-04-13",
+    "notes": "Exoatmospheric hit-to-kill interceptor. Kill vehicle detaches from booster at altitude and maneuvers independently using divert thrusters. First confirmed exoatmospheric combat interception in history during True Promise 1.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/arrow-3/",
+      "https://en.wikipedia.org/wiki/Arrow_3"
+    ]
+  },
+  {
+    "id": "sm3_block_ia",
+    "name": "SM-3 Block IA",
+    "parent_system": "aegis_sm3",
+    "type": "kinetic_kill",
+    "min_intercept_alt_km": 70,
+    "max_intercept_alt_km": 250,
+    "min_range_km": null,
+    "max_range_km": 500,
+    "speed_mach": null,
+    "length_m": 6.55,
+    "diameter_m": 0.34,
+    "weight_kg": 1500,
+    "guidance": "GPS-aided INS midcourse; LEAP kinetic warhead IIR terminal seeker",
+    "warhead_type": "Hit-to-kill (LEAP kinetic warhead)",
+    "kill_mechanism": "kinetic_kill",
+    "targets": ["MRBM", "SRBM"],
+    "unit_cost_usd": {
+      "estimate": 10000000,
+      "range": "10000000-12000000",
+      "notes": "Block IA baseline cost"
+    },
+    "developer": "Raytheon",
+    "country": "US",
+    "first_operational": 2004,
+    "first_combat_use": null,
+    "notes": "Three-stage ship-launched interceptor. LEAP (Lightweight Exo-Atmospheric Projectile) kill vehicle uses IIR seeker and divert thrusters.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/aegis/",
+      "https://en.wikipedia.org/wiki/RIM-161_Standard_Missile_3"
+    ]
+  },
+  {
+    "id": "sm3_block_iia",
+    "name": "SM-3 Block IIA",
+    "parent_system": "aegis_sm3",
+    "type": "kinetic_kill",
+    "min_intercept_alt_km": 70,
+    "max_intercept_alt_km": 500,
+    "min_range_km": null,
+    "max_range_km": 2500,
+    "speed_mach": null,
+    "length_m": 6.55,
+    "diameter_m": 0.53,
+    "weight_kg": 1500,
+    "guidance": "GPS-aided INS midcourse; improved LEAP kinetic warhead with larger IIR seeker",
+    "warhead_type": "Hit-to-kill (improved LEAP kinetic warhead)",
+    "kill_mechanism": "kinetic_kill",
+    "targets": ["MRBM", "IRBM", "ICBM"],
+    "unit_cost_usd": {
+      "estimate": 36000000,
+      "range": "28000000-36000000",
+      "notes": "Most expensive interceptor in active service. FY2024 unit cost ~$36M."
+    },
+    "developer": "Raytheon / Mitsubishi Heavy Industries",
+    "country": "US",
+    "first_operational": 2018,
+    "first_combat_use": "2024-04-13",
+    "notes": "Joint US-Japan development. 21-inch second and third stages (vs 13.5-inch in Block IA/IB) for greater range and burnout velocity. First combat use against Iranian ballistic missiles in TP1.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/aegis/",
+      "https://en.wikipedia.org/wiki/RIM-161_Standard_Missile_3"
+    ]
+  },
+  {
+    "id": "pac3_mse",
+    "name": "PAC-3 MSE",
+    "parent_system": "patriot_pac3",
+    "type": "kinetic_kill",
+    "min_intercept_alt_km": 3,
+    "max_intercept_alt_km": 40,
+    "min_range_km": 3,
+    "max_range_km": 60,
+    "speed_mach": 5,
+    "length_m": 5.2,
+    "diameter_m": 0.25,
+    "weight_kg": 316,
+    "guidance": "Ka-band active radar seeker; 180 attitude control motors",
+    "warhead_type": "Hit-to-kill (no warhead)",
+    "kill_mechanism": "kinetic_kill",
+    "targets": ["SRBM", "cruise_missile", "aircraft"],
+    "unit_cost_usd": {
+      "estimate": 4000000,
+      "range": "4000000-6000000",
+      "notes": "MSE (Missile Segment Enhancement) variant; more capable than baseline PAC-3"
+    },
+    "developer": "Lockheed Martin",
+    "country": "US",
+    "first_operational": 2015,
+    "first_combat_use": "2024-01",
+    "notes": "Hit-to-kill interceptor with 180 small side-mounted attitude control motors for terminal maneuver. MSE variant has dual-pulse motor for extended range. 16 per launcher vs 4 for PAC-2.",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/patriot/",
+      "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    ]
+  },
+  {
+    "id": "pac2_gem_plus",
+    "name": "PAC-2 GEM+",
+    "parent_system": "patriot_pac3",
+    "type": "blast_fragmentation",
+    "min_intercept_alt_km": 3,
+    "max_intercept_alt_km": 24,
+    "min_range_km": 3,
+    "max_range_km": 160,
+    "speed_mach": 5,
+    "length_m": 5.31,
+    "diameter_m": 0.41,
+    "weight_kg": 900,
+    "guidance": "Semi-active radar homing; TVM (Track-via-Missile)",
+    "warhead_type": "70 kg blast fragmentation",
+    "kill_mechanism": "blast_fragmentation",
+    "targets": ["aircraft", "cruise_missile", "UAV", "SRBM"],
+    "unit_cost_usd": {
+      "estimate": 3000000,
+      "range": "2000000-4000000",
+      "notes": "Older variant; still widely deployed in Gulf states"
+    },
+    "developer": "Raytheon",
+    "country": "US",
+    "first_operational": 2002,
+    "first_combat_use": "2003",
+    "notes": "Guidance Enhanced Missile with improved seeker for low-RCS targets. 4 per launcher. Still operated by Saudi Arabia, Kuwait, UAE, and others.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/MIM-104_Patriot"
+    ]
+  },
+  {
+    "id": "thaad_interceptor",
+    "name": "THAAD interceptor",
+    "parent_system": "thaad",
+    "type": "kinetic_kill",
+    "min_intercept_alt_km": 40,
+    "max_intercept_alt_km": 150,
+    "min_range_km": null,
+    "max_range_km": 200,
+    "speed_mach": 8.24,
+    "length_m": 6.17,
+    "diameter_m": 0.34,
+    "weight_kg": 900,
+    "guidance": "Midcourse INS/GPS; terminal IIR seeker on kill vehicle",
+    "warhead_type": "Hit-to-kill (no warhead)",
+    "kill_mechanism": "kinetic_kill",
+    "targets": ["MRBM", "SRBM", "IRBM"],
+    "unit_cost_usd": {
+      "estimate": 12000000,
+      "range": "10000000-15000000",
+      "notes": "Per interceptor; THAAD battery (~$2B) includes AN/TPY-2 radar, fire control, 6 launchers"
+    },
+    "developer": "Lockheed Martin",
+    "country": "US",
+    "first_operational": 2008,
+    "first_combat_use": "2024-10",
+    "notes": "Single-stage solid-fuel interceptor. Kill vehicle detaches after boost and maneuvers with divert thrusters. THAAD battery deployed to Israel Oct 2024 (first time outside US territory in combat).",
+    "sources": [
+      "https://missilethreat.csis.org/defsys/thaad/",
+      "https://en.wikipedia.org/wiki/Terminal_High_Altitude_Area_Defense"
+    ]
+  },
+  {
+    "id": "sm2_block_iiia",
+    "name": "SM-2 Block IIIA",
+    "parent_system": "aegis_sm2",
+    "type": "blast_fragmentation",
+    "min_intercept_alt_km": 0.01,
+    "max_intercept_alt_km": 24,
+    "min_range_km": null,
+    "max_range_km": 170,
+    "speed_mach": 3.5,
+    "length_m": 4.72,
+    "diameter_m": 0.34,
+    "weight_kg": 707,
+    "guidance": "Inertial midcourse; semi-active radar terminal (Aegis illumination); IR terminal seeker (Block IIIB)",
+    "warhead_type": "61 kg blast fragmentation",
+    "kill_mechanism": "blast_fragmentation",
+    "targets": ["cruise_missile", "aircraft", "UAV"],
+    "unit_cost_usd": {
+      "estimate": 2100000,
+      "range": "1800000-2500000",
+      "notes": "Standard fleet air defense missile"
+    },
+    "developer": "Raytheon",
+    "country": "US",
+    "first_operational": 1981,
+    "first_combat_use": "1988",
+    "notes": "Primary US Navy fleet air defense missile. Used against drones and cruise missiles in Red Sea (Houthi attacks) and Persian Gulf. Significantly cheaper than SM-3 but shorter-range.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/RIM-66_Standard"
+    ]
+  },
+  {
+    "id": "iron_beam",
+    "name": "Iron Beam",
+    "parent_system": null,
+    "type": "directed_energy",
+    "min_intercept_alt_km": 0,
+    "max_intercept_alt_km": null,
+    "min_range_km": 0,
+    "max_range_km": 7,
+    "speed_mach": null,
+    "length_m": null,
+    "diameter_m": null,
+    "weight_kg": null,
+    "guidance": "Beam tracking / electro-optical",
+    "warhead_type": "High-energy laser (100 kW class)",
+    "kill_mechanism": "directed_energy",
+    "targets": ["short_range_rocket", "mortar", "UAV"],
+    "unit_cost_usd": {
+      "estimate": 2,
+      "range": "2-4",
+      "notes": "Cost per shot (electricity only). System cost ~$100M per unit. Near-zero marginal cost per interception is the key advantage."
+    },
+    "developer": "Rafael Advanced Defense Systems",
+    "country": "IL",
+    "first_operational": null,
+    "first_combat_use": null,
+    "notes": "High-energy laser air defense system. Still in testing/limited deployment as of early 2026. Designed to complement Iron Dome by handling very short-range/cheap threats at near-zero cost per shot.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Iron_Beam"
+    ]
+  }
+]

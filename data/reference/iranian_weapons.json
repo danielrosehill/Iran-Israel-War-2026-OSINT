@@ -26,6 +26,17 @@
     },
     "basing": "Road-mobile (TEL)",
     "first_unveiled": 2015,
+    "unit_cost_usd": {
+      "estimate": 250000,
+      "range": "200000-400000",
+      "notes": "Liquid-fuel MRBMs cheaper than solid-fuel equivalents; Shahab-3 derivative keeps costs low"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GNSS-aided corrections (GPS/GLONASS/BeiDou); susceptible to jamming",
+      "ins_capabilities": "Strap-down inertial navigation; MaRV terminal corrections via fin-guided reentry vehicle"
+    },
     "first_combat_use": "2024-04-13",
     "lineage": "Shahab-3 derivative",
     "key_features": [
@@ -73,6 +84,17 @@
       "bm_hypersonic": false
     },
     "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 250000,
+      "range": "200000-350000",
+      "notes": "Similar cost structure to Emad; liquid-fuel Shahab-3 derivative"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GPS/GLONASS correction for midcourse; vulnerable to GNSS denial",
+      "ins_capabilities": "Strap-down INS provides baseline accuracy; GPS corrections improve CEP"
+    },
     "launch_prep_minutes": 30,
     "first_operational_year": 2007,
     "first_combat_use": "2025-06",
@@ -117,6 +139,17 @@
       "bm_hypersonic": false
     },
     "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 500000,
+      "range": "400000-700000",
+      "notes": "Solid-fuel two-stage design is more expensive to produce than liquid-fuel single-stage"
+    },
+    "navigation": {
+      "gps": false,
+      "ins": true,
+      "gps_capabilities": null,
+      "ins_capabilities": "Strap-down INS; upgraded guidance from 2021 may include satellite corrections but unconfirmed"
+    },
     "first_test_year": 2008,
     "first_combat_use": "2025-06",
     "lineage": "Indigenous Iranian design (not foreign copy)",
@@ -162,6 +195,17 @@
       "bm_hypersonic": false
     },
     "basing": "Road-mobile; dual-launch TEL on commercial 10-wheel truck",
+    "unit_cost_usd": {
+      "estimate": 500000,
+      "range": "400000-600000",
+      "notes": "Compact solid-fuel design; dual-launch TEL reduces per-unit logistics cost"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "Satellite-aided INS (GPS/GLONASS/BeiDou) for midcourse; more jam-resistant than Shahab-3 derivatives",
+      "ins_capabilities": "Fin-guided MaRV terminal phase using INS for precision terminal maneuver"
+    },
     "first_unveiled": "2022-02-09",
     "first_combat_use": "2024-04-13",
     "lineage": "Third-generation IRGC ballistic missile",
@@ -210,6 +254,17 @@
       "bm_hypersonic": false
     },
     "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 1000000,
+      "range": "800000-1500000",
+      "notes": "Advanced MaRV with TVC significantly more expensive than conventional MRBMs"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "Hybrid GNSS (GPS/GLONASS) for midcourse corrections",
+      "ins_capabilities": "High-quality INS with thrust vector control (TVC) for MaRV terminal maneuvering up to 100 km before impact"
+    },
     "first_unveiled": "2023-06-06",
     "first_combat_use": "2025-06",
     "key_features": [
@@ -253,6 +308,17 @@
       "bm_hypersonic": true
     },
     "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 2000000,
+      "range": "1500000-3000000",
+      "notes": "HGV technology is the most expensive category in Iranian arsenal; still far cheaper than Western equivalents"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GNSS (GPS/GLONASS) for midcourse corrections during boost phase",
+      "ins_capabilities": "INS + HGV maneuvers in pitch and yaw throughout glide phase; unpredictable approach vector"
+    },
     "first_unveiled": "2023-11",
     "first_combat_use": "2026-03-01",
     "key_features": [
@@ -294,7 +360,17 @@
       "bm_hypersonic": false
     },
     "launch_method": "Truck-mounted multiple-rail RATO launcher; fired in salvos",
-    "unit_cost_usd": "20000-50000",
+    "unit_cost_usd": {
+      "estimate": 20000,
+      "range": "20000-50000",
+      "notes": "Very low unit cost is the strategic point — forces defenders to expend $50K-$36M interceptors against a $20K drone"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "Civilian GNSS (GPS/GLONASS/BeiDou); pre-programmed waypoints; highly vulnerable to GPS jamming",
+      "ins_capabilities": "Basic INS for dead-reckoning between GNSS fixes; limited accuracy without satellite corrections"
+    },
     "first_combat_use": "2019-09",
     "first_combat_use_notes": "Abqaiq-Khurais attack; major use in Ukraine from Sept 2022",
     "key_features": [
@@ -340,6 +416,17 @@
       "bm_marv_equipped": false,
       "bm_hypersonic": false
     },
+    "unit_cost_usd": {
+      "estimate": 50000,
+      "range": "40000-80000",
+      "notes": "Jet engine adds cost vs Shahed-136 but still cheap relative to defenders' interceptors"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "Civilian GNSS (GPS/GLONASS); IR and RF seeker variants for terminal guidance reduce GNSS dependence",
+      "ins_capabilities": "INS baseline navigation; terminal seekers (IIR or RF) provide autonomous terminal guidance independent of GPS"
+    },
     "first_unveiled": "2023-11",
     "first_combat_use_notes": "Used by Russia against Ukraine; used by Iran in 2026 operations",
     "key_features": [
@@ -375,6 +462,17 @@
       "bm_solid_fueled": false,
       "bm_marv_equipped": false,
       "bm_hypersonic": false
+    },
+    "unit_cost_usd": {
+      "estimate": 15000,
+      "range": "10000-30000",
+      "notes": "Lighter/cheaper variant of Shahed-136; smallest warhead in the family"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "Civilian GNSS (GPS/GLONASS); pre-programmed coordinates",
+      "ins_capabilities": "Basic INS for dead-reckoning navigation between GNSS fixes"
     },
     "first_combat_use": "2022-09",
     "first_combat_use_notes": "Ukraine",
@@ -412,6 +510,17 @@
       "bm_marv_equipped": false,
       "bm_hypersonic": false
     },
+    "unit_cost_usd": {
+      "estimate": 500000,
+      "range": "400000-800000",
+      "notes": "Full UCAV with ISR payload and PGMs; significantly more expensive than one-way drones"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GNSS for waypoint navigation; datalink for real-time operator control",
+      "ins_capabilities": "INS for autonomous flight segments; EO/IR sensor suite for terminal guidance of Qaem PGMs"
+    },
     "first_combat_use": "2016",
     "first_combat_use_notes": "Syria/Iraq",
     "key_features": [
@@ -442,6 +551,17 @@
       "bm_solid_fueled": false,
       "bm_marv_equipped": false,
       "bm_hypersonic": false
+    },
+    "unit_cost_usd": {
+      "estimate": 500000,
+      "range": "300000-700000",
+      "notes": "Turbojet-powered GLCM; comparable to Tomahawk-class missiles in complexity"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GNSS for midcourse waypoint navigation",
+      "ins_capabilities": "INS + TERCOM (terrain contour matching) for terrain-following flight; reduces GPS dependence in jamming environments"
     },
     "first_combat_use": "2024-04-13",
     "first_combat_use_notes": "True Promise 1",
@@ -481,6 +601,17 @@
       "bm_hypersonic": false
     },
     "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 400000,
+      "range": "300000-500000",
+      "notes": "Liquid-fuel single-stage; largest warhead (1 ton) in Iranian inventory; older Shahab-3/BM-25 derivative"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "Satellite correction for midcourse; GNSS-aided INS",
+      "ins_capabilities": "Strap-down INS with MaRV terminal corrections"
+    },
     "first_unveiled": "2023-05-25",
     "first_combat_use": "2026-03-05",
     "lineage": "Khorramshahr family; Shahab-3 lineage via BM-25 Musudan technology",

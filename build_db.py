@@ -12,6 +12,7 @@ Outputs:
 import json
 import sqlite3
 import os
+import uuid
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(REPO, 'data', 'iran_israel_war.db')
@@ -26,6 +27,7 @@ WAVE_FILES = [
 REF_FILES = {
     'iranian_weapons': os.path.join(REPO, 'data', 'reference', 'iranian_weapons.json'),
     'defense_systems': os.path.join(REPO, 'data', 'reference', 'defense_systems.json'),
+    'interceptor_munitions': os.path.join(REPO, 'data', 'reference', 'interceptor_munitions.json'),
     'armed_forces': os.path.join(REPO, 'data', 'reference', 'armed_forces.json'),
     'us_bases': os.path.join(REPO, 'data', 'reference', 'us_bases.json'),
     'us_naval_vessels': os.path.join(REPO, 'data', 'reference', 'us_naval_vessels.json'),
@@ -64,6 +66,7 @@ def create_schema(cur):
     -- ══════════════════════════════════════════════════════════════
     CREATE TABLE IF NOT EXISTS waves (
         -- Identity
+        uuid                    TEXT NOT NULL UNIQUE,
         operation               TEXT NOT NULL,
         wave_number             INTEGER NOT NULL,
         wave_codename_farsi     TEXT,
@@ -223,6 +226,57 @@ def create_schema(cur):
     );
 
     -- ══════════════════════════════════════════════════════════════
+    -- Granular interception and strike events within each wave
+    -- ══════════════════════════════════════════════════════════════
+    CREATE TABLE IF NOT EXISTS wave_events (
+        uuid                TEXT PRIMARY KEY,
+        operation           TEXT NOT NULL,
+        wave_number         INTEGER NOT NULL,
+        event_type          TEXT NOT NULL CHECK (event_type IN ('interception', 'strike', 'impact')),
+        outcome_status      TEXT CHECK (outcome_status IN ('confirmed', 'disputed', 'unverified', NULL)),
+        location_name       TEXT NOT NULL,
+        lat                 REAL,
+        lon                 REAL,
+        country_code        TEXT,
+        weapon_type         TEXT,
+        defense_system      TEXT,
+        interception_method TEXT CHECK (interception_method IN ('surface_to_air_missile', 'air_to_air_missile', 'air_to_air_gun', 'directed_energy', 'electronic_warfare', NULL)),
+        interceptor_munition TEXT,
+        intercept_phase     TEXT CHECK (intercept_phase IN ('exoatmospheric', 'endoatmospheric', NULL)),
+        intercepting_force  TEXT,
+        fatalities          INTEGER,
+        injuries            INTEGER,
+        damage_description  TEXT,
+        target_type         TEXT CHECK (target_type IN ('military', 'civilian', 'dual_use', 'infrastructure', NULL)),
+        source_url          TEXT,
+        confidence          TEXT NOT NULL DEFAULT 'probable' CHECK (confidence IN ('confirmed', 'probable', 'unconfirmed')),
+        -- Competing claims
+        iranian_claim       TEXT,
+        israeli_claim        TEXT,
+        us_claim            TEXT,
+        -- Post-battle damage assessment
+        bda_source_type     TEXT CHECK (bda_source_type IN ('satellite_imagery', 'ground_photo', 'video', 'media_report', 'government_report', 'multiple', NULL)),
+        bda_source_name     TEXT,
+        bda_source_url      TEXT,
+        bda_assessment_date TEXT,
+        bda_assessment      TEXT,
+        bda_damage_confirmed INTEGER,  -- 0/1/NULL
+        bda_impact_count    INTEGER,
+        -- SATINT observations (nested within BDA)
+        satint_provider     TEXT,
+        satint_capture_date TEXT,
+        satint_resolution_m REAL,
+        satint_observations TEXT,
+        satint_before_after INTEGER,  -- 0/1/NULL
+        satint_imagery_url  TEXT,
+        -- Media and narrative
+        narrative           TEXT,
+        thumbnail           TEXT,
+        images_json         TEXT,  -- JSON array of image objects
+        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+    );
+
+    -- ══════════════════════════════════════════════════════════════
     -- Reference tables
     -- ══════════════════════════════════════════════════════════════
     CREATE TABLE IF NOT EXISTS iranian_weapons (
@@ -291,6 +345,33 @@ def create_schema(cur):
         lon             REAL
     );
 
+    CREATE TABLE IF NOT EXISTS interceptor_munitions (
+        id                  TEXT PRIMARY KEY,
+        name                TEXT NOT NULL,
+        parent_system       TEXT,
+        type                TEXT,
+        min_intercept_alt_km REAL,
+        max_intercept_alt_km REAL,
+        min_range_km        REAL,
+        max_range_km        REAL,
+        speed_mach          REAL,
+        length_m            REAL,
+        diameter_m          REAL,
+        weight_kg           REAL,
+        guidance            TEXT,
+        warhead_type        TEXT,
+        kill_mechanism      TEXT,
+        unit_cost_usd       INTEGER,
+        unit_cost_range     TEXT,
+        unit_cost_notes     TEXT,
+        developer           TEXT,
+        country             TEXT,
+        first_operational   TEXT,
+        first_combat_use    TEXT,
+        notes               TEXT,
+        FOREIGN KEY (parent_system) REFERENCES defense_systems(id)
+    );
+
     CREATE TABLE IF NOT EXISTS us_naval_vessels (
         name        TEXT PRIMARY KEY,
         type        TEXT,
@@ -324,6 +405,11 @@ def bool_to_int(val):
     if val is False:
         return 0
     return None
+
+
+def get_uuid(obj):
+    """Return existing UUID from JSON or generate a deterministic one."""
+    return obj.get('uuid') or str(uuid.uuid4())
 
 
 def load_operations(cur):
@@ -383,7 +469,7 @@ def load_waves(cur):
 
             cur.execute("""
                 INSERT OR REPLACE INTO waves VALUES (
-                    ?,?,?,?,?,
+                    ?,?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,
@@ -398,6 +484,7 @@ def load_waves(cur):
                     ?
                 )
             """, (
+                get_uuid(w),
                 op, wn,
                 w.get('wave_codename_farsi'),
                 w.get('wave_codename_english'),
@@ -523,6 +610,72 @@ def load_waves(cur):
                     "INSERT OR IGNORE INTO wave_sources VALUES (?,?,?)",
                     (op, wn, url))
 
+            # Events: granular interception and strike records
+            for evt in w.get('events', []):
+                bda = evt.get('bda') or {}
+                satint = bda.get('satint') or {}
+                cur.execute("""
+                    INSERT INTO wave_events
+                        (uuid, operation, wave_number, event_type, outcome_status,
+                         location_name,
+                         lat, lon, country_code, weapon_type,
+                         defense_system, interception_method, interceptor_munition,
+                         intercept_phase, intercepting_force,
+                         fatalities, injuries, damage_description,
+                         target_type, source_url, confidence,
+                         iranian_claim, israeli_claim, us_claim,
+                         bda_source_type, bda_source_name, bda_source_url,
+                         bda_assessment_date, bda_assessment,
+                         bda_damage_confirmed, bda_impact_count,
+                         satint_provider, satint_capture_date,
+                         satint_resolution_m, satint_observations,
+                         satint_before_after, satint_imagery_url,
+                         narrative, thumbnail, images_json)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                """, (
+                    get_uuid(evt),
+                    op, wn,
+                    evt['event_type'],
+                    evt.get('outcome_status'),
+                    evt['location_name'],
+                    evt.get('lat'),
+                    evt.get('lon'),
+                    evt.get('country_code'),
+                    evt.get('weapon_type'),
+                    evt.get('defense_system'),
+                    evt.get('interception_method'),
+                    evt.get('interceptor_munition'),
+                    evt.get('intercept_phase'),
+                    evt.get('intercepting_force'),
+                    evt.get('fatalities'),
+                    evt.get('injuries'),
+                    evt.get('damage_description'),
+                    evt.get('target_type'),
+                    evt.get('source_url'),
+                    evt.get('confidence', 'probable'),
+                    evt.get('iranian_claim'),
+                    evt.get('israeli_claim'),
+                    evt.get('us_claim'),
+                    bda.get('source_type'),
+                    bda.get('source_name'),
+                    bda.get('source_url'),
+                    bda.get('assessment_date'),
+                    bda.get('assessment'),
+                    bool_to_int(bda.get('damage_confirmed')),
+                    bda.get('impact_count'),
+                    # SATINT
+                    satint.get('imagery_provider'),
+                    satint.get('capture_date'),
+                    satint.get('resolution_m'),
+                    satint.get('observations'),
+                    bool_to_int(satint.get('before_after_available')),
+                    satint.get('imagery_url'),
+                    # Media and narrative
+                    evt.get('narrative'),
+                    evt.get('thumbnail'),
+                    json.dumps(evt['images']) if evt.get('images') else None,
+                ))
+
 
 def load_iranian_weapons(cur):
     with open(REF_FILES['iranian_weapons']) as f:
@@ -594,6 +747,38 @@ def load_armed_forces(cur):
                 (af['id'], alias))
 
 
+def load_interceptor_munitions(cur):
+    with open(REF_FILES['interceptor_munitions']) as f:
+        munitions = json.load(f)
+    for m in munitions:
+        cost = m.get('unit_cost_usd', {})
+        if isinstance(cost, dict):
+            cost_est = cost.get('estimate')
+            cost_range = cost.get('range')
+            cost_notes = cost.get('notes')
+        else:
+            cost_est = cost
+            cost_range = None
+            cost_notes = None
+        cur.execute("""
+            INSERT OR REPLACE INTO interceptor_munitions VALUES
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        """, (
+            m['id'], m['name'], m.get('parent_system'),
+            m.get('type'),
+            m.get('min_intercept_alt_km'), m.get('max_intercept_alt_km'),
+            m.get('min_range_km'), m.get('max_range_km'),
+            m.get('speed_mach'),
+            m.get('length_m'), m.get('diameter_m'), m.get('weight_kg'),
+            m.get('guidance'), m.get('warhead_type'), m.get('kill_mechanism'),
+            cost_est, cost_range, cost_notes,
+            m.get('developer'), m.get('country'),
+            str(m.get('first_operational', '')) or None,
+            m.get('first_combat_use'),
+            m.get('notes'),
+        ))
+
+
 def load_us_bases(cur):
     with open(REF_FILES['us_bases']) as f:
         bases = json.load(f)
@@ -643,9 +828,11 @@ def load_x_post_snippets(cur):
 
 def print_summary(cur):
     print("\n=== Database Summary ===")
-    for table in ['operations', 'waves', 'wave_landing_countries',
+    for table in ['operations', 'waves', 'wave_events',
+                   'wave_landing_countries',
                    'wave_interception_systems', 'wave_us_bases_targeted',
                    'wave_sources', 'iranian_weapons', 'defense_systems',
+                   'interceptor_munitions',
                    'armed_forces', 'us_bases', 'us_naval_vessels',
                    'x_post_snippets']:
         cur.execute(f"SELECT COUNT(*) FROM {table}")
@@ -701,6 +888,7 @@ def main():
     load_waves(cur)
     load_iranian_weapons(cur)
     load_defense_systems(cur)
+    load_interceptor_munitions(cur)
     load_armed_forces(cur)
     load_us_bases(cur)
     load_us_naval_vessels(cur)
