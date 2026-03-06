@@ -25,7 +25,7 @@ Specifically, the dataset tracks:
 For OSINT analysis, commentary, and visualizations built on this dataset, see the companion site repository:
 
 - **Repo:** `danielrosehill/Iran-Israel-OSINT-Site` (private)
-- **Live site:** `iranisrael.danielrosehill.com`
+- **Live site:** `promisedenied.com`
 
 ## Neutrality
 

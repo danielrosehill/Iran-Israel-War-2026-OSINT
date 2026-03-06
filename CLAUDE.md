@@ -36,7 +36,7 @@ data/
 The OSINT analysis site is in a separate repo:
 
 - **Repo:** `~/repos/github/Iran-Israel-OSINT-Site/` (private, GitHub: `danielrosehill/Iran-Israel-OSINT-Site`)
-- **Deployment:** Vercel at `iranisrael.danielrosehill.com`
+- **Deployment:** Vercel at `promisedenied.com`
 - **Data pipeline:** The site repo has `sync-data.sh` which pulls JSON from this repo's raw GitHub URLs
 
 ### Publishing Workflow
