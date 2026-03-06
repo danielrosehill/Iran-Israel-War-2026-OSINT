@@ -4,10 +4,10 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "wave_count": 20,
+    "wave_count": 23,
     "date_range": {
       "start": "2026-02-28",
-      "end": "2026-03-05"
+      "end": "2026-03-06"
     },
     "canonical_format": "json",
     "source_csv_columns": 75,
@@ -3260,6 +3260,474 @@
         }
       },
       "iranian_media_claims": "IRGC Public Relations announced the twentieth wave of Operation Promised Truth 4 began with a combined missile and drone operation along with a barrage of Khaibar-breaking (Kheibar Shekan) missiles against targets in the heart of Tel Aviv on the evening of the birth of Imam Hasan al-Mujtaba, with the code 'Ya Mo'izz al-Mu'minin'."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 21,
+      "wave_codename_farsi": "يا معزّ المؤمنين",
+      "wave_codename_english": "Ya Mu'izz al-Mu'minin",
+      "timing": {
+        "announced_utc": "2026-03-06T04:00:00Z",
+        "announced_utc_note": "Early Friday morning March 6; exact time approximate based on reporting of 'early Friday' and Day 7 context",
+        "announcement_source": "IRGC Aerospace Force",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-06T03:30:00Z",
+        "launch_time_israel": "2026-03-06T05:30:00+0200",
+        "launch_time_iran": "2026-03-06T07:00:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 7,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Kheibar Shekan ballistic missiles with cluster munition warheads, suicide drone swarms",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": false,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": "Kheibar Shekan",
+          "submunition_count": 20,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 8.0,
+          "dispersal_altitude_ft": 23000
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": null,
+        "targets": "Tel Aviv; combined drone swarms and Kheibar cluster missiles designed to saturate and overwhelm multi-layered air defences",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.0853,
+          "lon": 34.7818
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "IRGC claims Kheibar cluster warheads fragmented mid-flight, releasing dozens of submunitions that rendered Iron Dome, David's Sling, and Arrow largely ineffective. Independent verification unavailable."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "IRGC claims cluster warhead submunitions dispersed across target areas. No specific damage reports confirmed by Israeli sources.",
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://muslimmirror.com/irgc-unleashes-21st-wave-of-operation-true-promise-4-tel-aviv-rocked-by-advanced-khyber-missile-barrage/",
+          "https://www.newsx.com/world/israel-iran-us-war-live-day-6-irgc-launches-21st-wave-of-operation-true-promise-counterstrikes-with-drone-missile-swarms-tehran-vows-more-intense-operations-khamenei-death-funeral-trump-war-178308/",
+          "https://www.tribuneindia.com/news/counter-strikes/irans-irgc-launches-21st-wave-of-counter-strikes-vows-more-intense-operations",
+          "https://news.cgtn.com/news/2026-03-06/news-1LhO8FO6dC8/p.html"
+        ]
+      },
+      "description": "Twenty-first wave of Operation True Promise 4. Codename 'Ya Mu'izz al-Mu'minin.' IRGC Aerospace Force launched combined suicide drone swarms and Kheibar Shekan ballistic missiles with cluster warheads at Tel Aviv early Friday morning on Day 7 of the conflict. IRGC stated the tactic was designed to overwhelm Israel's multi-layered air defences. Iran vowed 'more intense' operations in coming days. Cumulative munitions prior to this wave reportedly exceeded 2,000 drones and 600 missiles.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC Aerospace Force announced the 21st wave of Operation True Promise 4 utilizing swarms of suicide drones and advanced Khayber missiles with cluster warheads to saturate and bypass the Zionist regime's multi-layered air defences."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 22,
+      "wave_codename_farsi": "يا حسين بن علي عليه السلام",
+      "wave_codename_english": "Ya Hossein ibn Ali (peace be upon him)",
+      "timing": {
+        "announced_utc": "2026-03-06T12:00:00Z",
+        "announced_utc_note": "Friday afternoon March 6; IRGC Public Relations described as 'Friday afternoon' operation. Exact time approximate.",
+        "announcement_source": "IRGC Public Relations",
+        "announcement_x_url": "https://x.com/IrnaEnglish/status/2029864376719581460",
+        "probable_launch_time": "2026-03-06T11:30:00Z",
+        "launch_time_israel": "2026-03-06T13:30:00+0200",
+        "launch_time_iran": "2026-03-06T15:00:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 7,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Khorramshahr-4 ballistic missiles (~1,500 kg warhead, Mach 16 exo-atmospheric / Mach 8 atmospheric), Kheibar Shekan ballistic missiles, Fattah hypersonic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": true,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Tel Aviv, Ben Gurion Airport, Israeli Air Force military centers in Haifa, US and Israeli positions across the Persian Gulf including Al Udeid Air Base (Qatar) and Al Dhafra Air Base (UAE). Retaliation for Minab school strike.",
+        "landings_countries": [
+          "IL",
+          "QA",
+          "AE"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": true,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [
+          {
+            "name": "Al Udeid Air Base",
+            "country_code": "QA"
+          },
+          {
+            "name": "Al Dhafra Air Base",
+            "country_code": "AE"
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": true,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": true,
+        "interception_report": "Israeli military confirmed defence systems intercepting missiles launched from Iran. No injuries reported in Israel."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "IRGC claims strikes on Tel Aviv, Ben Gurion Airport, military centers in Haifa. Claims Al Udeid radar systems, air traffic control, satellite stations, and fuel depots obliterated. Claims Al Dhafra early warning radar and critical infrastructure destroyed by precision strikes and drone swarms. No confirmed Israeli casualties.",
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://x.com/IrnaEnglish/status/2029864376719581460",
+          "https://www.presstv.ir/Detail/2026/03/06/765044/IRGC-launches-22nd-wave-of-Operation-True-Promise-4-in-response-to-US-Israeli-aggression",
+          "https://www.presstv.ir/Detail/2026/03/06/765034/New-generation-missiles-on-way-as-Iran-launches-22nd-barrage",
+          "https://www.palestinechronicle.com/iran-says-khorramshahr-4-missiles-targeted-ben-gurion-airport-in-new-attack-wave/",
+          "https://www.islamicinvitationturkey.com/iran-unleashes-22nd-missile-wave-in-op-true-promise-4-with-advanced-weaponry/",
+          "https://defencesecurityasia.com/en/iran-khorramshahr-4-ballistic-missile-strike-tel-aviv-israel-air-defence-operation-true-promise-4/"
+        ]
+      },
+      "description": "Twenty-second wave of Operation True Promise 4. Codename 'Ya Hossein ibn Ali.' Significant escalation in weapon sophistication: first wave to combine Khorramshahr-4 (~1,500 kg warhead, Mach 16), Kheibar Shekan, and Fattah hypersonic missiles simultaneously. Targeted Tel Aviv, Ben Gurion Airport, Haifa military centers, plus Al Udeid and Al Dhafra air bases in the Gulf. IRGC framed as retaliation for Minab school strike. Iranian state media stated most missiles used in the war to date were from 2012-2014 production, and new generation weapons had only been deployed in rare cases until this wave.",
+      "reactions": {
+        "idf": {
+          "statement": "Israeli military confirmed defence systems were intercepting missiles launched from Iran. No injuries reported.",
+          "url": null
+        },
+        "us_government": {
+          "statement": "US says Iran's ballistic missile attacks have fallen by 90 percent since the first day of the conflict; drone attacks down 83 percent.",
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC Public Relations announced the 22nd wave of Operation True Promise 4 began with a barrage of Khorramshahr 4, Kheibar, and Fattah missiles targeting the heart of the Israeli-occupied territories. The operation was codenamed 'Ya Hossein ibn Ali' and conducted in retaliation for the child-killing perpetrators who murdered Iran's children at the Minab school. IRGC stated only a fraction of Iran's actual capabilities had been used and new generation strategic weapons were forthcoming."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 23,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "timing": {
+        "announced_utc": "2026-03-06T20:31:00Z",
+        "announced_utc_note": "Announced at approximately 10:31 PM local time March 6 per social media posts; UTC offset approximate (Israel IST = UTC+2, so 22:31 IST = 20:31 UTC)",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-06T20:00:00Z",
+        "launch_time_israel": "2026-03-06T22:00:00+0200",
+        "launch_time_iran": "2026-03-06T23:30:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 7,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Advanced ballistic missiles (types to be confirmed); IRGC stated 'some of the world's most advanced missiles'",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Israel; Kuwait, Qatar, Bahrain, Saudi Arabia, UAE (per social media reports). Details pending confirmation.",
+        "landings_countries": [
+          "IL",
+          "KW",
+          "QA",
+          "BH",
+          "SA",
+          "AE"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": null,
+          "targeted_jerusalem": null,
+          "targeted_haifa": null,
+          "targeted_negev_beersheba": null,
+          "targeted_northern_periphery": null,
+          "targeted_eilat": null
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Israeli military confirmed defence systems intercepting missiles launched from Iran."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": null,
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.aljazeera.com/news/2026/3/6/iran-war-what-is-happening-on-day-seven-of-us-israel-attacks",
+          "https://x.com/IranUpdates0",
+          "https://x.com/IranToday_24"
+        ]
+      },
+      "description": "Twenty-third wave of Operation True Promise 4. Announced late evening March 6 (Day 7). IRGC stated this phase would involve 'some of the world's most advanced missiles.' Targets reported across Israel and Gulf states including Kuwait, Qatar, Bahrain, Saudi Arabia, and UAE. Israeli military confirmed intercepting missiles. Details remain sparse as the wave was announced only hours ago; this is a preliminary entry pending further OSINT confirmation.",
+      "reactions": {
+        "idf": {
+          "statement": "Israeli military confirmed defence systems intercepting missiles launched from Iran.",
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC announced the start of the 23rd wave of Operation True Promise 4. Social media accounts linked to Iranian state media stated this phase would involve 'some of the world's most advanced missiles' targeting Israel and US-allied positions across the Gulf."
     }
   ]
 }
