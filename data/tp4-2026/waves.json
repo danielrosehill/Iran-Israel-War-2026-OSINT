@@ -24,7 +24,20 @@
       "QA",
       "SA",
       "TR"
-    ]
+    ],
+    "data_quality": "partial — ongoing operation; wave-level munitions counts incomplete for most waves; timing approximate for later waves; cross-referenced against OSINT sources and Iranian state media",
+    "conflict_name": null,
+    "aggregate_stats": {
+      "total_ballistic_missiles": null,
+      "total_cruise_missiles": null,
+      "total_drones": null,
+      "total_munitions_estimate": null,
+      "interception_rate_claimed": null,
+      "total_killed": null,
+      "total_wounded": null,
+      "trigger_event": "Continued Israeli military operations and US strategic posture in Persian Gulf region; escalation following True Promise 3",
+      "historical_significance": "First Iranian operation to directly target US military bases and naval vessels alongside Israel; first confirmed combat use of cluster munition warheads on ballistic missiles; expanded theater to 12 countries across Middle East"
+    }
   },
   "waves": [
     {
@@ -3098,7 +3111,8 @@
       "wave_codename_farsi": "يا معزّ المؤمنين",
       "wave_codename_english": "Ya Mo'izz al-Mu'minin",
       "timing": {
-        "announced_utc": "2026-03-05T00:00:00Z",
+        "announced_utc": null,
+        "announced_utc_note": "Originally recorded as 2026-03-05T00:00:00Z but this was a placeholder; description says 'eighth Iranian attack since midnight' suggesting it occurred after wave 19 (06:00Z)",
         "announcement_source": "IRGC",
         "announcement_x_url": null,
         "probable_launch_time": null,
