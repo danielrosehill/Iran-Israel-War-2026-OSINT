@@ -25,14 +25,14 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 
 ## Dataset Description
 
-46 attack waves across four Iranian military operations, each with 87 structured fields covering timing, weapons systems, targets, interception performance, casualties, and escalation indicators.
+53 attack waves across four Iranian military operations, each with 87 structured fields covering timing, weapons systems, targets, interception performance, casualties, and escalation indicators.
 
 | Operation | Date | Waves | Munitions | Targets |
 |-----------|------|------:|----------:|---------|
 | True Promise 1 | Apr 13–14, 2024 | 2 | ~320 | Israel (airbases) |
 | True Promise 2 | Oct 1, 2024 | 2 | ~200 | Israel (airbases, intel HQ) |
 | True Promise 3 | Jun 13–24, 2025 | 22 | ~1,600–1,800 | Israel (cities, bases, infrastructure) |
-| True Promise 4 | Feb 28–ongoing, 2026 | 20 | TBD | Israel, US/coalition bases across Gulf & Med |
+| True Promise 4 | Feb 28–ongoing, 2026 | 27 | TBD | Israel, US/coalition bases across Gulf & Med |
 
 ## Data Fields (87 columns)
 
@@ -50,8 +50,9 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 
 ## Files
 
-- `waves.parquet` — All 46 waves, 87 columns (recommended)
+- `waves.parquet` — All 53 waves, 87 columns (recommended)
 - `waves.csv` — Same data in CSV format
+- `data_dictionary.csv` — Column-level documentation with data types, nullability, and descriptions for all 87 fields
 
 ## Usage
 

@@ -3,6 +3,7 @@
 
 import json
 import os
+import shutil
 import pandas as pd
 
 REPO = os.path.dirname(os.path.abspath(__file__))
@@ -164,6 +165,11 @@ def main():
 
     df.to_csv(csv_path, index=False)
     df.to_parquet(parquet_path, index=False)
+
+    # Copy data dictionary into kaggle export directory
+    dict_src = os.path.join(REPO, 'data', 'data_dictionary.csv')
+    if os.path.exists(dict_src):
+        shutil.copy2(dict_src, os.path.join(KAGGLE_DIR, 'data_dictionary.csv'))
 
     print(f"Exported {len(df)} waves to:")
     print(f"  {csv_path} ({os.path.getsize(csv_path) // 1024} KB)")

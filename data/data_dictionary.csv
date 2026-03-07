@@ -1,0 +1,88 @@
+column_name,data_type,nullable,description
+operation,string,no,"Operation identifier: tp1 (Apr 2024), tp2 (Oct 2024), tp3 (Jun 2025), tp4 (Feb 2026+)"
+wave_number,integer,no,Sequential wave number within the operation (1-indexed)
+wave_codename_farsi,string,yes,Iranian codename for this wave in Farsi script
+wave_codename_english,string,yes,Iranian codename for this wave transliterated to English
+announced_utc,datetime,yes,ISO 8601 timestamp (UTC) when wave was first announced or detected
+announcement_source,string,yes,"Source of the first announcement (e.g. IDF, IRGC, OSINT account)"
+probable_launch_time,datetime,yes,ISO 8601 timestamp of estimated launch time based on OSINT analysis
+launch_time_israel,string,yes,Local launch time in Israel Standard Time (IST/IDT)
+launch_time_iran,string,yes,Local launch time in Iran Standard Time (IRST/IRDT)
+solar_phase_launch_site,integer,yes,"Solar illumination at launch site: 0=Night, 1=Astronomical twilight, 2=Nautical twilight, 3=Civil twilight, 4=Low sun, 5=Daylight"
+solar_phase_target,integer,yes,"Solar illumination at target: 0=Night, 1=Astronomical twilight, 2=Nautical twilight, 3=Civil twilight, 4=Low sun, 5=Daylight"
+conflict_day,integer,yes,Day number of the conflict (Day 1 = first wave of that operation)
+hours_since_last_wave,float,yes,Hours elapsed since the previous wave in the same operation
+time_between_waves_minutes,float,yes,Minutes elapsed since the previous wave (finer granularity than hours_since_last_wave)
+wave_duration_minutes,float,yes,Estimated duration of the wave from first to last munition arrival
+payload,string,yes,"Free-text description of the weapon payload composition (e.g. 'mixed BM + drones', 'ballistic only')"
+drones_used,boolean,yes,Whether UAVs/loitering munitions were used in this wave
+ballistic_missiles_used,boolean,yes,Whether ballistic missiles were used in this wave
+cruise_missiles_used,boolean,yes,Whether cruise missiles were used in this wave
+emad_used,boolean,yes,Whether Emad liquid-fueled MRBM was used
+ghadr_used,boolean,yes,Whether Ghadr liquid-fueled MRBM was used
+sejjil_used,boolean,yes,Whether Sejjil solid-fueled MRBM was used
+kheibar_shekan_used,boolean,yes,Whether Kheibar Shekan solid-fueled MRBM was used
+fattah_used,boolean,yes,Whether Fattah-1 or Fattah-2 hypersonic missile was used
+shahed_136_used,boolean,yes,Whether Shahed-136 one-way attack drone was used
+shahed_238_used,boolean,yes,Whether Shahed-238 jet-powered one-way attack drone was used
+shahed_131_used,boolean,yes,Whether Shahed-131 one-way attack drone was used
+shahed_107_used,boolean,yes,Whether Shahed-107 (Ababil-2) drone was used
+shahed_129_used,boolean,yes,Whether Shahed-129 MALE UCAV was used
+mohajer_6_used,boolean,yes,Whether Mohajer-6 reconnaissance/strike UCAV was used
+bm_liquid_fueled,boolean,yes,Whether any liquid-fueled ballistic missile was used in this wave
+bm_solid_fueled,boolean,yes,Whether any solid-fueled ballistic missile was used in this wave
+bm_marv_equipped,boolean,yes,Whether any MARV-equipped (maneuverable reentry vehicle) ballistic missile was used
+bm_hypersonic,boolean,yes,Whether any hypersonic-class ballistic missile (Mach 5+) was used
+bm_cluster_warhead,boolean,yes,Whether any ballistic missile carried cluster submunitions
+cluster_warhead_confirmed,boolean,yes,Whether cluster warhead use was confirmed by IDF/police/OSINT evidence
+cluster_carrier_missile,string,yes,"Missile type that delivered the cluster warhead (e.g. 'Fattah-2')"
+cluster_submunition_count,integer,yes,Estimated number of submunitions per cluster warhead
+cluster_submunition_explosive_kg,float,yes,Explosive weight per individual submunition in kilograms
+cluster_dispersal_radius_km,float,yes,Estimated dispersal radius of submunitions in kilometers
+israel_targeted,boolean,yes,Whether this wave targeted locations in Israel
+us_bases_targeted,boolean,yes,Whether this wave targeted US military bases in the region
+targets,string,yes,"Free-text description of targets (e.g. 'Nevatim Airbase, Ramon Airbase')"
+landings_countries,string,yes,"Comma-separated ISO 3166-1 alpha-2 country codes where munitions landed (e.g. 'IL, JO, PS')"
+targeted_tel_aviv,boolean,yes,Whether Tel Aviv / Gush Dan metropolitan area was targeted
+targeted_jerusalem,boolean,yes,Whether Jerusalem area was targeted
+targeted_haifa,boolean,yes,Whether Haifa / northern coast was targeted
+targeted_negev_beersheba,boolean,yes,Whether Negev desert / Beersheba area was targeted (includes Nevatim/Ramon airbases)
+targeted_northern_periphery,boolean,yes,Whether northern periphery (Galilee / Golan) was targeted
+targeted_eilat,boolean,yes,Whether Eilat / southernmost Israel was targeted
+us_bases_list,string,yes,"Comma-separated names of US military bases targeted (e.g. 'Al Udeid Air Base, Al Dhafra Air Base')"
+us_naval_vessels_list,string,yes,"Comma-separated names of US naval vessels targeted (e.g. 'USS Eisenhower, USS Philippine Sea')"
+target_lat,float,yes,Latitude of primary target in decimal degrees (WGS84)
+target_lon,float,yes,Longitude of primary target in decimal degrees (WGS84)
+launch_site_description,string,yes,"Free-text description of launch origin (e.g. 'Western Iran, Kermanshah province')"
+launch_site_lat,float,yes,Latitude of launch site in decimal degrees (WGS84)
+launch_site_lon,float,yes,Longitude of launch site in decimal degrees (WGS84)
+intercepted,boolean,yes,Whether any munitions from this wave were intercepted
+interception_systems,string,yes,"Comma-separated defense systems used (e.g. 'Arrow-2, Arrow-3, David's Sling, Iron Dome')"
+intercepted_by_israel,boolean,yes,Whether Israel participated in interception of this wave
+intercepted_by_us,boolean,yes,Whether the United States participated in interception of this wave
+intercepted_by_uk,boolean,yes,Whether the United Kingdom participated in interception of this wave
+intercepted_by_jordan,boolean,yes,Whether Jordan participated in interception of this wave
+intercepted_by_other,string,yes,Comma-separated names of other countries that participated in interception
+estimated_intercept_count,integer,yes,Estimated number of munitions intercepted in this wave
+estimated_intercept_rate,float,yes,Estimated interception rate as a decimal (0.0-1.0) for this wave
+exoatmospheric_interception,boolean,yes,Whether exoatmospheric (above atmosphere ~100km) interceptions occurred
+endoatmospheric_interception,boolean,yes,Whether endoatmospheric (within atmosphere) interceptions occurred
+interception_report,string,yes,Free-text summary of interception activity and outcomes
+estimated_munitions_count,integer,yes,Estimated total number of munitions (missiles + drones) fired in this wave
+munitions_targeting_israel,integer,yes,Number of munitions in this wave directed at Israeli targets
+munitions_targeting_us_bases,integer,yes,Number of munitions in this wave directed at US military bases
+cumulative_total,integer,yes,Running cumulative total of all munitions fired across all waves in this operation
+small_number_of_missiles,boolean,yes,Flag indicating a small/token salvo rather than a full wave
+damage,string,yes,Free-text description of damage caused by this wave
+fatalities,integer,yes,Total number of fatalities (military + civilian) caused by this wave
+injuries,integer,yes,Total number of injuries (military + civilian) caused by this wave
+civilian_casualties,integer,yes,Number of civilian casualties (killed + injured) from this wave
+military_casualties,integer,yes,Number of military casualties (killed + injured) from this wave
+new_country_targeted,boolean,yes,Whether this wave targeted a country not previously attacked in this operation (escalation marker)
+new_weapon_first_use,boolean,yes,Whether this wave introduced a weapon system not previously used in this operation (escalation marker)
+proxy_involvement,boolean,yes,"Whether proxy forces (e.g. Hezbollah, Houthis, Iraqi militias) were involved in this wave"
+proxy_description,string,yes,Free-text description of proxy force involvement
+description,string,yes,Free-text narrative summary of the wave
+iranian_media_claims,string,yes,JSON-encoded Iranian state media claims about this wave's results
+idf_statement,string,yes,Summary or excerpt of official IDF statement regarding this wave
+source_urls,string,yes,Comma-separated URLs of OSINT sources documenting this wave
