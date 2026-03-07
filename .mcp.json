@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "newsapi": {
+      "command": "npx",
+      "args": ["-y", "newsapi-mcp"],
+      "env": {
+        "NEWSAPI_KEY": "${NEWSAPI_KEY}"
+      }
+    }
+  }
+}
