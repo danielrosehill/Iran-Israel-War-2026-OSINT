@@ -4,10 +4,10 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "wave_count": 23,
+    "wave_count": 27,
     "date_range": {
       "start": "2026-02-28",
-      "end": "2026-03-06"
+      "end": "2026-03-07"
     },
     "canonical_format": "json",
     "source_csv_columns": 75,
@@ -36,7 +36,9 @@
       "total_killed": null,
       "total_wounded": null,
       "trigger_event": "Continued Israeli military operations and US strategic posture in Persian Gulf region; escalation following True Promise 3",
-      "historical_significance": "First Iranian operation to directly target US military bases and naval vessels alongside Israel; first confirmed combat use of cluster munition warheads on ballistic missiles; expanded theater to 12 countries across Middle East"
+      "historical_significance": "First Iranian operation to directly target US military bases and naval vessels alongside Israel; first confirmed combat use of cluster munition warheads on ballistic missiles; expanded theater to 12 countries across Middle East",
+      "total_drones_estimate": "2,150+",
+      "total_ballistic_missiles_estimate": "950-1,000"
     }
   },
   "waves": [
@@ -168,10 +170,10 @@
       },
       "impact": {
         "damage": "Impacts reported in Tel Aviv (1 fatality, 21 injuries) and Bnei Brak (several injuries). Damage to US facilities in Gulf region.",
-        "fatalities": 1,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": 1
+        "fatalities": 2,
+        "injuries": 21,
+        "civilian_casualties": 2,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": true,
@@ -317,8 +319,8 @@
         "damage": null,
         "fatalities": 0,
         "injuries": 0,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -478,9 +480,9 @@
       "impact": {
         "damage": "Abdullah Al-Mubarak Air Base in Kuwait reportedly disabled. Damage to Harir base in Iraq.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": true,
@@ -625,9 +627,9 @@
       "impact": {
         "damage": "Continued strikes on Gulf and Israeli targets",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -785,9 +787,9 @@
       "impact": {
         "damage": "IRGC claims strikes on American vessels and Abdullah Mubarak naval base in Kuwait. Oil tanker reportedly struck in Indian Ocean.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": true,
@@ -932,8 +934,8 @@
         "damage": "IRGC claims hits on Tel Nof Air Base, HaKirya HQ, and Haifa naval installations",
         "fatalities": 0,
         "injuries": 0,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1097,9 +1099,9 @@
       "impact": {
         "damage": "Three US/British oil tankers in Persian Gulf struck and reportedly engulfed in fire. Ali Al-Salem naval base Kuwait shut down. Heavy damage to US base in Bahrain.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": true,
@@ -1263,9 +1265,9 @@
       "impact": {
         "damage": "IRGC claims 560 US military killed/wounded across waves 7-8 (unverified). Continued tanker fires.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1425,10 +1427,10 @@
       },
       "impact": {
         "damage": "IRGC claims strikes on 60 strategic targets and 500 combined US/Israeli sites since operation start. Cluster munition warhead strike near Tel Aviv injured 12.",
-        "fatalities": 0,
-        "injuries": 12,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "fatalities": 9,
+        "injuries": 40,
+        "civilian_casualties": 9,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": true,
@@ -1571,9 +1573,9 @@
       "impact": {
         "damage": "IRGC claims hits on Israeli government complex in Tel Aviv, military/security centers in Haifa, and East Jerusalem. Strike in Beersheba injured at least 10.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 10,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -1749,9 +1751,9 @@
       "impact": {
         "damage": "IRGC claims strikes on US intelligence centers, military support warehouses in Persian Gulf, Israeli army communications complex in Beersheba, 20+ points in Tel Aviv/West Jerusalem/Galilee",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": true,
@@ -1934,9 +1936,9 @@
       "impact": {
         "damage": "IRGC Navy claims: Arifjan base Kuwait hit by 12 drones in two phases; Al Minhad base UAE hit by 6 drones and 5 ballistic missiles; US naval facilities Bahrain destroyed by 6 drones; fuel tanker Athens Nova in Strait of Hormuz struck by 2 drones and still burning.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2108,9 +2110,9 @@
       "impact": {
         "damage": "IRGC claims strikes on US Marine Corps installations at Arifjan base Kuwait",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2288,9 +2290,9 @@
       "impact": {
         "damage": "IRGC claims main command building and HQ of US air base destroyed; fuel tanks set on fire. 20 drones and 3 missiles claimed to have hit targets.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2442,9 +2444,9 @@
       "impact": {
         "damage": "Strikes on Al-Udeid Air Base Qatar and Israeli positions. IRGC claims 7 Israeli drones shot down (Hermes, Heron, MQ-9). Fragmentation warhead detonation in Petah Tikva causing blast damage and injuries.",
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2589,9 +2591,9 @@
       "impact": {
         "damage": "IRGC claims strikes on HaKirya (IDF general staff and Ministry of War), strategic infrastructure in Bnei Brak, military targets in Beit Hakfa",
         "fatalities": 0,
-        "injuries": null,
+        "injuries": 0,
         "civilian_casualties": 0,
-        "military_casualties": null
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2730,9 +2732,9 @@
       "impact": {
         "damage": null,
         "fatalities": 0,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -2898,10 +2900,10 @@
       },
       "impact": {
         "damage": null,
-        "fatalities": null,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": null,
@@ -3071,7 +3073,7 @@
         "fatalities": 0,
         "injuries": 0,
         "civilian_casualties": 0,
-        "military_casualties": null
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -3223,7 +3225,7 @@
         "fatalities": 0,
         "injuries": 0,
         "civilian_casualties": 0,
-        "military_casualties": null
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -3377,10 +3379,10 @@
       },
       "impact": {
         "damage": "IRGC claims cluster warhead submunitions dispersed across target areas. No specific damage reports confirmed by Israeli sources.",
-        "fatalities": null,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -3539,7 +3541,7 @@
         "fatalities": 0,
         "injuries": 0,
         "civilian_casualties": 0,
-        "military_casualties": null
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -3580,8 +3582,8 @@
     {
       "operation": "tp4",
       "wave_number": 23,
-      "wave_codename_farsi": null,
-      "wave_codename_english": null,
+      "wave_codename_farsi": "يا حسن بن علي",
+      "wave_codename_english": "Ya Hasan ibn Ali",
       "timing": {
         "announced_utc": "2026-03-06T20:31:00Z",
         "announced_utc_note": "Announced at approximately 10:31 PM local time March 6 per social media posts; UTC offset approximate (Israel IST = UTC+2, so 22:31 IST = 20:31 UTC)",
@@ -3598,15 +3600,15 @@
         "wave_duration_minutes": null
       },
       "weapons": {
-        "payload": "Advanced ballistic missiles (types to be confirmed); IRGC stated 'some of the world's most advanced missiles'",
-        "drones_used": null,
+        "payload": "New-generation solid- and liquid-fuel missiles (Khaibar-Shekan, Rezvan variants); drones",
+        "drones_used": true,
         "ballistic_missiles_used": true,
         "cruise_missiles_used": null,
         "types": {
           "emad_used": null,
           "ghadr_used": null,
           "sejjil_used": null,
-          "kheibar_shekan_used": null,
+          "kheibar_shekan_used": true,
           "fattah_used": null,
           "shahed_136_used": null,
           "shahed_238_used": null,
@@ -3617,8 +3619,8 @@
           "khorramshahr_4_used": null
         },
         "categories": {
-          "bm_liquid_fueled": null,
-          "bm_solid_fueled": null,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
           "bm_marv_equipped": null,
           "bm_hypersonic": null,
           "bm_cluster_warhead": null
@@ -3628,7 +3630,7 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Israel; Kuwait, Qatar, Bahrain, Saudi Arabia, UAE (per social media reports). Details pending confirmation.",
+        "targets": "US bases: Sheikh Isa (Bahrain), Juffair (Bahrain), Ali al-Salem (Kuwait), al-Azraq (Jordan). Israel: Be'er Sheva (advanced technology centers, cybersecurity facilities, military support centers).",
         "landings_countries": [
           "IL",
           "KW",
@@ -3641,11 +3643,36 @@
           "targeted_tel_aviv": null,
           "targeted_jerusalem": null,
           "targeted_haifa": null,
-          "targeted_negev_beersheba": null,
+          "targeted_negev_beersheba": true,
           "targeted_northern_periphery": null,
           "targeted_eilat": null
         },
-        "us_bases": [],
+        "us_bases": [
+          {
+            "base_name": "Sheikh Isa Air Base",
+            "country": "BH",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "NSA Bahrain (Juffair)",
+            "country": "BH",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "Ali Al Salem Air Base",
+            "country": "KW",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "Muwaffaq Salti Air Base (al-Azraq)",
+            "country": "JO",
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
         "us_naval_vessels": [],
         "target_coordinates": {
           "lat": null,
@@ -3691,10 +3718,10 @@
       },
       "impact": {
         "damage": null,
-        "fatalities": null,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -3728,6 +3755,639 @@
         }
       },
       "iranian_media_claims": "IRGC announced the start of the 23rd wave of Operation True Promise 4. Social media accounts linked to Iranian state media stated this phase would involve 'some of the world's most advanced missiles' targeting Israel and US-allied positions across the Gulf."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 24,
+      "wave_codename_farsi": "يا مهدي",
+      "wave_codename_english": "Ya Mahdi",
+      "timing": {
+        "announced_utc": "2026-03-07T01:30:00Z",
+        "announced_utc_note": "Approximate dawn March 7. Gemini search grounding cites Islam Times, Al Mayadeen, IRNA. @iranscreenshot posted footage ~13h before 19:22 UTC (~06:22 UTC) which may reflect footage release rather than launch time.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-07T05:30:00Z",
+        "launch_time_israel": "2026-03-07T08:22:00+0200",
+        "launch_time_iran": "2026-03-07T09:52:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 8,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Kheibar Shekan, Emad, and Ghadr ballistic missiles",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": true
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Tel Aviv (\"heart of the occupied territories\"). At least 3 missile impacts confirmed in Tel Aviv per Al Jazeera. IRGC claimed strikes on strategic facilities.",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": null,
+          "targeted_haifa": null,
+          "targeted_negev_beersheba": null,
+          "targeted_northern_periphery": null,
+          "targeted_eilat": null
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "Arrow-3",
+          "David's Sling",
+          "Iron Dome"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Israeli Home Front Command reported sirens across Tel Aviv metro. Al Jazeera reported at least 3 missiles bypassed defenses."
+      },
+      "munitions": {
+        "estimated_munitions_count": 45,
+        "munitions_targeting_israel": 45,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Minor structural damage in Tel Aviv and Givatayim. Three missile impacts confirmed in Tel Aviv metro.",
+        "fatalities": 0,
+        "injuries": 5,
+        "civilian_casualties": 0,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah launched rockets at Dado Base (Northern Command HQ) and issued evacuation orders for Nahariyya/Kiryat Shmona. Islamic Resistance in Iraq claimed drone strike on US-linked base in Jordan. Houthis continued maritime threats in Red Sea."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://x.com/iranscreenshot"
+        ]
+      },
+      "description": "Twenty-fourth wave of Operation True Promise 4. Day 8 (March 7), dawn. Codename 'Ya Mahdi'. Kheibar Shekan, Emad, Ghadr ballistic missiles with cluster warheads targeting Tel Aviv. At least 3 impacts confirmed. IRGC released launch footage.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC claimed strikes on 'the heart of the occupied territories' and strategic facilities in Tel Aviv. Footage released showing Kheibar Shekan, Emad, Ghadr launches."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 25,
+      "wave_codename_farsi": "المقدس / علی ابن ابی‌طالب",
+      "wave_codename_english": "Al-Muqaddis / Ali ibn Abi Talib",
+      "timing": {
+        "announced_utc": "2026-03-07T10:35:00Z",
+        "announced_utc_note": "Approximately 14:05 local time per Gemini grounded search. Cross-referenced with @EllenJAbare post ~6h before 19:22 UTC (~13:22 UTC) — may reflect social media lag.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-07T12:30:00Z",
+        "launch_time_israel": "2026-03-07T15:22:00+0200",
+        "launch_time_iran": "2026-03-07T16:52:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 8,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Fateh, Imad (Emad), and strategic missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": true,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": true,
+          "shahed_136_used": null,
+          "shahed_238_used": true,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Joint US-Israeli military centers and logistical support. Al-Dhafra Air Base (UAE), Al-Minhad Air Base (UAE). IRGC claimed precision strikes on radar and satellite comms centers.",
+        "landings_countries": [
+          "IL",
+          "AE"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": null,
+          "targeted_jerusalem": null,
+          "targeted_haifa": null,
+          "targeted_negev_beersheba": null,
+          "targeted_northern_periphery": true,
+          "targeted_eilat": null
+        },
+        "us_bases": [
+          {
+            "base_name": "Al Dhafra Air Base",
+            "country": "AE",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "Al Minhad Air Base",
+            "country": "AE",
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "THAAD",
+          "Patriot PAC-3"
+        ],
+        "intercepted_by": {
+          "israel": null,
+          "us": true,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "US and UAE defenses engaged. IRGC claimed precision strikes on radar and satellite communication centers."
+      },
+      "munitions": {
+        "estimated_munitions_count": 60,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 60,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": null,
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah launched rockets at Dado Base (Northern Command HQ) and issued evacuation orders for Nahariyya/Kiryat Shmona. Islamic Resistance in Iraq claimed drone strike on US-linked base in Jordan. Houthis continued maritime threats in Red Sea."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.pingtvindia.com/irgc-launches-25th-wave-of-operation-true-promise-4-as-iran-israel-us-war-escalates/",
+          "https://www.jordannews.jo/Section-20/Middle-East/IRGC-Announces-Start-of-25th-Wave-of-True-Promise-4-Operation-49468",
+          "https://wanaen.com/25th-wave-of-operation-true-promise-4-launched-with-fattah-and-emad-missiles/"
+        ]
+      },
+      "description": "Twenty-fifth wave of Operation True Promise 4. Day 8 (March 7). Codename 'Al-Muqaddis / Ali ibn Abi Talib'. Fattah hypersonic and Emad missiles with Shahed-238 suicide drone swarms. Targeted joint US-Israeli military centers, Al-Dhafra and Al-Minhad Air Bases (UAE).",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC: Joint missile operation by drones codenamed Al-Muqaddis or Ali ibn Abi Talib, against military centers and military support of Zionist-American enemy with Fateh, Imad, and strategic missiles. 25th wave of Operation Al-Wafa Al-Sadiq 4."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 26,
+      "wave_codename_farsi": "یا حیدر کرار",
+      "wave_codename_english": "Ya Heydar Karrar",
+      "timing": {
+        "announced_utc": "2026-03-07T15:15:00Z",
+        "announced_utc_note": "Late afternoon per Gemini grounded search. Shafaq News timestamp ~15:32 UTC.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-07T17:00:00Z",
+        "launch_time_israel": "2026-03-07T19:00:00+0200",
+        "launch_time_iran": "2026-03-07T20:30:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 8,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "New-generation Emad, Ghadr, and multi-warhead Kheibar missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": true
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Targets from north to south of Israel hit with precision. Sdot Micha strategic military facility (radar). Also Iran army drone strikes against US bases: Al-Minhad Air Base (UAE) and Camp Udairi (Kuwait).",
+        "landings_countries": [
+          "IL",
+          "AE",
+          "KW"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": null,
+          "targeted_jerusalem": null,
+          "targeted_haifa": null,
+          "targeted_negev_beersheba": null,
+          "targeted_northern_periphery": true,
+          "targeted_eilat": null
+        },
+        "us_bases": [
+          {
+            "base_name": "Al Minhad Air Base",
+            "country": "AE",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "Camp Udairi",
+            "country": "KW",
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "Arrow-3",
+          "David's Sling",
+          "Iron Dome"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Israeli military reported intercepting over 110 drones since start of day. Acknowledged impacts in open areas and near military sites. Sirens in Kiryat Shmona and Upper Galilee."
+      },
+      "munitions": {
+        "estimated_munitions_count": 37,
+        "munitions_targeting_israel": 37,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Damage to radar installations at Sdot Micha. Sirens in Kiryat Shmona and Upper Galilee.",
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah launched rockets at Dado Base (Northern Command HQ) and issued evacuation orders for Nahariyya/Kiryat Shmona. Islamic Resistance in Iraq claimed drone strike on US-linked base in Jordan. Houthis continued maritime threats in Red Sea."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://wanaen.com/irgc-wave-26-of-operation-true-promise-4/",
+          "https://shafaq.com/en/Middle-East/IRGC-hits-Israeli-targets-in-26th-wave-of-Operation-True-Promise-4"
+        ]
+      },
+      "description": "Twenty-sixth wave of Operation True Promise 4. Day 8 (March 7). Combined drone-missile operation under codename 'Ya Heydar Karrar'. New-generation Emad, Ghadr, and multi-warhead Kheibar missiles struck targets across northern and southern Israel. Sdot Micha strategic military facility targeted. Concurrent Iran army drone strikes against US bases at Al-Minhad (UAE) and Camp Udairi (Kuwait). IRGC claimed destruction of enemy radar systems in previous waves made striking targets easier.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC announced the 26th wave under codename 'Ya Heydar Karrar'. Claimed all missiles fired hit their designated targets, aided by destruction of enemy radar systems in previous waves. Iran army separately launched 'massive wave' of drone strikes against US sites in UAE and Kuwait."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 27,
+      "wave_codename_farsi": "يا فاطمة الزهراء",
+      "wave_codename_english": "Ya Fatimah al-Zahra",
+      "timing": {
+        "announced_utc": "2026-03-07T19:45:00Z",
+        "announced_utc_note": "Evening March 7. @ShortReportOnX posted 36min before 19:22 UTC (~18:46 UTC). Gemini grounded search estimates ~19:45 UTC.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": "https://x.com/ShortReportOnX",
+        "probable_launch_time": "2026-03-07T18:30:00Z",
+        "launch_time_israel": "2026-03-07T20:46:00+0200",
+        "launch_time_iran": "2026-03-07T22:16:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 8,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Khorramshahr-4 heavy ballistic missiles, Fattah-2 hypersonic missiles, cluster warheads, suicide drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": true,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": true
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Haifa oil refinery; US positions in Kuwait (Camp Udairi / Camp Buehring). Cluster warheads confirmed over Israel.",
+        "landings_countries": [
+          "IL",
+          "KW"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": null,
+          "targeted_jerusalem": null,
+          "targeted_haifa": true,
+          "targeted_negev_beersheba": null,
+          "targeted_northern_periphery": null,
+          "targeted_eilat": null
+        },
+        "us_bases": [
+          {
+            "base_name": "Camp Udairi / Camp Buehring",
+            "country": "KW",
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": null,
+          "lon": null
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": true,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "launch_site": {
+        "description": null,
+        "lat": null,
+        "lon": null
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Heavy sirens in Haifa Bay. Kuwaiti and US defenses on high alert. Explosions heard near border."
+      },
+      "munitions": {
+        "estimated_munitions_count": 30,
+        "munitions_targeting_israel": 20,
+        "munitions_targeting_us_bases": 10,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Iranian state media claimed drone swarm hit Haifa refinery causing large fires. Unconfirmed.",
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah launched rockets at Dado Base (Northern Command HQ) and issued evacuation orders for Nahariyya/Kiryat Shmona. Islamic Resistance in Iraq claimed drone strike on US-linked base in Jordan. Houthis continued maritime threats in Red Sea."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://x.com/ShortReportOnX",
+          "https://x.com/wolfbrief_",
+          "https://x.com/IslanderWORLD"
+        ]
+      },
+      "description": "Twenty-seventh wave of Operation True Promise 4. Day 8 (March 7), evening. Codename 'Ya Fatimah al-Zahra'. Khorramshahr-4 heavy ballistic and Fattah-2 hypersonic missiles with cluster warheads plus suicide drones. Targeted Haifa oil refinery and US positions at Camp Udairi/Buehring (Kuwait). Iranian media claimed fires at Haifa refinery.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC launched 27th wave of missiles with cluster warheads and drones toward Israel and the Gulf. Claimed drone swarm hit Haifa refinery causing large fires. @IslanderWORLD noted Israel Channel 12 reported Iran 'out of missile launchers' — IRGC continued regardless."
     }
   ]
 }
