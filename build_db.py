@@ -31,7 +31,13 @@ REF_FILES = {
     'armed_forces': os.path.join(REPO, 'data', 'reference', 'armed_forces.json'),
     'us_bases': os.path.join(REPO, 'data', 'reference', 'us_bases.json'),
     'us_naval_vessels': os.path.join(REPO, 'data', 'reference', 'us_naval_vessels.json'),
+    'entities': os.path.join(REPO, 'data', 'reference', 'entities.json'),
+    'reaction_types': os.path.join(REPO, 'data', 'reference', 'reaction_types.json'),
 }
+
+REACTION_FILES = [
+    ('tp4', os.path.join(REPO, 'data', 'tp4-2026', 'international_reactions.json')),
+]
 
 
 def create_schema(cur):
@@ -379,6 +385,62 @@ def create_schema(cur):
         branch      TEXT,
         fleet       TEXT,
         notes       TEXT
+    );
+
+    -- ══════════════════════════════════════════════════════════════
+    -- Entities (countries + multilaterals)
+    -- ══════════════════════════════════════════════════════════════
+    CREATE TABLE IF NOT EXISTS entities (
+        iso_3166_1_alpha2   TEXT PRIMARY KEY,
+        entity_name         TEXT NOT NULL,
+        entity_type         TEXT NOT NULL CHECK (entity_type IN ('state', 'multilateral')),
+        eu_member_state     INTEGER NOT NULL DEFAULT 0,
+        combatant           INTEGER NOT NULL DEFAULT 0
+    );
+
+    CREATE TABLE IF NOT EXISTS reaction_types (
+        id                  TEXT PRIMARY KEY,
+        label               TEXT NOT NULL,
+        description         TEXT,
+        spectrum_score      INTEGER  -- -3 to +3, NULL for silent
+    );
+
+    -- ══════════════════════════════════════════════════════════════
+    -- International reactions (per entity per operation)
+    -- ══════════════════════════════════════════════════════════════
+    CREATE TABLE IF NOT EXISTS international_reactions (
+        iso_3166_1_alpha2   TEXT NOT NULL,
+        operation           TEXT NOT NULL,
+        entity_name         TEXT NOT NULL,
+        entity_type         TEXT NOT NULL,
+        eu_member_state     INTEGER NOT NULL DEFAULT 0,
+        combatant           INTEGER NOT NULL DEFAULT 0,
+        overall_stance      TEXT,
+        notes               TEXT,
+        PRIMARY KEY (iso_3166_1_alpha2, operation),
+        FOREIGN KEY (iso_3166_1_alpha2) REFERENCES entities(iso_3166_1_alpha2),
+        FOREIGN KEY (overall_stance) REFERENCES reaction_types(id)
+    );
+
+    CREATE TABLE IF NOT EXISTS reaction_statements (
+        id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+        iso_3166_1_alpha2   TEXT NOT NULL,
+        operation           TEXT NOT NULL,
+        statement_type      TEXT NOT NULL CHECK (statement_type IN (
+            'head_of_state', 'head_of_government', 'foreign_ministry', 'additional'
+        )),
+        made                INTEGER NOT NULL DEFAULT 0,
+        date                TEXT,
+        speaker             TEXT,
+        speaker_title       TEXT,
+        summary             TEXT,
+        statement_text      TEXT,
+        statement_url       TEXT,
+        category            TEXT,
+        source_type         TEXT,  -- for additional statements only
+        FOREIGN KEY (iso_3166_1_alpha2, operation)
+            REFERENCES international_reactions(iso_3166_1_alpha2, operation),
+        FOREIGN KEY (category) REFERENCES reaction_types(id)
     );
 
     -- ══════════════════════════════════════════════════════════════
@@ -803,6 +865,87 @@ def load_us_naval_vessels(cur):
         ))
 
 
+def load_entities(cur):
+    with open(REF_FILES['entities']) as f:
+        entities = json.load(f)
+    for e in entities:
+        cur.execute("""
+            INSERT OR REPLACE INTO entities VALUES (?,?,?,?,?)
+        """, (
+            e['alpha2'], e['name'], e['type'],
+            1 if e.get('eu_member_state') else 0,
+            1 if e.get('combatant') else 0,
+        ))
+
+
+def load_reaction_types(cur):
+    with open(REF_FILES['reaction_types']) as f:
+        types = json.load(f)
+    for rt in types:
+        cur.execute("""
+            INSERT OR REPLACE INTO reaction_types VALUES (?,?,?,?)
+        """, (rt['id'], rt['label'], rt.get('description'), rt.get('spectrum_score')))
+
+
+def load_international_reactions(cur):
+    for op_id, path in REACTION_FILES:
+        if not os.path.exists(path):
+            continue
+        with open(path) as f:
+            data = json.load(f)
+        operation = data['metadata'].get('operation', op_id)
+        for r in data['reactions']:
+            cur.execute("""
+                INSERT OR REPLACE INTO international_reactions VALUES (?,?,?,?,?,?,?,?)
+            """, (
+                r['iso_3166_1_alpha2'], operation,
+                r['entity_name'], r['entity_type'],
+                1 if r.get('eu_member_state') else 0,
+                1 if r.get('combatant') else 0,
+                r.get('overall_stance'),
+                r.get('notes'),
+            ))
+            # Statement types to load
+            for stype, key in [
+                ('head_of_state', 'head_of_state_statement'),
+                ('head_of_government', 'head_of_government_statement'),
+                ('foreign_ministry', 'foreign_ministry_statement'),
+            ]:
+                stmt = r.get(key)
+                if not stmt:
+                    continue
+                cur.execute("""
+                    INSERT INTO reaction_statements
+                        (iso_3166_1_alpha2, operation, statement_type, made,
+                         date, speaker, speaker_title, summary,
+                         statement_text, statement_url, category, source_type)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                """, (
+                    r['iso_3166_1_alpha2'], operation, stype,
+                    1 if stmt.get('made') else 0,
+                    stmt.get('date'), stmt.get('speaker'),
+                    stmt.get('speaker_title'), stmt.get('summary'),
+                    stmt.get('statement_text'), stmt.get('statement_url'),
+                    stmt.get('category'), None,
+                ))
+            # Additional statements
+            for stmt in r.get('additional_statements', []):
+                cur.execute("""
+                    INSERT INTO reaction_statements
+                        (iso_3166_1_alpha2, operation, statement_type, made,
+                         date, speaker, speaker_title, summary,
+                         statement_text, statement_url, category, source_type)
+                    VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+                """, (
+                    r['iso_3166_1_alpha2'], operation, 'additional',
+                    1 if stmt.get('made') else 0,
+                    stmt.get('date'), stmt.get('speaker'),
+                    stmt.get('speaker_title'), stmt.get('summary'),
+                    stmt.get('statement_text'), stmt.get('statement_url'),
+                    stmt.get('category'), stmt.get('source_type'),
+                ))
+
+
 SNIPPET_FILES = [
     os.path.join(REPO, 'data', 'tp4-2026', 'x_post_snippets.json'),
 ]
@@ -834,6 +977,8 @@ def print_summary(cur):
                    'wave_sources', 'iranian_weapons', 'defense_systems',
                    'interceptor_munitions',
                    'armed_forces', 'us_bases', 'us_naval_vessels',
+                   'entities', 'reaction_types',
+                   'international_reactions', 'reaction_statements',
                    'x_post_snippets']:
         cur.execute(f"SELECT COUNT(*) FROM {table}")
         print(f"  {table}: {cur.fetchone()[0]} rows")
@@ -892,6 +1037,9 @@ def main():
     load_armed_forces(cur)
     load_us_bases(cur)
     load_us_naval_vessels(cur)
+    load_entities(cur)
+    load_reaction_types(cur)
+    load_international_reactions(cur)
     load_x_post_snippets(cur)
 
     conn.commit()

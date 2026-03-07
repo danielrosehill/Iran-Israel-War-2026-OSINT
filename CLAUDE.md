@@ -72,45 +72,43 @@ All four operations (TP1–TP4) use the same schema. Each wave is nested into: `
 
 ## OSINT Research Tools
 
-### LLM Search via OpenRouter
+### Gemini with Google Search Grounding
 
-Two models available for OSINT research via OpenRouter. API key is in `OPENROUTER_API_KEY` environment variable (stored in `.env`, which is gitignored).
-
-| Model | OpenRouter ID | Best for |
-|-------|--------------|----------|
-| Grok 4.1 Fast | `x-ai/grok-4.1-fast` | Real-time X/Twitter data, fast responses |
-| Perplexity Sonar | `perplexity/sonar` | Search-grounded answers with citations |
+Primary research tool. Uses Gemini 3.1 Flash Lite with native Google Search grounding for sourced, cited answers. API key is in `GOOGLE_API_KEY` environment variable (stored in `.env` and `~/.bashrc`). SDK: `google-genai` (installed in `.venv`).
 
 ```python
-import json, os, urllib.request
+import os
+from google import genai
+from google.genai import types
 
-API_KEY = os.environ["OPENROUTER_API_KEY"]
-url = "https://openrouter.ai/api/v1/chat/completions"
+client = genai.Client()  # uses GOOGLE_API_KEY env var
 
-payload = {
-    "model": "x-ai/grok-4.1-fast",  # or "perplexity/sonar"
-    "messages": [{"role": "user", "content": "YOUR QUERY HERE"}],
-    "temperature": 0.2
-}
+response = client.models.generate_content(
+    model="gemini-3.1-flash-lite-preview",
+    contents="YOUR QUERY HERE",
+    config=types.GenerateContentConfig(
+        tools=[types.Tool(google_search=types.GoogleSearch())],
+        temperature=0.2,
+    ),
+)
 
-req = urllib.request.Request(url, data=json.dumps(payload).encode(),
-    headers={"Content-Type": "application/json",
-             "Authorization": f"Bearer {API_KEY}"}, method="POST")
-with urllib.request.urlopen(req, timeout=120) as resp:
-    result = json.loads(resp.read())
-    print(result["choices"][0]["message"]["content"])
+print(response.text)
+
+# Grounding sources
+if response.candidates[0].grounding_metadata:
+    for chunk in response.candidates[0].grounding_metadata.grounding_chunks or []:
+        if chunk.web:
+            print(f"  {chunk.web.title} — {chunk.web.uri}")
 ```
 
-**Slash commands for checking updates:**
-- `/check-updates-grok` — Query Grok only
-- `/check-updates-perplexity` — Query Perplexity Sonar only
-- `/check-updates-both` — Query both and cross-reference
+**Slash command:** `/check-updates-gemini` — Search-grounded check for new waves, data gaps, and updates
 
-Use these for:
+Use for:
 - Filling data gaps (munitions counts, casualties, interception details)
 - Cross-referencing wave details against multiple sources
 - Finding codenames, timestamps, and target specifics
 - Verifying claims from Iranian state media against independent reporting
+- Researching international reactions with sourced citations
 
 ### NewsAPI (MCP)
 
@@ -121,5 +119,5 @@ Configured in `.mcp.json` for article/event search via Event Registry. Use `sugg
 ```bash
 uv venv .venv
 source .venv/bin/activate
-uv pip install astral matplotlib pandas numpy seaborn
+uv pip install astral matplotlib pandas numpy seaborn google-genai
 ```

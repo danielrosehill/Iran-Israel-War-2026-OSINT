@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reaction.schema.json",
+  "title": "International Reactions to Iran-Israel Conflict",
+  "description": "Schema for tracking international governmental and multilateral reactions across operations",
+  "type": "object",
+  "required": ["metadata", "reactions"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["operation", "operation_name", "entity_count"],
+      "properties": {
+        "operation": {
+          "type": "string",
+          "enum": ["tp1", "tp2", "tp3", "tp4", "general"],
+          "description": "Which operation this reaction set covers, or 'general' for cross-operation"
+        },
+        "operation_name": { "type": "string" },
+        "entity_count": { "type": "integer" },
+        "last_updated": { "type": "string", "format": "date" }
+      }
+    },
+    "reactions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entity_reaction" }
+    }
+  },
+  "$defs": {
+    "official_statement": {
+      "type": ["object", "null"],
+      "properties": {
+        "made": {
+          "type": "boolean",
+          "description": "Whether a statement was made by this office"
+        },
+        "date": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "Date the statement was issued (ISO 8601)"
+        },
+        "speaker": {
+          "type": ["string", "null"],
+          "description": "Name of the person who made the statement"
+        },
+        "speaker_title": {
+          "type": ["string", "null"],
+          "description": "Official title (e.g. 'President', 'Prime Minister', 'Foreign Minister')"
+        },
+        "summary": {
+          "type": ["string", "null"],
+          "description": "Brief summary of the statement's position"
+        },
+        "statement_text": {
+          "type": ["string", "null"],
+          "description": "Direct quote or full text of the statement if available"
+        },
+        "statement_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL to official statement, transcript, or reporting"
+        },
+        "category": {
+          "type": ["string", "null"],
+          "enum": [
+            "active_participant_pro_iran",
+            "supports_iran",
+            "condemns_israel",
+            "calls_for_deescalation",
+            "neutral_acknowledgement",
+            "condemns_iran",
+            "supports_israel",
+            "active_participant_coalition",
+            null
+          ]
+        }
+      },
+      "required": ["made"]
+    },
+    "entity_reaction": {
+      "type": "object",
+      "required": ["iso_3166_1_alpha2", "entity_name", "entity_type", "overall_stance"],
+      "properties": {
+        "iso_3166_1_alpha2": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-2 code for states; custom identifier for multilaterals"
+        },
+        "entity_name": {
+          "type": "string"
+        },
+        "entity_type": {
+          "type": "string",
+          "enum": ["state", "multilateral"]
+        },
+        "eu_member_state": {
+          "type": "boolean"
+        },
+        "combatant": {
+          "type": "boolean",
+          "description": "Whether this entity was directly hit or had forces actively engaged"
+        },
+        "overall_stance": {
+          "type": ["string", "null"],
+          "enum": [
+            "active_participant_pro_iran",
+            "supports_iran",
+            "condemns_israel",
+            "calls_for_deescalation",
+            "neutral_acknowledgement",
+            "silent",
+            "condemns_iran",
+            "supports_israel",
+            "active_participant_coalition",
+            null
+          ],
+          "description": "The entity's dominant/latest assessed position"
+        },
+        "head_of_state_statement": {
+          "$ref": "#/$defs/official_statement",
+          "description": "Statement from president, monarch, or equivalent head of state"
+        },
+        "head_of_government_statement": {
+          "$ref": "#/$defs/official_statement",
+          "description": "Statement from prime minister, chancellor, or equivalent head of government"
+        },
+        "foreign_ministry_statement": {
+          "$ref": "#/$defs/official_statement",
+          "description": "Statement from foreign affairs ministry or its spokesperson"
+        },
+        "additional_statements": {
+          "type": "array",
+          "items": {
+            "allOf": [{ "$ref": "#/$defs/official_statement" }],
+            "properties": {
+              "source_type": {
+                "type": "string",
+                "enum": [
+                  "defense_ministry",
+                  "un_vote",
+                  "un_speech",
+                  "state_media",
+                  "social_media",
+                  "parliamentary_resolution",
+                  "other"
+                ]
+              }
+            }
+          },
+          "description": "Any additional notable statements beyond the three primary offices"
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

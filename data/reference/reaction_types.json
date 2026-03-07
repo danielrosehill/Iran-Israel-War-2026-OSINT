@@ -1,0 +1,56 @@
+[
+  {
+    "id": "active_participant_pro_iran",
+    "label": "Active Participant (Pro-Iran)",
+    "description": "Provided direct military, logistical, or intelligence support to Iran's attacks",
+    "spectrum_score": -3
+  },
+  {
+    "id": "supports_iran",
+    "label": "Supports Iran",
+    "description": "Explicitly endorsed or praised Iran's attacks as justified",
+    "spectrum_score": -2
+  },
+  {
+    "id": "condemns_israel",
+    "label": "Condemns Israel",
+    "description": "Condemned Israel without explicitly endorsing Iran's strikes",
+    "spectrum_score": -1
+  },
+  {
+    "id": "calls_for_deescalation",
+    "label": "Calls for De-escalation",
+    "description": "Urged both sides to cease hostilities and pursue diplomacy",
+    "spectrum_score": 0
+  },
+  {
+    "id": "neutral_acknowledgement",
+    "label": "Neutral Acknowledgement",
+    "description": "Acknowledged the conflict without taking a clear side",
+    "spectrum_score": 0
+  },
+  {
+    "id": "silent",
+    "label": "Silent / No Statement",
+    "description": "No public statement or position found",
+    "spectrum_score": null
+  },
+  {
+    "id": "condemns_iran",
+    "label": "Condemns Iran",
+    "description": "Condemned Iran's attacks or called on Iran specifically to stop",
+    "spectrum_score": 1
+  },
+  {
+    "id": "supports_israel",
+    "label": "Supports Israel",
+    "description": "Explicitly backed Israel's right to self-defense or offered diplomatic/material support",
+    "spectrum_score": 2
+  },
+  {
+    "id": "active_participant_coalition",
+    "label": "Active Participant (Coalition)",
+    "description": "Directly participated in intercepting Iranian munitions or provided active military defense",
+    "spectrum_score": 3
+  }
+]
