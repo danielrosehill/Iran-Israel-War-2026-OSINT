@@ -23,7 +23,9 @@ def flatten_wave(op, wave):
     w = wave.get('weapons', {})
     wt = w.get('types', {})
     wc = w.get('categories', {})
-    cw = w.get('cluster_warhead', {}) or {}
+    cw = w.get('cluster_warhead', {})
+    if not isinstance(cw, dict):
+        cw = {}
     tgt = wave.get('targets', {})
     iloc = tgt.get('israeli_locations', {})
     ls = wave.get('launch_site', {})
