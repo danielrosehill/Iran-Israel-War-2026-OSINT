@@ -25,7 +25,7 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 
 ## Dataset Description
 
-53 attack waves across four Iranian military operations, each with 87 structured fields covering timing, weapons systems, targets, interception performance, casualties, and escalation indicators.
+53 attack waves across four Iranian military operations, each with 87 structured fields covering timing, weapons systems, targets, interception performance, casualties, and escalation indicators. Also includes international reactions data with 210 country/organisation responses to True Promise 4, tracking official statements from heads of state, heads of government, and foreign ministries.
 
 | Operation | Date | Waves | Munitions | Targets |
 |-----------|------|------:|----------:|---------|
@@ -48,11 +48,24 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 | **Escalation** | `new_country_targeted`, `new_weapon_first_use` |
 | **Sources** | `idf_statement`, `iranian_media_claims`, `source_urls` |
 
+### International Reactions (33 columns)
+
+| Category | Fields |
+|----------|--------|
+| **Identity** | `operation`, `iso_3166_1_alpha2`, `entity_name`, `entity_type`, `eu_member_state`, `combatant` |
+| **Stance** | `overall_stance` (9 categories from `active_participant_coalition` to `silent`) |
+| **Head of State** | `hos_statement_made`, `hos_date`, `hos_speaker`, `hos_speaker_title`, `hos_summary`, `hos_statement_text`, `hos_statement_url`, `hos_category` |
+| **Head of Government** | `hog_statement_made` through `hog_category` (same structure) |
+| **Foreign Ministry** | `fm_statement_made` through `fm_category` (same structure) |
+| **Additional** | `additional_statements_count`, `additional_statements_json`, `notes` |
+
 ## Files
 
 - `waves.parquet` — All 53 waves, 87 columns (recommended)
 - `waves.csv` — Same data in CSV format
-- `data_dictionary.csv` — Column-level documentation with data types, nullability, and descriptions for all 87 fields
+- `international_reactions.parquet` — 210 country/org reactions to TP4, 33 columns (recommended)
+- `international_reactions.csv` — Same data in CSV format
+- `data_dictionary.csv` — Column-level documentation for all fields across both tables
 
 ## Usage
 
@@ -87,6 +100,19 @@ The GitHub repo contains the full nested JSON source files, SQLite database, Geo
 **Kaggle**: [danielrosehill/iran-israel-war-2026](https://www.kaggle.com/datasets/danielrosehill/iran-israel-war-2026)
 
 **Interactive Map & Dashboard**: [iranisrael26.danielrosehill.com](https://iranisrael26.danielrosehill.com)
+
+## Citation
+
+```bibtex
+@misc{daniel_rosehill_grok_4_1_fast_google_gemini_3_1_2026,
+    title={Iran Israel War 2026},
+    url={https://www.kaggle.com/dsv/15085716},
+    DOI={10.34740/KAGGLE/DSV/15085716},
+    publisher={Kaggle},
+    author={Daniel Rosehill and Grok 4.1 Fast and Google Gemini 3.1},
+    year={2026}
+}
+```
 
 ## License
 

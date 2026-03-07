@@ -86,3 +86,38 @@ description,string,yes,Free-text narrative summary of the wave
 iranian_media_claims,string,yes,JSON-encoded Iranian state media claims about this wave's results
 idf_statement,string,yes,Summary or excerpt of official IDF statement regarding this wave
 source_urls,string,yes,Comma-separated URLs of OSINT sources documenting this wave
+,,,"--- International Reactions (international_reactions.csv / .parquet) ---"
+operation,string,no,"Operation identifier: tp4 (Feb 2026+); will expand as reactions data is added for earlier operations"
+iso_3166_1_alpha2,string,yes,"ISO 3166-1 alpha-2 country code (e.g. US, IR, IL); null for multilateral entities"
+entity_name,string,no,"Country or organisation name (e.g. 'United States', 'European Union', 'NATO')"
+entity_type,string,no,"Entity classification: 'state' or 'multilateral'"
+eu_member_state,boolean,no,Whether the entity is a current EU member state
+combatant,boolean,no,Whether the entity is an active participant (combatant) in the conflict
+overall_stance,string,no,"Categorical stance: active_participant_coalition, active_participant_pro_iran, supports_israel, condemns_iran, calls_for_deescalation, neutral_acknowledgement, supports_iran, condemns_israel, silent"
+hos_statement_made,boolean,yes,Whether the head of state issued a public statement
+hos_date,datetime,yes,ISO 8601 date of the head of state's statement
+hos_speaker,string,yes,Name of the head of state who made the statement
+hos_speaker_title,string,yes,"Title of the speaker (e.g. 'President', 'King', 'Supreme Leader')"
+hos_summary,string,yes,Brief summary of the head of state's statement
+hos_statement_text,string,yes,Full or partial text of the statement
+hos_statement_url,string,yes,URL source for the head of state's statement
+hos_category,string,yes,"Statement tone category (e.g. 'condemnation', 'support', 'concern')"
+hog_statement_made,boolean,yes,Whether the head of government issued a public statement
+hog_date,datetime,yes,ISO 8601 date of the head of government's statement
+hog_speaker,string,yes,Name of the head of government who made the statement
+hog_speaker_title,string,yes,"Title of the speaker (e.g. 'Prime Minister', 'Chancellor')"
+hog_summary,string,yes,Brief summary of the head of government's statement
+hog_statement_text,string,yes,Full or partial text of the statement
+hog_statement_url,string,yes,URL source for the head of government's statement
+hog_category,string,yes,"Statement tone category (e.g. 'condemnation', 'support', 'concern')"
+fm_statement_made,boolean,yes,Whether the foreign ministry issued a public statement
+fm_date,datetime,yes,ISO 8601 date of the foreign ministry's statement
+fm_speaker,string,yes,Name of the foreign ministry spokesperson or minister
+fm_speaker_title,string,yes,"Title of the speaker (e.g. 'Foreign Minister', 'Spokesperson')"
+fm_summary,string,yes,Brief summary of the foreign ministry's statement
+fm_statement_text,string,yes,Full or partial text of the statement
+fm_statement_url,string,yes,URL source for the foreign ministry's statement
+fm_category,string,yes,"Statement tone category (e.g. 'condemnation', 'support', 'concern')"
+additional_statements_count,integer,no,Number of additional statements beyond the three standard channels
+additional_statements_json,string,yes,"JSON array of additional statements (each with speaker, title, summary, url, category)"
+notes,string,yes,Free-text contextual notes about the entity's position and relevant background

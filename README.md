@@ -319,6 +319,23 @@ Data is gathered from publicly available sources including official military ann
 
 This is an independent open-source research project. All data should be treated as provisional and subject to revision as new information becomes available.
 
+## Citation
+
+If you use this dataset in your research, please cite:
+
+```bibtex
+@misc{daniel_rosehill_grok_4_1_fast_google_gemini_3_1_2026,
+    title={Iran Israel War 2026},
+    url={https://www.kaggle.com/dsv/15085716},
+    DOI={10.34740/KAGGLE/DSV/15085716},
+    publisher={Kaggle},
+    author={Daniel Rosehill and Grok 4.1 Fast and Google Gemini 3.1},
+    year={2026}
+}
+```
+
+**Kaggle**: [danielrosehill/iran-israel-war-2026](https://www.kaggle.com/datasets/danielrosehill/iran-israel-war-2026)
+
 ## License
 
 This dataset is provided for research and educational purposes.

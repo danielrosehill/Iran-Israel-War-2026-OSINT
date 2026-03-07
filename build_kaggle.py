@@ -15,6 +15,10 @@ WAVE_FILES = [
     ('tp4', os.path.join(REPO, 'data', 'tp4-2026', 'waves.json')),
 ]
 
+REACTIONS_FILES = [
+    ('tp4', os.path.join(REPO, 'data', 'tp4-2026', 'international_reactions.json')),
+]
+
 KAGGLE_DIR = os.path.join(REPO, 'kaggle')
 
 
@@ -148,9 +152,60 @@ def flatten_wave(op, wave):
     }
 
 
+def flatten_reaction(op, reaction):
+    """Flatten a nested international reaction JSON object into a single dict."""
+    hos = reaction.get('head_of_state_statement', {}) or {}
+    hog = reaction.get('head_of_government_statement', {}) or {}
+    fm = reaction.get('foreign_ministry_statement', {}) or {}
+    addl = reaction.get('additional_statements', []) or []
+
+    return {
+        'operation': op,
+        'iso_3166_1_alpha2': reaction.get('iso_3166_1_alpha2'),
+        'entity_name': reaction.get('entity_name'),
+        'entity_type': reaction.get('entity_type'),
+        'eu_member_state': reaction.get('eu_member_state'),
+        'combatant': reaction.get('combatant'),
+        'overall_stance': reaction.get('overall_stance'),
+        # head of state
+        'hos_statement_made': hos.get('made'),
+        'hos_date': hos.get('date'),
+        'hos_speaker': hos.get('speaker'),
+        'hos_speaker_title': hos.get('speaker_title'),
+        'hos_summary': hos.get('summary'),
+        'hos_statement_text': hos.get('statement_text'),
+        'hos_statement_url': hos.get('statement_url'),
+        'hos_category': hos.get('category'),
+        # head of government
+        'hog_statement_made': hog.get('made'),
+        'hog_date': hog.get('date'),
+        'hog_speaker': hog.get('speaker'),
+        'hog_speaker_title': hog.get('speaker_title'),
+        'hog_summary': hog.get('summary'),
+        'hog_statement_text': hog.get('statement_text'),
+        'hog_statement_url': hog.get('statement_url'),
+        'hog_category': hog.get('category'),
+        # foreign ministry
+        'fm_statement_made': fm.get('made'),
+        'fm_date': fm.get('date'),
+        'fm_speaker': fm.get('speaker'),
+        'fm_speaker_title': fm.get('speaker_title'),
+        'fm_summary': fm.get('summary'),
+        'fm_statement_text': fm.get('statement_text'),
+        'fm_statement_url': fm.get('statement_url'),
+        'fm_category': fm.get('category'),
+        # additional statements
+        'additional_statements_count': len(addl),
+        'additional_statements_json': json.dumps(addl) if addl else None,
+        # notes
+        'notes': reaction.get('notes'),
+    }
+
+
 def main():
     os.makedirs(KAGGLE_DIR, exist_ok=True)
 
+    # --- Waves ---
     rows = []
     for op, path in WAVE_FILES:
         with open(path) as f:
@@ -166,16 +221,38 @@ def main():
     df.to_csv(csv_path, index=False)
     df.to_parquet(parquet_path, index=False)
 
+    print(f"Exported {len(df)} waves to:")
+    print(f"  {csv_path} ({os.path.getsize(csv_path) // 1024} KB)")
+    print(f"  {parquet_path} ({os.path.getsize(parquet_path) // 1024} KB)")
+    print(f"  Columns: {len(df.columns)}")
+    print(f"  Operations: {df['operation'].value_counts().to_dict()}")
+
+    # --- International Reactions ---
+    reaction_rows = []
+    for op, path in REACTIONS_FILES:
+        if os.path.exists(path):
+            with open(path) as f:
+                data = json.load(f)
+            for reaction in data.get('reactions', []):
+                reaction_rows.append(flatten_reaction(op, reaction))
+
+    if reaction_rows:
+        rdf = pd.DataFrame(reaction_rows)
+        r_csv = os.path.join(KAGGLE_DIR, 'international_reactions.csv')
+        r_parquet = os.path.join(KAGGLE_DIR, 'international_reactions.parquet')
+        rdf.to_csv(r_csv, index=False)
+        rdf.to_parquet(r_parquet, index=False)
+        print(f"\nExported {len(rdf)} international reactions to:")
+        print(f"  {r_csv} ({os.path.getsize(r_csv) // 1024} KB)")
+        print(f"  {r_parquet} ({os.path.getsize(r_parquet) // 1024} KB)")
+        print(f"  Columns: {len(rdf.columns)}")
+
     # Copy data dictionary into kaggle export directory
     dict_src = os.path.join(REPO, 'data', 'data_dictionary.csv')
     if os.path.exists(dict_src):
         shutil.copy2(dict_src, os.path.join(KAGGLE_DIR, 'data_dictionary.csv'))
 
-    print(f"Exported {len(df)} waves to:")
-    print(f"  {csv_path} ({os.path.getsize(csv_path) // 1024} KB)")
-    print(f"  {parquet_path} ({os.path.getsize(parquet_path) // 1024} KB)")
-    print(f"\nColumns: {len(df.columns)}")
-    print(f"Operations: {df['operation'].value_counts().to_dict()}")
+    print(f"\nDone.")
 
 
 if __name__ == '__main__':

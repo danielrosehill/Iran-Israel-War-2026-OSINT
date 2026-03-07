@@ -1,4 +1,10 @@
-# Data Dictionary — waves.json
+# Data Dictionary
+
+This document covers both tables in the dataset: **waves** (attack wave records) and **international reactions** (diplomatic responses). See also [`about-dataset.md`](about-dataset.md) for a narrative description of the dataset and suggested use cases.
+
+---
+
+## Part 1: waves.json
 
 Each entry in `waves[]` has the following structure. Fields marked **enriched** are computed by scripts; all others are **primary** (LLM-extracted or manually entered).
 
@@ -266,3 +272,80 @@ Track schema evolution as new fields are added or modified.
 |------|----------------------|--------|
 | 2026-03-05 | `weapons.categories.bm_cluster_warhead` (bool\|null) | Track confirmed cluster warhead use per wave |
 | 2026-03-05 | `weapons.cluster_warhead` (object\|null) | Structured cluster munition details: carrier missile, submunition count, explosive weight, dispersal radius, dispersal altitude |
+| 2026-03-08 | `international_reactions.json` (new file) | 210 country/org diplomatic reactions to TP4 with statement-level detail |
+
+---
+
+## Part 2: international_reactions.json
+
+Source file: `data/tp4-2026/international_reactions.json`
+
+Each entry in `reactions[]` represents one country's or multilateral organisation's official response to an operation. Currently covers TP4 only (210 entities: 193 states, 17 multilateral bodies).
+
+### Top-Level Metadata
+
+| Path | Type | Description |
+|------|------|-------------|
+| `metadata.operation` | string | Operation identifier (`"tp4"`) |
+| `metadata.operation_name` | string | Full operation name |
+| `metadata.entity_count` | int | Number of entities in the reactions array |
+| `metadata.last_updated` | string | ISO 8601 date of last update |
+
+### Reaction Entity
+
+| Path | Type | Description | Example |
+|------|------|-------------|---------|
+| `iso_3166_1_alpha2` | string\|null | ISO 3166-1 alpha-2 country code; null for multilateral bodies | `"US"` |
+| `entity_name` | string | Country or organisation name | `"United States"` |
+| `entity_type` | string | `"state"` or `"multilateral"` | `"state"` |
+| `eu_member_state` | bool | Whether entity is an EU member state | `false` |
+| `combatant` | bool | Whether entity is an active combatant | `true` |
+| `overall_stance` | string | Categorical stance classification (see values below) | `"active_participant_coalition"` |
+| `notes` | string\|null | Free-text contextual background | |
+
+#### overall_stance Values
+
+| Value | Count | Description |
+|-------|------:|-------------|
+| `silent` | 68 | No public statement issued |
+| `calls_for_deescalation` | 62 | Called for restraint, ceasefire, or diplomatic resolution |
+| `condemns_iran` | 50 | Condemned Iranian aggression or the attacks specifically |
+| `condemns_israel` | 10 | Condemned Israeli actions that triggered the conflict |
+| `supports_iran` | 7 | Expressed support or solidarity with Iran |
+| `neutral_acknowledgement` | 5 | Acknowledged the situation without taking a clear side |
+| `supports_israel` | 4 | Expressed support or solidarity with Israel |
+| `active_participant_coalition` | 3 | Actively participating militarily alongside Israel/US |
+| `active_participant_pro_iran` | 1 | Actively participating militarily alongside Iran |
+
+### Statement Blocks
+
+Three parallel blocks share the same structure: `head_of_state_statement`, `head_of_government_statement`, and `foreign_ministry_statement`.
+
+| Path (prefix: `{block}.`) | Type | Description |
+|----------------------------|------|-------------|
+| `made` | bool | Whether a statement was issued |
+| `date` | string\|null | ISO 8601 date of the statement |
+| `speaker` | string\|null | Name of the speaker |
+| `speaker_title` | string\|null | Title (e.g. "President", "Foreign Minister") |
+| `summary` | string\|null | Brief summary of the statement |
+| `statement_text` | string\|null | Full or partial text |
+| `statement_url` | string\|null | Source URL |
+| `category` | string\|null | Tone category (e.g. "condemnation", "support", "concern") |
+
+### Additional Statements
+
+| Path | Type | Description |
+|------|------|-------------|
+| `additional_statements` | array | Array of additional statements beyond the three standard channels |
+
+Each entry in the array follows the same structure as the statement blocks above (speaker, title, summary, text, url, category).
+
+### Flattened Export Columns
+
+In the CSV/Parquet exports (`international_reactions.csv` / `.parquet`), the nested statement blocks are flattened with prefixes:
+
+- `hos_` — head of state fields (e.g. `hos_statement_made`, `hos_speaker`, `hos_summary`)
+- `hog_` — head of government fields
+- `fm_` — foreign ministry fields
+- `additional_statements_count` — integer count
+- `additional_statements_json` — JSON string of the full array

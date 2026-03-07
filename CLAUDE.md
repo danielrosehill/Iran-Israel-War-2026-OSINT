@@ -39,15 +39,7 @@ The OSINT analysis site is in a separate repo:
 - **Deployment:** Vercel at `promisedenied.com`
 - **Data pipeline:** The site repo has `sync-data.sh` which pulls JSON from this repo's raw GitHub URLs
 
-### Publishing Workflow
-
-After validating and gathering new data in this repo:
-
-1. Commit and push data changes to this repo
-2. Run `cd ~/repos/github/Iran-Israel-OSINT-Site && bash sync-data.sh` to pull fresh data into the site
-3. Commit and push the site repo — Vercel auto-deploys on push
-
-This should be done automatically after any data update (new waves added, corrections applied, reference data changed).
+Frontend syncing is done manually by the user when needed — do not auto-sync after data updates.
 
 ## SITREP Format
 
