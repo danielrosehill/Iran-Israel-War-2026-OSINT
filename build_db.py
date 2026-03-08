@@ -14,6 +14,11 @@ import sqlite3
 import os
 import uuid
 
+from wave_enrichment import (
+    classify_target_types, get_cluster_munitions, countries_iso_to_names,
+    get_wave_uid, WAVE_NARRATIVES,
+)
+
 REPO = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(REPO, 'data', 'iran_israel_war.db')
 
@@ -72,9 +77,11 @@ def create_schema(cur):
     -- ══════════════════════════════════════════════════════════════
     CREATE TABLE IF NOT EXISTS waves (
         -- Identity
+        wave_uid                TEXT NOT NULL UNIQUE,  -- e.g. tp4_w21
         uuid                    TEXT NOT NULL UNIQUE,
         operation               TEXT NOT NULL,
         wave_number             INTEGER NOT NULL,
+        narrative               TEXT,
         wave_codename_farsi     TEXT,
         wave_codename_english   TEXT,
         description             TEXT,
@@ -119,6 +126,7 @@ def create_schema(cur):
         bm_solid_fueled         INTEGER,
         bm_marv_equipped        INTEGER,
         bm_hypersonic           INTEGER,
+        cluster_munitions       INTEGER,  -- 0/1: derived from weapons.cluster_warhead
 
         -- Targets
         israel_targeted         INTEGER,
@@ -133,6 +141,19 @@ def create_schema(cur):
         target_lat              REAL,
         target_lon              REAL,
         target_generic_location INTEGER,  -- 0/1/NULL: true = approx centroid, false = specifically geolocated
+        landing_countries_names  TEXT,    -- readable country names
+
+        -- Target type classification (derived)
+        target_iaf_base             INTEGER,
+        target_us_base              INTEGER,
+        target_naval_base           INTEGER,
+        target_naval_vessel         INTEGER,
+        target_government_c2        INTEGER,
+        target_military_industrial  INTEGER,
+        target_intelligence         INTEGER,
+        target_civilian_infrastructure INTEGER,
+        target_civilian_area        INTEGER,
+        target_diplomatic           INTEGER,
 
         -- Launch site
         launch_site_description TEXT,
@@ -531,14 +552,17 @@ def load_waves(cur):
             prx = w.get('proxy', {})
             src = w.get('sources', {})
 
+            wave_uid = get_wave_uid(op, wn)
+            tt = classify_target_types(w)
+
             cur.execute("""
                 INSERT OR REPLACE INTO waves VALUES (
-                    ?,?,?,?,?,?,
+                    ?,?,?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,
-                    ?,?,?,?,
+                    ?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,
-                    ?,?,?,?,
-                    ?,?,?,?,?,?,?,?,?,?,?,?,
+                    ?,?,?,?,?,
+                    ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
@@ -548,8 +572,10 @@ def load_waves(cur):
                     ?
                 )
             """, (
+                wave_uid,
                 get_uuid(w),
                 op, wn,
+                WAVE_NARRATIVES.get(wave_uid),
                 w.get('wave_codename_farsi'),
                 w.get('wave_codename_english'),
                 w.get('description'),
@@ -590,6 +616,7 @@ def load_waves(cur):
                 bool_to_int(wc.get('bm_solid_fueled')),
                 bool_to_int(wc.get('bm_marv_equipped')),
                 bool_to_int(wc.get('bm_hypersonic')),
+                bool_to_int(get_cluster_munitions(w)),
                 # targets
                 bool_to_int(tgt.get('israel_targeted')),
                 bool_to_int(tgt.get('us_bases_targeted')),
@@ -603,6 +630,18 @@ def load_waves(cur):
                 tc.get('lat'),
                 tc.get('lon'),
                 bool_to_int(tc.get('generic_location')),
+                countries_iso_to_names(tgt.get('landings_countries')),
+                # target type booleans
+                bool_to_int(tt['target_iaf_base']),
+                bool_to_int(tt['target_us_base']),
+                bool_to_int(tt['target_naval_base']),
+                bool_to_int(tt['target_naval_vessel']),
+                bool_to_int(tt['target_government_c2']),
+                bool_to_int(tt['target_military_industrial']),
+                bool_to_int(tt['target_intelligence']),
+                bool_to_int(tt['target_civilian_infrastructure']),
+                bool_to_int(tt['target_civilian_area']),
+                bool_to_int(tt['target_diplomatic']),
                 # launch site
                 ls.get('description'),
                 ls.get('lat'),

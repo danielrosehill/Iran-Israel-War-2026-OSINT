@@ -1,4 +1,5 @@
 column_name,data_type,nullable,description
+wave_uid,string,no,"Unique wave identifier for cross-layer joins (e.g. 'tp4_w21')"
 operation,string,no,"Operation identifier: tp1 (Apr 2024), tp2 (Oct 2024), tp3 (Jun 2025), tp4 (Feb 2026+)"
 wave_number,integer,no,Sequential wave number within the operation (1-indexed)
 wave_codename_farsi,string,yes,Iranian codename for this wave in Farsi script
@@ -34,6 +35,7 @@ bm_solid_fueled,boolean,yes,Whether any solid-fueled ballistic missile was used 
 bm_marv_equipped,boolean,yes,Whether any MARV-equipped (maneuverable reentry vehicle) ballistic missile was used
 bm_hypersonic,boolean,yes,Whether any hypersonic-class ballistic missile (Mach 5+) was used
 bm_cluster_warhead,boolean,yes,Whether any ballistic missile carried cluster submunitions
+cluster_munitions,boolean,yes,"Derived: true if cluster warhead confirmed for this wave (from weapons.cluster_warhead)"
 cluster_warhead_confirmed,boolean,yes,Whether cluster warhead use was confirmed by IDF/police/OSINT evidence
 cluster_carrier_missile,string,yes,"Missile type that delivered the cluster warhead (e.g. 'Fattah-2')"
 cluster_submunition_count,integer,yes,Estimated number of submunitions per cluster warhead
@@ -42,7 +44,8 @@ cluster_dispersal_radius_km,float,yes,Estimated dispersal radius of submunitions
 israel_targeted,boolean,yes,Whether this wave targeted locations in Israel
 us_bases_targeted,boolean,yes,Whether this wave targeted US military bases in the region
 targets,string,yes,"Free-text description of targets (e.g. 'Nevatim Airbase, Ramon Airbase')"
-landings_countries,string,yes,"Comma-separated ISO 3166-1 alpha-2 country codes where munitions landed (e.g. 'IL, JO, PS')"
+landings_countries_iso,string,yes,"Comma-separated ISO 3166-1 alpha-2 country codes where munitions landed (e.g. 'IL, JO, PS')"
+landings_countries,string,yes,"Comma-separated readable country names where munitions landed (e.g. 'Israel, Jordan, Palestine')"
 targeted_tel_aviv,boolean,yes,Whether Tel Aviv / Gush Dan metropolitan area was targeted
 targeted_jerusalem,boolean,yes,Whether Jerusalem area was targeted
 targeted_haifa,boolean,yes,Whether Haifa / northern coast was targeted
@@ -54,6 +57,16 @@ us_naval_vessels_list,string,yes,"Comma-separated names of US naval vessels targ
 target_lat,float,yes,Latitude of primary target in decimal degrees (WGS84)
 target_lon,float,yes,Longitude of primary target in decimal degrees (WGS84)
 target_generic_location,boolean,yes,"Whether target coordinates are an approximate centroid (true) or specifically geolocated (false/null)"
+target_iaf_base,boolean,yes,"Derived: whether this wave targeted an Israeli Air Force base (Nevatim, Ramon, Tel Nof, Hatzerim, Ramat David, Ovda)"
+target_us_base,boolean,yes,"Derived: whether this wave targeted a US/coalition military base"
+target_naval_base,boolean,yes,"Derived: whether this wave targeted a naval base or port facility"
+target_naval_vessel,boolean,yes,"Derived: whether this wave targeted a naval vessel at sea"
+target_government_c2,boolean,yes,"Derived: whether this wave targeted a government HQ, ministry, or C2 node"
+target_military_industrial,boolean,yes,"Derived: whether this wave targeted defense industry or military production facilities"
+target_intelligence,boolean,yes,"Derived: whether this wave targeted intelligence facilities (CIA, Mossad, Unit 8200, radar)"
+target_civilian_infrastructure,boolean,yes,"Derived: whether this wave targeted civilian infrastructure (airports, refineries, power plants, data centres)"
+target_civilian_area,boolean,yes,"Derived: whether this wave targeted or struck residential/civilian areas"
+target_diplomatic,boolean,yes,"Derived: whether this wave targeted diplomatic facilities (embassies, consulates)"
 launch_site_description,string,yes,"Free-text description of launch origin (e.g. 'Western Iran, Kermanshah province')"
 launch_site_lat,float,yes,Latitude of launch site in decimal degrees (WGS84)
 launch_site_lon,float,yes,Longitude of launch site in decimal degrees (WGS84)
@@ -88,6 +101,7 @@ description,string,yes,Free-text narrative summary of the wave
 iranian_media_claims,string,yes,JSON-encoded Iranian state media claims about this wave's results
 idf_statement,string,yes,Summary or excerpt of official IDF statement regarding this wave
 source_urls,string,yes,Comma-separated URLs of OSINT sources documenting this wave
+narrative,string,yes,"1-2 paragraph analytical description of the wave's tactical significance, targeting, and context"
 ,,,"--- International Reactions (international_reactions.csv / .parquet) ---"
 operation,string,no,"Operation identifier: tp4 (Feb 2026+); will expand as reactions data is added for earlier operations"
 iso_3166_1_alpha2,string,yes,"ISO 3166-1 alpha-2 country code (e.g. US, IR, IL); null for multilateral entities"

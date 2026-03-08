@@ -6,6 +6,11 @@ import os
 import shutil
 import pandas as pd
 
+from wave_enrichment import (
+    classify_target_types, get_cluster_munitions, countries_iso_to_names,
+    get_wave_uid, WAVE_NARRATIVES,
+)
+
 REPO = os.path.dirname(os.path.abspath(__file__))
 
 WAVE_FILES = [
@@ -43,7 +48,11 @@ def flatten_wave(op, wave):
     src = wave.get('sources', {})
     tc = tgt.get('target_coordinates', {}) or {}
 
+    wave_uid = get_wave_uid(op, wave.get('wave_number', 0))
+    target_types = classify_target_types(wave)
+
     return {
+        'wave_uid': wave_uid,
         'operation': op,
         'wave_number': wave.get('wave_number'),
         'wave_codename_farsi': wave.get('wave_codename_farsi'),
@@ -81,6 +90,7 @@ def flatten_wave(op, wave):
         'bm_marv_equipped': wc.get('bm_marv_equipped'),
         'bm_hypersonic': wc.get('bm_hypersonic'),
         'bm_cluster_warhead': wc.get('bm_cluster_warhead'),
+        'cluster_munitions': get_cluster_munitions(wave),
         # cluster warhead
         'cluster_warhead_confirmed': cw.get('confirmed'),
         'cluster_carrier_missile': cw.get('carrier_missile'),
@@ -91,7 +101,8 @@ def flatten_wave(op, wave):
         'israel_targeted': tgt.get('israel_targeted'),
         'us_bases_targeted': tgt.get('us_bases_targeted'),
         'targets': tgt.get('targets'),
-        'landings_countries': ', '.join(tgt.get('landings_countries', []) or []),
+        'landings_countries_iso': ', '.join(sorted(tgt.get('landings_countries', []) or [])),
+        'landings_countries': countries_iso_to_names(tgt.get('landings_countries')),
         'targeted_tel_aviv': iloc.get('targeted_tel_aviv'),
         'targeted_jerusalem': iloc.get('targeted_jerusalem'),
         'targeted_haifa': iloc.get('targeted_haifa'),
@@ -151,6 +162,10 @@ def flatten_wave(op, wave):
         # sources
         'idf_statement': src.get('idf_statement'),
         'source_urls': ', '.join(src.get('urls', []) or []),
+        # target type classification
+        **target_types,
+        # narrative
+        'narrative': WAVE_NARRATIVES.get(wave_uid),
     }
 
 
