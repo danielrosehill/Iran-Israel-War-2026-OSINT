@@ -132,11 +132,13 @@ def create_schema(cur):
         targeted_eilat          INTEGER,
         target_lat              REAL,
         target_lon              REAL,
+        target_generic_location INTEGER,  -- 0/1/NULL: true = approx centroid, false = specifically geolocated
 
         -- Launch site
         launch_site_description TEXT,
         launch_site_lat         REAL,
         launch_site_lon         REAL,
+        launch_site_generic_location INTEGER,  -- 0/1/NULL: true = approx centroid, false = specifically geolocated
 
         -- Interception
         intercepted             INTEGER,
@@ -536,8 +538,8 @@ def load_waves(cur):
                     ?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
-                    ?,?,?,?,?,?,?,?,?,?,?,
-                    ?,?,?,
+                    ?,?,?,?,?,?,?,?,?,?,?,?,
+                    ?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
                     ?,?,?,?,?,
@@ -600,10 +602,12 @@ def load_waves(cur):
                 bool_to_int(il.get('targeted_eilat')),
                 tc.get('lat'),
                 tc.get('lon'),
+                bool_to_int(tc.get('generic_location')),
                 # launch site
                 ls.get('description'),
                 ls.get('lat'),
                 ls.get('lon'),
+                bool_to_int(ls.get('generic_location')),
                 # interception
                 bool_to_int(icp.get('intercepted')),
                 icp.get('estimated_intercept_count'),

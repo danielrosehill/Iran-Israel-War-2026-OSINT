@@ -128,8 +128,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 31.66,
+          "lon": 34.78,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -144,8 +145,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -266,8 +268,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.835,
+          "lon": 35.25,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -282,8 +285,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -404,8 +408,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.07,
+          "lon": 34.77,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -420,8 +425,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -542,8 +548,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -558,8 +565,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -680,8 +688,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.82,
+          "lon": 35.0,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -696,8 +705,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -818,8 +828,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -834,8 +845,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -956,8 +968,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -972,8 +985,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1094,8 +1108,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1110,8 +1125,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1232,8 +1248,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1248,8 +1265,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1370,8 +1388,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.0567,
+          "lon": 35.02,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1386,8 +1405,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1510,8 +1530,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 31.25,
+          "lon": 34.79,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1526,8 +1547,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1647,8 +1669,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.07,
+          "lon": 34.77,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1663,8 +1686,9 @@
       },
       "launch_site": {
         "description": "Central/western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1786,8 +1810,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1802,8 +1827,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -1923,8 +1949,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -1939,8 +1966,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2076,8 +2104,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2215,8 +2244,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2352,8 +2382,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2473,8 +2504,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 31.62,
+          "lon": 35.06,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -2489,8 +2521,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2613,8 +2646,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -2629,8 +2663,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2751,8 +2786,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.07,
+          "lon": 34.77,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": true,
@@ -2767,8 +2803,9 @@
       },
       "launch_site": {
         "description": "Central/western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -2891,8 +2928,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 32.07,
+          "lon": 34.77,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -2907,8 +2945,9 @@
       },
       "launch_site": {
         "description": "Central/western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,
@@ -3028,8 +3067,9 @@
         "us_bases": [],
         "us_naval_vessels": [],
         "target_coordinates": {
-          "lat": null,
-          "lon": null
+          "lat": 31.25,
+          "lon": 34.79,
+          "generic_location": true
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -3044,8 +3084,9 @@
       },
       "launch_site": {
         "description": "Western Iran",
-        "lat": null,
-        "lon": null
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
       },
       "interception": {
         "intercepted": true,

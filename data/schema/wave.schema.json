@@ -201,7 +201,11 @@
           "type": "object",
           "properties": {
             "lat": { "type": ["number", "null"] },
-            "lon": { "type": ["number", "null"] }
+            "lon": { "type": ["number", "null"] },
+            "generic_location": {
+              "type": ["boolean", "null"],
+              "description": "true = coordinates are approximate centroid of targeted area (e.g. city center for 'targeted_tel_aviv'); false/null = coordinates are specifically geolocated"
+            }
           }
         }
       }
@@ -211,7 +215,11 @@
       "properties": {
         "description": { "type": ["string", "null"] },
         "lat": { "type": ["number", "null"] },
-        "lon": { "type": ["number", "null"] }
+        "lon": { "type": ["number", "null"] },
+        "generic_location": {
+          "type": ["boolean", "null"],
+          "description": "true = coordinates are approximate centroid of a named region (e.g. 'Western Iran'); false/null = coordinates are specifically geolocated"
+        }
       }
     },
     "interception": {

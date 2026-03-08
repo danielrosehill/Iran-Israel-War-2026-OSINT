@@ -7,3 +7,4 @@ kaggle.json
 kaggle/
 .claude/agent-memory/
 .env
+exports/

@@ -79,5 +79,41 @@
     "branch": "US Military / Coalition",
     "lat": 36.54,
     "lon": 44.38
+  },
+  {
+    "name": "Al Dhafra Air Base",
+    "aliases": ["Al Dhafra", "Al-Dhafra"],
+    "country_code": "AE",
+    "country_name": "United Arab Emirates",
+    "branch": "US Air Force",
+    "lat": 24.25,
+    "lon": 54.55
+  },
+  {
+    "name": "Muwaffaq Salti Air Base",
+    "aliases": ["Muwaffaq Salti", "Al-Azraq", "al-Azraq", "Al-Azraq Air Base"],
+    "country_code": "JO",
+    "country_name": "Jordan",
+    "branch": "US Air Force / Royal Jordanian Air Force",
+    "lat": 31.83,
+    "lon": 36.78
+  },
+  {
+    "name": "Camp Udairi",
+    "aliases": ["Camp Udairi", "Camp Buehring", "Camp Udairi / Camp Buehring"],
+    "country_code": "KW",
+    "country_name": "Kuwait",
+    "branch": "US Army",
+    "lat": 29.69,
+    "lon": 47.09
+  },
+  {
+    "name": "NSA Bahrain",
+    "aliases": ["NSA Bahrain", "NSA Bahrain (Juffair)", "Naval Support Activity Bahrain", "Juffair"],
+    "country_code": "BH",
+    "country_name": "Bahrain",
+    "branch": "US Navy (Fifth Fleet HQ)",
+    "lat": 26.22,
+    "lon": 50.60
   }
 ]

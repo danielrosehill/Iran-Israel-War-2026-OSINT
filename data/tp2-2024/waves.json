@@ -121,7 +121,8 @@
         "us_naval_vessels": [],
         "target_coordinates": {
           "lat": 30.89,
-          "lon": 34.78
+          "lon": 34.78,
+          "generic_location": false
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -137,7 +138,8 @@
       "launch_site": {
         "description": "IRGC Aerospace Force launch sites in western Iran",
         "lat": 33.5,
-        "lon": 50.0
+        "lon": 50.0,
+        "generic_location": false
       },
       "interception": {
         "intercepted": true,
@@ -405,7 +407,8 @@
         "us_naval_vessels": [],
         "target_coordinates": {
           "lat": 32.15,
-          "lon": 34.79
+          "lon": 34.79,
+          "generic_location": false
         },
         "critical_infrastructure": {
           "targeted_airport": null,
@@ -421,7 +424,8 @@
       "launch_site": {
         "description": "IRGC Aerospace Force launch sites in western Iran",
         "lat": 33.5,
-        "lon": 50.0
+        "lon": 50.0,
+        "generic_location": false
       },
       "interception": {
         "intercepted": true,
