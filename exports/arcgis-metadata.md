@@ -1,9 +1,4 @@
-# ArcGIS Online Item Metadata
-
-Copy-paste text for the Title, Summary, and Description fields when uploading layers to ArcGIS Online.
-
----
-
+ 
 ## Launch Sites
 
 **Title:** Iranian Missile & Drone Launch Sites Across 4 True Promise Operations (55 Waves, 2024–2026)
