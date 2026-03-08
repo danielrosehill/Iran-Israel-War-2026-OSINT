@@ -203,7 +203,7 @@ def feature_collection(features):
 
 def main():
     parser = argparse.ArgumentParser(description='Build ArcGIS StoryMap exports')
-    parser.add_argument('--output-dir', default=os.path.join(REPO, 'exports'),
+    parser.add_argument('--output-dir', default=os.path.join(REPO, 'exports', 'latest'),
                         help='Output directory')
     args = parser.parse_args()
     os.makedirs(args.output_dir, exist_ok=True)

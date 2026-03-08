@@ -93,13 +93,24 @@ def main():
     if result.returncode != 0:
         print(f"  ERROR: {result.stderr}")
 
-    # 5. Copy to latest/
+    # 5. ArcGIS StoryMap exports
+    print("ArcGIS exports:")
+    result = subprocess.run(
+        ['python3', os.path.join(REPO, 'build_arcgis.py'),
+         '--output-dir', export_dir],
+        capture_output=True, text=True
+    )
+    print(result.stdout)
+    if result.returncode != 0:
+        print(f"  ERROR: {result.stderr}")
+
+    # 6. Copy to latest/
     if os.path.exists(latest_dir):
         shutil.rmtree(latest_dir)
     shutil.copytree(export_dir, latest_dir)
     print(f"\nCopied to {latest_dir}")
 
-    # 6. Write manifest
+    # 7. Write manifest
     manifest = {
         "timestamp": timestamp,
         "export_dir": export_dir,
