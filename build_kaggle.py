@@ -108,10 +108,12 @@ def flatten_wave(op, wave):
         ),
         'target_lat': tc.get('lat'),
         'target_lon': tc.get('lon'),
+        'target_generic_location': tc.get('generic_location'),
         # launch site
         'launch_site_description': ls.get('description'),
         'launch_site_lat': ls.get('lat'),
         'launch_site_lon': ls.get('lon'),
+        'launch_site_generic_location': ls.get('generic_location'),
         # interception
         'intercepted': interc.get('intercepted'),
         'interception_systems': ', '.join(interc.get('interception_systems', []) or []),

@@ -53,9 +53,11 @@ us_bases_list,string,yes,"Comma-separated names of US military bases targeted (e
 us_naval_vessels_list,string,yes,"Comma-separated names of US naval vessels targeted (e.g. 'USS Eisenhower, USS Philippine Sea')"
 target_lat,float,yes,Latitude of primary target in decimal degrees (WGS84)
 target_lon,float,yes,Longitude of primary target in decimal degrees (WGS84)
+target_generic_location,boolean,yes,"Whether target coordinates are an approximate centroid (true) or specifically geolocated (false/null)"
 launch_site_description,string,yes,"Free-text description of launch origin (e.g. 'Western Iran, Kermanshah province')"
 launch_site_lat,float,yes,Latitude of launch site in decimal degrees (WGS84)
 launch_site_lon,float,yes,Longitude of launch site in decimal degrees (WGS84)
+launch_site_generic_location,boolean,yes,"Whether launch site coordinates are an approximate centroid (true) or specifically geolocated (false/null)"
 intercepted,boolean,yes,Whether any munitions from this wave were intercepted
 interception_systems,string,yes,"Comma-separated defense systems used (e.g. 'Arrow-2, Arrow-3, David's Sling, Iron Dome')"
 intercepted_by_israel,boolean,yes,Whether Israel participated in interception of this wave

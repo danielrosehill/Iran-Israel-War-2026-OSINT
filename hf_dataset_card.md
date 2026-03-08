@@ -25,7 +25,7 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 
 ## Dataset Description
 
-53 attack waves across four Iranian military operations, each with 87 structured fields covering timing, weapons systems, targets, interception performance, casualties, and escalation indicators. Also includes international reactions data with 210 country/organisation responses to True Promise 4, tracking official statements from heads of state, heads of government, and foreign ministries.
+53 attack waves across four Iranian military operations, each with 89 structured fields covering timing, weapons systems, targets, interception performance, casualties, and escalation indicators. Also includes international reactions data with 210 country/organisation responses to True Promise 4, tracking official statements from heads of state, heads of government, and foreign ministries.
 
 | Operation | Date | Waves | Munitions | Targets |
 |-----------|------|------:|----------:|---------|
@@ -34,7 +34,7 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 | True Promise 3 | Jun 13–24, 2025 | 22 | ~1,600–1,800 | Israel (cities, bases, infrastructure) |
 | True Promise 4 | Feb 28–ongoing, 2026 | 27 | TBD | Israel, US/coalition bases across Gulf & Med |
 
-## Data Fields (87 columns)
+## Data Fields (89 columns)
 
 | Category | Fields |
 |----------|--------|
@@ -42,7 +42,7 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 | **Timing** | `announced_utc`, `probable_launch_time`, `launch_time_israel`, `launch_time_iran`, `conflict_day`, `hours_since_last_wave`, `time_between_waves_minutes` |
 | **Weapons** | `payload`, `drones_used`, `ballistic_missiles_used`, `cruise_missiles_used`, per-system booleans (`emad_used`, `ghadr_used`, `kheibar_shekan_used`, `fattah_used`, `shahed_136_used`, etc.), fuel/warhead categories |
 | **Cluster Warheads** | `cluster_warhead_confirmed`, `cluster_carrier_missile`, `cluster_submunition_count`, `cluster_dispersal_radius_km` |
-| **Targets** | `israel_targeted`, `us_bases_targeted`, `targets` (text), `landings_countries`, per-city booleans, US base/vessel lists, coordinates |
+| **Targets** | `israel_targeted`, `us_bases_targeted`, `targets` (text), `landings_countries`, per-city booleans, US base/vessel lists, coordinates, `target_generic_location` |
 | **Interception** | `intercepted`, `interception_systems`, per-country interception flags, intercept counts/rates, exo/endoatmospheric phase |
 | **Impact** | `damage` (text), `fatalities`, `injuries`, `civilian_casualties`, `military_casualties` |
 | **Escalation** | `new_country_targeted`, `new_weapon_first_use` |
@@ -61,7 +61,7 @@ Open-source intelligence dataset tracking Iranian missile and drone attack waves
 
 ## Files
 
-- `waves.parquet` — All 53 waves, 87 columns (recommended)
+- `waves.parquet` — All 53 waves, 89 columns (recommended)
 - `waves.csv` — Same data in CSV format
 - `international_reactions.parquet` — 210 country/org reactions to TP4, 33 columns (recommended)
 - `international_reactions.csv` — Same data in CSV format
