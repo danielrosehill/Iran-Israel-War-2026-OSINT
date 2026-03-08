@@ -119,7 +119,14 @@ def main():
     if result.returncode != 0:
         print(f"  ERROR: {result.stderr}")
 
-    # 6. Write manifest
+    # 6. Copy README files into subfolders
+    readme_dir = os.path.join(REPO, 'exports', 'latest')
+    for subdir in ['json', 'sqlite', 'geojson', 'arcgis']:
+        readme_src = os.path.join(readme_dir, subdir, 'README.md')
+        if os.path.exists(readme_src):
+            shutil.copy2(readme_src, os.path.join(export_dir, subdir, 'README.md'))
+
+    # 7. Write manifest
     manifest = {
         "timestamp": timestamp,
         "structure": {

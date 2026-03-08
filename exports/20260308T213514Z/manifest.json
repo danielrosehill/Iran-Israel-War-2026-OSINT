@@ -1,0 +1,24 @@
+{
+  "timestamp": "20260308T213514Z",
+  "structure": {
+    "json": "Combined and per-operation wave JSON files",
+    "sqlite": "SQLite database with all tables and reference data",
+    "geojson": "GeoJSON layers for GIS tools (QGIS, Mapbox, Leaflet, kepler.gl)",
+    "arcgis": "ArcGIS Online / StoryMap optimized exports with enriched properties"
+  },
+  "files": [
+    "arcgis/arcgis_launch_sites.geojson",
+    "arcgis/arcgis_targets.geojson",
+    "arcgis/arcgis_trajectories.geojson",
+    "arcgis/arcgis_waves.csv",
+    "geojson/waves_combined.geojson",
+    "geojson/waves_launch_sites.geojson",
+    "geojson/waves_targets.geojson",
+    "json/tp1_waves.json",
+    "json/tp2_waves.json",
+    "json/tp3_waves.json",
+    "json/tp4_waves.json",
+    "json/waves_all.json",
+    "sqlite/iran_israel_war.db"
+  ]
+}
