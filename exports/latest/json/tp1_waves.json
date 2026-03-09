@@ -135,6 +135,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": "Multiple sites across Iran; Shahed drones also launched from Iraq and Yemen by proxies",
         "lat": 33.0,
@@ -346,6 +350,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "IRGC Aerospace Force launch sites in western and central Iran",

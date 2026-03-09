@@ -155,6 +155,10 @@ def create_schema(cur):
         target_civilian_area        INTEGER,
         target_diplomatic           INTEGER,
 
+        -- Attacking force
+        attacking_force_actor   TEXT,    -- top-level: Iran, Hezbollah, Ansar Allah (Houthis), Islamic Resistance in Iraq
+        attacking_force_subunit TEXT,    -- specific branch: IRGC Aerospace Force, IRGC Navy, etc.
+
         -- Launch site
         launch_site_description TEXT,
         launch_site_lat         REAL,
@@ -543,6 +547,7 @@ def load_waves(cur):
             tgt = w.get('targets', {})
             il = tgt.get('israeli_locations', {})
             tc = tgt.get('target_coordinates', {})
+            af = w.get('attacking_force', {})
             ls = w.get('launch_site', {})
             icp = w.get('interception', {})
             ib = icp.get('intercepted_by', {})
@@ -563,6 +568,7 @@ def load_waves(cur):
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
+                    ?,?,
                     ?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
@@ -642,6 +648,9 @@ def load_waves(cur):
                 bool_to_int(tt['target_civilian_infrastructure']),
                 bool_to_int(tt['target_civilian_area']),
                 bool_to_int(tt['target_diplomatic']),
+                # attacking force
+                af.get('actor'),
+                af.get('subunit'),
                 # launch site
                 ls.get('description'),
                 ls.get('lat'),

@@ -41,6 +41,17 @@ The OSINT analysis site is in a separate repo:
 
 Frontend syncing is done manually by the user when needed — do not auto-sync after data updates.
 
+## Post-Update Sync
+
+After updating wave data (adding waves, correcting fields, backfilling), always offer to sync to distribution platforms:
+
+1. **Rebuild DB**: `python3 build_db.py`
+2. **Rebuild Kaggle exports**: `python3 build_kaggle.py`
+3. **Push to Kaggle**: `python3 upload_kaggle.py`
+4. **Sync to HF + Kaggle**: `python3 sync_platforms.py`
+
+Do not auto-run these — prompt the user after data changes.
+
 ## SITREP Format
 
 All SITREPs must follow the template in `docs/sitrep-template.md`:

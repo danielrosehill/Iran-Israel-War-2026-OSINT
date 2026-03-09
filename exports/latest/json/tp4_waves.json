@@ -132,6 +132,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
         "lat": 34.31,
@@ -285,6 +289,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Western Iran",
@@ -451,6 +459,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": "Western and southwestern Iran",
         "lat": 34.31,
@@ -599,6 +611,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Western Iran",
@@ -766,6 +782,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": "Western Iran, IRGC naval positions",
         "lat": 34.31,
@@ -908,6 +928,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Western Iran",
@@ -1082,6 +1106,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": "Western Iran, IRGC naval positions",
         "lat": 34.31,
@@ -1249,6 +1277,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1373,9 +1405,16 @@
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": true
         },
-        "cluster_warhead": null
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": null,
+          "submunition_count": null,
+          "submunition_explosive_kg": null,
+          "dispersal_radius_km": null,
+          "dispersal_altitude_ft": null
+        }
       },
       "targets": {
         "israel_targeted": true,
@@ -1413,6 +1452,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Western Iran",
@@ -1560,6 +1603,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Central Iran",
@@ -1740,6 +1787,10 @@
           "targeted_diplomatic": true,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Western Iran",
@@ -1928,6 +1979,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Navy"
+      },
       "launch_site": {
         "description": "IRGC naval positions, western Iran",
         "lat": 34.31,
@@ -2103,6 +2158,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Navy"
       },
       "launch_site": {
         "description": "IRGC positions",
@@ -2286,6 +2345,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Navy"
+      },
       "launch_site": {
         "description": "IRGC naval positions",
         "lat": 26.5,
@@ -2392,9 +2455,16 @@
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": true
         },
-        "cluster_warhead": null
+        "cluster_warhead": {
+          "confirmed": false,
+          "carrier_missile": null,
+          "submunition_count": null,
+          "submunition_explosive_kg": null,
+          "dispersal_radius_km": null,
+          "dispersal_altitude_ft": null
+        }
       },
       "targets": {
         "israel_targeted": true,
@@ -2442,6 +2512,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -2471,7 +2545,7 @@
         "cumulative_total": null
       },
       "impact": {
-        "damage": "Strikes on Al-Udeid Air Base Qatar and Israeli positions. IRGC claims 7 Israeli drones shot down (Hermes, Heron, MQ-9). Fragmentation warhead detonation in Petah Tikva causing blast damage and injuries.",
+        "damage": "Strikes on Al-Udeid Air Base Qatar and Israeli positions. IRGC claims 7 Israeli drones shot down (Hermes, Heron, MQ-9). Suspected cluster/fragmentation warhead detonation in Bnei Brak/Petah Tikva causing blast damage; 7 wounded (1 moderate, 6 light) per Haaretz.",
         "fatalities": 0,
         "injuries": 0,
         "civilian_casualties": 0,
@@ -2590,6 +2664,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Ground Force"
       },
       "launch_site": {
         "description": "Western Iran, IRGC ground force positions",
@@ -2733,6 +2811,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Central/western Iran",
@@ -2904,6 +2986,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3073,6 +3159,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3229,6 +3319,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": null,
@@ -3388,6 +3482,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": null,
@@ -3549,6 +3647,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": null,
@@ -3732,6 +3834,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3846,7 +3952,14 @@
           "bm_hypersonic": null,
           "bm_cluster_warhead": true
         },
-        "cluster_warhead": true
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": "Kheibar Shekan, Emad, Ghadr",
+          "submunition_count": 20,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 8.0,
+          "dispersal_altitude_ft": null
+        }
       },
       "targets": {
         "israel_targeted": true,
@@ -3880,6 +3993,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": null,
@@ -4046,6 +4163,10 @@
           "targeted_research": null
         }
       },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
+      },
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4163,12 +4284,19 @@
           "bm_hypersonic": null,
           "bm_cluster_warhead": true
         },
-        "cluster_warhead": true
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": "Kheibar Shekan",
+          "submunition_count": 20,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 8.0,
+          "dispersal_altitude_ft": null
+        }
       },
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Targets from north to south of Israel hit with precision. Sdot Micha strategic military facility (radar). Also Iran army drone strikes against US bases: Al-Minhad Air Base (UAE) and Camp Udairi (Kuwait).",
+        "targets": "Targets from north to south of Israel hit with precision, including Jerusalem (cluster missile intercepted over city per Anadolu Agency/Israel National News). Sdot Micha strategic military facility (radar). Also Iran army drone strikes against US bases: Al-Minhad Air Base (UAE) and Camp Udairi (Kuwait).",
         "landings_countries": [
           "IL",
           "AE",
@@ -4176,7 +4304,7 @@
         ],
         "israeli_locations": {
           "targeted_tel_aviv": null,
-          "targeted_jerusalem": null,
+          "targeted_jerusalem": true,
           "targeted_haifa": null,
           "targeted_negev_beersheba": null,
           "targeted_northern_periphery": true,
@@ -4212,6 +4340,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": null,
@@ -4264,10 +4396,12 @@
         "idf_statement": null,
         "urls": [
           "https://wanaen.com/irgc-wave-26-of-operation-true-promise-4/",
-          "https://shafaq.com/en/Middle-East/IRGC-hits-Israeli-targets-in-26th-wave-of-Operation-True-Promise-4"
+          "https://shafaq.com/en/Middle-East/IRGC-hits-Israeli-targets-in-26th-wave-of-Operation-True-Promise-4",
+          "https://www.aa.com.tr/en/middle-east/loud-explosions-heard-after-iranian-cluster-missile-seen-in-skies-over-jerusalem/3854447",
+          "https://www.israelnationalnews.com/news/423520"
         ]
       },
-      "description": "Twenty-sixth wave of Operation True Promise 4. Day 8 (March 7). Combined drone-missile operation under codename 'Ya Heydar Karrar'. New-generation Emad, Ghadr, and multi-warhead Kheibar missiles struck targets across northern and southern Israel. Sdot Micha strategic military facility targeted. Concurrent Iran army drone strikes against US bases at Al-Minhad (UAE) and Camp Udairi (Kuwait). IRGC claimed destruction of enemy radar systems in previous waves made striking targets easier.",
+      "description": "Twenty-sixth wave of Operation True Promise 4. Day 8 (March 7). Combined drone-missile operation under codename 'Ya Heydar Karrar'. New-generation Emad, Ghadr, and multi-warhead Kheibar missiles with cluster warheads struck targets across northern and southern Israel including Jerusalem (cluster missile intercepted over city per Anadolu Agency and Israel National News). Sdot Micha strategic military facility targeted. Concurrent Iran army drone strikes against US bases at Al-Minhad (UAE) and Camp Udairi (Kuwait). IRGC claimed destruction of enemy radar systems in previous waves made striking targets easier.",
       "reactions": {
         "idf": {
           "statement": null,
@@ -4330,7 +4464,14 @@
           "bm_hypersonic": true,
           "bm_cluster_warhead": true
         },
-        "cluster_warhead": true
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": "Khorramshahr-4",
+          "submunition_count": 80,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 16.0,
+          "dispersal_altitude_ft": null
+        }
       },
       "targets": {
         "israel_targeted": true,
@@ -4372,6 +4513,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": null,
@@ -4485,9 +4630,16 @@
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": true
         },
-        "cluster_warhead": null
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": "Kheibar Shekan",
+          "submunition_count": 20,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 8.0,
+          "dispersal_altitude_ft": null
+        }
       },
       "targets": {
         "israel_targeted": true,
@@ -4499,7 +4651,7 @@
         ],
         "israeli_locations": {
           "targeted_tel_aviv": true,
-          "targeted_jerusalem": false,
+          "targeted_jerusalem": true,
           "targeted_haifa": false,
           "targeted_negev_beersheba": true,
           "targeted_northern_periphery": false,
@@ -4529,6 +4681,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Iran — IRGC Aerospace Force",
@@ -4678,6 +4834,10 @@
           "targeted_diplomatic": null,
           "targeted_research": null
         }
+      },
+      "attacking_force": {
+        "actor": "Iran",
+        "subunit": "IRGC Aerospace Force"
       },
       "launch_site": {
         "description": "Iran — IRGC Aerospace Force",

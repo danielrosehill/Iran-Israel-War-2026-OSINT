@@ -119,14 +119,50 @@ def main():
     if result.returncode != 0:
         print(f"  ERROR: {result.stderr}")
 
-    # 6. Copy README files into subfolders
+    # 6. Auto-generate SQLite schema documentation
+    print("\nSchema:")
+    if os.path.exists(os.path.join(sqlite_dir, 'iran_israel_war.db')):
+        import sqlite3
+        conn = sqlite3.connect(os.path.join(sqlite_dir, 'iran_israel_war.db'))
+        cur = conn.cursor()
+        schema_lines = ["# Database Schema\n"]
+        schema_lines.append(f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}\n")
+        cur.execute("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")
+        tables = [r[0] for r in cur.fetchall()]
+        for table in tables:
+            cur.execute(f"SELECT COUNT(*) FROM [{table}]")
+            count = cur.fetchone()[0]
+            schema_lines.append(f"\n## {table} ({count} rows)\n")
+            cur.execute(f"PRAGMA table_info([{table}])")
+            cols = cur.fetchall()
+            schema_lines.append("| # | Column | Type | Nullable | Default |")
+            schema_lines.append("|--:|--------|------|----------|---------|")
+            for col in cols:
+                cid, name, ctype, notnull, default, pk = col
+                nullable = "NO" if notnull else "YES"
+                default_str = str(default) if default is not None else ""
+                pk_str = " **PK**" if pk else ""
+                schema_lines.append(f"| {cid} | `{name}`{pk_str} | {ctype} | {nullable} | {default_str} |")
+        conn.close()
+        schema_path = os.path.join(export_dir, 'SCHEMA.md')
+        with open(schema_path, 'w') as f:
+            f.write('\n'.join(schema_lines) + '\n')
+        print(f"  {schema_path} ({len(tables)} tables)")
+
+    # 7. Copy JSON schema into export
+    schema_src = os.path.join(REPO, 'data', 'schema', 'wave.schema.json')
+    if os.path.exists(schema_src):
+        shutil.copy2(schema_src, os.path.join(json_dir, 'wave.schema.json'))
+        print(f"  Copied wave.schema.json to {json_dir}")
+
+    # 8. Copy README files into subfolders
     readme_dir = os.path.join(REPO, 'exports', 'latest')
     for subdir in ['json', 'sqlite', 'geojson', 'arcgis']:
         readme_src = os.path.join(readme_dir, subdir, 'README.md')
         if os.path.exists(readme_src):
             shutil.copy2(readme_src, os.path.join(export_dir, subdir, 'README.md'))
 
-    # 7. Write manifest
+    # 9. Write manifest
     manifest = {
         "timestamp": timestamp,
         "structure": {
@@ -141,7 +177,7 @@ def main():
     with open(manifest_path, 'w') as f:
         json.dump(manifest, f, indent=2)
 
-    # 7. Copy to latest/
+    # 10. Copy to latest/
     if os.path.exists(latest_dir):
         shutil.rmtree(latest_dir)
     shutil.copytree(export_dir, latest_dir)
