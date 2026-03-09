@@ -4,10 +4,10 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "wave_count": 29,
+    "wave_count": 31,
     "date_range": {
       "start": "2026-02-28",
-      "end": "2026-03-08"
+      "end": "2026-03-09"
     },
     "canonical_format": "json",
     "source_csv_columns": 75,
@@ -5042,6 +5042,333 @@
         }
       },
       "iranian_media_claims": "IRGC announced 29th wave launched by Aerospace Force with 'new generation of missiles' hitting targets in Tel Aviv, the Naqab, and US airbase. Codename Ya Ali Ibn Abi Talib."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 30,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "timing": {
+        "announced_utc": "2026-03-09T06:00:00Z",
+        "announced_utc_note": "Approximate. Exact UTC unclear; morning wave on March 9. Estimated ~06:00 UTC.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T05:30:00Z",
+        "launch_time_israel": "2026-03-09T08:00:00+0200",
+        "launch_time_iran": "2026-03-09T09:30:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": 14.0,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Khorramshahr, Fattah (hypersonic), Kheibar Shekan ballistic missiles + strategic drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": true,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "US and Israeli positions; sirens in Netanya, Western Galilee, northern Israel",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": false,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": true,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.33,
+          "lon": 34.86,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC"
+        }
+      ],
+      "launch_site": {
+        "description": "Iran — IRGC",
+        "lat": 33.5,
+        "lon": 48.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": null
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Iranian TV claimed \"complete success\"; specific damage details sparse.",
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      },
+      "description": "Thirtieth wave of Operation True Promise 4. Day 10 (March 9), morning. First IRGC action since Mojtaba Khamenei became Supreme Leader on March 8. Featured Khorramshahr, Fattah hypersonic, and Kheibar Shekan ballistic missiles plus strategic drones. Sirens sounded in Netanya and Western Galilee. Iranian TV claimed complete success.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "Iranian TV claimed \"complete success\" for the 30th wave. First military action under new Supreme Leader Mojtaba Khamenei. IRGC launched Khorramshahr, Fattah hypersonic, and Kheibar Shekan missiles alongside strategic drones targeting US and Israeli positions."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 31,
+      "wave_codename_farsi": "لبیک یا خامنه‌ای",
+      "wave_codename_english": "Labbaik Ya Khamenei",
+      "timing": {
+        "announced_utc": "2026-03-09T13:43:00Z",
+        "announced_utc_note": "Approximately 13:43 UTC on March 9. Dedicated to new Supreme Leader Mojtaba Khamenei.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T13:00:00Z",
+        "launch_time_israel": "2026-03-09T15:43:00+0200",
+        "launch_time_iran": "2026-03-09T17:13:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": 7.72,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Super-heavy missiles: Qadr, Khorramshahr, Kheibar Shekan ballistic missiles; IRGC Navy loitering drones and cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": true,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": null,
+          "submunition_count": 24,
+          "submunition_explosive_kg": 3.5,
+          "dispersal_radius_km": null,
+          "dispersal_altitude_ft": null
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Five strategic US bases (incl. US Navy 5th Fleet HQ); Israeli military sites in Tel Aviv and Haifa; US Al-Adiri helicopter base; Bat Yam (cluster munition strike)",
+        "landings_countries": [
+          "IL",
+          "BH"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": true,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [
+          {
+            "base_name": "US Navy 5th Fleet HQ",
+            "country": "BH",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "Al-Adiri helicopter base",
+            "country": null,
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.02,
+          "lon": 34.75,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        }
+      ],
+      "launch_site": {
+        "description": "Iran — IRGC Aerospace Force and IRGC Navy",
+        "lat": 33.5,
+        "lon": 48.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "NATO downed a second Iranian missile over Turkey on March 9. UAE detected 15 ballistic missiles and 18 UAVs from Iran (12 destroyed, 3 fell in sea)."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Cluster munition strike in Bat Yam — 24 submunitions (2-5 kg each), dispersed across 6 locations in greater Tel Aviv area.",
+        "fatalities": 2,
+        "injuries": null,
+        "civilian_casualties": "2 killed in central Israel, multiple injuries",
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": "Hezbollah operating in parallel but outside IRGC wave numbering. Houthis remain uninvolved."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      },
+      "description": "Thirty-first wave of Operation True Promise 4. Day 10 (March 9), afternoon. Codename \"Labbaik Ya Khamenei\" — dedicated to new Supreme Leader Mojtaba Khamenei. Joint IRGC Aerospace Force and IRGC Navy operation. Featured super-heavy missiles (Qadr, Khorramshahr, Kheibar Shekan) plus naval loitering drones and cruise missiles. Targeted five strategic US bases including 5th Fleet HQ, Israeli military sites in Tel Aviv and Haifa, and US Al-Adiri helicopter base. Cluster munition strike in Bat Yam dispersed 24 submunitions across 6 locations. 2 killed in central Israel. Bahrain: 32 injured including children in strike on Sitra island.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC announced 31st wave codename \"Labbaik Ya Khamenei\" dedicated to new Supreme Leader. Joint Aerospace Force and Navy operation using \"super-heavy missiles\" targeting five US strategic bases and Israeli military sites. Claimed direct hits on targets in Tel Aviv, Haifa, and US bases."
     }
   ]
 }
