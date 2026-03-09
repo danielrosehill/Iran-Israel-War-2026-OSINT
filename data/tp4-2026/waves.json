@@ -5338,7 +5338,7 @@
         "damage": "Cluster munition strike in Bat Yam — 24 submunitions (2-5 kg each), dispersed across 6 locations in greater Tel Aviv area.",
         "fatalities": 2,
         "injuries": null,
-        "civilian_casualties": "2 killed in central Israel, multiple injuries",
+        "civilian_casualties": 2,
         "military_casualties": null
       },
       "escalation": {
