@@ -13,7 +13,7 @@ OSINT dataset tracking Iranian missile/drone attack waves against Israel and US/
 
 ### SQLite Database (preferred for queries)
 
-`data/iran_israel_war.db` — single queryable database with all wave data, reference tables, and junction tables. Rebuild with `python3 build_db.py`.
+`data/iran_israel_war.db` — single queryable database with all wave data, reference tables, and junction tables. Rebuild with `python3 scripts/build_db.py`.
 
 Key tables: `operations` (4), `waves` (53 rows, 76 columns), `wave_landing_countries`, `wave_interception_systems`, `wave_us_bases_targeted`, `iranian_weapons`, `defense_systems`, `armed_forces`, `us_bases`, `us_naval_vessels`.
 
@@ -45,10 +45,10 @@ Frontend syncing is done manually by the user when needed — do not auto-sync a
 
 After updating wave data (adding waves, correcting fields, backfilling), always offer to sync to distribution platforms:
 
-1. **Rebuild DB**: `python3 build_db.py`
-2. **Rebuild Kaggle exports**: `python3 build_kaggle.py`
-3. **Push to Kaggle**: `python3 upload_kaggle.py`
-4. **Sync to HF + Kaggle**: `python3 sync_platforms.py`
+1. **Rebuild DB**: `python3 scripts/build_db.py`
+2. **Rebuild Kaggle exports**: `python3 scripts/build_kaggle.py`
+3. **Push to Kaggle**: `python3 scripts/upload_kaggle.py`
+4. **Sync to HF + Kaggle**: `python3 scripts/sync_platforms.py`
 
 Do not auto-run these — prompt the user after data changes.
 

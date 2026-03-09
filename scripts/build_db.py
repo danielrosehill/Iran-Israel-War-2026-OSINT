@@ -19,7 +19,7 @@ from wave_enrichment import (
     get_wave_uid, WAVE_NARRATIVES,
 )
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(REPO, 'data', 'iran_israel_war.db')
 
 WAVE_FILES = [

@@ -5,7 +5,7 @@ Sync the dataset to Kaggle and Hugging Face.
 1. Rebuild the Kaggle/HF exports and upload to both platforms:
 
 ```bash
-source .venv/bin/activate && python3 sync_platforms.py "Add attacking_force field, fix cluster munition data, update schema"
+source .venv/bin/activate && python3 scripts/sync_platforms.py "Add attacking_force field, fix cluster munition data, update schema"
 ```
 
 Pass a short version note describing what changed. If the user provided context about recent changes, use that. Otherwise summarise the latest git commit message.

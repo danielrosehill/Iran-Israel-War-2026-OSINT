@@ -78,7 +78,7 @@ Always cross-reference against primary sources before drawing conclusions.
 
 ## Database and File Formats
 
-The primary data store is a **SQLite database** at `data/iran_israel_war.db`. This is the recommended way to query the data — it contains all wave data, international reactions, reference tables (weapon specs, defense systems, armed forces, base locations, naval vessels), and junction tables for many-to-many relationships (landing countries, interception systems, US bases targeted, source URLs). Rebuild from source with `python3 build_db.py`.
+The primary data store is a **SQLite database** at `data/iran_israel_war.db`. This is the recommended way to query the data — it contains all wave data, international reactions, reference tables (weapon specs, defense systems, armed forces, base locations, naval vessels), and junction tables for many-to-many relationships (landing countries, interception systems, US bases targeted, source URLs). Rebuild from source with `python3 scripts/build_db.py`.
 
 Key tables:
 

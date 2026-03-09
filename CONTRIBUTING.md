@@ -29,7 +29,7 @@ Use this when you are adding new information — new wave events, new BDA assess
 - **Requirements:**
   - Follow the JSON schema in `data/schema/wave.schema.json`
   - Cite OSINT sources for all new data
-  - Run `python3 build_db.py` and confirm it builds without errors
+  - Run `python3 scripts/build_db.py` and confirm it builds without errors
   - For new waves: populate all required fields (`wave_number`, `timing`, `weapons`, `targets`)
   - For new events: include `event_type`, `location_name`, `confidence`, and `outcome_status`
 

@@ -37,7 +37,7 @@ labels: data-correction
 
 ## Build verification
 
-- [ ] I ran `python3 build_db.py` and it completed without errors
+- [ ] I ran `python3 scripts/build_db.py` and it completed without errors
 - [ ] The correction does not break any existing data relationships
 
 ## Additional context

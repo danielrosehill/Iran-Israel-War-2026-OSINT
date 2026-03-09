@@ -45,7 +45,7 @@ Full field reference: [`docs/data-dictionary.md`](docs/data-dictionary.md) | Sch
 
 **[`data/iran_israel_war.db`](data/iran_israel_war.db)** — all wave data, reference tables, and junction tables in a single queryable file.
 
-Rebuild from JSON: `python3 build_db.py`
+Rebuild from JSON: `python3 scripts/build_db.py`
 
 Compatible with Python `sqlite3`, DuckDB, [Datasette](https://datasette.io/), DB Browser for SQLite, and any SQL client.
 
@@ -82,10 +82,18 @@ data/
   tp4-2026/reference/        # Round 4 targets, bases, vessels, launch zones
   reference/                 # Shared reference data
   schema/wave.schema.json    # JSON Schema for validation
-build_db.py                  # Rebuild SQLite from JSON sources
+scripts/
+  build_db.py                # Rebuild SQLite from JSON sources
+  build_kaggle.py            # Build Kaggle CSV/Parquet exports
+  build_export.py            # Build timestamped export bundles
+  build_geojson.py           # Build GeoJSON exports
+  build_arcgis.py            # Build ArcGIS-compatible exports
+  sync_platforms.py          # Sync to Kaggle + Hugging Face
+  upload_kaggle.py           # Upload to Kaggle
+  wave_enrichment.py         # Shared wave enrichment utilities
 docs/
   data-dictionary.md         # Full field reference
-  terms-of-use.md            # Terms of use
+  hf_dataset_card.md         # Hugging Face dataset card
 ```
 
 ## Data Conventions
@@ -95,6 +103,10 @@ docs/
 - **Booleans**: Native JSON `true`/`false`
 - **Missing values**: `null`
 - **Country codes**: ISO 3166-1 alpha-2
+
+## Terms of Use
+
+This dataset is provided **as-is without warranty**. Users assume all risk. It **may not** be used to glorify terrorism, incite violence, serve as propaganda, or dehumanise victims. Iranian operational names and weapon designations are used solely for analytical standardisation — not endorsement. Intended for academic research, journalism, defence analysis, and education. See [`TERMS_OF_USE.md`](TERMS_OF_USE.md) for full terms.
 
 ## Citation
 
@@ -119,4 +131,4 @@ This dataset is provided for research and educational purposes.
 
 ---
 
-> **Disclaimer**: The use of Iranian operational designations ("True Promise 1–4") in this dataset is for identification and reference purposes only. Their inclusion does not constitute endorsement, legitimisation, or glorification of any military operation, armed group, or state actor. This dataset documents events as reported in open sources for research and educational use. See [Terms of Use](docs/terms-of-use.md) for full details.
+> **Disclaimer**: The use of Iranian operational designations ("True Promise 1–4") in this dataset is for identification and reference purposes only. Their inclusion does not constitute endorsement, legitimisation, or glorification of any military operation, armed group, or state actor. This dataset documents events as reported in open sources for research and educational use. See [Terms of Use](TERMS_OF_USE.md) for full details.

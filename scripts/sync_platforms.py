@@ -6,7 +6,7 @@ import sys
 import shutil
 import os
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KAGGLE_DIR = os.path.join(REPO, "kaggle")
 HF_REPO = "danielrosehill/Iran-Israel-War-2026"
 KAGGLE_HANDLE = "danielrosehill/iran-israel-war-2026"

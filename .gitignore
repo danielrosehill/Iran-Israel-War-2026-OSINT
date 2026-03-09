@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 planning/
-scripts/
+clippings/
 kaggle.json
 kaggle/
 .claude/agent-memory/

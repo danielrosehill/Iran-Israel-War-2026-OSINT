@@ -20,7 +20,7 @@ import shutil
 import subprocess
 from datetime import datetime, timezone
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 WAVE_FILES = [
     ('tp1', os.path.join(REPO, 'data', 'tp1-2024', 'waves.json')),
