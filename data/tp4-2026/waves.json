@@ -132,10 +132,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
         "lat": 34.31,
@@ -290,10 +292,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -459,10 +463,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western and southwestern Iran",
         "lat": 34.31,
@@ -612,10 +618,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -782,10 +790,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran, IRGC naval positions",
         "lat": 34.31,
@@ -929,10 +939,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1106,10 +1118,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran, IRGC naval positions",
         "lat": 34.31,
@@ -1277,10 +1291,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1453,10 +1469,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1604,10 +1622,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Central Iran",
         "lat": 33.5,
@@ -1648,8 +1672,8 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": "IDF assessing damage from advanced missile strikes",
@@ -1788,10 +1812,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1832,8 +1862,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": null,
@@ -1979,10 +2009,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Navy"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "IRGC naval positions, western Iran",
         "lat": 34.31,
@@ -2023,8 +2059,8 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": null,
@@ -2159,10 +2195,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Navy"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "IRGC positions",
         "lat": 33.5,
@@ -2203,8 +2245,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": null,
@@ -2345,10 +2387,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Navy"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "IRGC naval positions",
         "lat": 26.5,
@@ -2389,8 +2437,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued rocket and drone attacks on northern Israel from Lebanon, maintaining pressure on IDF Northern Command."
       },
       "sources": {
         "idf_statement": null,
@@ -2512,10 +2560,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -2556,8 +2610,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued rocket and drone attacks on northern Israel from Lebanon, maintaining pressure on IDF Northern Command."
       },
       "sources": {
         "idf_statement": null,
@@ -2665,10 +2719,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Ground Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Ground Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Western Iran, IRGC ground force positions",
         "lat": 34.31,
@@ -2709,8 +2769,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah launched precision-guided missile strike on Dado Base (IDF Northern Command HQ) near Safed at approximately 03:30 UTC on March 4. Continued rocket fire on northern Israeli towns."
       },
       "sources": {
         "idf_statement": null,
@@ -2812,10 +2872,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Central/western Iran",
         "lat": 34.31,
@@ -2856,8 +2922,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah launched precision-guided missile strike on Dado Base (IDF Northern Command HQ) near Safed at approximately 03:30 UTC on March 4. Continued rocket fire on northern Israeli towns."
       },
       "sources": {
         "idf_statement": null,
@@ -2986,10 +3052,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3030,8 +3102,8 @@
         "new_weapon_first_use": null
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah launched precision-guided missile strike on Dado Base (IDF Northern Command HQ) near Safed at approximately 03:30 UTC on March 4. Continued rocket fire on northern Israeli towns."
       },
       "sources": {
         "idf_statement": null,
@@ -3159,10 +3231,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3206,8 +3284,8 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Israeli officials confirmed simultaneous IRGC-Hezbollah launches were coordinated. Hezbollah maintained rocket fire on northern Israel and issued evacuation warnings for border towns."
       },
       "sources": {
         "idf_statement": null,
@@ -3320,10 +3398,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3364,8 +3448,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Israeli officials confirmed simultaneous IRGC-Hezbollah launches were coordinated. Hezbollah maintained rocket fire on northern Israel and issued evacuation warnings for border towns."
       },
       "sources": {
         "idf_statement": "IDF Home Front Command cleared civilians to leave shelters but advised remaining close. No immediate injuries reported by medics.",
@@ -3483,10 +3567,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3527,8 +3617,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah sustained rocket and drone campaign against northern Israel, coordinating timing with IRGC ballistic missile waves."
       },
       "sources": {
         "idf_statement": null,
@@ -3648,10 +3738,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3692,8 +3788,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah sustained rocket and drone campaign against northern Israel, coordinating timing with IRGC ballistic missile waves."
       },
       "sources": {
         "idf_statement": null,
@@ -3834,10 +3930,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3878,8 +3980,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah sustained rocket and drone campaign against northern Israel, coordinating timing with IRGC ballistic missile waves."
       },
       "sources": {
         "idf_statement": null,
@@ -3994,10 +4096,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4163,10 +4271,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4341,10 +4455,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4514,10 +4634,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4682,10 +4808,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Iran — IRGC Aerospace Force",
         "lat": 33.5,
@@ -4726,8 +4858,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued coordinated attacks on northern Israel from Lebanon."
       },
       "sources": {
         "idf_statement": null,
@@ -4835,10 +4967,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Iran — IRGC Aerospace Force",
         "lat": 33.5,
@@ -4879,8 +5017,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued coordinated attacks on northern Israel from Lebanon."
       },
       "sources": {
         "idf_statement": null,

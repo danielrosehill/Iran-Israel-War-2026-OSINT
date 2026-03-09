@@ -258,6 +258,15 @@ def create_schema(cur):
         FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
     );
 
+    CREATE TABLE IF NOT EXISTS wave_attacking_forces (
+        operation       TEXT NOT NULL,
+        wave_number     INTEGER NOT NULL,
+        actor           TEXT NOT NULL,
+        subunit         TEXT,
+        PRIMARY KEY (operation, wave_number, actor),
+        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+    );
+
     -- ══════════════════════════════════════════════════════════════
     -- Granular interception and strike events within each wave
     -- ══════════════════════════════════════════════════════════════
@@ -547,7 +556,10 @@ def load_waves(cur):
             tgt = w.get('targets', {})
             il = tgt.get('israeli_locations', {})
             tc = tgt.get('target_coordinates', {})
-            af = w.get('attacking_force', {})
+            af_list = w.get('attacking_force', [])
+            if isinstance(af_list, dict):
+                af_list = [af_list]  # backward compat for old single-object format
+            af = af_list[0] if af_list else {}
             ls = w.get('launch_site', {})
             icp = w.get('interception', {})
             ib = icp.get('intercepted_by', {})
@@ -723,6 +735,12 @@ def load_waves(cur):
                 cur.execute(
                     "INSERT OR IGNORE INTO wave_sources VALUES (?,?,?)",
                     (op, wn, url))
+
+            # Junction: attacking forces (all co-attackers)
+            for attacker in af_list:
+                cur.execute(
+                    "INSERT OR IGNORE INTO wave_attacking_forces VALUES (?,?,?,?)",
+                    (op, wn, attacker.get('actor', ''), attacker.get('subunit')))
 
             # Events: granular interception and strike records
             for evt in w.get('events', []):

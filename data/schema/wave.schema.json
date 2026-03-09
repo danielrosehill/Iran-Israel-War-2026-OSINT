@@ -60,7 +60,12 @@
         "timing": { "$ref": "#/$defs/timing" },
         "weapons": { "$ref": "#/$defs/weapons" },
         "targets": { "$ref": "#/$defs/targets" },
-        "attacking_force": { "$ref": "#/$defs/attacking_force" },
+        "attacking_force": {
+          "type": "array",
+          "description": "Forces responsible for launching munitions in this wave. Array allows multiple co-attackers (e.g. IRGC + Hezbollah coordinated strikes).",
+          "items": { "$ref": "#/$defs/attacking_force" },
+          "minItems": 1
+        },
         "launch_site": { "$ref": "#/$defs/launch_site" },
         "interception": { "$ref": "#/$defs/interception" },
         "munitions": { "$ref": "#/$defs/munitions" },

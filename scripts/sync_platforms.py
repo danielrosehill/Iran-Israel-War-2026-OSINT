@@ -10,12 +10,12 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KAGGLE_DIR = os.path.join(REPO, "kaggle")
 HF_REPO = "danielrosehill/Iran-Israel-War-2026"
 KAGGLE_HANDLE = "danielrosehill/iran-israel-war-2026"
-DATASET_CARD = os.path.join(REPO, "hf_dataset_card.md")
+DATASET_CARD = os.path.join(REPO, "docs", "hf_dataset_card.md")
 
 
 def build():
     print("==> Building CSV and Parquet exports...")
-    subprocess.run([sys.executable, os.path.join(REPO, "build_kaggle.py")], check=True)
+    subprocess.run([sys.executable, os.path.join(REPO, "scripts", "build_kaggle.py")], check=True)
 
 
 def sync_kaggle(notes):
