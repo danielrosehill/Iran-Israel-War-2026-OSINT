@@ -2613,6 +2613,40 @@
     },
     {
       "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 39,
+        "wave_number": 39,
+        "wave_id": "tp4_w39",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T17:51:00Z",
+        "probable_launch_time": "2026-03-10T17:40:00Z",
+        "conflict_day": 11,
+        "payload": "Ballistic missile(s) targeting central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -8594,6 +8628,44 @@
         "target_type": "israeli",
         "target_hit": null,
         "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 39,
+        "wave_number": 39,
+        "wave_id": "tp4_w39",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T17:51:00Z",
+        "probable_launch_time": "2026-03-10T17:40:00Z",
+        "conflict_day": 11,
+        "payload": "Ballistic missile(s) targeting central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Beit Shemesh (open area)",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Beit Shemesh (open area)"
       }
     }
   ]

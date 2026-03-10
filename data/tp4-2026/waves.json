@@ -4,7 +4,7 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "incident_count": 38,
+    "incident_count": 39,
     "date_range": {
       "start": "2026-02-28",
       "end": "2026-03-10"
@@ -7120,6 +7120,159 @@
         ]
       },
       "iranian_media_claims": "Iranian army announced drone attack targeting Israeli oil and gas refinery and fuel tanks in Haifa."
+    },
+    {
+      "operation": "tp4",
+      "sequence": 39,
+      "wave_number": 39,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "description": "Thirty-ninth wave of Operation True Promise 4. Day 11 (March 10), evening. Fifth Iranian missile salvo of the day. Ballistic missile targeting central Israel. Sirens sounded across central Israel. One missile struck an open area near Beit Shemesh. No injuries reported. MDA confirmed no casualty reports.",
+      "timing": {
+        "announced_utc": "2026-03-10T17:51:00Z",
+        "announced_utc_note": "7:51 PM Israel time per Times of Israel liveblog. Fifth salvo of the day.",
+        "announcement_source": "IDF / Times of Israel liveblog",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-10T17:40:00Z",
+        "launch_time_israel": "2026-03-10T19:51:00+0200",
+        "launch_time_iran": "2026-03-10T21:21:00+0330",
+        "solar_phase_launch_site": 0,
+        "solar_phase_target": 0,
+        "conflict_day": 11,
+        "hours_since_last_incident": null,
+        "time_between_incidents_minutes": null,
+        "incident_duration_minutes": null,
+        "elapsed_minutes_since_last": null
+      },
+      "weapons": {
+        "payload": "Ballistic missile(s) targeting central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "targets": "Central Israel; open area near Beit Shemesh. Sirens across central Israel.",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 31.75,
+          "lon": 34.99,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Beit Shemesh (open area)",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
+      },
+      "attacking_force": [
+        {
+          "actor": "IRGC Aerospace Force",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Iran (specific site unknown)",
+        "lat": null,
+        "lon": null,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "David's Sling"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Sirens activated across central Israel. One missile struck open area. No injuries."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "One missile struck open area near Beit Shemesh. No structural damage reported.",
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.timesofisrael.com/liveblog-march-10-2026/"
+        ]
+      },
+      "iranian_media_claims": null
     }
   ]
 }
