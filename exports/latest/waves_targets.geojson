@@ -5730,7 +5730,7 @@
         "landing_countries": [
           "IL"
         ],
-        "casualties_killed": 1,
+        "casualties_killed": 2,
         "casualties_wounded": 3,
         "launch_site_description": "Iran (specific site unknown)",
         "layer": "target",
@@ -5777,6 +5777,132 @@
         "target_type": "us_base",
         "target_hit": false,
         "generic_location": "Al Udeid Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 37,
+        "wave_number": 37,
+        "wave_id": "tp4_w37",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T09:30:00Z",
+        "probable_launch_time": "2026-03-10T09:15:00Z",
+        "conflict_day": 11,
+        "payload": "Ballistic missiles targeting Jerusalem/Beit Shemesh area",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Jerusalem",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 37,
+        "wave_number": 37,
+        "wave_id": "tp4_w37",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T09:30:00Z",
+        "probable_launch_time": "2026-03-10T09:15:00Z",
+        "conflict_day": 11,
+        "payload": "Ballistic missiles targeting Jerusalem/Beit Shemesh area",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Beit Shemesh",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Beit Shemesh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 38,
+        "wave_number": 38,
+        "wave_id": "tp4_w38",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T10:00:00Z",
+        "probable_launch_time": "2026-03-10T06:00:00Z",
+        "conflict_day": 11,
+        "payload": "Drones targeting Haifa oil/gas infrastructure",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
       }
     }
   ]
