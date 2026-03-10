@@ -12,9 +12,9 @@
       },
       "properties": {
         "operation": "tp1",
-        "sequence": 1,
+        "sequence": null,
         "wave_number": 1,
-        "wave_id": "tp1_w1",
+        "wave_id": "tp1_wNone",
         "wave_codename_english": "Drone/Cruise Missile Wave",
         "wave_codename_farsi": null,
         "announced_utc": "2024-04-13T19:00:00Z",
@@ -28,7 +28,7 @@
         "munitions_targeting_israel": 200,
         "munitions_targeting_us_bases": 0,
         "interception_rate": 0.99,
-        "intercepted_count": null,
+        "intercepted_count": 198,
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landing_countries": [
@@ -52,9 +52,9 @@
       },
       "properties": {
         "operation": "tp1",
-        "sequence": 2,
+        "sequence": null,
         "wave_number": 2,
-        "wave_id": "tp1_w2",
+        "wave_id": "tp1_wNone",
         "wave_codename_english": "Ballistic Missile Wave",
         "wave_codename_farsi": null,
         "announced_utc": null,
@@ -68,7 +68,7 @@
         "munitions_targeting_israel": 120,
         "munitions_targeting_us_bases": 0,
         "interception_rate": 0.99,
-        "intercepted_count": null,
+        "intercepted_count": 119,
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landing_countries": [
@@ -92,9 +92,9 @@
       },
       "properties": {
         "operation": "tp2",
-        "sequence": 1,
+        "sequence": null,
         "wave_number": 1,
-        "wave_id": "tp2_w1",
+        "wave_id": "tp2_wNone",
         "wave_codename_english": "First Ballistic Salvo",
         "wave_codename_farsi": null,
         "announced_utc": "2024-10-01T16:30:00Z",
@@ -134,9 +134,9 @@
       },
       "properties": {
         "operation": "tp2",
-        "sequence": 2,
+        "sequence": null,
         "wave_number": 2,
-        "wave_id": "tp2_w2",
+        "wave_id": "tp2_wNone",
         "wave_codename_english": "Second Ballistic Salvo (Fattah-1)",
         "wave_codename_farsi": null,
         "announced_utc": null,
@@ -176,9 +176,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 1,
+        "sequence": null,
         "wave_number": 1,
-        "wave_id": "tp3_w1",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-13T18:30:00Z",
@@ -216,9 +216,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 2,
+        "sequence": null,
         "wave_number": 2,
-        "wave_id": "tp3_w2",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-13T19:30:00Z",
@@ -256,9 +256,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 3,
+        "sequence": null,
         "wave_number": 3,
-        "wave_id": "tp3_w3",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": "Ya Ali ibn Abi Talib",
         "wave_codename_farsi": "يا علي بن أبي طالب",
         "announced_utc": "2025-06-14T15:00:00Z",
@@ -296,9 +296,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 4,
+        "sequence": null,
         "wave_number": 4,
-        "wave_id": "tp3_w4",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-14T19:00:00Z",
@@ -336,9 +336,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 5,
+        "sequence": null,
         "wave_number": 5,
-        "wave_id": "tp3_w5",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-15T05:00:00Z",
@@ -376,9 +376,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 6,
+        "sequence": null,
         "wave_number": 6,
-        "wave_id": "tp3_w6",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-15T15:00:00Z",
@@ -416,9 +416,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 7,
+        "sequence": null,
         "wave_number": 7,
-        "wave_id": "tp3_w7",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-16T04:00:00Z",
@@ -456,9 +456,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 8,
+        "sequence": null,
         "wave_number": 8,
-        "wave_id": "tp3_w8",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-16T00:00:00Z",
@@ -496,9 +496,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 9,
+        "sequence": null,
         "wave_number": 9,
-        "wave_id": "tp3_w9",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-16T12:00:00Z",
@@ -536,9 +536,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 10,
+        "sequence": null,
         "wave_number": 10,
-        "wave_id": "tp3_w10",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-17T08:00:00Z",
@@ -576,9 +576,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 11,
+        "sequence": null,
         "wave_number": 11,
-        "wave_id": "tp3_w11",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-17T23:00:00Z",
@@ -616,9 +616,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 12,
+        "sequence": null,
         "wave_number": 12,
-        "wave_id": "tp3_w12",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-19T18:00:00Z",
@@ -656,9 +656,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 13,
+        "sequence": null,
         "wave_number": 13,
-        "wave_id": "tp3_w13",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T00:00:00Z",
@@ -696,9 +696,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 14,
+        "sequence": null,
         "wave_number": 14,
-        "wave_id": "tp3_w14",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T08:00:00Z",
@@ -736,9 +736,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 15,
+        "sequence": null,
         "wave_number": 15,
-        "wave_id": "tp3_w15",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T12:00:00Z",
@@ -776,9 +776,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 16,
+        "sequence": null,
         "wave_number": 16,
-        "wave_id": "tp3_w16",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T20:00:00Z",
@@ -816,9 +816,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 17,
+        "sequence": null,
         "wave_number": 17,
-        "wave_id": "tp3_w17",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-21T06:00:00Z",
@@ -856,9 +856,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 18,
+        "sequence": null,
         "wave_number": 18,
-        "wave_id": "tp3_w18",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-21T14:00:00Z",
@@ -896,9 +896,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 19,
+        "sequence": null,
         "wave_number": 19,
-        "wave_id": "tp3_w19",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-22T06:00:00Z",
@@ -936,9 +936,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 20,
+        "sequence": null,
         "wave_number": 20,
-        "wave_id": "tp3_w20",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-22T10:00:00Z",
@@ -976,9 +976,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 21,
+        "sequence": null,
         "wave_number": 21,
-        "wave_id": "tp3_w21",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-23T09:00:00Z",
@@ -1016,9 +1016,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 22,
+        "sequence": null,
         "wave_number": 22,
-        "wave_id": "tp3_w22",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-24T03:30:00Z",
@@ -2545,15 +2545,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          30.89
+          34.82,
+          31.21
         ]
       },
       "properties": {
         "operation": "tp1",
-        "sequence": 1,
+        "sequence": null,
         "wave_number": 1,
-        "wave_id": "tp1_w1",
+        "wave_id": "tp1_wNone",
         "wave_codename_english": "Drone/Cruise Missile Wave",
         "wave_codename_farsi": null,
         "announced_utc": "2024-04-13T19:00:00Z",
@@ -2567,7 +2567,7 @@
         "munitions_targeting_israel": 200,
         "munitions_targeting_us_bases": 0,
         "interception_rate": 0.99,
-        "intercepted_count": null,
+        "intercepted_count": 198,
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landing_countries": [
@@ -2577,7 +2577,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites across Iran; Shahed drones also launched from Iraq and Yemen by proxies",
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": false,
+        "generic_location": "Nevatim / Negev"
       }
     },
     {
@@ -2585,15 +2589,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          30.89
+          35.5,
+          32.85
         ]
       },
       "properties": {
         "operation": "tp1",
-        "sequence": 2,
+        "sequence": null,
+        "wave_number": 1,
+        "wave_id": "tp1_wNone",
+        "wave_codename_english": "Drone/Cruise Missile Wave",
+        "wave_codename_farsi": null,
+        "announced_utc": "2024-04-13T19:00:00Z",
+        "probable_launch_time": "2024-04-13T19:00:00Z",
+        "conflict_day": 1,
+        "payload": "170 Shahed-136 loitering munitions and 30 Paveh cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": 200,
+        "munitions_targeting_israel": 200,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": 0.99,
+        "intercepted_count": 198,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Multiple sites across Iran; Shahed drones also launched from Iraq and Yemen by proxies",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": false,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp1",
+        "sequence": null,
         "wave_number": 2,
-        "wave_id": "tp1_w2",
+        "wave_id": "tp1_wNone",
         "wave_codename_english": "Ballistic Missile Wave",
         "wave_codename_farsi": null,
         "announced_utc": null,
@@ -2607,7 +2655,7 @@
         "munitions_targeting_israel": 120,
         "munitions_targeting_us_bases": 0,
         "interception_rate": 0.99,
-        "intercepted_count": null,
+        "intercepted_count": 119,
         "israel_targeted": true,
         "us_bases_targeted": false,
         "landing_countries": [
@@ -2617,7 +2665,11 @@
         "casualties_wounded": 32,
         "launch_site_description": "IRGC Aerospace Force launch sites in western and central Iran",
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
       }
     },
     {
@@ -2625,15 +2677,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          30.89
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp1",
+        "sequence": null,
+        "wave_number": 2,
+        "wave_id": "tp1_wNone",
+        "wave_codename_english": "Ballistic Missile Wave",
+        "wave_codename_farsi": null,
+        "announced_utc": null,
+        "probable_launch_time": "2024-04-13T23:00:00Z",
+        "conflict_day": 1,
+        "payload": "120 ballistic missiles including Emad, Ghadr (Ghadr-S/H/F variants), Kheibar Shekan, possibly Shahab-3B",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 120,
+        "munitions_targeting_israel": 120,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": 0.99,
+        "intercepted_count": 119,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 32,
+        "launch_site_description": "IRGC Aerospace Force launch sites in western and central Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
         ]
       },
       "properties": {
         "operation": "tp2",
-        "sequence": 1,
+        "sequence": null,
         "wave_number": 1,
-        "wave_id": "tp2_w1",
+        "wave_id": "tp2_wNone",
         "wave_codename_english": "First Ballistic Salvo",
         "wave_codename_farsi": null,
         "announced_utc": "2024-10-01T16:30:00Z",
@@ -2659,7 +2755,11 @@
         "casualties_wounded": 4,
         "launch_site_description": "IRGC Aerospace Force launch sites in western Iran",
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
       }
     },
     {
@@ -2667,15 +2767,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.79,
-          32.15
+          34.77,
+          32.07
         ]
       },
       "properties": {
         "operation": "tp2",
-        "sequence": 2,
+        "sequence": null,
         "wave_number": 2,
-        "wave_id": "tp2_w2",
+        "wave_id": "tp2_wNone",
         "wave_codename_english": "Second Ballistic Salvo (Fattah-1)",
         "wave_codename_farsi": null,
         "announced_utc": null,
@@ -2701,7 +2801,11 @@
         "casualties_wounded": 4,
         "launch_site_description": "IRGC Aerospace Force launch sites in western Iran",
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -2709,15 +2813,61 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          31.66
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp2",
+        "sequence": null,
+        "wave_number": 2,
+        "wave_id": "tp2_wNone",
+        "wave_codename_english": "Second Ballistic Salvo (Fattah-1)",
+        "wave_codename_farsi": null,
+        "announced_utc": null,
+        "probable_launch_time": "2024-10-01T16:45:00Z",
+        "conflict_day": 1,
+        "payload": "Fattah-1 hypersonic missiles, Emad, Kheibar Shekan ballistic missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 100,
+        "munitions_targeting_israel": 100,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL",
+          "PS",
+          "JO"
+        ],
+        "casualties_killed": 1,
+        "casualties_wounded": 4,
+        "launch_site_description": "IRGC Aerospace Force launch sites in western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 1,
+        "sequence": null,
         "wave_number": 1,
-        "wave_id": "tp3_w1",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-13T18:30:00Z",
@@ -2741,7 +2891,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -2749,15 +2903,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.25,
-          32.835
+          34.82,
+          31.21
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 2,
+        "sequence": null,
+        "wave_number": 1,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-13T18:30:00Z",
+        "probable_launch_time": "2025-06-13T18:30:00Z",
+        "conflict_day": 1,
+        "payload": "~100 ballistic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 100,
+        "munitions_targeting_israel": 100,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 2,
-        "wave_id": "tp3_w2",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-13T19:30:00Z",
@@ -2781,7 +2979,55 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
+        "wave_number": 2,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-13T19:30:00Z",
+        "probable_launch_time": "2025-06-13T19:30:00Z",
+        "conflict_day": 1,
+        "payload": "Ballistic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
       }
     },
     {
@@ -2795,9 +3041,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 3,
+        "sequence": null,
         "wave_number": 3,
-        "wave_id": "tp3_w3",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": "Ya Ali ibn Abi Talib",
         "wave_codename_farsi": "يا علي بن أبي طالب",
         "announced_utc": "2025-06-14T15:00:00Z",
@@ -2821,7 +3067,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -2829,15 +3079,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          34.77,
+          32.07
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 4,
+        "sequence": null,
         "wave_number": 4,
-        "wave_id": "tp3_w4",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-14T19:00:00Z",
@@ -2861,7 +3111,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -2875,9 +3129,53 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 5,
+        "sequence": null,
+        "wave_number": 4,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-14T19:00:00Z",
+        "probable_launch_time": "2025-06-14T19:00:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 5,
-        "wave_id": "tp3_w5",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-15T05:00:00Z",
@@ -2901,7 +3199,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Haifa"
       }
     },
     {
@@ -2909,15 +3211,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          34.77,
+          32.07
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 6,
+        "sequence": null,
         "wave_number": 6,
-        "wave_id": "tp3_w6",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-15T15:00:00Z",
@@ -2941,7 +3243,11 @@
         "casualties_wounded": 200,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -2949,15 +3255,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          35.0,
+          32.82
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 7,
+        "sequence": null,
+        "wave_number": 6,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-15T15:00:00Z",
+        "probable_launch_time": "2025-06-15T15:00:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 9,
+        "casualties_wounded": 200,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 7,
-        "wave_id": "tp3_w7",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-16T04:00:00Z",
@@ -2981,7 +3331,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -2989,15 +3343,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          35.0,
+          32.82
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 8,
+        "sequence": null,
+        "wave_number": 7,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-16T04:00:00Z",
+        "probable_launch_time": "2025-06-16T04:00:00Z",
+        "conflict_day": 4,
+        "payload": "Missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 8,
-        "wave_id": "tp3_w8",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-16T00:00:00Z",
@@ -3021,7 +3419,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3029,15 +3431,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          35.0,
+          32.82
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 9,
+        "sequence": null,
+        "wave_number": 8,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-16T00:00:00Z",
+        "probable_launch_time": "2025-06-16T00:00:00Z",
+        "conflict_day": 4,
+        "payload": "Hundreds of missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 9,
-        "wave_id": "tp3_w9",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-16T12:00:00Z",
@@ -3061,7 +3507,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3069,15 +3519,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.02,
-          32.0567
+          35.0,
+          32.82
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 10,
+        "sequence": null,
+        "wave_number": 9,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-16T12:00:00Z",
+        "probable_launch_time": "2025-06-16T12:00:00Z",
+        "conflict_day": 4,
+        "payload": "Missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 10,
-        "wave_id": "tp3_w10",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-17T08:00:00Z",
@@ -3101,7 +3595,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3109,15 +3607,103 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.79,
-          31.25
+          34.82,
+          31.21
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 11,
+        "sequence": null,
+        "wave_number": 10,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-17T08:00:00Z",
+        "probable_launch_time": "2025-06-17T08:00:00Z",
+        "conflict_day": 5,
+        "payload": "Large-scale missile barrage",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
+        "wave_number": 10,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-17T08:00:00Z",
+        "probable_launch_time": "2025-06-17T08:00:00Z",
+        "conflict_day": 5,
+        "payload": "Large-scale missile barrage",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 11,
-        "wave_id": "tp3_w11",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-17T23:00:00Z",
@@ -3141,7 +3727,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
       }
     },
     {
@@ -3155,9 +3745,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 12,
+        "sequence": null,
         "wave_number": 12,
-        "wave_id": "tp3_w12",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-19T18:00:00Z",
@@ -3181,7 +3771,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Central/western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3189,15 +3783,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          34.77,
+          32.07
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 13,
+        "sequence": null,
         "wave_number": 13,
-        "wave_id": "tp3_w13",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T00:00:00Z",
@@ -3221,7 +3815,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3229,15 +3827,59 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          35.0,
+          32.82
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 14,
+        "sequence": null,
+        "wave_number": 13,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-20T00:00:00Z",
+        "probable_launch_time": "2025-06-20T00:00:00Z",
+        "conflict_day": 8,
+        "payload": "Missiles and drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 14,
-        "wave_id": "tp3_w14",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T08:00:00Z",
@@ -3261,7 +3903,55 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
+        "wave_number": 14,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-20T08:00:00Z",
+        "probable_launch_time": "2025-06-20T08:00:00Z",
+        "conflict_day": 8,
+        "payload": "Missiles and drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
       }
     },
     {
@@ -3269,9 +3959,9 @@
       "geometry": null,
       "properties": {
         "operation": "tp3",
-        "sequence": 15,
+        "sequence": null,
         "wave_number": 15,
-        "wave_id": "tp3_w15",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T12:00:00Z",
@@ -3295,6 +3985,10 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
+        "target_index": 0,
+        "target_name": null,
+        "target_type": "legacy",
+        "target_hit": null,
         "generic_location": null
       }
     },
@@ -3303,9 +3997,9 @@
       "geometry": null,
       "properties": {
         "operation": "tp3",
-        "sequence": 16,
+        "sequence": null,
         "wave_number": 16,
-        "wave_id": "tp3_w16",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-20T20:00:00Z",
@@ -3329,6 +4023,10 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
+        "target_index": 0,
+        "target_name": null,
+        "target_type": "legacy",
+        "target_hit": null,
         "generic_location": null
       }
     },
@@ -3337,9 +4035,9 @@
       "geometry": null,
       "properties": {
         "operation": "tp3",
-        "sequence": 17,
+        "sequence": null,
         "wave_number": 17,
-        "wave_id": "tp3_w17",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-21T06:00:00Z",
@@ -3363,6 +4061,10 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
+        "target_index": 0,
+        "target_name": null,
+        "target_type": "legacy",
+        "target_hit": null,
         "generic_location": null
       }
     },
@@ -3371,15 +4073,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.06,
-          31.62
+          35.0,
+          32.82
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 18,
+        "sequence": null,
         "wave_number": 18,
-        "wave_id": "tp3_w18",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-21T14:00:00Z",
@@ -3403,7 +4105,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Haifa"
       }
     },
     {
@@ -3411,15 +4117,147 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          34.82,
+          31.21
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 19,
+        "sequence": null,
+        "wave_number": 18,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-21T14:00:00Z",
+        "probable_launch_time": "2025-06-21T14:00:00Z",
+        "conflict_day": 9,
+        "payload": "Shahed-136 drones and precision missiles — new innovations in missile selection, target choice, and guidance paths",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 3,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
+        "wave_number": 18,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-21T14:00:00Z",
+        "probable_launch_time": "2025-06-21T14:00:00Z",
+        "conflict_day": 9,
+        "payload": "Shahed-136 drones and precision missiles — new innovations in missile selection, target choice, and guidance paths",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 3,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.95,
+          29.56
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
+        "wave_number": 18,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-21T14:00:00Z",
+        "probable_launch_time": "2025-06-21T14:00:00Z",
+        "conflict_day": 9,
+        "payload": "Shahed-136 drones and precision missiles — new innovations in missile selection, target choice, and guidance paths",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 3,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Eilat",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Eilat"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
         "wave_number": 19,
-        "wave_id": "tp3_w19",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-22T06:00:00Z",
@@ -3443,7 +4281,55 @@
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp3",
+        "sequence": null,
+        "wave_number": 19,
+        "wave_id": "tp3_wNone",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2025-06-22T06:00:00Z",
+        "probable_launch_time": "2025-06-22T06:00:00Z",
+        "conflict_day": 10,
+        "payload": "Combined missiles and drones — large combined operation",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
       }
     },
     {
@@ -3457,9 +4343,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 20,
+        "sequence": null,
         "wave_number": 20,
-        "wave_id": "tp3_w20",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-22T10:00:00Z",
@@ -3483,7 +4369,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Central/western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3497,9 +4387,9 @@
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 21,
+        "sequence": null,
         "wave_number": 21,
-        "wave_id": "tp3_w21",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-23T09:00:00Z",
@@ -3523,7 +4413,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Central/western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3531,15 +4425,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.79,
-          31.25
+          34.82,
+          31.21
         ]
       },
       "properties": {
         "operation": "tp3",
-        "sequence": 22,
+        "sequence": null,
         "wave_number": 22,
-        "wave_id": "tp3_w22",
+        "wave_id": "tp3_wNone",
         "wave_codename_english": null,
         "wave_codename_farsi": null,
         "announced_utc": "2025-06-24T03:30:00Z",
@@ -3563,7 +4457,11 @@
         "casualties_wounded": 20,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
       }
     },
     {
@@ -3571,8 +4469,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.79,
-          31.07
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -3609,7 +4507,111 @@
         "casualties_wounded": 21,
         "launch_site_description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 1,
+        "wave_number": 1,
+        "wave_id": "tp4_w1",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "probable_launch_time": "2026-02-28T18:00:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "BH",
+          "AE",
+          "QA",
+          "JO",
+          "OM"
+        ],
+        "casualties_killed": 2,
+        "casualties_wounded": 21,
+        "launch_site_description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.6,
+          26.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 1,
+        "wave_number": 1,
+        "wave_id": "tp4_w1",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-02-28T18:30:00Z",
+        "probable_launch_time": "2026-02-28T18:00:00Z",
+        "conflict_day": 1,
+        "payload": "Emad and Ghadr ballistic missiles, Shahed-136 drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "BH",
+          "AE",
+          "QA",
+          "JO",
+          "OM"
+        ],
+        "casualties_killed": 2,
+        "casualties_wounded": 21,
+        "launch_site_description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Mina Salman Naval Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Mina Salman Naval Base"
       }
     },
     {
@@ -3650,7 +4652,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3658,8 +4664,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.09,
-          32.58
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -3696,7 +4702,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western and southwestern Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3704,8 +4714,208 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          31.66
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 3,
+        "wave_number": 3,
+        "wave_id": "tp4_w3",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "probable_launch_time": "2026-02-28T23:30:00Z",
+        "conflict_day": 1,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": 35,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "IQ",
+          "SA",
+          "BH",
+          "AE",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western and southwestern Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 3,
+        "wave_number": 3,
+        "wave_id": "tp4_w3",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "probable_launch_time": "2026-02-28T23:30:00Z",
+        "conflict_day": 1,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": 35,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "IQ",
+          "SA",
+          "BH",
+          "AE",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western and southwestern Iran",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.97,
+          29.24
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 3,
+        "wave_number": 3,
+        "wave_id": "tp4_w3",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "probable_launch_time": "2026-02-28T23:30:00Z",
+        "conflict_day": 1,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": 35,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "IQ",
+          "SA",
+          "BH",
+          "AE",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western and southwestern Iran",
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Abdullah Al-Mubarak Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Abdullah Al-Mubarak Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.38,
+          36.54
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 3,
+        "wave_number": 3,
+        "wave_id": "tp4_w3",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-02-28T23:45:00Z",
+        "probable_launch_time": "2026-02-28T23:30:00Z",
+        "conflict_day": 1,
+        "payload": "Advanced ballistic missiles, drones, cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": 35,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "IQ",
+          "SA",
+          "BH",
+          "AE",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western and southwestern Iran",
+        "layer": "target",
+        "target_index": 4,
+        "target_name": "Harir Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Harir Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -3738,7 +4948,57 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 4,
+        "wave_number": 4,
+        "wave_id": "tp4_w4",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-01T01:00:00Z",
+        "probable_launch_time": "2026-03-01T00:45:00Z",
+        "conflict_day": 2,
+        "payload": "Kheibar Shekan ballistic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "IQ"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
       }
     },
     {
@@ -3780,7 +5040,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran, IRGC naval positions",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Abdullah Al-Mubarak Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Abdullah Al-Mubarak Air Base"
       }
     },
     {
@@ -3788,8 +5052,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -3820,7 +5084,55 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 6,
+        "wave_number": 6,
+        "wave_id": "tp4_w6",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-01T08:00:00Z",
+        "probable_launch_time": "2026-03-01T07:30:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Haifa"
       }
     },
     {
@@ -3865,7 +5177,109 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran, IRGC naval positions",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Ali Al-Salem Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.39,
+          28.73
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 7,
+        "wave_number": 7,
+        "wave_id": "tp4_w7",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "probable_launch_time": "2026-03-01T13:30:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "IO",
+          "SA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran, IRGC naval positions",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Mohammed Al-Ahmad Naval Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Mohammed Al-Ahmad Naval Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.6,
+          26.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 7,
+        "wave_number": 7,
+        "wave_id": "tp4_w7",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-01T14:00:00Z",
+        "probable_launch_time": "2026-03-01T13:30:00Z",
+        "conflict_day": 2,
+        "payload": "Ballistic missiles, drones, cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "IO",
+          "SA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran, IRGC naval positions",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Mina Salman Naval Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Mina Salman Naval Base"
       }
     },
     {
@@ -3901,6 +5315,10 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
         "layer": "target",
+        "target_index": 0,
+        "target_name": null,
+        "target_type": "legacy",
+        "target_hit": true,
         "generic_location": null
       }
     },
@@ -3945,7 +5363,11 @@
         "casualties_wounded": 40,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3953,8 +5375,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          32.09
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -3986,7 +5408,11 @@
         "casualties_wounded": 10,
         "launch_site_description": "Central Iran",
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -3994,8 +5420,143 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.07,
-          31.9875
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 10,
+        "wave_number": 10,
+        "wave_id": "tp4_w10",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "probable_launch_time": "2026-03-02T03:30:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL",
+          "SA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 10,
+        "launch_site_description": "Central Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Jerusalem",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 10,
+        "wave_number": 10,
+        "wave_id": "tp4_w10",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "probable_launch_time": "2026-03-02T03:30:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL",
+          "SA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 10,
+        "launch_site_description": "Central Iran",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 10,
+        "wave_number": 10,
+        "wave_id": "tp4_w10",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T04:00:00Z",
+        "probable_launch_time": "2026-03-02T03:30:00Z",
+        "conflict_day": 3,
+        "payload": "Kheibar Shekan maneuvering ballistic missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL",
+          "SA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 10,
+        "launch_site_description": "Central Iran",
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4034,7 +5595,219 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 11,
+        "wave_number": 11,
+        "wave_id": "tp4_w11",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "probable_launch_time": "2026-03-02T09:30:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "AE",
+          "CY",
+          "SA",
+          "QA",
+          "JO",
+          "OM"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Jerusalem",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 11,
+        "wave_number": 11,
+        "wave_id": "tp4_w11",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "probable_launch_time": "2026-03-02T09:30:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "AE",
+          "CY",
+          "SA",
+          "QA",
+          "JO",
+          "OM"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 11,
+        "wave_number": 11,
+        "wave_id": "tp4_w11",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "probable_launch_time": "2026-03-02T09:30:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "AE",
+          "CY",
+          "SA",
+          "QA",
+          "JO",
+          "OM"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.6,
+          26.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 11,
+        "wave_number": 11,
+        "wave_id": "tp4_w11",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T10:00:00Z",
+        "probable_launch_time": "2026-03-02T09:30:00Z",
+        "conflict_day": 3,
+        "payload": "Missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "AE",
+          "CY",
+          "SA",
+          "QA",
+          "JO",
+          "OM"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran",
+        "layer": "target",
+        "target_index": 4,
+        "target_name": "Mina Salman Naval Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Mina Salman Naval Base"
       }
     },
     {
@@ -4078,7 +5851,59 @@
         "casualties_wounded": 0,
         "launch_site_description": "IRGC naval positions, western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Camp Arifjan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37,
+          25.03
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 12,
+        "wave_number": 12,
+        "wave_id": "tp4_w12",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T14:30:00Z",
+        "probable_launch_time": "2026-03-02T14:00:00Z",
+        "conflict_day": 3,
+        "payload": "26 attack drones, 5 ballistic missiles, Fattah-2 hypersonic missile",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 31,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 31,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "KW",
+          "AE",
+          "BH",
+          "IO",
+          "IQ"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC naval positions, western Iran",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Al Minhad Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Al Minhad Air Base"
       }
     },
     {
@@ -4118,7 +5943,55 @@
         "casualties_wounded": 0,
         "launch_site_description": "IRGC positions",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Camp Arifjan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.52,
+          29.35
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 13,
+        "wave_number": 13,
+        "wave_id": "tp4_w13",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-02T19:00:00Z",
+        "probable_launch_time": "2026-03-02T18:30:00Z",
+        "conflict_day": 3,
+        "payload": "UAVs/drones",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC positions",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Ali Al-Salem Air Base"
       }
     },
     {
@@ -4159,7 +6032,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "IRGC naval positions",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Sheikh Isa Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Sheikh Isa Air Base"
       }
     },
     {
@@ -4203,7 +6080,11 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4211,8 +6092,104 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          35.135,
-          32.46
+          50.59,
+          25.92
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 15,
+        "wave_number": 15,
+        "wave_id": "tp4_w15",
+        "wave_codename_english": "Ya Fatimah Al-Zahra",
+        "wave_codename_farsi": "یا فاطمه الزهرا",
+        "announced_utc": "2026-03-03T16:00:00Z",
+        "probable_launch_time": "2026-03-03T15:30:00Z",
+        "conflict_day": 4,
+        "payload": "Missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "QA",
+          "AE",
+          "SA",
+          "BH"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Sheikh Isa Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Sheikh Isa Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.31,
+          25.12
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 15,
+        "wave_number": 15,
+        "wave_id": "tp4_w15",
+        "wave_codename_english": "Ya Fatimah Al-Zahra",
+        "wave_codename_farsi": "یا فاطمه الزهرا",
+        "announced_utc": "2026-03-03T16:00:00Z",
+        "probable_launch_time": "2026-03-03T15:30:00Z",
+        "conflict_day": 4,
+        "payload": "Missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "QA",
+          "AE",
+          "SA",
+          "BH"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Al-Udeid Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Al-Udeid Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4249,7 +6226,61 @@
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran, IRGC ground force positions",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 16,
+        "wave_number": 16,
+        "wave_id": "tp4_w16",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-04T06:00:00Z",
+        "probable_launch_time": "2026-03-04T05:30:00Z",
+        "conflict_day": 5,
+        "payload": "230 attack drones, missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 230,
+        "munitions_targeting_us_bases": 230,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "IQ",
+          "SA",
+          "AE",
+          "CY",
+          "TR"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Western Iran, IRGC ground force positions",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
       }
     },
     {
@@ -4289,7 +6320,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "Central/western Iran",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4321,6 +6356,10 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
+        "target_index": 0,
+        "target_name": null,
+        "target_type": "legacy",
+        "target_hit": null,
         "generic_location": null
       }
     },
@@ -4329,8 +6368,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.995,
-          31.925
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4364,7 +6403,11 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4372,8 +6415,178 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.7818,
-          32.0853
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 19,
+        "wave_number": 19,
+        "wave_id": "tp4_w19",
+        "wave_codename_english": "Ya Hassan ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "یا حسن بن علی علیه السلام",
+        "announced_utc": "2026-03-05T06:00:00Z",
+        "probable_launch_time": "2026-03-05T05:30:00Z",
+        "conflict_day": 6,
+        "payload": "Khorramshahr-4 ballistic missiles (1-ton warheads), explosive drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Jerusalem",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 19,
+        "wave_number": 19,
+        "wave_id": "tp4_w19",
+        "wave_codename_english": "Ya Hassan ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "یا حسن بن علی علیه السلام",
+        "announced_utc": "2026-03-05T06:00:00Z",
+        "probable_launch_time": "2026-03-05T05:30:00Z",
+        "conflict_day": 6,
+        "payload": "Khorramshahr-4 ballistic missiles (1-ton warheads), explosive drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "US military positions Kuwait",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "US military positions Kuwait"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 19,
+        "wave_number": 19,
+        "wave_id": "tp4_w19",
+        "wave_codename_english": "Ya Hassan ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "یا حسن بن علی علیه السلام",
+        "announced_utc": "2026-03-05T06:00:00Z",
+        "probable_launch_time": "2026-03-05T05:30:00Z",
+        "conflict_day": 6,
+        "payload": "Khorramshahr-4 ballistic missiles (1-ton warheads), explosive drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "US military positions Bahrain",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "US military positions Bahrain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 19,
+        "wave_number": 19,
+        "wave_id": "tp4_w19",
+        "wave_codename_english": "Ya Hassan ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "یا حسن بن علی علیه السلام",
+        "announced_utc": "2026-03-05T06:00:00Z",
+        "probable_launch_time": "2026-03-05T05:30:00Z",
+        "conflict_day": 6,
+        "payload": "Khorramshahr-4 ballistic missiles (1-ton warheads), explosive drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 4,
+        "target_name": "US military positions Qatar",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "US military positions Qatar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4404,7 +6617,11 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4412,8 +6629,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.7818,
-          32.0853
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4444,7 +6661,11 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": false
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4452,8 +6673,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.885,
-          32.445
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4486,7 +6707,11 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4494,8 +6719,134 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.79,
-          31.25
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 22,
+        "wave_number": 22,
+        "wave_id": "tp4_w22",
+        "wave_codename_english": "Ya Hossein ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "يا حسين بن علي عليه السلام",
+        "announced_utc": "2026-03-06T12:00:00Z",
+        "probable_launch_time": "2026-03-06T11:30:00Z",
+        "conflict_day": 7,
+        "payload": "Khorramshahr-4 ballistic missiles (~1,500 kg warhead, Mach 16 exo-atmospheric / Mach 8 atmospheric), Kheibar Shekan ballistic missiles, Fattah hypersonic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "QA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 22,
+        "wave_number": 22,
+        "wave_id": "tp4_w22",
+        "wave_codename_english": "Ya Hossein ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "يا حسين بن علي عليه السلام",
+        "announced_utc": "2026-03-06T12:00:00Z",
+        "probable_launch_time": "2026-03-06T11:30:00Z",
+        "conflict_day": 7,
+        "payload": "Khorramshahr-4 ballistic missiles (~1,500 kg warhead, Mach 16 exo-atmospheric / Mach 8 atmospheric), Kheibar Shekan ballistic missiles, Fattah hypersonic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "QA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Al Udeid Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Al Udeid Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 22,
+        "wave_number": 22,
+        "wave_id": "tp4_w22",
+        "wave_codename_english": "Ya Hossein ibn Ali (peace be upon him)",
+        "wave_codename_farsi": "يا حسين بن علي عليه السلام",
+        "announced_utc": "2026-03-06T12:00:00Z",
+        "probable_launch_time": "2026-03-06T11:30:00Z",
+        "conflict_day": 7,
+        "payload": "Khorramshahr-4 ballistic missiles (~1,500 kg warhead, Mach 16 exo-atmospheric / Mach 8 atmospheric), Kheibar Shekan ballistic missiles, Fattah hypersonic missiles, drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "QA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Al Dhafra Air Base",
+        "target_type": "us_base",
+        "target_hit": true,
+        "generic_location": "Al Dhafra Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
         ]
       },
       "properties": {
@@ -4531,7 +6882,189 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.59,
+          25.92
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 23,
+        "wave_number": 23,
+        "wave_id": "tp4_w23",
+        "wave_codename_english": "Ya Hasan ibn Ali",
+        "wave_codename_farsi": "يا حسن بن علي",
+        "announced_utc": "2026-03-06T20:31:00Z",
+        "probable_launch_time": "2026-03-06T20:00:00Z",
+        "conflict_day": 7,
+        "payload": "New-generation solid- and liquid-fuel missiles (Khaibar-Shekan, Rezvan variants); drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "QA",
+          "BH",
+          "SA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Sheikh Isa Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Sheikh Isa Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 23,
+        "wave_number": 23,
+        "wave_id": "tp4_w23",
+        "wave_codename_english": "Ya Hasan ibn Ali",
+        "wave_codename_farsi": "يا حسن بن علي",
+        "announced_utc": "2026-03-06T20:31:00Z",
+        "probable_launch_time": "2026-03-06T20:00:00Z",
+        "conflict_day": 7,
+        "payload": "New-generation solid- and liquid-fuel missiles (Khaibar-Shekan, Rezvan variants); drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "QA",
+          "BH",
+          "SA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "NSA Bahrain (Juffair)",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "NSA Bahrain (Juffair)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 23,
+        "wave_number": 23,
+        "wave_id": "tp4_w23",
+        "wave_codename_english": "Ya Hasan ibn Ali",
+        "wave_codename_farsi": "يا حسن بن علي",
+        "announced_utc": "2026-03-06T20:31:00Z",
+        "probable_launch_time": "2026-03-06T20:00:00Z",
+        "conflict_day": 7,
+        "payload": "New-generation solid- and liquid-fuel missiles (Khaibar-Shekan, Rezvan variants); drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "QA",
+          "BH",
+          "SA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Ali Al Salem Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Ali Al Salem Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 23,
+        "wave_number": 23,
+        "wave_id": "tp4_w23",
+        "wave_codename_english": "Ya Hasan ibn Ali",
+        "wave_codename_farsi": "يا حسن بن علي",
+        "announced_utc": "2026-03-06T20:31:00Z",
+        "probable_launch_time": "2026-03-06T20:00:00Z",
+        "conflict_day": 7,
+        "payload": "New-generation solid- and liquid-fuel missiles (Khaibar-Shekan, Rezvan variants); drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW",
+          "QA",
+          "BH",
+          "SA",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 4,
+        "target_name": "Muwaffaq Salti Air Base (al-Azraq)",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Muwaffaq Salti Air Base (al-Azraq)"
       }
     },
     {
@@ -4571,7 +7104,11 @@
         "casualties_wounded": 5,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4612,7 +7149,141 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 25,
+        "wave_number": 25,
+        "wave_id": "tp4_w25",
+        "wave_codename_english": "Al-Muqaddis / Ali ibn Abi Talib",
+        "wave_codename_farsi": "المقدس / علی ابن ابی‌طالب",
+        "announced_utc": "2026-03-07T10:35:00Z",
+        "probable_launch_time": "2026-03-07T12:30:00Z",
+        "conflict_day": 8,
+        "payload": "Fateh, Imad (Emad), and strategic missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": 60,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 60,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Al Dhafra Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al Dhafra Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37,
+          25.03
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 25,
+        "wave_number": 25,
+        "wave_id": "tp4_w25",
+        "wave_codename_english": "Al-Muqaddis / Ali ibn Abi Talib",
+        "wave_codename_farsi": "المقدس / علی ابن ابی‌طالب",
+        "announced_utc": "2026-03-07T10:35:00Z",
+        "probable_launch_time": "2026-03-07T12:30:00Z",
+        "conflict_day": 8,
+        "payload": "Fateh, Imad (Emad), and strategic missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": 60,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 60,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "AE"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Al Minhad Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al Minhad Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 26,
+        "wave_number": 26,
+        "wave_id": "tp4_w26",
+        "wave_codename_english": "Ya Heydar Karrar",
+        "wave_codename_farsi": "یا حیدر کرار",
+        "announced_utc": "2026-03-07T15:15:00Z",
+        "probable_launch_time": "2026-03-07T17:00:00Z",
+        "conflict_day": 8,
+        "payload": "New-generation Emad, Ghadr, and multi-warhead Kheibar missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": 37,
+        "munitions_targeting_israel": 37,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "AE",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Jerusalem",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Jerusalem"
       }
     },
     {
@@ -4654,7 +7325,97 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 1,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37,
+          25.03
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 26,
+        "wave_number": 26,
+        "wave_id": "tp4_w26",
+        "wave_codename_english": "Ya Heydar Karrar",
+        "wave_codename_farsi": "یا حیدر کرار",
+        "announced_utc": "2026-03-07T15:15:00Z",
+        "probable_launch_time": "2026-03-07T17:00:00Z",
+        "conflict_day": 8,
+        "payload": "New-generation Emad, Ghadr, and multi-warhead Kheibar missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": 37,
+        "munitions_targeting_israel": 37,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "AE",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Al Minhad Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al Minhad Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 26,
+        "wave_number": 26,
+        "wave_id": "tp4_w26",
+        "wave_codename_english": "Ya Heydar Karrar",
+        "wave_codename_farsi": "یا حیدر کرار",
+        "announced_utc": "2026-03-07T15:15:00Z",
+        "probable_launch_time": "2026-03-07T17:00:00Z",
+        "conflict_day": 8,
+        "payload": "New-generation Emad, Ghadr, and multi-warhead Kheibar missiles; drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": 37,
+        "munitions_targeting_israel": 37,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "AE",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Camp Udairi",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Camp Udairi"
       }
     },
     {
@@ -4695,7 +7456,50 @@
         "casualties_wounded": 0,
         "launch_site_description": null,
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 27,
+        "wave_number": 27,
+        "wave_id": "tp4_w27",
+        "wave_codename_english": "Ya Fatimah al-Zahra",
+        "wave_codename_farsi": "يا فاطمة الزهراء",
+        "announced_utc": "2026-03-07T19:45:00Z",
+        "probable_launch_time": "2026-03-07T18:30:00Z",
+        "conflict_day": 8,
+        "payload": "Khorramshahr-4 heavy ballistic missiles, Fattah-2 hypersonic missiles, cluster warheads, suicide drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": 30,
+        "munitions_targeting_israel": 20,
+        "munitions_targeting_us_bases": 10,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Camp Udairi / Camp Buehring",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Camp Udairi / Camp Buehring"
       }
     },
     {
@@ -4703,8 +7507,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          31.66
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4736,7 +7540,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4744,8 +7552,137 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.78,
-          31.66
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 28,
+        "wave_number": 28,
+        "wave_id": "tp4_w28",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-08T11:22:00Z",
+        "probable_launch_time": "2026-03-08T10:30:00Z",
+        "conflict_day": 9,
+        "payload": "Qadr, Emad (700kg-1 ton warheads), Kheibar Shekan ballistic missiles (1,450 km range, terminal maneuverability)",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "JO"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Jerusalem",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Jerusalem"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 28,
+        "wave_number": 28,
+        "wave_id": "tp4_w28",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-08T11:22:00Z",
+        "probable_launch_time": "2026-03-08T10:30:00Z",
+        "conflict_day": 9,
+        "payload": "Qadr, Emad (700kg-1 ton warheads), Kheibar Shekan ballistic missiles (1,450 km range, terminal maneuverability)",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "JO"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 28,
+        "wave_number": 28,
+        "wave_id": "tp4_w28",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-08T11:22:00Z",
+        "probable_launch_time": "2026-03-08T10:30:00Z",
+        "conflict_day": 9,
+        "payload": "Qadr, Emad (700kg-1 ton warheads), Kheibar Shekan ballistic missiles (1,450 km range, terminal maneuverability)",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "JO"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Al-Azraq Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Azraq Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4776,7 +7713,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4784,8 +7725,52 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.86,
-          32.33
+          34.82,
+          31.21
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 29,
+        "wave_number": 29,
+        "wave_id": "tp4_w29",
+        "wave_codename_english": "Ya Ali Ibn Abi Talib",
+        "wave_codename_farsi": "يا علي ابن أبي طالب",
+        "announced_utc": "2026-03-08T16:00:00Z",
+        "probable_launch_time": "2026-03-08T15:30:00Z",
+        "conflict_day": 9,
+        "payload": "New generation of missiles (type unspecified)",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Nevatim / Negev",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Nevatim / Negev"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
         ]
       },
       "properties": {
@@ -4816,7 +7801,11 @@
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
       }
     },
     {
@@ -4824,8 +7813,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.75,
-          32.02
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4857,7 +7846,11 @@
         "casualties_wounded": 3,
         "launch_site_description": "Iran — IRGC Aerospace Force and IRGC Navy",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
@@ -4865,8 +7858,131 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.85,
-          32.4
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 31,
+        "wave_number": 31,
+        "wave_id": "tp4_w31",
+        "wave_codename_english": "Labbaik Ya Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T13:43:00Z",
+        "probable_launch_time": "2026-03-09T13:00:00Z",
+        "conflict_day": 10,
+        "payload": "Super-heavy missiles: Qadr, Khorramshahr, Kheibar Shekan ballistic missiles; IRGC Navy loitering drones and cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "BH"
+        ],
+        "casualties_killed": 1,
+        "casualties_wounded": 3,
+        "launch_site_description": "Iran — IRGC Aerospace Force and IRGC Navy",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 31,
+        "wave_number": 31,
+        "wave_id": "tp4_w31",
+        "wave_codename_english": "Labbaik Ya Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T13:43:00Z",
+        "probable_launch_time": "2026-03-09T13:00:00Z",
+        "conflict_day": 10,
+        "payload": "Super-heavy missiles: Qadr, Khorramshahr, Kheibar Shekan ballistic missiles; IRGC Navy loitering drones and cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "BH"
+        ],
+        "casualties_killed": 1,
+        "casualties_wounded": 3,
+        "launch_site_description": "Iran — IRGC Aerospace Force and IRGC Navy",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "US Navy 5th Fleet HQ",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "US Navy 5th Fleet HQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 31,
+        "wave_number": 31,
+        "wave_id": "tp4_w31",
+        "wave_codename_english": "Labbaik Ya Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T13:43:00Z",
+        "probable_launch_time": "2026-03-09T13:00:00Z",
+        "conflict_day": 10,
+        "payload": "Super-heavy missiles: Qadr, Khorramshahr, Kheibar Shekan ballistic missiles; IRGC Navy loitering drones and cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "BH"
+        ],
+        "casualties_killed": 1,
+        "casualties_wounded": 3,
+        "launch_site_description": "Iran — IRGC Aerospace Force and IRGC Navy",
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Al-Adiri helicopter base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Adiri helicopter base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -4897,7 +8013,99 @@
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0,
+          32.82
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 32,
+        "wave_number": 32,
+        "wave_id": "tp4_w32",
+        "wave_codename_english": "At Your Service, Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T16:30:00Z",
+        "probable_launch_time": "2026-03-09T16:00:00Z",
+        "conflict_day": 10,
+        "payload": "Qadr and Khorramshahr ballistic missiles targeting northern and central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Haifa",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Haifa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 32,
+        "wave_number": 32,
+        "wave_id": "tp4_w32",
+        "wave_codename_english": "At Your Service, Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T16:30:00Z",
+        "probable_launch_time": "2026-03-09T16:00:00Z",
+        "conflict_day": 10,
+        "payload": "Qadr and Khorramshahr ballistic missiles targeting northern and central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
       }
     },
     {
@@ -4938,7 +8146,50 @@
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 33,
+        "wave_number": 33,
+        "wave_id": "tp4_w33",
+        "wave_codename_english": "At Your Service, Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T19:00:00Z",
+        "probable_launch_time": "2026-03-09T18:30:00Z",
+        "conflict_day": 10,
+        "payload": "Large numbers of solid-fuel Khaibar Shekan missiles with one-ton warheads; IRGC Aerospace Force drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "BH"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "US Navy 5th Fleet HQ",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "US Navy 5th Fleet HQ"
       }
     },
     {
@@ -4978,6 +8229,10 @@
         "casualties_wounded": 16,
         "launch_site_description": "Southern Lebanon",
         "layer": "target",
+        "target_index": 0,
+        "target_name": true,
+        "target_type": "legacy",
+        "target_hit": true,
         "generic_location": true
       }
     },
@@ -4986,8 +8241,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          34.89,
-          32.03
+          34.77,
+          32.07
         ]
       },
       "properties": {
@@ -5018,18 +8273,16 @@
         "casualties_wounded": 3,
         "launch_site_description": "Iran (specific site unknown)",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Tel Aviv",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          51.31,
-          25.12
-        ]
-      },
+      "geometry": null,
       "properties": {
         "operation": "tp4",
         "sequence": 36,
@@ -5058,7 +8311,11 @@
         "casualties_wounded": 0,
         "launch_site_description": "Iran (specific site unknown)",
         "layer": "target",
-        "generic_location": true
+        "target_index": 0,
+        "target_name": "Al Udeid Air Base",
+        "target_type": "us_base",
+        "target_hit": false,
+        "generic_location": "Al Udeid Air Base"
       }
     }
   ]

@@ -97,16 +97,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -141,7 +141,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -243,16 +256,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -287,7 +300,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -389,16 +415,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -433,7 +459,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -542,9 +576,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -579,7 +613,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -688,9 +735,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -725,7 +772,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -834,9 +889,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -871,7 +926,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -980,9 +1048,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1017,7 +1085,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1126,9 +1207,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1163,7 +1244,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1272,9 +1366,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1309,7 +1403,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1418,9 +1525,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1455,7 +1562,25 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1568,7 +1693,7 @@
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": true,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1603,7 +1728,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1711,9 +1844,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1748,7 +1881,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1851,16 +1992,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1895,7 +2036,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1996,16 +2150,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2040,7 +2194,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2147,10 +2314,10 @@
         },
         "categories": {
           "bm_liquid_fueled": false,
-          "bm_solid_fueled": true,
+          "bm_solid_fueled": false,
           "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2184,7 +2351,9 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": []
       },
       "attacking_force": [
         {
@@ -2294,9 +2463,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2330,7 +2499,9 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": []
       },
       "attacking_force": [
         {
@@ -2438,9 +2609,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2474,7 +2645,9 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": []
       },
       "attacking_force": [
         {
@@ -2575,16 +2748,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2619,7 +2792,30 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Eilat",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2723,16 +2919,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2767,7 +2963,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2878,7 +3087,7 @@
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2913,7 +3122,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": true
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3024,9 +3241,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": true,
+          "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -3061,7 +3278,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3169,9 +3394,9 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -3206,7 +3431,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {

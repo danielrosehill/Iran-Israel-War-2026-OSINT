@@ -89,15 +89,17 @@
           "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
-          "shahed_131_used": null,
+          "shahed_131_used": true,
           "paveh_used": true,
-          "mohajer_6_used": null
+          "mohajer_6_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
-          "bm_hypersonic": false,
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
           "bm_cluster_warhead": null
         },
         "cluster_warhead": null
@@ -133,7 +135,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": false,
+        "target_locations": [
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": false
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": false
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -164,7 +179,7 @@
             "France"
           ]
         },
-        "estimated_intercept_count": null,
+        "estimated_intercept_count": 198,
         "estimated_intercept_rate": 0.99,
         "exoatmospheric_interception": false,
         "endoatmospheric_interception": true,
@@ -316,7 +331,7 @@
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -351,7 +366,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -380,7 +408,7 @@
           "jordan": true,
           "other": []
         },
-        "estimated_intercept_count": null,
+        "estimated_intercept_count": 119,
         "estimated_intercept_rate": 0.99,
         "exoatmospheric_interception": true,
         "endoatmospheric_interception": true,

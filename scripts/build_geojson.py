@@ -5,6 +5,11 @@ Build GeoJSON FeatureCollection from all wave JSON data.
 Produces two layers:
   - launch_sites: Point features at each wave's launch site
   - targets: Point features at each wave's target coordinates
+    Resolves MULTIPLE targets per wave from:
+      1. targets.target_locations array (if present, from backfill)
+      2. targets.israeli_locations boolean flags → reference coords
+      3. targets.us_bases array → reference coords
+      4. Legacy targets.target_coordinates as fallback
 
 Waves missing coordinates are included with null geometry.
 
@@ -31,6 +36,71 @@ WAVE_FILES = [
     ('tp3', os.path.join(REPO, 'data', 'tp3-2025', 'waves.json')),
     ('tp4', os.path.join(REPO, 'data', 'tp4-2026', 'waves.json')),
 ]
+
+# Mapping from israeli_locations boolean flags to default target name and coords.
+ISRAELI_FLAG_DEFAULTS = {
+    "targeted_tel_aviv": {
+        "name": "Tel Aviv (general)",
+        "lat": 32.07, "lon": 34.77,
+    },
+    "targeted_jerusalem": {
+        "name": "East Jerusalem",
+        "lat": 31.78, "lon": 35.24,
+    },
+    "targeted_haifa": {
+        "name": "Haifa Naval Base",
+        "lat": 32.82, "lon": 35.0,
+    },
+    "targeted_negev_beersheba": {
+        "name": "Nevatim Airbase",
+        "lat": 31.21, "lon": 34.82,
+    },
+    "targeted_northern_periphery": {
+        "name": "Galilee (general)",
+        "lat": 32.85, "lon": 35.5,
+    },
+    "targeted_eilat": {
+        "name": "Eilat (approximate)",
+        "lat": 29.56, "lon": 34.95,
+    },
+}
+
+
+def _load_json_with_fallback(primary_path, fallback_path):
+    """Load JSON from primary_path, falling back to fallback_path."""
+    for p in (primary_path, fallback_path):
+        if os.path.isfile(p):
+            with open(p) as f:
+                return json.load(f)
+    return []
+
+
+def load_reference_data():
+    """Load israeli_targets.json and us_bases.json reference files.
+
+    Looks first in data/tp4-2026/reference/, then falls back to data/reference/.
+    Returns (israeli_targets_by_name, us_bases_by_name) dicts keyed by lowercase name.
+    """
+    israeli_primary = os.path.join(REPO, 'data', 'tp4-2026', 'reference', 'israeli_targets.json')
+    israeli_fallback = os.path.join(REPO, 'data', 'reference', 'israeli_targets.json')
+    israeli_list = _load_json_with_fallback(israeli_primary, israeli_fallback)
+
+    us_primary = os.path.join(REPO, 'data', 'tp4-2026', 'reference', 'us_bases.json')
+    us_fallback = os.path.join(REPO, 'data', 'reference', 'us_bases.json')
+    us_list = _load_json_with_fallback(us_primary, us_fallback)
+
+    # Build lookup dicts keyed by lowercase name (and aliases)
+    israeli_by_name = {}
+    for entry in israeli_list:
+        israeli_by_name[entry['name'].lower()] = entry
+        for alias in entry.get('aliases', []):
+            israeli_by_name[alias.lower()] = entry
+
+    us_by_name = {}
+    for entry in us_list:
+        us_by_name[entry['name'].lower()] = entry
+
+    return israeli_by_name, us_by_name
 
 
 def load_all_waves():
@@ -63,8 +133,9 @@ def wave_properties(w):
 
     return {
         "operation": w.get('_operation'),
+        "sequence": w.get('sequence'),
         "wave_number": w.get('wave_number'),
-        "wave_id": f"{w.get('_operation')}_w{w.get('wave_number')}",
+        "wave_id": f"{w.get('_operation')}_w{w.get('sequence')}",
         "wave_codename_english": w.get('wave_codename_english'),
         "wave_codename_farsi": w.get('wave_codename_farsi'),
         "announced_utc": timing.get('announced_utc'),
@@ -88,7 +159,154 @@ def wave_properties(w):
     }
 
 
-def build_features(waves):
+def _fuzzy_match_israeli(name, israeli_ref):
+    """Try to match a target name to Israeli reference data with fuzzy matching."""
+    name_lower = name.lower()
+    # Direct match
+    if name_lower in israeli_ref:
+        ref = israeli_ref[name_lower]
+        return ref.get('lat'), ref.get('lon')
+
+    # Keyword-based matching for common backfill names
+    KEYWORD_MAP = {
+        'tel aviv': 'tel aviv (general)',
+        'jerusalem': 'east jerusalem',
+        'haifa': 'haifa naval base',
+        'negev': 'nevatim airbase',
+        'nevatim': 'nevatim airbase',
+        'beersheba': 'beersheba army communications complex',
+        'northern': 'galilee (general)',
+        'galilee': 'galilee (general)',
+        'eilat': 'eilat (approximate)',
+    }
+    for keyword, ref_name in KEYWORD_MAP.items():
+        if keyword in name_lower:
+            ref = israeli_ref.get(ref_name)
+            if ref:
+                return ref.get('lat'), ref.get('lon')
+            # Fall back to flag defaults
+            for flag_key, defaults in ISRAELI_FLAG_DEFAULTS.items():
+                if defaults['name'].lower() == ref_name:
+                    return defaults['lat'], defaults['lon']
+
+    # Try flag defaults directly
+    for flag_key, defaults in ISRAELI_FLAG_DEFAULTS.items():
+        if defaults['name'].lower() in name_lower or name_lower in defaults['name'].lower():
+            return defaults['lat'], defaults['lon']
+
+    return None, None
+
+
+def resolve_targets(w, israeli_ref, us_ref):
+    """Resolve all target locations for a wave.
+
+    Returns a list of dicts, each with keys:
+        target_name, target_type, lat, lon, target_hit
+
+    Resolution order:
+    1. targets.target_locations array (from backfill, has per-target hit status)
+    2. targets.israeli_locations boolean flags → look up in israeli_ref or use defaults
+    3. targets.us_bases array → look up in us_ref
+    4. Fallback: legacy target_coordinates (if no targets resolved above)
+    """
+    resolved = []
+    targets = w.get('targets', {})
+
+    # 1. Use target_locations if present (from target_hit backfill)
+    target_locs = targets.get('target_locations', [])
+    if target_locs:
+        for tl in target_locs:
+            name = tl.get('name', '')
+            ttype = tl.get('type', 'unknown')
+            hit = tl.get('hit')
+
+            # Look up coords from reference data
+            lat, lon = None, None
+            if ttype == 'israeli':
+                lat, lon = _fuzzy_match_israeli(name, israeli_ref)
+            elif ttype == 'us_base':
+                # Try exact match first, then substring
+                ref = us_ref.get(name.lower())
+                if ref:
+                    lat, lon = ref.get('lat'), ref.get('lon')
+                else:
+                    for ref_name, ref_entry in us_ref.items():
+                        if name.lower() in ref_name or ref_name in name.lower():
+                            lat, lon = ref_entry.get('lat'), ref_entry.get('lon')
+                            break
+
+            resolved.append({
+                'target_name': name,
+                'target_type': ttype,
+                'lat': lat,
+                'lon': lon,
+                'target_hit': hit,
+            })
+        return resolved
+
+    # 2. Resolve Israeli location flags
+    israeli_locs = targets.get('israeli_locations', {})
+    for flag_key, defaults in ISRAELI_FLAG_DEFAULTS.items():
+        if israeli_locs.get(flag_key):
+            ref_entry = israeli_ref.get(defaults['name'].lower())
+            if ref_entry:
+                lat = ref_entry.get('lat', defaults['lat'])
+                lon = ref_entry.get('lon', defaults['lon'])
+                name = ref_entry.get('name', defaults['name'])
+            else:
+                lat = defaults['lat']
+                lon = defaults['lon']
+                name = defaults['name']
+            resolved.append({
+                'target_name': name,
+                'target_type': 'israeli',
+                'lat': lat,
+                'lon': lon,
+                'target_hit': None,
+            })
+
+    # 3. Resolve US bases from the us_bases array
+    us_bases_list = targets.get('us_bases', [])
+    for base_entry in us_bases_list:
+        if isinstance(base_entry, dict):
+            base_name = base_entry.get('name') or base_entry.get('base_name', '')
+        else:
+            base_name = str(base_entry)
+        if not base_name:
+            continue
+        ref_entry = us_ref.get(base_name.lower())
+        if ref_entry:
+            resolved.append({
+                'target_name': ref_entry.get('name', base_name),
+                'target_type': 'us_base',
+                'lat': ref_entry.get('lat'),
+                'lon': ref_entry.get('lon'),
+                'target_hit': None,
+            })
+        else:
+            resolved.append({
+                'target_name': base_name,
+                'target_type': 'us_base',
+                'lat': None,
+                'lon': None,
+                'target_hit': None,
+            })
+
+    # 4. Fallback: legacy target_coordinates if nothing was resolved
+    if not resolved:
+        tc = targets.get('target_coordinates', {})
+        resolved.append({
+            'target_name': tc.get('generic_location'),
+            'target_type': 'legacy',
+            'lat': tc.get('lat'),
+            'lon': tc.get('lon'),
+            'target_hit': targets.get('target_hit'),
+        })
+
+    return resolved
+
+
+def build_features(waves, israeli_ref, us_ref):
     """Build launch-site and target feature lists."""
     launch_features = []
     target_features = []
@@ -96,9 +314,8 @@ def build_features(waves):
     for w in waves:
         props = wave_properties(w)
         ls = w.get('launch_site', {})
-        tc = w.get('targets', {}).get('target_coordinates', {})
 
-        # Launch site feature
+        # Launch site feature (one per wave, unchanged)
         launch_geom = make_point(ls.get('lat'), ls.get('lon'))
         launch_props = {
             **props,
@@ -111,18 +328,24 @@ def build_features(waves):
             "properties": launch_props,
         })
 
-        # Target feature
-        target_geom = make_point(tc.get('lat'), tc.get('lon'))
-        target_props = {
-            **props,
-            "layer": "target",
-            "generic_location": tc.get('generic_location'),
-        }
-        target_features.append({
-            "type": "Feature",
-            "geometry": target_geom,
-            "properties": target_props,
-        })
+        # Target features (multiple per wave)
+        resolved = resolve_targets(w, israeli_ref, us_ref)
+        for idx, t in enumerate(resolved):
+            target_geom = make_point(t['lat'], t['lon'])
+            target_props = {
+                **props,
+                "layer": "target",
+                "target_index": idx,
+                "target_name": t['target_name'],
+                "target_type": t['target_type'],
+                "target_hit": t['target_hit'],
+                "generic_location": t['target_name'],
+            }
+            target_features.append({
+                "type": "Feature",
+                "geometry": target_geom,
+                "properties": target_props,
+            })
 
     return launch_features, target_features
 
@@ -142,8 +365,12 @@ def main():
 
     os.makedirs(args.output_dir, exist_ok=True)
 
+    # Load reference data for target resolution
+    israeli_ref, us_ref = load_reference_data()
+    print(f"Reference data: {len(israeli_ref)} Israeli targets, {len(us_ref)} US bases")
+
     waves = load_all_waves()
-    launch_features, target_features = build_features(waves)
+    launch_features, target_features = build_features(waves, israeli_ref, us_ref)
 
     # Write individual layers
     for name, features in [('waves_launch_sites', launch_features),
@@ -161,7 +388,7 @@ def main():
         json.dump(feature_collection(combined), f, indent=2, ensure_ascii=False)
     print(f"  {path}: {len(combined)} features (combined)")
 
-    print(f"\nDone — {len(waves)} waves across {len(WAVE_FILES)} operations.")
+    print(f"\nDone — {len(waves)} waves, {len(target_features)} target features across {len(WAVE_FILES)} operations.")
 
 
 if __name__ == '__main__':

@@ -76,16 +76,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -131,7 +131,26 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Mina Salman Naval Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "BH"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -247,16 +266,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -292,7 +311,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -397,24 +424,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -464,7 +491,37 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Abdullah Al-Mubarak Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "KW"
+          },
+          {
+            "name": "Harir Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "IQ"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -574,16 +631,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
           "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -620,7 +677,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -725,24 +795,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -793,7 +863,16 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Abdullah Al-Mubarak Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "KW"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -891,24 +970,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -943,7 +1022,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1048,24 +1140,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1123,7 +1215,28 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Ali Al-Salem Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "KW"
+          },
+          {
+            "name": "Mohammed Al-Ahmad Naval Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "KW"
+          },
+          {
+            "name": "Mina Salman Naval Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "BH"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1244,24 +1357,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1297,7 +1410,9 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": []
       },
       "attacking_force": [
         {
@@ -1413,22 +1528,22 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
@@ -1476,7 +1591,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1592,9 +1715,9 @@
         "categories": {
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": true,
+          "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1630,7 +1753,30 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Jerusalem",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1756,24 +1902,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -1821,7 +1967,36 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": true,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Jerusalem",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Mina Salman Naval Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "BH"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -1957,16 +2132,16 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": false,
+          "bm_marv_equipped": true,
           "bm_hypersonic": true,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2019,7 +2194,22 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Camp Arifjan",
+            "type": "us_base",
+            "hit": true,
+            "country": "KW"
+          },
+          {
+            "name": "Al Minhad Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "AE"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2153,15 +2343,15 @@
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
-          "bm_hypersonic": false,
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
           "bm_cluster_warhead": null
         },
         "cluster_warhead": null
@@ -2206,7 +2396,22 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Camp Arifjan",
+            "type": "us_base",
+            "hit": null,
+            "country": "KW"
+          },
+          {
+            "name": "Ali Al-Salem Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "KW"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2341,24 +2546,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2399,7 +2604,16 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": true,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Sheikh Isa Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "BH"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2501,22 +2715,22 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
@@ -2573,7 +2787,27 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": true,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Sheikh Isa Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "BH"
+          },
+          {
+            "name": "Al-Udeid Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "QA"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2675,24 +2909,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": true,
           "shahed_238_used": false,
           "shahed_131_used": true,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2733,7 +2967,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -2835,11 +3082,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": false,
           "shahed_238_used": false,
           "shahed_131_used": null,
@@ -2848,11 +3095,11 @@
           "mohajer_6_used": null
         },
         "categories": {
-          "bm_liquid_fueled": false,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": false,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -2887,7 +3134,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3019,11 +3274,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": null,
         "types": {
-          "emad_used": null,
+          "emad_used": false,
           "ghadr_used": true,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
+          "fattah_used": false,
           "shahed_136_used": null,
           "shahed_238_used": null,
           "shahed_131_used": null,
@@ -3036,7 +3291,7 @@
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -3068,7 +3323,9 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": []
       },
       "attacking_force": [
         {
@@ -3173,25 +3430,25 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": true
         },
         "categories": {
-          "bm_liquid_fueled": true,
+          "bm_liquid_fueled": false,
           "bm_solid_fueled": false,
           "bm_marv_equipped": false,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -3248,7 +3505,38 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Jerusalem",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "US military positions Kuwait",
+            "type": "us_base",
+            "hit": null,
+            "country": "KW"
+          },
+          {
+            "name": "US military positions Bahrain",
+            "type": "us_base",
+            "hit": true,
+            "country": "BH"
+          },
+          {
+            "name": "US military positions Qatar",
+            "type": "us_base",
+            "hit": null,
+            "country": "QA"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3357,22 +3645,22 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false
         },
         "categories": {
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
+          "bm_marv_equipped": false,
           "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
@@ -3416,7 +3704,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3526,23 +3822,23 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
+          "bm_marv_equipped": false,
           "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
@@ -3586,7 +3882,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3694,25 +3998,25 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
           "fattah_used": true,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": true
         },
         "categories": {
-          "bm_liquid_fueled": true,
+          "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": true,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -3758,7 +4062,32 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Al Udeid Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "QA"
+          },
+          {
+            "name": "Al Dhafra Air Base",
+            "type": "us_base",
+            "hit": true,
+            "country": "AE"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3778,7 +4107,15 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": [],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "Iron Dome",
+          "David's Sling",
+          "THAAD",
+          "Patriot PAC-3",
+          "Aegis BMD / SM-3"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": null,
@@ -3868,25 +4205,25 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": null,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": null
         },
         "categories": {
-          "bm_liquid_fueled": true,
+          "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
-          "bm_cluster_warhead": null
+          "bm_marv_equipped": false,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -3951,7 +4288,39 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Sheikh Isa Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "BH"
+          },
+          {
+            "name": "NSA Bahrain (Juffair)",
+            "type": "us_base",
+            "hit": null,
+            "country": "BH"
+          },
+          {
+            "name": "Ali Al Salem Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "KW"
+          },
+          {
+            "name": "Muwaffaq Salti Air Base (al-Azraq)",
+            "type": "us_base",
+            "hit": null,
+            "country": "JO"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -3971,7 +4340,15 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": [],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "Iron Dome",
+          "David's Sling",
+          "THAAD",
+          "Patriot PAC-3",
+          "Aegis BMD / SM-3"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": null,
@@ -4060,9 +4437,9 @@
         "types": {
           "emad_used": true,
           "ghadr_used": true,
-          "sejjil_used": null,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
+          "fattah_used": false,
           "shahed_136_used": null,
           "shahed_238_used": null,
           "shahed_131_used": null,
@@ -4074,8 +4451,8 @@
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
         "cluster_warhead": {
@@ -4118,7 +4495,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -4228,24 +4613,24 @@
         "cruise_missiles_used": null,
         "types": {
           "emad_used": true,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
+          "ghadr_used": false,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
           "fattah_used": true,
-          "shahed_136_used": null,
+          "shahed_136_used": false,
           "shahed_238_used": true,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": null
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
+          "bm_marv_equipped": true,
           "bm_hypersonic": true,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -4294,7 +4679,27 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Al Dhafra Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "AE"
+          },
+          {
+            "name": "Al Minhad Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "AE"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -4406,22 +4811,22 @@
         "types": {
           "emad_used": true,
           "ghadr_used": true,
-          "sejjil_used": null,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": null
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
         "cluster_warhead": {
@@ -4479,7 +4884,32 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Jerusalem",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Al Minhad Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "AE"
+          },
+          {
+            "name": "Camp Udairi",
+            "type": "us_base",
+            "hit": null,
+            "country": "KW"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -4591,23 +5021,23 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": null,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
           "fattah_used": true,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": true
         },
         "categories": {
-          "bm_liquid_fueled": true,
+          "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
+          "bm_marv_equipped": true,
           "bm_hypersonic": true,
           "bm_cluster_warhead": true
         },
@@ -4659,7 +5089,21 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Camp Udairi / Camp Buehring",
+            "type": "us_base",
+            "hit": null,
+            "country": "KW"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -4679,7 +5123,15 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": [],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "Iron Dome",
+          "David's Sling",
+          "THAAD",
+          "Patriot PAC-3",
+          "Aegis BMD / SM-3"
+        ],
         "intercepted_by": {
           "israel": true,
           "us": true,
@@ -4768,9 +5220,9 @@
         "types": {
           "emad_used": true,
           "ghadr_used": true,
-          "sejjil_used": null,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
+          "fattah_used": false,
           "shahed_136_used": false,
           "shahed_238_used": false,
           "shahed_131_used": false,
@@ -4834,7 +5286,31 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Jerusalem",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Al-Azraq Air Base",
+            "type": "us_base",
+            "hit": null,
+            "country": "JO"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -4941,11 +5417,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": null,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": null,
           "shahed_238_used": null,
           "shahed_131_used": null,
@@ -4955,11 +5431,11 @@
           "khorramshahr_4_used": null
         },
         "categories": {
-          "bm_liquid_fueled": null,
-          "bm_solid_fueled": null,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
-          "bm_cluster_warhead": null
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -4994,7 +5470,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -5099,25 +5588,25 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": null,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
           "fattah_used": true,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": true
         },
         "categories": {
-          "bm_liquid_fueled": true,
+          "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
+          "bm_marv_equipped": true,
           "bm_hypersonic": true,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -5152,7 +5641,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -5251,24 +5748,24 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": true,
         "types": {
-          "emad_used": null,
+          "emad_used": false,
           "ghadr_used": true,
-          "sejjil_used": null,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": true
         },
         "categories": {
           "bm_liquid_fueled": true,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
+          "bm_marv_equipped": false,
+          "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
         "cluster_warhead": {
@@ -5325,7 +5822,31 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "US Navy 5th Fleet HQ",
+            "type": "us_base",
+            "hit": null,
+            "country": "BH"
+          },
+          {
+            "name": "Al-Adiri helicopter base",
+            "type": "us_base",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -5428,11 +5949,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
+          "emad_used": false,
           "ghadr_used": true,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
+          "fattah_used": false,
           "shahed_136_used": null,
           "shahed_238_used": null,
           "shahed_131_used": null,
@@ -5443,10 +5964,10 @@
         },
         "categories": {
           "bm_liquid_fueled": true,
-          "bm_solid_fueled": null,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
-          "bm_cluster_warhead": null
+          "bm_solid_fueled": false,
+          "bm_marv_equipped": false,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": {
           "confirmed": null,
@@ -5488,7 +6009,25 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -5587,25 +6126,25 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
           "kheibar_shekan_used": true,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": null
         },
         "categories": {
           "bm_liquid_fueled": false,
           "bm_solid_fueled": true,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
-          "bm_cluster_warhead": null
+          "bm_marv_equipped": false,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": {
           "confirmed": null,
@@ -5655,7 +6194,21 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "US Navy 5th Fleet HQ",
+            "type": "us_base",
+            "hit": null,
+            "country": "BH"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -5769,10 +6322,10 @@
           "khorramshahr_4_used": false
         },
         "categories": {
-          "bm_liquid_fueled": null,
-          "bm_solid_fueled": null,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
+          "bm_liquid_fueled": false,
+          "bm_solid_fueled": false,
+          "bm_marv_equipped": false,
+          "bm_hypersonic": false,
           "bm_cluster_warhead": false
         },
         "cluster_warhead": null
@@ -5808,7 +6361,9 @@
           "targeted_telecom_data": true,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": []
       },
       "attacking_force": [
         {
@@ -5896,11 +6451,11 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
           "shahed_136_used": false,
           "shahed_238_used": false,
           "shahed_131_used": false,
@@ -5910,10 +6465,10 @@
           "khorramshahr_4_used": null
         },
         "categories": {
-          "bm_liquid_fueled": null,
-          "bm_solid_fueled": null,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": false,
           "bm_cluster_warhead": true
         },
         "cluster_warhead": {
@@ -5956,7 +6511,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -6044,25 +6607,25 @@
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
         "types": {
-          "emad_used": null,
-          "ghadr_used": null,
-          "sejjil_used": null,
-          "kheibar_shekan_used": null,
-          "fattah_used": null,
-          "shahed_136_used": null,
-          "shahed_238_used": null,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null,
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": true,
+          "fattah_used": false,
+          "shahed_136_used": true,
+          "shahed_238_used": false,
+          "shahed_131_used": true,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
           "khorramshahr_4_used": null
         },
         "categories": {
-          "bm_liquid_fueled": null,
-          "bm_solid_fueled": null,
-          "bm_marv_equipped": null,
-          "bm_hypersonic": null,
-          "bm_cluster_warhead": null
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -6104,7 +6667,16 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": false,
+        "target_locations": [
+          {
+            "name": "Al Udeid Air Base",
+            "type": "us_base",
+            "hit": false,
+            "country": "QA"
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -6120,13 +6692,23 @@
       },
       "interception": {
         "intercepted": true,
-        "interception_systems": [],
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "Iron Dome",
+          "David's Sling",
+          "THAAD",
+          "Patriot PAC-3",
+          "Aegis BMD / SM-3"
+        ],
         "intercepted_by": {
           "israel": false,
           "us": null,
           "uk": null,
           "jordan": false,
-          "other": ["Qatar"]
+          "other": [
+            "Qatar"
+          ]
         },
         "estimated_intercept_count": 23,
         "estimated_intercept_rate": 1.0,

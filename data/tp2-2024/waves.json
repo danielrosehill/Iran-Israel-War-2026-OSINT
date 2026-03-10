@@ -96,7 +96,7 @@
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": false,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -133,7 +133,15 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
@@ -388,7 +396,7 @@
           "bm_solid_fueled": true,
           "bm_marv_equipped": true,
           "bm_hypersonic": true,
-          "bm_cluster_warhead": null
+          "bm_cluster_warhead": false
         },
         "cluster_warhead": null
       },
@@ -425,7 +433,20 @@
           "targeted_telecom_data": null,
           "targeted_diplomatic": null,
           "targeted_research": null
-        }
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Nevatim / Negev",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
       },
       "attacking_force": [
         {
