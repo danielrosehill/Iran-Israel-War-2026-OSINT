@@ -2263,6 +2263,85 @@
         "layer": "target",
         "generic_location": true
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.85,
+          32.4
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "wave_number": 32,
+        "wave_id": "tp4_w32",
+        "wave_codename_english": "At Your Service, Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T16:30:00Z",
+        "probable_launch_time": "2026-03-09T16:00:00Z",
+        "conflict_day": 10,
+        "payload": "Qadr and Khorramshahr ballistic missiles targeting northern and central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "wave_number": 33,
+        "wave_id": "tp4_w33",
+        "wave_codename_english": "At Your Service, Khamenei",
+        "wave_codename_farsi": "لبیک یا خامنه‌ای",
+        "announced_utc": "2026-03-09T19:00:00Z",
+        "probable_launch_time": "2026-03-09T18:30:00Z",
+        "conflict_day": 10,
+        "payload": "Large numbers of solid-fuel Khaibar Shekan missiles with one-ton warheads; IRGC Aerospace Force drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "BH"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "generic_location": true
+      }
     }
   ]
 }

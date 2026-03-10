@@ -4,10 +4,10 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "wave_count": 29,
+    "wave_count": 33,
     "date_range": {
       "start": "2026-02-28",
-      "end": "2026-03-08"
+      "end": "2026-03-09"
     },
     "canonical_format": "json",
     "source_csv_columns": 75,
@@ -132,10 +132,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
         "lat": 34.31,
@@ -290,10 +292,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -459,10 +463,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western and southwestern Iran",
         "lat": 34.31,
@@ -612,10 +618,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -782,10 +790,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran, IRGC naval positions",
         "lat": 34.31,
@@ -929,10 +939,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1106,10 +1118,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran, IRGC naval positions",
         "lat": 34.31,
@@ -1277,10 +1291,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1453,10 +1469,12 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1604,10 +1622,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Central Iran",
         "lat": 33.5,
@@ -1648,8 +1672,8 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": "IDF assessing damage from advanced missile strikes",
@@ -1788,10 +1812,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Western Iran",
         "lat": 34.31,
@@ -1832,8 +1862,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": null,
@@ -1979,10 +2009,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Navy"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "IRGC naval positions, western Iran",
         "lat": 34.31,
@@ -2023,8 +2059,8 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": null,
@@ -2159,10 +2195,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Navy"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "IRGC positions",
         "lat": 33.5,
@@ -2203,8 +2245,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah re-entered the conflict on March 2, launching rockets and drones at northern Israel from Lebanon. Coordinated with IRGC waves but operationally independent."
       },
       "sources": {
         "idf_statement": null,
@@ -2345,10 +2387,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Navy"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "IRGC naval positions",
         "lat": 26.5,
@@ -2389,8 +2437,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued rocket and drone attacks on northern Israel from Lebanon, maintaining pressure on IDF Northern Command."
       },
       "sources": {
         "idf_statement": null,
@@ -2512,10 +2560,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -2556,8 +2610,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": false,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued rocket and drone attacks on northern Israel from Lebanon, maintaining pressure on IDF Northern Command."
       },
       "sources": {
         "idf_statement": null,
@@ -2665,10 +2719,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Ground Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Ground Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Western Iran, IRGC ground force positions",
         "lat": 34.31,
@@ -2709,8 +2769,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah launched precision-guided missile strike on Dado Base (IDF Northern Command HQ) near Safed at approximately 03:30 UTC on March 4. Continued rocket fire on northern Israeli towns."
       },
       "sources": {
         "idf_statement": null,
@@ -2812,10 +2872,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Central/western Iran",
         "lat": 34.31,
@@ -2856,8 +2922,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah launched precision-guided missile strike on Dado Base (IDF Northern Command HQ) near Safed at approximately 03:30 UTC on March 4. Continued rocket fire on northern Israeli towns."
       },
       "sources": {
         "idf_statement": null,
@@ -2986,10 +3052,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3030,8 +3102,8 @@
         "new_weapon_first_use": null
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah launched precision-guided missile strike on Dado Base (IDF Northern Command HQ) near Safed at approximately 03:30 UTC on March 4. Continued rocket fire on northern Israeli towns."
       },
       "sources": {
         "idf_statement": null,
@@ -3159,10 +3231,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3206,8 +3284,8 @@
         "new_weapon_first_use": true
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Israeli officials confirmed simultaneous IRGC-Hezbollah launches were coordinated. Hezbollah maintained rocket fire on northern Israel and issued evacuation warnings for border towns."
       },
       "sources": {
         "idf_statement": null,
@@ -3320,10 +3398,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3364,8 +3448,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Israeli officials confirmed simultaneous IRGC-Hezbollah launches were coordinated. Hezbollah maintained rocket fire on northern Israel and issued evacuation warnings for border towns."
       },
       "sources": {
         "idf_statement": "IDF Home Front Command cleared civilians to leave shelters but advised remaining close. No immediate injuries reported by medics.",
@@ -3483,10 +3567,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3527,8 +3617,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah sustained rocket and drone campaign against northern Israel, coordinating timing with IRGC ballistic missile waves."
       },
       "sources": {
         "idf_statement": null,
@@ -3648,10 +3738,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3692,8 +3788,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah sustained rocket and drone campaign against northern Israel, coordinating timing with IRGC ballistic missile waves."
       },
       "sources": {
         "idf_statement": null,
@@ -3834,10 +3930,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -3878,8 +3980,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah sustained rocket and drone campaign against northern Israel, coordinating timing with IRGC ballistic missile waves."
       },
       "sources": {
         "idf_statement": null,
@@ -3994,10 +4096,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4163,10 +4271,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4341,10 +4455,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4514,10 +4634,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": null,
         "lat": 33.5,
@@ -4682,10 +4808,16 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
-      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
       "launch_site": {
         "description": "Iran — IRGC Aerospace Force",
         "lat": 33.5,
@@ -4726,8 +4858,8 @@
         "new_weapon_first_use": false
       },
       "proxy": {
-        "involvement": null,
-        "description": null
+        "involvement": true,
+        "description": "Hezbollah continued coordinated attacks on northern Israel from Lebanon."
       },
       "sources": {
         "idf_statement": null,
@@ -4835,10 +4967,503 @@
           "targeted_research": null
         }
       },
-      "attacking_force": {
-        "actor": "Iran",
-        "subunit": "IRGC Aerospace Force"
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Iran — IRGC Aerospace Force",
+        "lat": 33.5,
+        "lon": 48.5,
+        "generic_location": true
       },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": null
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": null,
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah continued coordinated attacks on northern Israel from Lebanon."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://x.com/AbebeSamson1"
+        ]
+      },
+      "description": "Twenty-ninth wave of Operation True Promise 4. Day 9 (March 8), afternoon. Codename 'Ya Ali Ibn Abi Talib'. IRGC Aerospace Force launched new generation of missiles hitting targets in Tel Aviv, the Naqab (Negev), and US airbase in region. Details still emerging.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC announced 29th wave launched by Aerospace Force with 'new generation of missiles' hitting targets in Tel Aviv, the Naqab, and US airbase. Codename Ya Ali Ibn Abi Talib."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 30,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "timing": {
+        "announced_utc": "2026-03-09T06:00:00Z",
+        "announced_utc_note": "Approximate. Exact UTC unclear; morning wave on March 9. Estimated ~06:00 UTC.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T05:30:00Z",
+        "launch_time_israel": "2026-03-09T08:00:00+0200",
+        "launch_time_iran": "2026-03-09T09:30:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": 14.0,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Khorramshahr, Fattah (hypersonic), Kheibar Shekan ballistic missiles + strategic drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": true,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "US and Israeli positions; sirens in Netanya, Western Galilee, northern Israel",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": false,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": true,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.33,
+          "lon": 34.86,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC"
+        }
+      ],
+      "launch_site": {
+        "description": "Iran — IRGC",
+        "lat": 33.5,
+        "lon": 48.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": null
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Iranian TV claimed \"complete success\"; specific damage details sparse.",
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      },
+      "description": "Thirtieth wave of Operation True Promise 4. Day 10 (March 9), morning. First IRGC action since Mojtaba Khamenei became Supreme Leader on March 8. Featured Khorramshahr, Fattah hypersonic, and Kheibar Shekan ballistic missiles plus strategic drones. Sirens sounded in Netanya and Western Galilee. Iranian TV claimed complete success.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "Iranian TV claimed \"complete success\" for the 30th wave. First military action under new Supreme Leader Mojtaba Khamenei. IRGC launched Khorramshahr, Fattah hypersonic, and Kheibar Shekan missiles alongside strategic drones targeting US and Israeli positions."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 31,
+      "wave_codename_farsi": "لبیک یا خامنه‌ای",
+      "wave_codename_english": "Labbaik Ya Khamenei",
+      "timing": {
+        "announced_utc": "2026-03-09T13:43:00Z",
+        "announced_utc_note": "Approximately 13:43 UTC on March 9. Dedicated to new Supreme Leader Mojtaba Khamenei.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T13:00:00Z",
+        "launch_time_israel": "2026-03-09T15:43:00+0200",
+        "launch_time_iran": "2026-03-09T17:13:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": 7.72,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Super-heavy missiles: Qadr, Khorramshahr, Kheibar Shekan ballistic missiles; IRGC Navy loitering drones and cruise missiles",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": true,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": true,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": null,
+          "submunition_count": 24,
+          "submunition_explosive_kg": 3.5,
+          "dispersal_radius_km": null,
+          "dispersal_altitude_ft": null
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Five strategic US bases (incl. US Navy 5th Fleet HQ); Israeli military sites in Tel Aviv and Haifa; US Al-Adiri helicopter base; Bat Yam (cluster munition strike)",
+        "landings_countries": [
+          "IL",
+          "BH"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": true,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [
+          {
+            "base_name": "US Navy 5th Fleet HQ",
+            "country": "BH",
+            "targeted": true,
+            "damage_reported": null
+          },
+          {
+            "base_name": "Al-Adiri helicopter base",
+            "country": null,
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.02,
+          "lon": 34.75,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Navy"
+        }
+      ],
+      "launch_site": {
+        "description": "Iran — IRGC Aerospace Force and IRGC Navy",
+        "lat": 33.5,
+        "lon": 48.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "NATO downed a second Iranian missile over Turkey on March 9. UAE detected 15 ballistic missiles and 18 UAVs from Iran (12 destroyed, 3 fell in sea)."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Cluster munition strike in Bat Yam — 24 submunitions (2-5 kg each), dispersed across 6 locations in greater Tel Aviv area.",
+        "fatalities": 2,
+        "injuries": null,
+        "civilian_casualties": 2,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": "Hezbollah operating in parallel but outside IRGC wave numbering. Houthis remain uninvolved."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      },
+      "description": "Thirty-first wave of Operation True Promise 4. Day 10 (March 9), afternoon. Codename \"Labbaik Ya Khamenei\" — dedicated to new Supreme Leader Mojtaba Khamenei. Joint IRGC Aerospace Force and IRGC Navy operation. Featured super-heavy missiles (Qadr, Khorramshahr, Kheibar Shekan) plus naval loitering drones and cruise missiles. Targeted five strategic US bases including 5th Fleet HQ, Israeli military sites in Tel Aviv and Haifa, and US Al-Adiri helicopter base. Cluster munition strike in Bat Yam dispersed 24 submunitions across 6 locations. 2 killed in central Israel. Bahrain: 32 injured including children in strike on Sitra island.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC announced 31st wave codename \"Labbaik Ya Khamenei\" dedicated to new Supreme Leader. Joint Aerospace Force and Navy operation using \"super-heavy missiles\" targeting five US strategic bases and Israeli military sites. Claimed direct hits on targets in Tel Aviv, Haifa, and US bases."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 32,
+      "wave_codename_farsi": "لبیک یا خامنه‌ای",
+      "wave_codename_english": "At Your Service, Khamenei",
+      "timing": {
+        "announced_utc": "2026-03-09T16:30:00Z",
+        "announced_utc_note": "Approximately 16:30 UTC on March 9. Second wave of the afternoon, codename shared with wave 33.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T16:00:00Z",
+        "launch_time_israel": "2026-03-09T18:30:00+0200",
+        "launch_time_iran": "2026-03-09T20:00:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": 2.78,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Qadr and Khorramshahr ballistic missiles targeting northern and central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": true,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": {
+          "confirmed": null,
+          "carrier_missile": null,
+          "submunition_count": null,
+          "submunition_explosive_kg": null,
+          "dispersal_radius_km": null,
+          "dispersal_altitude_ft": null
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "targets": "Sites in northern and central Israel",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": true,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": true,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.4,
+          "lon": 34.85,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
       "launch_site": {
         "description": "Iran — IRGC Aerospace Force",
         "lat": 33.5,
@@ -4880,15 +5505,13 @@
       },
       "proxy": {
         "involvement": null,
-        "description": null
+        "description": "Hezbollah operating in parallel but outside IRGC wave numbering. Houthis remain uninvolved."
       },
       "sources": {
         "idf_statement": null,
-        "urls": [
-          "https://x.com/AbebeSamson1"
-        ]
+        "urls": []
       },
-      "description": "Twenty-ninth wave of Operation True Promise 4. Day 9 (March 8), afternoon. Codename 'Ya Ali Ibn Abi Talib'. IRGC Aerospace Force launched new generation of missiles hitting targets in Tel Aviv, the Naqab (Negev), and US airbase in region. Details still emerging.",
+      "description": "Thirty-second wave of Operation True Promise 4. Day 10 (March 9), evening. Codename \"At Your Service, Khamenei\" (also rendered as \"The noose will tighten\"). IRGC Aerospace Force launched Qadr and Khorramshahr ballistic missiles at sites in northern and central Israel. IRGC stated \"heavy fire will continue to rain down\" and warned of relentless pressure.",
       "reactions": {
         "idf": {
           "statement": null,
@@ -4903,7 +5526,173 @@
           "url": null
         }
       },
-      "iranian_media_claims": "IRGC announced 29th wave launched by Aerospace Force with 'new generation of missiles' hitting targets in Tel Aviv, the Naqab, and US airbase. Codename Ya Ali Ibn Abi Talib."
+      "iranian_media_claims": "IRGC announced 32nd wave using Qadr and Khorramshahr missiles against northern and central Israel. Warned that 'the noose will tighten' and 'heavy fire will continue to rain down.'"
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 33,
+      "wave_codename_farsi": "لبیک یا خامنه‌ای",
+      "wave_codename_english": "At Your Service, Khamenei",
+      "timing": {
+        "announced_utc": "2026-03-09T19:00:00Z",
+        "announced_utc_note": "Approximately 19:00 UTC on March 9. Third wave of the evening, heaviest of the day.",
+        "announcement_source": "IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T18:30:00Z",
+        "launch_time_israel": "2026-03-09T21:00:00+0200",
+        "launch_time_iran": "2026-03-09T22:30:00+0330",
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": 2.5,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Large numbers of solid-fuel Khaibar Shekan missiles with one-ton warheads; IRGC Aerospace Force drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": false,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": {
+          "confirmed": null,
+          "carrier_missile": null,
+          "submunition_count": null,
+          "submunition_explosive_kg": null,
+          "dispersal_radius_km": null,
+          "dispersal_altitude_ft": null
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Tel Aviv (10+ missile impacts reported); US Navy 5th Fleet base; Sdot Micha satellite communications center (reportedly destroyed by drones)",
+        "landings_countries": [
+          "IL",
+          "BH"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [
+          {
+            "base_name": "US Navy 5th Fleet HQ",
+            "country": "BH",
+            "targeted": true,
+            "damage_reported": null
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.07,
+          "lon": 34.77,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
+      "launch_site": {
+        "description": "Iran — IRGC Aerospace Force",
+        "lat": 33.5,
+        "lon": 48.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "IRGC Ruhollah Corps intercepted and destroyed a cruise missile over central Iran. An Orbiter-4 reconnaissance drone belonging to 'Zionist-American enemy' was destroyed over Isfahan."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "10+ Khaibar Shekan missiles reportedly struck Tel Aviv, penetrating Iron Dome. Sdot Micha satellite communications center south of Tel Aviv reportedly destroyed by IRGC drones.",
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": "Hezbollah operating in parallel but outside IRGC wave numbering. Houthis remain uninvolved."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      },
+      "description": "Thirty-third wave of Operation True Promise 4. Day 10 (March 9), late evening. Codename \"At Your Service, Khamenei.\" Heaviest wave of the day. Large numbers of solid-fuel Khaibar Shekan missiles with one-ton warheads launched at Tel Aviv — 10+ impacts reported. IRGC Aerospace Force drones reportedly destroyed Sdot Micha satellite communications center south of Tel Aviv. US Navy 5th Fleet base also targeted with precision-guided missiles. IRGC Ruhollah Corps intercepted a cruise missile over central Iran and destroyed an Orbiter-4 drone over Isfahan.",
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      },
+      "iranian_media_claims": "IRGC announced 33rd wave codename \"At Your Service, Khamenei.\" Claimed 10+ Khaibar Shekan missiles with one-ton warheads struck Tel Aviv, penetrating Iron Dome. Claimed drones destroyed Sdot Micha satellite communications center. Also claimed precision strikes on US Navy 5th Fleet base. IRGC Ruhollah Corps claimed interception of enemy cruise missile over central Iran and destruction of Orbiter-4 drone over Isfahan."
     }
   ]
 }
