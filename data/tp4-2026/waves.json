@@ -4,7 +4,7 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "wave_count": 33,
+    "wave_count": 34,
     "date_range": {
       "start": "2026-02-28",
       "end": "2026-03-09"
@@ -5252,7 +5252,7 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Five strategic US bases (incl. US Navy 5th Fleet HQ); Israeli military sites in Tel Aviv and Haifa; US Al-Adiri helicopter base; Bat Yam (cluster munition strike)",
+        "targets": "Five strategic US bases (incl. US Navy 5th Fleet HQ); Israeli military sites; Cluster warhead struck Yehud, Or Yehuda, Holon, Bat Yam, Rishon LeZion",
         "landings_countries": [
           "IL",
           "BH"
@@ -5335,11 +5335,11 @@
         "cumulative_total": null
       },
       "impact": {
-        "damage": "Cluster munition strike in Bat Yam — 24 submunitions (2-5 kg each), dispersed across 6 locations in greater Tel Aviv area.",
-        "fatalities": 2,
-        "injuries": null,
-        "civilian_casualties": 2,
-        "military_casualties": null
+        "damage": "Cluster munition warhead struck at least 6 sites across central Israel — Yehud, Or Yehuda, Holon, Bat Yam, Rishon LeZion. Construction site hit in Yehud (1 killed, 1 critically wounded). Man seriously wounded in Or Yehuda. Woman moderately injured in Rishon LeZion from submunition partial detonation.",
+        "fatalities": 1,
+        "injuries": 3,
+        "civilian_casualties": 4,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -5693,6 +5693,142 @@
         }
       },
       "iranian_media_claims": "IRGC announced 33rd wave codename \"At Your Service, Khamenei.\" Claimed 10+ Khaibar Shekan missiles with one-ton warheads struck Tel Aviv, penetrating Iron Dome. Claimed drones destroyed Sdot Micha satellite communications center. Also claimed precision strikes on US Navy 5th Fleet base. IRGC Ruhollah Corps claimed interception of enemy cruise missile over central Iran and destruction of Orbiter-4 drone over Isfahan."
+    },
+    {
+      "operation": "tp4",
+      "wave_number": 34,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "description": "Thirty-fourth wave of Operation True Promise 4. Day 10 (March 9), evening. Hezbollah long-range missile barrage targeting central Israel. 16 lightly wounded in Ramle including from kindergarten hit. Hezbollah claimed targets were IDF Home Front Command HQ (Rehavam Base) in Ramle and satellite communications station in Haela Valley near Beit Shemesh.",
+      "timing": {
+        "announced_utc": "2026-03-09T17:00:00Z",
+        "announced_utc_note": "Approximate evening March 9. Hezbollah long-range missile barrage.",
+        "announcement_source": "Hezbollah",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T16:30:00Z",
+        "launch_time_israel": "2026-03-09T19:00:00+0200",
+        "launch_time_iran": null,
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Long-range missiles (type unspecified)",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
+          "fattah_used": false,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
+          "khorramshahr_4_used": false
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": false
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "targets": "Ramle (kindergarten and infrastructure hit); Mateh Yehuda Regional Council (open area); claimed target: IDF Home Front Command HQ (Rehavam Base) in Ramle; claimed target: satellite communications station in Haela Valley near Beit Shemesh",
+        "landings_countries": ["IL"],
+        "israeli_locations": {
+          "targeted_tel_aviv": false,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 31.93,
+          "lon": 34.87,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Southern Lebanon",
+        "lat": 33.4,
+        "lon": 35.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": ["Iron Dome"],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": false,
+        "endoatmospheric_interception": true,
+        "interception_report": "Air defenses intercepted some missiles; others hit open areas and Ramle. No warning sirens sounded in Ramle. IDF destroyed three Hezbollah launchers within one hour via airstrikes."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Kindergarten/daycare facility in Ramle struck and damaged. Infrastructure damage in Ramle. No warning sirens sounded.",
+        "fatalities": 0,
+        "injuries": 16,
+        "civilian_casualties": 16,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah long-range missile barrage coordinated with ongoing Iranian True Promise 4 operations. Assessed as intended to distract from Iran conflict and stretch Israeli air defenses."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.timesofisrael.com/hezbollah-missile-fire-wounds-16-damages-daycare-infrastructure-in-central-israel/"
+        ]
+      }
     }
   ]
 }

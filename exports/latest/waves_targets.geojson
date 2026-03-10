@@ -2257,8 +2257,8 @@
           "IL",
           "BH"
         ],
-        "casualties_killed": 2,
-        "casualties_wounded": null,
+        "casualties_killed": 1,
+        "casualties_wounded": 3,
         "launch_site_description": "Iran — IRGC Aerospace Force and IRGC Navy",
         "layer": "target",
         "generic_location": true
@@ -2339,6 +2339,45 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
+        "layer": "target",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.87,
+          31.93
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "wave_number": 34,
+        "wave_id": "tp4_w34",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-09T17:00:00Z",
+        "probable_launch_time": "2026-03-09T16:30:00Z",
+        "conflict_day": 10,
+        "payload": "Long-range missiles (type unspecified)",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 16,
+        "launch_site_description": "Southern Lebanon",
         "layer": "target",
         "generic_location": true
       }
