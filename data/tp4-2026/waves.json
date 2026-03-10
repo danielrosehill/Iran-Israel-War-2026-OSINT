@@ -59,7 +59,6 @@
         "solar_phase_target": 0,
         "conflict_day": 1,
         "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": null
       },
@@ -250,7 +249,6 @@
         "solar_phase_target": 0,
         "conflict_day": 1,
         "hours_since_last_incident": 2.5,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 150.0
       },
@@ -416,8 +414,7 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 1,
-        "hours_since_last_incident": 3.0,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 2.75,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 165.0
       },
@@ -616,8 +613,7 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 2,
-        "hours_since_last_incident": 1.2,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 1.25,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 75.0
       },
@@ -789,8 +785,7 @@
         "solar_phase_launch_site": 4,
         "solar_phase_target": 2,
         "conflict_day": 2,
-        "hours_since_last_incident": 2.8,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 3.0,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 180.0
       },
@@ -966,7 +961,6 @@
         "solar_phase_target": 5,
         "conflict_day": 2,
         "hours_since_last_incident": 4.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 240.0
       },
@@ -1137,7 +1131,6 @@
         "solar_phase_target": 5,
         "conflict_day": 2,
         "hours_since_last_incident": 6.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 360.0
       },
@@ -1355,7 +1348,6 @@
         "solar_phase_target": 0,
         "conflict_day": 2,
         "hours_since_last_incident": 4.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 240.0
       },
@@ -1527,7 +1519,6 @@
         "solar_phase_target": 0,
         "conflict_day": 2,
         "hours_since_last_incident": 4.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 240.0
       },
@@ -1700,7 +1691,6 @@
         "solar_phase_target": 2,
         "conflict_day": 3,
         "hours_since_last_incident": 6.0,
-        "time_between_incidents_minutes": 360.0,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 360.0
       },
@@ -1903,7 +1893,6 @@
         "solar_phase_target": 5,
         "conflict_day": 3,
         "hours_since_last_incident": 6.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 360.0
       },
@@ -2126,7 +2115,6 @@
         "solar_phase_target": 5,
         "conflict_day": 3,
         "hours_since_last_incident": 4.5,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 270.0
       },
@@ -2338,7 +2326,6 @@
         "solar_phase_target": 0,
         "conflict_day": 3,
         "hours_since_last_incident": 4.5,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 270.0
       },
@@ -2550,7 +2537,6 @@
         "solar_phase_target": 0,
         "conflict_day": 4,
         "hours_since_last_incident": 7.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 420.0
       },
@@ -2720,7 +2706,6 @@
         "solar_phase_target": 4,
         "conflict_day": 4,
         "hours_since_last_incident": 14.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 840.0
       },
@@ -2915,7 +2900,6 @@
         "solar_phase_target": 5,
         "conflict_day": 5,
         "hours_since_last_incident": 14.0,
-        "time_between_incidents_minutes": 840.0,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 840.0
       },
@@ -3089,7 +3073,6 @@
         "solar_phase_target": 5,
         "conflict_day": 5,
         "hours_since_last_incident": 3.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 180.0
       },
@@ -3281,10 +3264,9 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 5,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 6.0,
         "incident_duration_minutes": null,
-        "elapsed_minutes_since_last": null,
+        "elapsed_minutes_since_last": 360.0,
         "announced_utc_note": "March 4, 2026. Approximate time based on Gemini grounded search (IRGC announcement). Sources: Saba News (Yemen), Ansarollah, ILKHA."
       },
       "weapons": {
@@ -3467,10 +3449,9 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 6,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 15.0,
         "incident_duration_minutes": null,
-        "elapsed_minutes_since_last": 1260.0
+        "elapsed_minutes_since_last": 900.0
       },
       "weapons": {
         "payload": "Khorramshahr-4 ballistic missiles (1-ton warheads), explosive drones",
@@ -3683,10 +3664,9 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 7,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 4.0,
         "incident_duration_minutes": null,
-        "elapsed_minutes_since_last": null
+        "elapsed_minutes_since_last": 240.0
       },
       "weapons": {
         "payload": "Kheibar Shekan ballistic missiles with cluster munition warheads (~20 submunitions per warhead, ~2.5 kg explosive each, ~8 km dispersal radius), drones",
@@ -3861,8 +3841,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 7,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 22.0,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 1320.0
       },
@@ -4038,10 +4017,9 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 7,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 4.0,
         "incident_duration_minutes": null,
-        "elapsed_minutes_since_last": 480.0
+        "elapsed_minutes_since_last": 240.0
       },
       "weapons": {
         "payload": "Khorramshahr-4 ballistic missiles (~1,500 kg warhead, Mach 16 exo-atmospheric / Mach 8 atmospheric), Kheibar Shekan ballistic missiles, Fattah hypersonic missiles, drones",
@@ -4246,8 +4224,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 7,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 8.52,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 511.0
       },
@@ -4477,8 +4454,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 8,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 4.98,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 299.0
       },
@@ -4655,8 +4631,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 8,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 9.08,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 545.0
       },
@@ -4853,8 +4828,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 8,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 4.67,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 280.0
       },
@@ -5066,8 +5040,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 8,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 4.5,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 270.0
       },
@@ -5264,8 +5237,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 9,
-        "hours_since_last_incident": 15.75,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 15.62,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 937.0
       },
@@ -5464,8 +5436,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 9,
-        "hours_since_last_incident": 5.0,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 4.63,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 278.0
       },
@@ -5637,7 +5608,6 @@
         "solar_phase_target": null,
         "conflict_day": 10,
         "hours_since_last_incident": 14.0,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 840.0
       },
@@ -5798,7 +5768,6 @@
         "solar_phase_target": null,
         "conflict_day": 10,
         "hours_since_last_incident": 7.72,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 463.0
       },
@@ -6000,7 +5969,6 @@
         "solar_phase_target": null,
         "conflict_day": 10,
         "hours_since_last_incident": 2.78,
-        "time_between_incidents_minutes": null,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 167.0
       },
@@ -6177,8 +6145,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 10,
-        "hours_since_last_incident": 2.5,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 2.0,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 120.0
       },
@@ -6360,8 +6327,7 @@
         "solar_phase_launch_site": null,
         "solar_phase_target": null,
         "conflict_day": 10,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 0.5,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 30.0
       },
@@ -6504,8 +6470,7 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 11,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 0.75,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 45.0
       },
@@ -6661,8 +6626,7 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 11,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 5.25,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 315.0
       },
@@ -6829,8 +6793,7 @@
         "solar_phase_launch_site": 1,
         "solar_phase_target": 1,
         "conflict_day": 11,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 8.5,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 510.0
       },
@@ -6988,8 +6951,7 @@
         "solar_phase_launch_site": 1,
         "solar_phase_target": 1,
         "conflict_day": 11,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 0.5,
         "incident_duration_minutes": null,
         "elapsed_minutes_since_last": 30.0
       },
@@ -7139,10 +7101,9 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 11,
-        "hours_since_last_incident": null,
-        "time_between_incidents_minutes": null,
+        "hours_since_last_incident": 7.85,
         "incident_duration_minutes": null,
-        "elapsed_minutes_since_last": null
+        "elapsed_minutes_since_last": 471.0
       },
       "weapons": {
         "payload": "Ballistic missile(s) targeting central Israel",
