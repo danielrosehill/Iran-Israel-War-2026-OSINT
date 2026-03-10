@@ -2,6 +2,7 @@
   "waves": [
     {
       "operation": "tp1",
+      "sequence": 1,
       "wave_number": 1,
       "wave_codename_farsi": null,
       "wave_codename_english": "Drone/Cruise Missile Wave",
@@ -219,6 +220,7 @@
     },
     {
       "operation": "tp1",
+      "sequence": 2,
       "wave_number": 2,
       "wave_codename_farsi": null,
       "wave_codename_english": "Ballistic Missile Wave",
@@ -434,6 +436,7 @@
     },
     {
       "operation": "tp2",
+      "sequence": 1,
       "wave_number": 1,
       "wave_codename_farsi": null,
       "wave_codename_english": "First Ballistic Salvo",
@@ -726,6 +729,7 @@
     },
     {
       "operation": "tp2",
+      "sequence": 2,
       "wave_number": 2,
       "wave_codename_farsi": null,
       "wave_codename_english": "Second Ballistic Salvo (Fattah-1)",
@@ -952,6 +956,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 1,
       "wave_number": 1,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1098,6 +1103,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 2,
       "wave_number": 2,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1244,6 +1250,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 3,
       "wave_number": 3,
       "wave_codename_farsi": "يا علي بن أبي طالب",
       "wave_codename_english": "Ya Ali ibn Abi Talib",
@@ -1390,6 +1397,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 4,
       "wave_number": 4,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1536,6 +1544,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 5,
       "wave_number": 5,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1682,6 +1691,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 6,
       "wave_number": 6,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1828,6 +1838,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 7,
       "wave_number": 7,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1974,6 +1985,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 8,
       "wave_number": 8,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2120,6 +2132,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 9,
       "wave_number": 9,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2266,6 +2279,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 10,
       "wave_number": 10,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2414,6 +2428,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 11,
       "wave_number": 11,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2559,6 +2574,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 12,
       "wave_number": 12,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2706,6 +2722,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 13,
       "wave_number": 13,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2851,6 +2868,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 14,
       "wave_number": 14,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -2996,6 +3014,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 15,
       "wave_number": 15,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -3142,6 +3161,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 16,
       "wave_number": 16,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -3286,6 +3306,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 17,
       "wave_number": 17,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -3430,6 +3451,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 18,
       "wave_number": 18,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -3578,6 +3600,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 19,
       "wave_number": 19,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -3724,6 +3747,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 20,
       "wave_number": 20,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -3872,6 +3896,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 21,
       "wave_number": 21,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4017,6 +4042,7 @@
     },
     {
       "operation": "tp3",
+      "sequence": 22,
       "wave_number": 22,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4165,6 +4191,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 1,
       "wave_number": 1,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4335,6 +4362,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 2,
       "wave_number": 2,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4492,6 +4520,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 3,
       "wave_number": 3,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4660,6 +4689,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 4,
       "wave_number": 4,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4818,6 +4848,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 5,
       "wave_number": 5,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -4983,6 +5014,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 6,
       "wave_number": 6,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -5139,6 +5171,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 7,
       "wave_number": 7,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -5334,6 +5367,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 8,
       "wave_number": 8,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -5502,6 +5536,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 9,
       "wave_number": 9,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -5665,6 +5700,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 10,
       "wave_number": 10,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -5843,6 +5879,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 11,
       "wave_number": 11,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -6035,6 +6072,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 12,
       "wave_number": 12,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -6230,6 +6268,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 13,
       "wave_number": 13,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -6425,6 +6464,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 14,
       "wave_number": 14,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -6584,6 +6624,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 15,
       "wave_number": 15,
       "wave_codename_farsi": "یا فاطمه الزهرا",
       "wave_codename_english": "Ya Fatimah Al-Zahra",
@@ -6757,6 +6798,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 16,
       "wave_number": 16,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -6916,6 +6958,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 17,
       "wave_number": 17,
       "wave_codename_farsi": "یا رسول الله",
       "wave_codename_english": "Rasul Allah (Messenger of Allah)",
@@ -7099,6 +7142,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 18,
       "wave_number": 18,
       "wave_codename_farsi": "یا امام حسن مجتبی",
       "wave_codename_english": "Ya Imam Hassan Mojtaba",
@@ -7252,6 +7296,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 19,
       "wave_number": 19,
       "wave_codename_farsi": "یا حسن بن علی علیه السلام",
       "wave_codename_english": "Ya Hassan ibn Ali (peace be upon him)",
@@ -7434,6 +7479,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 20,
       "wave_number": 20,
       "wave_codename_farsi": "يا معزّ المؤمنين",
       "wave_codename_english": "Ya Mo'izz al-Mu'minin",
@@ -7602,6 +7648,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 21,
       "wave_number": 21,
       "wave_codename_farsi": "يا معزّ المؤمنين",
       "wave_codename_english": "Ya Mu'izz al-Mu'minin",
@@ -7769,6 +7816,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 22,
       "wave_number": 22,
       "wave_codename_farsi": "يا حسين بن علي عليه السلام",
       "wave_codename_english": "Ya Hossein ibn Ali (peace be upon him)",
@@ -7942,6 +7990,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 23,
       "wave_number": 23,
       "wave_codename_farsi": "يا حسن بن علي",
       "wave_codename_english": "Ya Hasan ibn Ali",
@@ -8131,6 +8180,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 24,
       "wave_number": 24,
       "wave_codename_farsi": "يا مهدي",
       "wave_codename_english": "Ya Mahdi",
@@ -8299,6 +8349,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 25,
       "wave_number": 25,
       "wave_codename_farsi": "المقدس / علی ابن ابی‌طالب",
       "wave_codename_english": "Al-Muqaddis / Ali ibn Abi Talib",
@@ -8475,6 +8526,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 26,
       "wave_number": 26,
       "wave_codename_farsi": "یا حیدر کرار",
       "wave_codename_english": "Ya Heydar Karrar",
@@ -8661,6 +8713,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 27,
       "wave_number": 27,
       "wave_codename_farsi": "يا فاطمة الزهراء",
       "wave_codename_english": "Ya Fatimah al-Zahra",
@@ -8835,6 +8888,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 28,
       "wave_number": 28,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -9009,6 +9063,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 29,
       "wave_number": 29,
       "wave_codename_farsi": "يا علي ابن أبي طالب",
       "wave_codename_english": "Ya Ali Ibn Abi Talib",
@@ -9166,6 +9221,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 30,
       "wave_number": 30,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -9317,6 +9373,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 31,
       "wave_number": 31,
       "wave_codename_farsi": "لبیک یا خامنه‌ای",
       "wave_codename_english": "Labbaik Ya Khamenei",
@@ -9373,7 +9430,7 @@
       "targets": {
         "israel_targeted": true,
         "us_bases_targeted": true,
-        "targets": "Five strategic US bases (incl. US Navy 5th Fleet HQ); Israeli military sites in Tel Aviv and Haifa; US Al-Adiri helicopter base; Bat Yam (cluster munition strike)",
+        "targets": "Five strategic US bases (incl. US Navy 5th Fleet HQ); Israeli military sites; Cluster warhead struck Yehud, Or Yehuda, Holon, Bat Yam, Rishon LeZion",
         "landings_countries": [
           "IL",
           "BH"
@@ -9456,11 +9513,11 @@
         "cumulative_total": null
       },
       "impact": {
-        "damage": "Cluster munition strike in Bat Yam — 24 submunitions (2-5 kg each), dispersed across 6 locations in greater Tel Aviv area.",
-        "fatalities": 2,
-        "injuries": null,
-        "civilian_casualties": 2,
-        "military_casualties": null
+        "damage": "Cluster munition warhead struck at least 6 sites across central Israel — Yehud, Or Yehuda, Holon, Bat Yam, Rishon LeZion. Construction site hit in Yehud (1 killed, 1 critically wounded). Man seriously wounded in Or Yehuda. Woman moderately injured in Rishon LeZion from submunition partial detonation.",
+        "fatalities": 1,
+        "injuries": 3,
+        "civilian_casualties": 4,
+        "military_casualties": 0
       },
       "escalation": {
         "new_country_targeted": false,
@@ -9493,6 +9550,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 32,
       "wave_number": 32,
       "wave_codename_farsi": "لبیک یا خامنه‌ای",
       "wave_codename_english": "At Your Service, Khamenei",
@@ -9651,6 +9709,7 @@
     },
     {
       "operation": "tp4",
+      "sequence": 33,
       "wave_number": 33,
       "wave_codename_farsi": "لبیک یا خامنه‌ای",
       "wave_codename_english": "At Your Service, Khamenei",
@@ -9814,7 +9873,445 @@
         }
       },
       "iranian_media_claims": "IRGC announced 33rd wave codename \"At Your Service, Khamenei.\" Claimed 10+ Khaibar Shekan missiles with one-ton warheads struck Tel Aviv, penetrating Iron Dome. Claimed drones destroyed Sdot Micha satellite communications center. Also claimed precision strikes on US Navy 5th Fleet base. IRGC Ruhollah Corps claimed interception of enemy cruise missile over central Iran and destruction of Orbiter-4 drone over Isfahan."
+    },
+    {
+      "operation": "tp4",
+      "sequence": 34,
+      "wave_number": 34,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "description": "Thirty-fourth wave of Operation True Promise 4. Day 10 (March 9), evening. Hezbollah long-range missile barrage targeting central Israel. 16 lightly wounded in Ramle including from kindergarten hit. Hezbollah claimed targets were IDF Home Front Command HQ (Rehavam Base) in Ramle and satellite communications station in Haela Valley near Beit Shemesh.",
+      "timing": {
+        "announced_utc": "2026-03-09T17:00:00Z",
+        "announced_utc_note": "Approximate evening March 9. Hezbollah long-range missile barrage.",
+        "announcement_source": "Hezbollah",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T16:30:00Z",
+        "launch_time_israel": "2026-03-09T19:00:00+0200",
+        "launch_time_iran": null,
+        "solar_phase_launch_site": null,
+        "solar_phase_target": null,
+        "conflict_day": 10,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Long-range missiles (type unspecified)",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": null,
+        "types": {
+          "emad_used": false,
+          "ghadr_used": false,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
+          "fattah_used": false,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
+          "khorramshahr_4_used": false
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": false
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "targets": "Ramle (kindergarten and infrastructure hit); Mateh Yehuda Regional Council (open area); claimed target: IDF Home Front Command HQ (Rehavam Base) in Ramle; claimed target: satellite communications station in Haela Valley near Beit Shemesh",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": false,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 31.93,
+          "lon": 34.87,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": true,
+          "targeted_industrial": null,
+          "targeted_telecom_data": true,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Southern Lebanon",
+        "lat": 33.4,
+        "lon": 35.5,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "Iron Dome"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": false,
+        "endoatmospheric_interception": true,
+        "interception_report": "Air defenses intercepted some missiles; others hit open areas and Ramle. No warning sirens sounded in Ramle. IDF destroyed three Hezbollah launchers within one hour via airstrikes."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Kindergarten/daycare facility in Ramle struck and damaged. Infrastructure damage in Ramle. No warning sirens sounded.",
+        "fatalities": 0,
+        "injuries": 16,
+        "civilian_casualties": 16,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah long-range missile barrage coordinated with ongoing Iranian True Promise 4 operations. Assessed as intended to distract from Iran conflict and stretch Israeli air defenses."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.timesofisrael.com/hezbollah-missile-fire-wounds-16-damages-daycare-infrastructure-in-central-israel/"
+        ]
+      }
+    },
+    {
+      "operation": "tp4",
+      "sequence": 35,
+      "wave_number": 35,
+      "wave_codename_farsi": null,
+      "wave_codename_english": "First Wave Under the New Ayatollah",
+      "description": "Thirty-fifth wave of Operation True Promise 4. Day 11 (March 10), overnight. IRGC launched ballistic missile with cluster warhead at central Israel. Submunitions scattered across at least six sites in Yehud, Or Yehuda, Holon, Bat Yam, and Rishon Letzion. One man killed at construction site in Yehud, two men seriously wounded at same site. Woman moderately wounded by debris in Rishon Letzion. Iranian state broadcaster IRIB hailed this as the 'first wave of missiles under Mojtaba Khamenei towards occupied territories.'",
+      "timing": {
+        "announced_utc": "2026-03-10T01:00:00Z",
+        "announced_utc_note": "Overnight March 9-10. Part of 8+ salvos fired since midnight. Exact time of cluster warhead impact unclear.",
+        "announcement_source": "IRIB / IRGC",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-10T00:30:00Z",
+        "launch_time_israel": "2026-03-10T03:00:00+0200",
+        "launch_time_iran": null,
+        "solar_phase_launch_site": 0,
+        "solar_phase_target": 0,
+        "conflict_day": 11,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "Ballistic missile with cluster warhead; submunitions dispersed across 6+ sites",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": null,
+          "submunition_count": null,
+          "submunition_explosive_kg": 2.5,
+          "dispersal_radius_km": 8,
+          "dispersal_altitude_ft": null
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "targets": "Yehud (construction site — primary impact, 1 killed, 2 seriously wounded); Or Yehuda; Holon; Bat Yam; Rishon Letzion (1 moderately wounded)",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.03,
+          "lon": 34.89,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "IRGC Aerospace Force",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Iran (specific site unknown)",
+        "lat": null,
+        "lon": null,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": null,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": null,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Cluster warhead submunitions not intercepted; multiple impact sites across central Israel. No specific interception details reported for this salvo."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Construction site in Yehud struck. Submunitions impacted across six sites in Yehud, Or Yehuda, Holon, Bat Yam, and Rishon Letzion.",
+        "fatalities": 1,
+        "injuries": 3,
+        "civilian_casualties": 4,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.timesofisrael.com/1-dead-2-seriously-wounded-as-iranian-cluster-bomb-warhead-hits-central-israel/",
+          "https://www.zerohedge.com/geopolitical/iran-hails-deadly-cluster-bomb-central-israel-first-wave-under-new-ayatollah"
+        ]
+      },
+      "iranian_media_claims": "IRIB hailed attack as 'first wave of missiles under Mojtaba Khamenei towards occupied territories.' Described as cluster bomb warhead striking central Israel."
+    },
+    {
+      "operation": "tp4",
+      "sequence": 36,
+      "wave_number": 36,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "description": "Thirty-sixth wave of Operation True Promise 4. Day 11 (March 10). IRGC launched 17 ballistic missiles and 6 drones at Qatar. Qatar Armed Forces successfully intercepted all incoming projectiles with no casualties or damage reported. Part of ongoing Iranian targeting of Gulf States hosting US military assets. Qatari Ministry of Defence released video of interceptions.",
+      "timing": {
+        "announced_utc": "2026-03-10T00:15:00Z",
+        "announced_utc_note": "Approximately 03:15 local Qatar time (00:15 UTC). Explosions heard from interceptor missiles engaging incoming Iranian missiles.",
+        "announcement_source": "Qatar MoD",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-09T23:45:00Z",
+        "launch_time_israel": null,
+        "launch_time_iran": null,
+        "solar_phase_launch_site": 0,
+        "solar_phase_target": 0,
+        "conflict_day": 11,
+        "hours_since_last_wave": null,
+        "time_between_waves_minutes": null,
+        "wave_duration_minutes": null
+      },
+      "weapons": {
+        "payload": "17 ballistic missiles and 6 drones",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": null,
+          "shahed_238_used": null,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": null,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "targets": "Qatar — likely targeting Al Udeid Air Base and other US military facilities",
+        "landings_countries": [
+          "QA"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": false,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [
+          {
+            "base_name": "Al Udeid Air Base",
+            "country": "QA",
+            "targeted": true,
+            "damage_reported": false
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 25.12,
+          "lon": 51.31,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        }
+      },
+      "attacking_force": [
+        {
+          "actor": "IRGC Aerospace Force",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Iran (specific site unknown)",
+        "lat": null,
+        "lon": null,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [],
+        "intercepted_by": {
+          "israel": false,
+          "us": null,
+          "uk": null,
+          "jordan": false,
+          "other": [
+            "Qatar"
+          ]
+        },
+        "estimated_intercept_count": 23,
+        "estimated_intercept_rate": 1.0,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": true,
+        "interception_report": "Qatar Armed Forces successfully intercepted all 17 ballistic missiles and 6 drones. No casualties or damage reported. Qatar MoD released video of interceptions."
+      },
+      "munitions": {
+        "estimated_munitions_count": 23,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": 23,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "No damage reported. All projectiles intercepted.",
+        "fatalities": 0,
+        "injuries": 0,
+        "civilian_casualties": 0,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.aljazeera.com/video/newsfeed/2026/3/9/qatar-releases-video-of-interception-of-iranian-missiles",
+          "https://www.aa.com.tr/en/middle-east/qatar-says-65-ballistic-missiles-12-drones-intercepted-in-iranian-retaliatory-strikes-8-injured/3844496"
+        ]
+      },
+      "iranian_media_claims": null
     }
-  ],
-  "total": 59
+  ]
 }
