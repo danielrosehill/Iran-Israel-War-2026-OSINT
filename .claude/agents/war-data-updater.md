@@ -47,6 +47,18 @@ Each wave object follows the schema at `data/schema/wave.schema.json` and includ
 
 6. **Update reference files if needed**: If a new weapon type, target site, US base, or naval vessel appears that isn't in the reference files, add it there too.
 
+7. **Rebuild ALL derived exports**: After any data changes, you MUST regenerate all exports. The site's interactive maps load GeoJSON directly — if you skip this step, the maps will show stale data.
+
+```bash
+cd ~/repos/github/Iran-Israel-War-2026-Data/
+source .venv/bin/activate
+python3 scripts/build_db.py          # SQLite database
+python3 scripts/build_geojson.py     # GeoJSON for interactive maps (CRITICAL)
+python3 scripts/build_kaggle.py      # Kaggle/CSV exports
+```
+
+All four scripts must run every time data changes. Do not skip any.
+
 ## Data Quality Rules
 
 - **Never fabricate data**. If you cannot confirm a detail, set it to `null`.
@@ -54,6 +66,13 @@ Each wave object follows the schema at `data/schema/wave.schema.json` and includ
 - **Preserve existing data**. When updating, do not overwrite confirmed data with less certain information. Only upgrade: `null` → confirmed value, or preliminary → confirmed.
 - **Note discrepancies**. If sources disagree on numbers (e.g., munition counts), use the most authoritative source and note the range in any descriptive fields.
 - **Maintain consistency** with existing naming conventions in the dataset (e.g., weapon system names should match `data/reference/iranian_weapons.json`).
+
+## Weapons Detail Requirements
+
+- **Drone variants**: Always identify specific drone variants (Shahed-136, Shahed-238, Shahed-131, Shahed-107, Shahed-129, Mohajer-6) and set the corresponding `weapons.types.*_used` boolean flags. Do not just set `drones_used: true` without identifying which variants. The map UI displays per-variant breakdowns.
+- **Missile types**: Similarly, identify specific missile systems (Emad, Ghadr, Sejjil, Kheibar Shekan, Fattah) and set the `weapons.types.*_used` flags.
+- **Interception systems**: Record which defensive systems engaged in `interception.interception_systems` (Arrow-2, Arrow-3, Iron Dome, David's Sling, THAAD, Patriot PAC-3, Aegis BMD/SM-3). This data is displayed on the map and in wave detail pages.
+- **Categories**: Set `weapons.categories` booleans (liquid/solid fueled, MARV-equipped, hypersonic, cluster warhead) when known.
 
 ## When Information Is Insufficient
 
