@@ -140,7 +140,7 @@ def process_file(path, zones, us_bases_lookup, apply=False):
     changes = 0
     op = data['metadata'].get('operation', os.path.basename(os.path.dirname(path)))
 
-    for w in data['waves']:
+    for w in data['incidents']:
         wn = w['wave_number']
         ls = w.setdefault('launch_site', {})
         tc = w.setdefault('targets', {}).setdefault('target_coordinates', {})

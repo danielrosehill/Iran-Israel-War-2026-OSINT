@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export all wave data to flattened CSV and Parquet for Kaggle."""
+"""Export all incident data to flattened CSV and Parquet for Kaggle."""
 
 import json
 import os
@@ -27,8 +27,8 @@ REACTIONS_FILES = [
 KAGGLE_DIR = os.path.join(REPO, 'kaggle')
 
 
-def flatten_wave(op, wave):
-    """Flatten a nested wave JSON object into a single dict."""
+def flatten_incident(op, wave):
+    """Flatten a nested incident JSON object into a single dict."""
     t = wave.get('timing', {})
     w = wave.get('weapons', {})
     wt = w.get('types', {})
@@ -66,9 +66,9 @@ def flatten_wave(op, wave):
         'solar_phase_launch_site': t.get('solar_phase_launch_site'),
         'solar_phase_target': t.get('solar_phase_target'),
         'conflict_day': t.get('conflict_day'),
-        'hours_since_last_wave': t.get('hours_since_last_wave'),
-        'time_between_waves_minutes': t.get('time_between_waves_minutes'),
-        'wave_duration_minutes': t.get('wave_duration_minutes'),
+        'hours_since_last_incident': t.get('hours_since_last_incident'),
+        'time_between_incidents_minutes': t.get('time_between_incidents_minutes'),
+        'incident_duration_minutes': t.get('incident_duration_minutes'),
         # weapons
         'payload': w.get('payload'),
         'drones_used': w.get('drones_used'),
@@ -222,23 +222,23 @@ def flatten_reaction(op, reaction):
 def main():
     os.makedirs(KAGGLE_DIR, exist_ok=True)
 
-    # --- Waves ---
+    # --- Incidents ---
     rows = []
     for op, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
-        for wave in data['waves']:
-            rows.append(flatten_wave(op, wave))
+        for incident in data['incidents']:
+            rows.append(flatten_incident(op, incident))
 
     df = pd.DataFrame(rows)
 
-    csv_path = os.path.join(KAGGLE_DIR, 'waves.csv')
-    parquet_path = os.path.join(KAGGLE_DIR, 'waves.parquet')
+    csv_path = os.path.join(KAGGLE_DIR, 'incidents.csv')
+    parquet_path = os.path.join(KAGGLE_DIR, 'incidents.parquet')
 
     df.to_csv(csv_path, index=False)
     df.to_parquet(parquet_path, index=False)
 
-    print(f"Exported {len(df)} waves to:")
+    print(f"Exported {len(df)} incidents to:")
     print(f"  {csv_path} ({os.path.getsize(csv_path) // 1024} KB)")
     print(f"  {parquet_path} ({os.path.getsize(parquet_path) // 1024} KB)")
     print(f"  Columns: {len(df.columns)}")

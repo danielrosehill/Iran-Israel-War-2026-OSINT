@@ -1,9 +1,9 @@
 """
-Shared wave enrichment logic used by build_arcgis.py, build_db.py, and build_kaggle.py.
+Shared incident enrichment logic used by build_arcgis.py, build_db.py, and build_kaggle.py.
 
 Provides:
-  - classify_target_types(wave) → dict of 10 target-type booleans
-  - get_cluster_munitions(wave) → bool
+  - classify_target_types(incident) → dict of 10 target-type booleans
+  - get_cluster_munitions(incident) → bool
   - countries_iso_to_names(iso_list) → str of readable country names
   - get_wave_uid(operation, wave_number) → str unique ID
   - WAVE_NARRATIVES → dict of wave_uid → narrative text
@@ -105,7 +105,7 @@ _DIPLOMATIC = [
 
 
 def classify_target_types(wave):
-    """Classify target types from wave target description and structured fields."""
+    """Classify target types from incident target description and structured fields."""
     targets = wave.get('targets', {})
     desc = (targets.get('targets') or '').lower()
     us_bases = targets.get('us_bases') or []
@@ -148,7 +148,7 @@ def classify_target_types(wave):
 
 
 def get_cluster_munitions(wave):
-    """Return True if cluster munitions were confirmed for this wave."""
+    """Return True if cluster munitions were confirmed for this incident."""
     cw = wave.get('weapons', {}).get('cluster_warhead')
     if cw is True:
         return True

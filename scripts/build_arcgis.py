@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-Build ArcGIS StoryMap-optimized exports from wave data.
+Build ArcGIS StoryMap-optimized exports from incident data.
 
 Produces:
   - arcgis_launch_sites.geojson — launch origins with display-friendly fields
   - arcgis_targets.geojson — target points with display-friendly fields
   - arcgis_trajectories.geojson — LineString arcs from launch → target
-  - arcgis_waves.csv — flat CSV with lat/lon for ArcGIS Online CSV import
+  - arcgis_incidents.csv — flat CSV with lat/lon for ArcGIS Online CSV import
 
 All files include: unique wave_uid for cross-layer joins, operation_label,
 wave_label, narrative description, target type booleans, timestamp_epoch,
@@ -55,15 +55,15 @@ OPERATION_SHORT = {
 
 
 
-def load_all_waves():
-    waves = []
+def load_all_incidents():
+    incidents = []
     for op, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
-        for w in data['waves']:
+        for w in data['incidents']:
             w['_operation'] = op
-            waves.append(w)
-    return waves
+            incidents.append(w)
+    return incidents
 
 
 def iso_to_epoch(iso_str):
@@ -137,7 +137,7 @@ def build_popup_summary(w):
 
 
 def get_narrative(wave_uid):
-    """Get the narrative description for a wave, or a placeholder."""
+    """Get the narrative description for an incident, or a placeholder."""
     return WAVE_NARRATIVES.get(wave_uid, "Narrative pending — details being confirmed through OSINT sources.")
 
 
@@ -239,14 +239,14 @@ def main():
     args = parser.parse_args()
     os.makedirs(args.output_dir, exist_ok=True)
 
-    waves = load_all_waves()
+    incidents = load_all_incidents()
 
     launch_features = []
     target_features = []
     trajectory_features = []
     csv_rows = []
 
-    for w in waves:
+    for w in incidents:
         ls = w.get('launch_site', {})
         tc = w.get('targets', {}).get('target_coordinates', {})
 
@@ -297,7 +297,7 @@ def main():
         print(f"  {path}: {len(features)} features ({geo_count} with geometry)")
 
     # Write CSV
-    csv_path = os.path.join(args.output_dir, 'arcgis_waves.csv')
+    csv_path = os.path.join(args.output_dir, 'arcgis_incidents.csv')
     if csv_rows:
         fieldnames = list(csv_rows[0].keys())
         with open(csv_path, 'w', newline='') as f:
@@ -306,7 +306,7 @@ def main():
             writer.writerows(csv_rows)
         print(f"  {csv_path}: {len(csv_rows)} rows")
 
-    print(f"\nDone — {len(waves)} waves, {len(trajectory_features)} trajectories.")
+    print(f"\nDone — {len(incidents)} incidents, {len(trajectory_features)} trajectories.")
 
 
 if __name__ == '__main__':

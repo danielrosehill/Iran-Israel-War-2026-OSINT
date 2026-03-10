@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Backfill missing weapons detail across all wave data files.
+Backfill missing weapons detail across all incident data files.
 
 Fills in:
 1. Drone variant flags (shahed_136, shahed_238, shahed_131, shahed_107, shahed_129, mohajer_6)
@@ -299,42 +299,42 @@ def backfill_intercept_count(wave, op):
 
 
 def process_file(filepath):
-    """Process a single wave file."""
+    """Process a single incident file."""
     with open(filepath) as f:
         data = json.load(f)
 
     op = data["metadata"]["operation"]
-    waves = data["waves"]
+    incidents = data["incidents"]
 
-    for wave in waves:
-        backfill_drone_variants(wave, op)
-        backfill_bm_types(wave, op)
-        backfill_categories(wave, op)
-        backfill_interception_systems(wave, op)
-        backfill_intercept_count(wave, op)
+    for incident in incidents:
+        backfill_drone_variants(incident, op)
+        backfill_bm_types(incident, op)
+        backfill_categories(incident, op)
+        backfill_interception_systems(incident, op)
+        backfill_intercept_count(incident, op)
 
     with open(filepath, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
-    return len(waves)
+    return len(incidents)
 
 
 def main():
-    total_waves = 0
+    total_incidents = 0
     for fp in WAVE_FILES:
         if not fp.exists():
             print(f"SKIP: {fp} not found")
             continue
         count = process_file(fp)
-        total_waves += count
-        print(f"Processed {fp.name}: {count} waves")
+        total_incidents += count
+        print(f"Processed {fp.name}: {count} incidents")
 
     # Summary
     print(f"\n{'='*70}")
     print(f"BACKFILL SUMMARY")
     print(f"{'='*70}")
-    print(f"Total waves processed: {total_waves}")
+    print(f"Total incidents processed: {total_incidents}")
     print(f"Total fields updated:  {len(changes_log)}")
 
     # Group by operation

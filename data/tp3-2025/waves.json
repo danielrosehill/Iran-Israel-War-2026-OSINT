@@ -4,7 +4,7 @@
     "operation_name": "Operation True Promise 3",
     "operation_name_farsi": "عملیات وعده صادق ۳",
     "version": "1.1",
-    "wave_count": 22,
+    "incident_count": 22,
     "date_range": {
       "start": "2025-06-13",
       "end": "2025-06-24"
@@ -66,7 +66,7 @@
       ]
     }
   },
-  "waves": [
+  "incidents": [
     {
       "operation": "tp3",
       "wave_number": 1,
@@ -81,7 +81,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 1,
-        "hours_since_last_wave": null
+        "hours_since_last_incident": null,
+        "elapsed_minutes_since_last": null
       },
       "weapons": {
         "payload": "~100 ballistic missiles, drones",
@@ -240,7 +241,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 1,
-        "hours_since_last_wave": 1.0
+        "hours_since_last_incident": 1.0,
+        "elapsed_minutes_since_last": 60.0
       },
       "weapons": {
         "payload": "Ballistic missiles, drones",
@@ -399,7 +401,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 2,
-        "hours_since_last_wave": 19.5
+        "hours_since_last_incident": 19.5,
+        "elapsed_minutes_since_last": 1170.0
       },
       "weapons": {
         "payload": "Dozens of missiles and drones",
@@ -553,7 +556,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 2,
-        "hours_since_last_wave": 4.0
+        "hours_since_last_incident": 4.0,
+        "elapsed_minutes_since_last": 240.0
       },
       "weapons": {
         "payload": "Ballistic missiles",
@@ -712,7 +716,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 3,
-        "hours_since_last_wave": 10.0
+        "hours_since_last_incident": 10.0,
+        "elapsed_minutes_since_last": 600.0
       },
       "weapons": {
         "payload": "Ballistic missiles",
@@ -866,7 +871,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 3,
-        "hours_since_last_wave": 10.0
+        "hours_since_last_incident": 10.0,
+        "elapsed_minutes_since_last": 600.0
       },
       "weapons": {
         "payload": "Missiles",
@@ -1013,165 +1019,6 @@
     },
     {
       "operation": "tp3",
-      "wave_number": 7,
-      "wave_codename_farsi": null,
-      "wave_codename_english": null,
-      "timing": {
-        "announced_utc": "2025-06-16T04:00:00Z",
-        "announcement_source": "IRGC",
-        "probable_launch_time": "2025-06-16T04:00:00Z",
-        "launch_time_israel": "2025-06-16T07:00:00+0300",
-        "launch_time_iran": "2025-06-16T09:30:00+0330",
-        "solar_phase_launch_site": 5,
-        "solar_phase_target": 5,
-        "conflict_day": 4,
-        "hours_since_last_wave": 13.0
-      },
-      "weapons": {
-        "payload": "Missiles",
-        "drones_used": false,
-        "ballistic_missiles_used": true,
-        "cruise_missiles_used": false,
-        "types": {
-          "emad_used": true,
-          "ghadr_used": true,
-          "sejjil_used": false,
-          "kheibar_shekan_used": false,
-          "fattah_used": false,
-          "shahed_136_used": false,
-          "shahed_238_used": false,
-          "shahed_131_used": null,
-          "shahed_107_used": null,
-          "shahed_129_used": null,
-          "mohajer_6_used": null
-        },
-        "categories": {
-          "bm_liquid_fueled": true,
-          "bm_solid_fueled": false,
-          "bm_marv_equipped": true,
-          "bm_hypersonic": false,
-          "bm_cluster_warhead": false
-        },
-        "cluster_warhead": null
-      },
-      "targets": {
-        "targets": "Tel Aviv, Haifa — enhanced intelligence-guided targeting",
-        "israel_targeted": true,
-        "us_bases_targeted": false,
-        "landings_countries": [
-          "IL"
-        ],
-        "israeli_locations": {
-          "targeted_tel_aviv": true,
-          "targeted_jerusalem": false,
-          "targeted_haifa": true,
-          "targeted_negev_beersheba": false,
-          "targeted_northern_periphery": false,
-          "targeted_eilat": false
-        },
-        "us_bases": [],
-        "us_naval_vessels": [],
-        "target_coordinates": {
-          "lat": 32.445,
-          "lon": 34.885,
-          "generic_location": true
-        },
-        "critical_infrastructure": {
-          "targeted_airport": null,
-          "targeted_energy": null,
-          "targeted_port": null,
-          "targeted_government": null,
-          "targeted_industrial": null,
-          "targeted_telecom_data": null,
-          "targeted_diplomatic": null,
-          "targeted_research": null
-        },
-        "target_hit": null,
-        "target_locations": [
-          {
-            "name": "Tel Aviv",
-            "type": "israeli",
-            "hit": null
-          },
-          {
-            "name": "Haifa",
-            "type": "israeli",
-            "hit": null
-          }
-        ]
-      },
-      "attacking_force": [
-        {
-          "actor": "Iran",
-          "subunit": "IRGC Aerospace Force"
-        }
-      ],
-      "launch_site": {
-        "description": "Western Iran",
-        "lat": 34.31,
-        "lon": 47.07,
-        "generic_location": true
-      },
-      "interception": {
-        "intercepted": true,
-        "interception_systems": [
-          "Arrow-2",
-          "Arrow-3",
-          "THAAD",
-          "Iron Dome"
-        ],
-        "intercepted_by": {
-          "israel": true,
-          "us": true,
-          "uk": false,
-          "jordan": false,
-          "other": []
-        },
-        "exoatmospheric_interception": true,
-        "endoatmospheric_interception": true
-      },
-      "munitions": {
-        "estimated_munitions_count": null,
-        "munitions_targeting_israel": null,
-        "munitions_targeting_us_bases": 0,
-        "cumulative_total": null
-      },
-      "impact": {
-        "damage": null,
-        "fatalities": null,
-        "injuries": null,
-        "civilian_casualties": null,
-        "military_casualties": null
-      },
-      "escalation": {
-        "new_country_targeted": false,
-        "new_weapon_first_use": false
-      },
-      "proxy": {
-        "involvement": true,
-        "description": "Continued Houthi coordination"
-      },
-      "sources": {
-        "idf_statement": null,
-        "urls": []
-      },
-      "reactions": {
-        "idf": {
-          "statement": null,
-          "url": null
-        },
-        "us_government": {
-          "statement": null,
-          "url": null
-        },
-        "centcom": {
-          "statement": null,
-          "url": null
-        }
-      }
-    },
-    {
-      "operation": "tp3",
       "wave_number": 8,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1184,7 +1031,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 4,
-        "hours_since_last_wave": null
+        "hours_since_last_incident": null,
+        "elapsed_minutes_since_last": 540.0
       },
       "weapons": {
         "payload": "Hundreds of missiles",
@@ -1331,6 +1179,166 @@
     },
     {
       "operation": "tp3",
+      "wave_number": 7,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "timing": {
+        "announced_utc": "2025-06-16T04:00:00Z",
+        "announcement_source": "IRGC",
+        "probable_launch_time": "2025-06-16T04:00:00Z",
+        "launch_time_israel": "2025-06-16T07:00:00+0300",
+        "launch_time_iran": "2025-06-16T09:30:00+0330",
+        "solar_phase_launch_site": 5,
+        "solar_phase_target": 5,
+        "conflict_day": 4,
+        "hours_since_last_incident": 13.0,
+        "elapsed_minutes_since_last": 240.0
+      },
+      "weapons": {
+        "payload": "Missiles",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": true,
+          "ghadr_used": true,
+          "sejjil_used": false,
+          "kheibar_shekan_used": false,
+          "fattah_used": false,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": null,
+          "shahed_107_used": null,
+          "shahed_129_used": null,
+          "mohajer_6_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": false,
+          "bm_marv_equipped": true,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": false
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "targets": "Tel Aviv, Haifa — enhanced intelligence-guided targeting",
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": true,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.445,
+          "lon": 34.885,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Tel Aviv",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Haifa",
+            "type": "israeli",
+            "hit": null
+          }
+        ]
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
+      "launch_site": {
+        "description": "Western Iran",
+        "lat": 34.31,
+        "lon": 47.07,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "THAAD",
+          "Iron Dome"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": false,
+          "jordan": false,
+          "other": []
+        },
+        "exoatmospheric_interception": true,
+        "endoatmospheric_interception": true
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": null,
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Continued Houthi coordination"
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": []
+      },
+      "reactions": {
+        "idf": {
+          "statement": null,
+          "url": null
+        },
+        "us_government": {
+          "statement": null,
+          "url": null
+        },
+        "centcom": {
+          "statement": null,
+          "url": null
+        }
+      }
+    },
+    {
+      "operation": "tp3",
       "wave_number": 9,
       "wave_codename_farsi": null,
       "wave_codename_english": null,
@@ -1343,7 +1351,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 4,
-        "hours_since_last_wave": null
+        "hours_since_last_incident": null,
+        "elapsed_minutes_since_last": 480.0
       },
       "weapons": {
         "payload": "Missiles",
@@ -1502,7 +1511,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 5,
-        "hours_since_last_wave": null
+        "hours_since_last_incident": null,
+        "elapsed_minutes_since_last": 1200.0
       },
       "weapons": {
         "payload": "Large-scale missile barrage",
@@ -1668,7 +1678,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 5,
-        "hours_since_last_wave": 15.0
+        "hours_since_last_incident": 15.0,
+        "elapsed_minutes_since_last": 900.0
       },
       "weapons": {
         "payload": "Fattah-1 (first combat use in TP3), Emad, Ghadr, others",
@@ -1821,7 +1832,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 7,
-        "hours_since_last_wave": null
+        "hours_since_last_incident": null,
+        "elapsed_minutes_since_last": 2580.0
       },
       "weapons": {
         "payload": "Sejjil (~8 missiles, first combat deployment), other MRBMs",
@@ -1976,7 +1988,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 8,
-        "hours_since_last_wave": 6.0
+        "hours_since_last_incident": 6.0,
+        "elapsed_minutes_since_last": 360.0
       },
       "weapons": {
         "payload": "Missiles and drones",
@@ -2134,7 +2147,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 8,
-        "hours_since_last_wave": 8.0
+        "hours_since_last_incident": 8.0,
+        "elapsed_minutes_since_last": 480.0
       },
       "weapons": {
         "payload": "Missiles and drones",
@@ -2292,7 +2306,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 8,
-        "hours_since_last_wave": 4.0
+        "hours_since_last_incident": 4.0,
+        "elapsed_minutes_since_last": 240.0
       },
       "weapons": {
         "payload": "New-generation missiles",
@@ -2440,7 +2455,8 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 8,
-        "hours_since_last_wave": 8.0
+        "hours_since_last_incident": 8.0,
+        "elapsed_minutes_since_last": 480.0
       },
       "weapons": {
         "payload": "Missiles",
@@ -2586,7 +2602,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 9,
-        "hours_since_last_wave": 10.0
+        "hours_since_last_incident": 10.0,
+        "elapsed_minutes_since_last": 600.0
       },
       "weapons": {
         "payload": "Missiles",
@@ -2732,7 +2749,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 9,
-        "hours_since_last_wave": 8.0
+        "hours_since_last_incident": 8.0,
+        "elapsed_minutes_since_last": 480.0
       },
       "weapons": {
         "payload": "Shahed-136 drones and precision missiles — new innovations in missile selection, target choice, and guidance paths",
@@ -2903,7 +2921,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 10,
-        "hours_since_last_wave": 16.0
+        "hours_since_last_incident": 16.0,
+        "elapsed_minutes_since_last": 960.0
       },
       "weapons": {
         "payload": "Combined missiles and drones — large combined operation",
@@ -3062,7 +3081,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 10,
-        "hours_since_last_wave": 4.0
+        "hours_since_last_incident": 4.0,
+        "elapsed_minutes_since_last": 240.0
       },
       "weapons": {
         "payload": "40 missiles (solid + liquid fuel), Kheibar Shekan multi-warhead variant (first use)",
@@ -3218,7 +3238,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 11,
-        "hours_since_last_wave": 23.0
+        "hours_since_last_incident": 23.0,
+        "elapsed_minutes_since_last": 1380.0
       },
       "weapons": {
         "payload": "Kheibar/Qadr-H multi-warhead (first use), new-gen missiles",
@@ -3371,7 +3392,8 @@
         "solar_phase_launch_site": 5,
         "solar_phase_target": 5,
         "conflict_day": 12,
-        "hours_since_last_wave": 18.5
+        "hours_since_last_incident": 18.5,
+        "elapsed_minutes_since_last": 1110.0
       },
       "weapons": {
         "payload": "14 missiles — final wave before ceasefire",

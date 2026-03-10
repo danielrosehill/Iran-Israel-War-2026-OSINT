@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Backfill target_hit and target_locations into wave JSON files.
+Backfill target_hit and target_locations into incident JSON files.
 
 Logic for target_hit (overall):
   - intercept_rate >= 0.99 AND no fatalities/injuries AND no damage mentions → false
@@ -55,7 +55,7 @@ NO_DAMAGE_PATTERN = re.compile(
 
 
 def determine_overall_target_hit(wave):
-    """Determine overall target_hit status for a wave."""
+    """Determine overall target_hit status for an incident."""
     interception = wave.get("interception", {}) or {}
     impact = wave.get("impact", {}) or {}
 
@@ -243,15 +243,15 @@ def _determine_israeli_location_hit(name, overall_hit, intercept_rate, all_damag
 
 
 def process_file(filepath):
-    """Process a single waves.json file."""
+    """Process a single incident JSON file."""
     with open(filepath) as f:
         data = json.load(f)
 
     op = data.get("metadata", {}).get("operation", filepath)
-    waves = data.get("waves", [])
-    stats = {"total": len(waves), "true": 0, "false": 0, "partial": 0, "null": 0}
+    incidents = data.get("incidents", [])
+    stats = {"total": len(incidents), "true": 0, "false": 0, "partial": 0, "null": 0}
 
-    for wave in waves:
+    for wave in incidents:
         overall_hit = determine_overall_target_hit(wave)
         target_locations = determine_per_target_hit(wave, overall_hit)
 
@@ -274,15 +274,15 @@ def process_file(filepath):
         json.dump(data, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
-    return op, stats, waves
+    return op, stats, incidents
 
 
 def main():
     print("=" * 60)
-    print("Backfilling target_hit into wave JSON files")
+    print("Backfilling target_hit into incident JSON files")
     print("=" * 60)
 
-    total_waves = 0
+    total_incidents = 0
     total_locations = 0
 
     for rel_path in WAVE_FILES:
@@ -291,25 +291,25 @@ def main():
             print(f"\n  SKIP: {rel_path} (not found)")
             continue
 
-        op, stats, waves = process_file(filepath)
-        total_waves += stats["total"]
+        op, stats, incidents = process_file(filepath)
+        total_incidents += stats["total"]
 
-        wave_locs = sum(
+        incident_locs = sum(
             len(w.get("targets", {}).get("target_locations", []))
-            for w in waves
+            for w in incidents
         )
-        total_locations += wave_locs
+        total_locations += incident_locs
 
         print(f"\n  {op} ({rel_path})")
-        print(f"    Waves: {stats['total']}")
+        print(f"    Incidents: {stats['total']}")
         print(
             f"    target_hit: true={stats['true']}, false={stats['false']}, "
             f"partial={stats['partial']}, null={stats['null']}"
         )
-        print(f"    target_locations entries added: {wave_locs}")
+        print(f"    target_locations entries added: {incident_locs}")
 
     print(f"\n{'=' * 60}")
-    print(f"Total waves processed: {total_waves}")
+    print(f"Total incidents processed: {total_incidents}")
     print(f"Total target_locations entries: {total_locations}")
     print("Done.")
 

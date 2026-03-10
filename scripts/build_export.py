@@ -31,24 +31,24 @@ WAVE_FILES = [
 
 
 def build_combined_json(output_path):
-    """Merge all operation wave files into a single JSON."""
+    """Merge all operation incident files into a single JSON."""
     combined = {
         "export_timestamp": datetime.now(timezone.utc).isoformat(),
         "operations": [],
     }
-    total_waves = 0
+    total_incidents = 0
     for op_id, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
         combined["operations"].append(data)
-        total_waves += len(data["waves"])
+        total_incidents += len(data["incidents"])
 
-    combined["total_waves"] = total_waves
+    combined["total_incidents"] = total_incidents
 
     with open(output_path, 'w') as f:
         json.dump(combined, f, indent=2, ensure_ascii=False)
         f.write('\n')
-    print(f"  {output_path} ({total_waves} waves)")
+    print(f"  {output_path} ({total_incidents} incidents)")
 
 
 def collect_files(directory):
@@ -78,11 +78,11 @@ def main():
 
     # 1. Combined JSON
     print("JSON:")
-    build_combined_json(os.path.join(json_dir, 'waves_all.json'))
+    build_combined_json(os.path.join(json_dir, 'incidents_all.json'))
 
     # 2. Individual operation JSONs
     for op_id, path in WAVE_FILES:
-        dest = os.path.join(json_dir, f'{op_id}_waves.json')
+        dest = os.path.join(json_dir, f'{op_id}_incidents.json')
         shutil.copy2(path, dest)
         print(f"  {dest}")
 
@@ -166,7 +166,7 @@ def main():
     manifest = {
         "timestamp": timestamp,
         "structure": {
-            "json": "Combined and per-operation wave JSON files",
+            "json": "Combined and per-operation incident JSON files",
             "sqlite": "SQLite database with all tables and reference data",
             "geojson": "GeoJSON layers for GIS tools (QGIS, Mapbox, Leaflet, kepler.gl)",
             "arcgis": "ArcGIS Online / StoryMap optimized exports with enriched properties",

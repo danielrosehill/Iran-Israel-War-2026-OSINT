@@ -1,14 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "wave.schema.json",
-  "title": "Iran-Israel War Wave Data",
-  "description": "Schema for attack wave data in Operation True Promise datasets",
+  "title": "Iran-Israel War Incident Data",
+  "description": "Schema for attack incident data in Operation True Promise datasets",
   "type": "object",
-  "required": ["metadata", "waves"],
+  "required": ["metadata", "incidents"],
   "properties": {
     "metadata": {
       "type": "object",
-      "required": ["operation_name", "wave_count", "date_range"],
+      "required": ["operation_name", "incident_count", "date_range"],
       "properties": {
         "operation": {
           "type": "string",
@@ -18,7 +18,7 @@
         "operation_name": { "type": "string" },
         "operation_name_farsi": { "type": "string" },
         "version": { "type": "string" },
-        "wave_count": { "type": "integer", "minimum": 1 },
+        "incident_count": { "type": "integer", "minimum": 1 },
         "date_range": {
           "type": "object",
           "properties": {
@@ -33,7 +33,7 @@
         }
       }
     },
-    "waves": {
+    "incidents": {
       "type": "array",
       "items": { "$ref": "#/$defs/wave" }
     }
@@ -102,9 +102,10 @@
           "maximum": 5
         },
         "conflict_day": { "type": ["integer", "null"], "minimum": 1 },
-        "hours_since_last_wave": { "type": ["number", "null"] },
-        "time_between_waves_minutes": { "type": ["number", "null"] },
-        "wave_duration_minutes": { "type": ["number", "null"] }
+        "hours_since_last_incident": { "type": ["number", "null"] },
+        "time_between_incidents_minutes": { "type": ["number", "null"] },
+        "incident_duration_minutes": { "type": ["number", "null"] },
+        "elapsed_minutes_since_last": { "type": ["number", "null"] }
       }
     },
     "weapons": {

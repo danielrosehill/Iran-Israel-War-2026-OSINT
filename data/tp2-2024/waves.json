@@ -4,7 +4,7 @@
     "operation_name": "Operation True Promise II",
     "operation_name_farsi": "عملیات وعده صادق ۲",
     "version": "1.0",
-    "wave_count": 2,
+    "incident_count": 2,
     "date_range": {
       "start": "2024-10-01",
       "end": "2024-10-01"
@@ -53,7 +53,7 @@
       "historical_significance": "First confirmed combat use of Iran's Fattah-1 hypersonic missile; ballistic-missile-only strike (no drones/cruise missiles); more missiles penetrated defenses than in TP1"
     }
   },
-  "waves": [
+  "incidents": [
     {
       "operation": "tp2",
       "wave_number": 1,
@@ -70,9 +70,10 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 1,
-        "hours_since_last_wave": null,
-        "time_between_waves_minutes": null,
-        "wave_duration_minutes": null
+        "hours_since_last_incident": null,
+        "time_between_incidents_minutes": null,
+        "incident_duration_minutes": null,
+        "elapsed_minutes_since_last": null
       },
       "weapons": {
         "payload": "Emad, Ghadr-H, Ghadr-F, Kheibar Shekan ballistic missiles",
@@ -370,9 +371,10 @@
         "solar_phase_launch_site": 0,
         "solar_phase_target": 0,
         "conflict_day": 1,
-        "hours_since_last_wave": 0.25,
-        "time_between_waves_minutes": 15,
-        "wave_duration_minutes": null
+        "hours_since_last_incident": 0.25,
+        "time_between_incidents_minutes": 15,
+        "incident_duration_minutes": null,
+        "elapsed_minutes_since_last": null
       },
       "weapons": {
         "payload": "Fattah-1 hypersonic missiles, Emad, Kheibar Shekan ballistic missiles",

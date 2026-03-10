@@ -55,7 +55,7 @@ def create_schema(cur):
         operation_name    TEXT,
         operation_name_farsi TEXT,
         version           TEXT,
-        wave_count        INTEGER,
+        incident_count    INTEGER,
         date_start        TEXT,
         date_end          TEXT,
         data_quality      TEXT,
@@ -73,9 +73,9 @@ def create_schema(cur):
     );
 
     -- ══════════════════════════════════════════════════════════════
-    -- Main waves table (one row per wave, flattened)
+    -- Main incidents table (one row per incident, flattened)
     -- ══════════════════════════════════════════════════════════════
-    CREATE TABLE IF NOT EXISTS waves (
+    CREATE TABLE IF NOT EXISTS incidents (
         -- Identity
         wave_uid                TEXT NOT NULL UNIQUE,  -- e.g. tp4_w21
         uuid                    TEXT NOT NULL UNIQUE,
@@ -96,9 +96,9 @@ def create_schema(cur):
         solar_phase_launch_site INTEGER,
         solar_phase_target      INTEGER,
         conflict_day            INTEGER,
-        hours_since_last_wave   REAL,
-        time_between_waves_min  REAL,
-        wave_duration_min       REAL,
+        hours_since_last_incident   REAL,
+        time_between_incidents_min  REAL,
+        incident_duration_min       REAL,
 
         -- Weapons (booleans + payload text)
         payload                 TEXT,
@@ -208,69 +208,69 @@ def create_schema(cur):
     -- ══════════════════════════════════════════════════════════════
     -- Junction tables for many-to-many relationships
     -- ══════════════════════════════════════════════════════════════
-    CREATE TABLE IF NOT EXISTS wave_landing_countries (
+    CREATE TABLE IF NOT EXISTS incident_landing_countries (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         country_code    TEXT NOT NULL,
         PRIMARY KEY (operation, wave_number, country_code),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
-    CREATE TABLE IF NOT EXISTS wave_interception_systems (
+    CREATE TABLE IF NOT EXISTS incident_interception_systems (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         system_name     TEXT NOT NULL,
         PRIMARY KEY (operation, wave_number, system_name),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
-    CREATE TABLE IF NOT EXISTS wave_intercepted_by_other (
+    CREATE TABLE IF NOT EXISTS incident_intercepted_by_other (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         country         TEXT NOT NULL,
         PRIMARY KEY (operation, wave_number, country),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
-    CREATE TABLE IF NOT EXISTS wave_us_bases_targeted (
+    CREATE TABLE IF NOT EXISTS incident_us_bases_targeted (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         base_name       TEXT NOT NULL,
         country_code    TEXT,
         PRIMARY KEY (operation, wave_number, base_name),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
-    CREATE TABLE IF NOT EXISTS wave_us_naval_vessels_targeted (
+    CREATE TABLE IF NOT EXISTS incident_us_naval_vessels_targeted (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         vessel_name     TEXT NOT NULL,
         vessel_type     TEXT,
         PRIMARY KEY (operation, wave_number, vessel_name),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
-    CREATE TABLE IF NOT EXISTS wave_sources (
+    CREATE TABLE IF NOT EXISTS incident_sources (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         url             TEXT NOT NULL,
         PRIMARY KEY (operation, wave_number, url),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
-    CREATE TABLE IF NOT EXISTS wave_attacking_forces (
+    CREATE TABLE IF NOT EXISTS incident_attacking_forces (
         operation       TEXT NOT NULL,
         wave_number     INTEGER NOT NULL,
         actor           TEXT NOT NULL,
         subunit         TEXT,
         PRIMARY KEY (operation, wave_number, actor),
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
     -- ══════════════════════════════════════════════════════════════
-    -- Granular interception and strike events within each wave
+    -- Granular interception and strike events within each incident
     -- ══════════════════════════════════════════════════════════════
-    CREATE TABLE IF NOT EXISTS wave_events (
+    CREATE TABLE IF NOT EXISTS incident_events (
         uuid                TEXT PRIMARY KEY,
         operation           TEXT NOT NULL,
         wave_number         INTEGER NOT NULL,
@@ -315,7 +315,7 @@ def create_schema(cur):
         narrative           TEXT,
         thumbnail           TEXT,
         images_json         TEXT,  -- JSON array of image objects
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
 
     -- ══════════════════════════════════════════════════════════════
@@ -492,7 +492,7 @@ def create_schema(cur):
         post_date       TEXT,
         text            TEXT NOT NULL,
         image_file      TEXT,
-        FOREIGN KEY (operation, wave_number) REFERENCES waves(operation, wave_number)
+        FOREIGN KEY (operation, wave_number) REFERENCES incidents(operation, wave_number)
     );
     """)
 
@@ -524,7 +524,7 @@ def load_operations(cur):
             meta.get('operation_name'),
             meta.get('operation_name_farsi'),
             meta.get('version'),
-            meta.get('wave_count'),
+            meta.get('incident_count'),
             dr.get('start'),
             dr.get('end'),
             meta.get('data_quality'),
@@ -541,12 +541,12 @@ def load_operations(cur):
         ))
 
 
-def load_waves(cur):
+def load_incidents(cur):
     for op_id, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
 
-        for w in data['waves']:
+        for w in data['incidents']:
             op = w.get('operation', op_id)
             wn = w['wave_number']
             t = w.get('timing', {})
@@ -573,7 +573,7 @@ def load_waves(cur):
             tt = classify_target_types(w)
 
             cur.execute("""
-                INSERT OR REPLACE INTO waves VALUES (
+                INSERT OR REPLACE INTO incidents VALUES (
                     ?,?,?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,?,
@@ -607,9 +607,9 @@ def load_waves(cur):
                 t.get('solar_phase_launch_site'),
                 t.get('solar_phase_target'),
                 t.get('conflict_day'),
-                t.get('hours_since_last_wave'),
-                t.get('time_between_waves_minutes'),
-                t.get('wave_duration_minutes'),
+                t.get('hours_since_last_incident'),
+                t.get('time_between_incidents_minutes'),
+                t.get('incident_duration_minutes'),
                 # weapons
                 wp.get('payload'),
                 bool_to_int(wp.get('drones_used')),
@@ -703,43 +703,43 @@ def load_waves(cur):
             # Junction: landing countries
             for cc in tgt.get('landings_countries', []):
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_landing_countries VALUES (?,?,?)",
+                    "INSERT OR IGNORE INTO incident_landing_countries VALUES (?,?,?)",
                     (op, wn, cc))
 
             # Junction: interception systems
             for sys in icp.get('interception_systems', []):
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_interception_systems VALUES (?,?,?)",
+                    "INSERT OR IGNORE INTO incident_interception_systems VALUES (?,?,?)",
                     (op, wn, sys))
 
             # Junction: intercepted by other
             for other in ib.get('other', []):
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_intercepted_by_other VALUES (?,?,?)",
+                    "INSERT OR IGNORE INTO incident_intercepted_by_other VALUES (?,?,?)",
                     (op, wn, other))
 
             # Junction: US bases targeted
             for base in tgt.get('us_bases', []):
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_us_bases_targeted VALUES (?,?,?,?)",
+                    "INSERT OR IGNORE INTO incident_us_bases_targeted VALUES (?,?,?,?)",
                     (op, wn, base.get('name', ''), base.get('country_code')))
 
             # Junction: US naval vessels targeted
             for vessel in tgt.get('us_naval_vessels', []):
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_us_naval_vessels_targeted VALUES (?,?,?,?)",
+                    "INSERT OR IGNORE INTO incident_us_naval_vessels_targeted VALUES (?,?,?,?)",
                     (op, wn, vessel.get('name', ''), vessel.get('type')))
 
             # Junction: source URLs
             for url in src.get('urls', []):
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_sources VALUES (?,?,?)",
+                    "INSERT OR IGNORE INTO incident_sources VALUES (?,?,?)",
                     (op, wn, url))
 
             # Junction: attacking forces (all co-attackers)
             for attacker in af_list:
                 cur.execute(
-                    "INSERT OR IGNORE INTO wave_attacking_forces VALUES (?,?,?,?)",
+                    "INSERT OR IGNORE INTO incident_attacking_forces VALUES (?,?,?,?)",
                     (op, wn, attacker.get('actor', ''), attacker.get('subunit')))
 
             # Events: granular interception and strike records
@@ -747,7 +747,7 @@ def load_waves(cur):
                 bda = evt.get('bda') or {}
                 satint = bda.get('satint') or {}
                 cur.execute("""
-                    INSERT INTO wave_events
+                    INSERT INTO incident_events
                         (uuid, operation, wave_number, event_type, outcome_status,
                          location_name,
                          lat, lon, country_code, weapon_type,
@@ -1041,10 +1041,10 @@ def load_x_post_snippets(cur):
 
 def print_summary(cur):
     print("\n=== Database Summary ===")
-    for table in ['operations', 'waves', 'wave_events',
-                   'wave_landing_countries',
-                   'wave_interception_systems', 'wave_us_bases_targeted',
-                   'wave_sources', 'iranian_weapons', 'defense_systems',
+    for table in ['operations', 'incidents', 'incident_events',
+                   'incident_landing_countries',
+                   'incident_interception_systems', 'incident_us_bases_targeted',
+                   'incident_sources', 'iranian_weapons', 'defense_systems',
                    'interceptor_munitions',
                    'armed_forces', 'us_bases', 'us_naval_vessels',
                    'entities', 'reaction_types',
@@ -1057,19 +1057,19 @@ def print_summary(cur):
     cur.execute("""
         SELECT
             operation,
-            COUNT(*) as waves,
-            SUM(CASE WHEN ballistic_missiles_used = 1 THEN 1 ELSE 0 END) as bm_waves,
-            SUM(CASE WHEN drones_used = 1 THEN 1 ELSE 0 END) as drone_waves,
-            SUM(CASE WHEN cruise_missiles_used = 1 THEN 1 ELSE 0 END) as cm_waves,
+            COUNT(*) as incidents,
+            SUM(CASE WHEN ballistic_missiles_used = 1 THEN 1 ELSE 0 END) as bm_incidents,
+            SUM(CASE WHEN drones_used = 1 THEN 1 ELSE 0 END) as drone_incidents,
+            SUM(CASE WHEN cruise_missiles_used = 1 THEN 1 ELSE 0 END) as cm_incidents,
             SUM(COALESCE(estimated_munitions_count, 0)) as sum_known_munitions,
             SUM(COALESCE(fatalities, 0)) as sum_fatalities,
             SUM(COALESCE(injuries, 0)) as sum_injuries
-        FROM waves
+        FROM incidents
         GROUP BY operation
         ORDER BY operation
     """)
     for row in cur.fetchall():
-        print(f"  {row[0]}: {row[1]} waves | BM:{row[2]} drone:{row[3]} CM:{row[4]} "
+        print(f"  {row[0]}: {row[1]} incidents | BM:{row[2]} drone:{row[3]} CM:{row[4]} "
               f"| known_mun:{row[5]} | killed:{row[6]} injured:{row[7]}")
 
     print("\n=== Weapon System Usage Across All Operations ===")
@@ -1081,10 +1081,10 @@ def print_summary(cur):
         ('paveh_used', 'Paveh'),
     ]
     for col, name in weapon_cols:
-        cur.execute(f"SELECT COUNT(*) FROM waves WHERE {col} = 1")
+        cur.execute(f"SELECT COUNT(*) FROM incidents WHERE {col} = 1")
         count = cur.fetchone()[0]
         if count > 0:
-            print(f"  {name}: used in {count} waves")
+            print(f"  {name}: used in {count} incidents")
 
 
 def main():
@@ -1100,7 +1100,7 @@ def main():
 
     create_schema(cur)
     load_operations(cur)
-    load_waves(cur)
+    load_incidents(cur)
     load_iranian_weapons(cur)
     load_defense_systems(cur)
     load_interceptor_munitions(cur)
@@ -1116,15 +1116,15 @@ def main():
     print_summary(cur)
 
     # Verify row counts
-    cur.execute("SELECT COUNT(*) FROM waves")
-    total_waves = cur.fetchone()[0]
+    cur.execute("SELECT COUNT(*) FROM incidents")
+    total_incidents = cur.fetchone()[0]
     cur.execute("SELECT COUNT(*) FROM operations")
     total_ops = cur.fetchone()[0]
 
     conn.close()
 
     size_kb = os.path.getsize(DB_PATH) / 1024
-    print(f"\nDone. {total_ops} operations, {total_waves} waves. "
+    print(f"\nDone. {total_ops} operations, {total_incidents} incidents. "
           f"Database size: {size_kb:.0f} KB")
 
 

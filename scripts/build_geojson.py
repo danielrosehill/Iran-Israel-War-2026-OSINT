@@ -1,25 +1,25 @@
 #!/usr/bin/env python3
 """
-Build GeoJSON FeatureCollection from all wave JSON data.
+Build GeoJSON FeatureCollection from all incident JSON data.
 
 Produces two layers:
-  - launch_sites: Point features at each wave's launch site
-  - targets: Point features at each wave's target coordinates
-    Resolves MULTIPLE targets per wave from:
+  - launch_sites: Point features at each incident's launch site
+  - targets: Point features at each incident's target coordinates
+    Resolves MULTIPLE targets per incident from:
       1. targets.target_locations array (if present, from backfill)
       2. targets.israeli_locations boolean flags → reference coords
       3. targets.us_bases array → reference coords
       4. Legacy targets.target_coordinates as fallback
 
-Waves missing coordinates are included with null geometry.
+Incidents missing coordinates are included with null geometry.
 
 Usage:
     python build_geojson.py [--output PATH]
 
 Outputs (default):
-    exports/waves_launch_sites.geojson
-    exports/waves_targets.geojson
-    exports/waves_combined.geojson   (both layers merged)
+    exports/incidents_launch_sites.geojson
+    exports/incidents_targets.geojson
+    exports/incidents_combined.geojson   (both layers merged)
 """
 
 import json
@@ -103,16 +103,16 @@ def load_reference_data():
     return israeli_by_name, us_by_name
 
 
-def load_all_waves():
-    """Load waves from all operation JSON files."""
-    waves = []
+def load_all_incidents():
+    """Load incidents from all operation JSON files."""
+    incidents = []
     for op, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
-        for w in data['waves']:
+        for w in data['incidents']:
             w['_operation'] = op
-            waves.append(w)
-    return waves
+            incidents.append(w)
+    return incidents
 
 
 def make_point(lat, lon):
@@ -122,7 +122,7 @@ def make_point(lat, lon):
     return None
 
 
-def wave_properties(w):
+def incident_properties(w):
     """Extract flat properties for a GeoJSON feature."""
     timing = w.get('timing', {})
     weapons = w.get('weapons', {})
@@ -198,7 +198,7 @@ def _fuzzy_match_israeli(name, israeli_ref):
 
 
 def resolve_targets(w, israeli_ref, us_ref):
-    """Resolve all target locations for a wave.
+    """Resolve all target locations for an incident.
 
     Returns a list of dicts, each with keys:
         target_name, target_type, lat, lon, target_hit
@@ -306,16 +306,16 @@ def resolve_targets(w, israeli_ref, us_ref):
     return resolved
 
 
-def build_features(waves, israeli_ref, us_ref):
+def build_features(incidents, israeli_ref, us_ref):
     """Build launch-site and target feature lists."""
     launch_features = []
     target_features = []
 
-    for w in waves:
-        props = wave_properties(w)
+    for w in incidents:
+        props = incident_properties(w)
         ls = w.get('launch_site', {})
 
-        # Launch site feature (one per wave, unchanged)
+        # Launch site feature (one per incident, unchanged)
         launch_geom = make_point(ls.get('lat'), ls.get('lon'))
         launch_props = {
             **props,
@@ -328,7 +328,7 @@ def build_features(waves, israeli_ref, us_ref):
             "properties": launch_props,
         })
 
-        # Target features (multiple per wave)
+        # Target features (multiple per incident)
         resolved = resolve_targets(w, israeli_ref, us_ref)
         for idx, t in enumerate(resolved):
             target_geom = make_point(t['lat'], t['lon'])
@@ -358,7 +358,7 @@ def feature_collection(features):
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Build GeoJSON from wave data')
+    parser = argparse.ArgumentParser(description='Build GeoJSON from incident data')
     parser.add_argument('--output-dir', default=os.path.join(REPO, 'exports', 'latest'),
                         help='Output directory')
     args = parser.parse_args()
@@ -369,12 +369,12 @@ def main():
     israeli_ref, us_ref = load_reference_data()
     print(f"Reference data: {len(israeli_ref)} Israeli targets, {len(us_ref)} US bases")
 
-    waves = load_all_waves()
-    launch_features, target_features = build_features(waves, israeli_ref, us_ref)
+    incidents = load_all_incidents()
+    launch_features, target_features = build_features(incidents, israeli_ref, us_ref)
 
     # Write individual layers
-    for name, features in [('waves_launch_sites', launch_features),
-                           ('waves_targets', target_features)]:
+    for name, features in [('incidents_launch_sites', launch_features),
+                           ('incidents_targets', target_features)]:
         path = os.path.join(args.output_dir, f'{name}.geojson')
         with open(path, 'w') as f:
             json.dump(feature_collection(features), f, indent=2, ensure_ascii=False)
@@ -383,12 +383,12 @@ def main():
 
     # Write combined
     combined = launch_features + target_features
-    path = os.path.join(args.output_dir, f'waves_combined.geojson')
+    path = os.path.join(args.output_dir, f'incidents_combined.geojson')
     with open(path, 'w') as f:
         json.dump(feature_collection(combined), f, indent=2, ensure_ascii=False)
     print(f"  {path}: {len(combined)} features (combined)")
 
-    print(f"\nDone — {len(waves)} waves, {len(target_features)} target features across {len(WAVE_FILES)} operations.")
+    print(f"\nDone — {len(incidents)} incidents, {len(target_features)} target features across {len(WAVE_FILES)} operations.")
 
 
 if __name__ == '__main__':

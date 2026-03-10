@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Backfill weapons.categories from weapons.types in all wave JSON files."""
+"""Backfill weapons.categories from weapons.types in all incident JSON files."""
 
 import json
 import os
@@ -75,7 +75,7 @@ def derive_categories(wave: dict) -> dict | None:
 
 
 def main():
-    total_waves = 0
+    total_incidents = 0
     total_changed = 0
 
     for rel_path in WAVE_FILES:
@@ -83,11 +83,11 @@ def main():
         with open(fpath, "r") as f:
             data = json.load(f)
 
-        waves = data.get("waves", [])
+        incidents = data.get("incidents", [])
         file_changes = 0
 
-        for wave in waves:
-            total_waves += 1
+        for wave in incidents:
+            total_incidents += 1
             new_cats = derive_categories(wave)
             if new_cats is None:
                 continue
@@ -113,11 +113,11 @@ def main():
             with open(fpath, "w") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
                 f.write("\n")
-            print(f"[{rel_path}] Updated {file_changes} wave(s)")
+            print(f"[{rel_path}] Updated {file_changes} incident(s)")
         else:
             print(f"[{rel_path}] No changes needed")
 
-    print(f"\nSummary: {total_changed} waves changed out of {total_waves} total")
+    print(f"\nSummary: {total_changed} incidents changed out of {total_incidents} total")
 
 
 if __name__ == "__main__":
