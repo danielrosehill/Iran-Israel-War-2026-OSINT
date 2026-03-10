@@ -5,6 +5,8 @@
     "aliases": [
       "Emad-1"
     ],
+    "nato_designation": null,
+    "western_reference": "Shahab-3 MaRV variant",
     "type_key": "emad_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "liquid-fuel",
@@ -60,6 +62,8 @@
       "Qadr H",
       "Qadr F"
     ],
+    "nato_designation": null,
+    "western_reference": "Shahab-3 derivative",
     "type_key": "ghadr_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "liquid-fuel",
@@ -118,6 +122,8 @@
       "Sejjil-2",
       "Ashura"
     ],
+    "nato_designation": null,
+    "western_reference": "Sejjil (Ashoura)",
     "type_key": "sejjil_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "solid-fuel",
@@ -170,6 +176,8 @@
     "aliases": [
       "Kheibar Shekan MaRV"
     ],
+    "nato_designation": null,
+    "western_reference": "Kheibar Shekan",
     "type_key": "kheibar_shekan_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "solid-fuel",
@@ -227,6 +235,8 @@
     "aliases": [
       "Fattah"
     ],
+    "nato_designation": null,
+    "western_reference": "Fattah-1 (IISS: MaRV-MRBM, not true hypersonic)",
     "type_key": "fattah_used",
     "classification": "MRBM with Maneuverable Reentry Vehicle (MaRV)",
     "propulsion": "solid-fuel",
@@ -282,6 +292,8 @@
     "system_name": "Fattah-2",
     "name_translation": "Conqueror",
     "aliases": [],
+    "nato_designation": null,
+    "western_reference": "Fattah-2 (HGV attempt)",
     "type_key": "fattah_used",
     "classification": "Hypersonic Glide Vehicle (HGV) system",
     "propulsion": "solid-fuel booster + unpowered HGV",
@@ -290,7 +302,7 @@
     "warhead_kg": 200,
     "launch_weight_kg": 4100,
     "length_m": 12.0,
-    "diameter_m": null,
+    "diameter_m": 0.8,
     "guidance": "INS + GNSS; HGV maneuvers in pitch and yaw throughout glide phase",
     "CEP_m": null,
     "marv": false,
@@ -338,6 +350,8 @@
     "aliases": [
       "Geran-2"
     ],
+    "nato_designation": null,
+    "russian_service_name": "Geran-2",
     "type_key": "shahed_136_used",
     "classification": "Loitering munition / one-way attack UAV",
     "propulsion": "piston engine (Mado MD-550); RATO launch",
@@ -392,6 +406,8 @@
     "aliases": [
       "Geran-3"
     ],
+    "nato_designation": null,
+    "russian_service_name": "Geran-3",
     "type_key": "shahed_238_used",
     "classification": "Jet-powered loitering munition / one-way attack UAV",
     "propulsion": "turbojet (PBS TJ150 / Toloue-10)",
@@ -403,6 +419,7 @@
     "endurance_hours": 2,
     "ceiling_m": 9144,
     "warhead_kg": 50,
+    "total_weight_kg": 380,
     "length_m": 3.5,
     "wingspan_m": 3.0,
     "guidance": {
@@ -446,6 +463,8 @@
     "aliases": [
       "Geran-1"
     ],
+    "nato_designation": null,
+    "russian_service_name": "Geran-1",
     "type_key": "shahed_131_used",
     "classification": "Loitering munition / one-way attack UAV",
     "propulsion": "piston engine; RATO launch",
@@ -491,6 +510,8 @@
     "aliases": [
       "Mohajer-6 UCAV"
     ],
+    "nato_designation": null,
+    "western_reference": "Qods Mohajer-6",
     "type_key": "mohajer_6_used",
     "classification": "Medium-altitude reconnaissance/strike UAV",
     "propulsion": "piston engine (pusher)",
@@ -538,6 +559,8 @@
     "aliases": [
       "Paveh cruise missile"
     ],
+    "nato_designation": null,
+    "western_reference": "Paveh GLCM",
     "type_key": "cruise_missile_used",
     "classification": "Ground-launched cruise missile (GLCM)",
     "propulsion": "turbojet",
@@ -545,6 +568,10 @@
     "range_km": 1650,
     "warhead_kg": 450,
     "length_m": 8.0,
+    "diameter_m": 0.51,
+    "diameter_m_notes": "Estimated from Kh-55 proxy (0.514m); not officially disclosed",
+    "launch_weight_kg": 1210,
+    "launch_weight_kg_notes": "Estimated from Kh-55 proxy; not officially disclosed",
     "guidance": "INS + TERCOM + GNSS",
     "categories": {
       "bm_liquid_fueled": false,
@@ -581,6 +608,8 @@
     "aliases": [
       "Khorramshahr-4"
     ],
+    "nato_designation": null,
+    "western_reference": "Khorramshahr-4 / Kheibar (Hwasong-10 derivative)",
     "type_key": "khorramshahr_4_used",
     "classification": "Medium-Range Ballistic Missile (MRBM)",
     "propulsion": "liquid-fuel",
@@ -624,6 +653,302 @@
     "sources": [
       "https://missilethreat.csis.org/missile/khorramshahr/",
       "https://en.wikipedia.org/wiki/Khorramshahr_(missile)"
+    ]
+  },
+  {
+    "id": "shahab_1",
+    "system_name": "Shahab-1",
+    "aliases": ["Scud-B (Iranian copy)"],
+    "nato_designation": "SS-1C Scud-B",
+    "type_key": "shahab_1_used",
+    "classification": "Short-Range Ballistic Missile (SRBM)",
+    "propulsion": "liquid-fuel",
+    "stages": 1,
+    "range_km": 300,
+    "warhead_kg": 985,
+    "launch_weight_kg": 5860,
+    "length_m": 11.25,
+    "diameter_m": 0.88,
+    "guidance": "Gyroscopic inertial",
+    "CEP_m": 500,
+    "marv": false,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": true,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 100000,
+      "range": "80000-150000",
+      "notes": "Soviet-era design, mass-produced"
+    },
+    "navigation": {
+      "gps": false,
+      "ins": true,
+      "gps_capabilities": null,
+      "ins_capabilities": "Gyroscopic inertial navigation; no terminal correction"
+    },
+    "first_combat_use": "1985",
+    "lineage": "Soviet R-17 Elbrus (Scud-B) direct copy",
+    "key_features": [
+      "Iran's first ballistic missile (acquired during Iran-Iraq War)",
+      "Direct copy of Soviet Scud-B",
+      "Still operational but largely superseded by newer systems"
+    ],
+    "sources": [
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/shahab-1/",
+      "https://missilethreat.csis.org/country_tax/iran/"
+    ]
+  },
+  {
+    "id": "shahab_2",
+    "system_name": "Shahab-2",
+    "aliases": ["Scud-C (Iranian copy)", "Hwasong-6 derivative"],
+    "nato_designation": "SS-1D Scud-C",
+    "type_key": "shahab_2_used",
+    "classification": "Short-Range Ballistic Missile (SRBM)",
+    "propulsion": "liquid-fuel",
+    "stages": 1,
+    "range_km": 500,
+    "warhead_kg": 770,
+    "launch_weight_kg": 6400,
+    "length_m": 12.3,
+    "diameter_m": 0.88,
+    "guidance": "Inertial",
+    "CEP_m": 500,
+    "marv": false,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": true,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 120000,
+      "range": "100000-200000",
+      "notes": "Based on North Korean Hwasong-6"
+    },
+    "navigation": {
+      "gps": false,
+      "ins": true,
+      "gps_capabilities": null,
+      "ins_capabilities": "Basic inertial navigation inherited from Scud-C design"
+    },
+    "first_combat_use": null,
+    "lineage": "North Korean Hwasong-6 (extended Scud-C)",
+    "key_features": [
+      "Extended-range Scud derivative via North Korean technology transfer",
+      "Traded warhead weight for increased range vs Shahab-1",
+      "Acquired from North Korea in the 1990s"
+    ],
+    "sources": [
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/shahab-2/",
+      "https://missilethreat.csis.org/country_tax/iran/"
+    ]
+  },
+  {
+    "id": "shahab_3",
+    "system_name": "Shahab-3",
+    "aliases": ["Nodong-1 derivative"],
+    "nato_designation": null,
+    "western_reference": "Shahab-3 (No Dong derivative)",
+    "type_key": "shahab_3_used",
+    "classification": "Medium-Range Ballistic Missile (MRBM)",
+    "propulsion": "liquid-fuel",
+    "stages": 1,
+    "range_km": 1600,
+    "warhead_kg": 1200,
+    "launch_weight_kg": 16000,
+    "length_m": 16.0,
+    "diameter_m": 1.25,
+    "guidance": "Inertial",
+    "CEP_m": 2500,
+    "marv": false,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": true,
+      "bm_solid_fueled": false,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 200000,
+      "range": "150000-300000",
+      "notes": "Foundation of Iran's MRBM inventory; heavily modified over time"
+    },
+    "navigation": {
+      "gps": false,
+      "ins": true,
+      "gps_capabilities": null,
+      "ins_capabilities": "Basic inertial navigation; poor accuracy by modern standards"
+    },
+    "first_combat_use": null,
+    "lineage": "North Korean Nodong-1 / Hwasong-7",
+    "key_features": [
+      "Foundation of Iran's MRBM family (parent of Emad, Ghadr, Khorramshahr)",
+      "Based on North Korean Nodong-1 technology",
+      "Largely superseded by Emad and Ghadr variants but still in inventory"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/shahab-3/",
+      "https://en.wikipedia.org/wiki/Shahab-3"
+    ]
+  },
+  {
+    "id": "fateh_110",
+    "system_name": "Fateh-110",
+    "aliases": ["Fateh A-110", "M-600 (export)"],
+    "nato_designation": null,
+    "western_reference": "Fateh-110",
+    "type_key": "fateh_110_used",
+    "classification": "Short-Range Ballistic Missile (SRBM)",
+    "propulsion": "solid-fuel",
+    "stages": 1,
+    "range_km": 300,
+    "warhead_kg": 500,
+    "launch_weight_kg": 3450,
+    "length_m": 8.86,
+    "diameter_m": 0.61,
+    "guidance": "GPS + inertial",
+    "CEP_m": 100,
+    "marv": false,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 200000,
+      "range": "150000-300000",
+      "notes": "Foundation of Iran's solid-fuel SRBM family"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GPS-aided midcourse corrections",
+      "ins_capabilities": "Inertial guidance baseline"
+    },
+    "first_combat_use": "2017",
+    "first_combat_use_notes": "June 2017 strike on ISIS in Deir ez-Zor, Syria",
+    "lineage": "Indigenous Iranian design; parent of Fateh-313, Zolfaghar, Dezful families",
+    "key_features": [
+      "Foundation of Iran's solid-fuel SRBM family",
+      "Exported as M-600 to Syria, technology shared with Hezbollah",
+      "Four generations of progressive improvement"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/fateh-110/",
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/fateh-110/"
+    ]
+  },
+  {
+    "id": "fateh_313",
+    "system_name": "Fateh-313",
+    "aliases": [],
+    "nato_designation": null,
+    "western_reference": "Fateh-313",
+    "type_key": "fateh_313_used",
+    "classification": "Short-Range Ballistic Missile (SRBM)",
+    "propulsion": "solid-fuel",
+    "stages": 1,
+    "range_km": 500,
+    "warhead_kg": 500,
+    "launch_weight_kg": 3500,
+    "length_m": 8.76,
+    "diameter_m": 0.61,
+    "guidance": "GPS + inertial",
+    "CEP_m": 100,
+    "marv": false,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 250000,
+      "range": "200000-350000",
+      "notes": "Improved Fateh-110 with composite body for extended range"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GPS-aided corrections",
+      "ins_capabilities": "Inertial navigation with improved accuracy over Fateh-110"
+    },
+    "first_unveiled": "2015-08",
+    "first_combat_use": "2024-04-13",
+    "first_combat_use_notes": "True Promise 1",
+    "lineage": "Fateh-110 derivative with composite fuel and body",
+    "key_features": [
+      "Extended range over Fateh-110 via composite construction",
+      "Same diameter as Fateh-110 for launcher compatibility",
+      "Used in True Promise 1 against Israel"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fateh-313",
+      "https://missilethreat.csis.org/missile/fateh-110/"
+    ]
+  },
+  {
+    "id": "zolfaghar",
+    "system_name": "Zolfaghar",
+    "aliases": ["Zulfiqar"],
+    "nato_designation": null,
+    "western_reference": "Zolfaghar",
+    "type_key": "zolfaghar_used",
+    "classification": "Short-Range Ballistic Missile (SRBM)",
+    "propulsion": "solid-fuel",
+    "stages": 1,
+    "range_km": 700,
+    "warhead_kg": 590,
+    "launch_weight_kg": 4615,
+    "length_m": 10.3,
+    "diameter_m": 0.68,
+    "guidance": "Inertial + GPS",
+    "CEP_m": 100,
+    "marv": false,
+    "hypersonic": false,
+    "categories": {
+      "bm_liquid_fueled": false,
+      "bm_solid_fueled": true,
+      "bm_marv_equipped": false,
+      "bm_hypersonic": false
+    },
+    "basing": "Road-mobile (TEL)",
+    "unit_cost_usd": {
+      "estimate": 300000,
+      "range": "250000-400000",
+      "notes": "Fateh-110 family; includes cluster warhead option"
+    },
+    "navigation": {
+      "gps": true,
+      "ins": true,
+      "gps_capabilities": "GPS/GLONASS for midcourse corrections",
+      "ins_capabilities": "Inertial navigation; separating warhead for harder interception"
+    },
+    "first_combat_use": "2017-06",
+    "first_combat_use_notes": "IRGC strike on ISIS targets in Deir ez-Zor, Syria",
+    "lineage": "Fateh-110 family derivative; successor Dezful extends range to 1,000 km",
+    "key_features": [
+      "Separating warhead (midcourse separation complicates interception)",
+      "Cluster warhead option",
+      "First operational use by IRGC in Syrian Civil War"
+    ],
+    "sources": [
+      "https://missilethreat.csis.org/missile/zolfaghar/",
+      "https://en.wikipedia.org/wiki/Zolfaghar_(missile)"
     ]
   }
 ]

@@ -1,0 +1,260 @@
+[
+  {
+    "id": "f15i_raam",
+    "system_name": "F-15I Ra'am",
+    "nato_designation": "F-15I",
+    "aliases": ["Ra'am", "Thunder"],
+    "operator": "Israel (IAF)",
+    "country": "IL",
+    "type": "twin-engine multirole strike fighter",
+    "manufacturer": "Boeing (McDonnell Douglas)",
+    "crew": 2,
+    "max_speed_mach": 2.5,
+    "max_speed_kmh": 3087,
+    "combat_radius_km": 1770,
+    "ferry_range_km": 4450,
+    "service_ceiling_m": 18300,
+    "max_weapons_payload_kg": 10432,
+    "engines": "2x Pratt & Whitney F100-PW-229",
+    "armament": {
+      "cannon": "1x M61A1 20mm Vulcan",
+      "air_to_air": ["AIM-120 AMRAAM", "AIM-9 Sidewinder", "Python-4", "Python-5"],
+      "air_to_ground": ["Spice-250/1000/2000", "Delilah", "JDAM", "Popeye"],
+      "pods": ["LANTIRN", "Litening"]
+    },
+    "first_operational": 1998,
+    "fleet_size": 25,
+    "role_in_operations": "Primary long-range strike fighter and air superiority. Backbone of IAF deep-strike capability. Used for CAP and drone/cruise missile interception during True Promise operations.",
+    "key_features": [
+      "Conformal fuel tanks for extended range without drag penalty",
+      "Israeli-specific avionics and EW suite",
+      "Optimized for long-range strike missions into Iran"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle#F-15I_Ra'am",
+      "https://www.iaf.org.il/4399-46098-en/IAF.aspx"
+    ]
+  },
+  {
+    "id": "f16i_sufa",
+    "system_name": "F-16I Sufa",
+    "nato_designation": "F-16I",
+    "aliases": ["Sufa", "Storm"],
+    "operator": "Israel (IAF)",
+    "country": "IL",
+    "type": "single-engine multirole fighter",
+    "manufacturer": "Lockheed Martin",
+    "crew": 2,
+    "max_speed_mach": 2.0,
+    "max_speed_kmh": 2414,
+    "combat_radius_km": 1640,
+    "ferry_range_km": 4220,
+    "service_ceiling_m": 15240,
+    "max_weapons_payload_kg": 7700,
+    "engines": "1x Pratt & Whitney F100-PW-229",
+    "armament": {
+      "cannon": "1x M61A1 20mm Vulcan",
+      "air_to_air": ["AIM-120 AMRAAM", "Python-4", "Python-5"],
+      "air_to_ground": ["Spice-250/1000/2000", "Delilah", "JDAM", "Popeye", "GBU-39 SDB"],
+      "pods": ["LANTIRN", "Litening IV"]
+    },
+    "first_operational": 2004,
+    "fleet_size": 102,
+    "role_in_operations": "Multirole strike and interception. Block 52-based with Israeli avionics, conformal fuel tanks, and extended range. Participated in drone interception during True Promise operations.",
+    "key_features": [
+      "Israeli conformal fuel tanks extending range significantly",
+      "Dorsal spine housing Israeli-developed avionics and EW",
+      "Largest single fighter fleet in the IAF"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon_variants#F-16I_Sufa",
+      "https://www.airforce-technology.com/projects/f-16i-soufa/"
+    ]
+  },
+  {
+    "id": "f35i_adir",
+    "system_name": "F-35I Adir",
+    "nato_designation": "F-35I",
+    "aliases": ["Adir", "Mighty One"],
+    "operator": "Israel (IAF)",
+    "country": "IL",
+    "type": "single-engine stealth multirole fighter",
+    "manufacturer": "Lockheed Martin",
+    "crew": 1,
+    "max_speed_mach": 1.6,
+    "max_speed_kmh": 1960,
+    "combat_radius_km": 1100,
+    "ferry_range_km": 2200,
+    "service_ceiling_m": 15240,
+    "max_weapons_payload_kg": 8160,
+    "engines": "1x Pratt & Whitney F135",
+    "armament": {
+      "cannon": "1x GAU-22/A 25mm (internal)",
+      "air_to_air": ["AIM-120 AMRAAM", "AIM-9X", "Python-5 (integration planned)"],
+      "air_to_ground": ["GBU-31 JDAM", "GBU-39 SDB", "Spice-250 (Israeli integration)", "JSM"],
+      "internal_bays": "2x AIM-120 + 2x GBU-31 (stealth mode)"
+    },
+    "stealth": true,
+    "first_operational": 2017,
+    "fleet_size": 50,
+    "role_in_operations": "Israel's premier stealth platform. Used for intelligence gathering, air superiority, and reportedly has overflown Iranian airspace. Israeli modifications include custom mission computers and EW suites.",
+    "key_features": [
+      "Full low-observable stealth design",
+      "Israeli-specific mission computers and plug-and-play weapons integration",
+      "360-degree sensor fusion via AN/AAQ-37 DAS",
+      "First stealth fighter in Middle East"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II_Israeli_procurement",
+      "https://www.iaf.org.il/4399-51498-en/IAF.aspx"
+    ]
+  },
+  {
+    "id": "fa18ef_super_hornet",
+    "system_name": "F/A-18E/F Super Hornet",
+    "nato_designation": "F/A-18E/F",
+    "aliases": ["Rhino", "Super Bug"],
+    "operator": "United States (US Navy)",
+    "country": "US",
+    "type": "twin-engine carrier-based multirole fighter",
+    "manufacturer": "Boeing",
+    "crew": [1, 2],
+    "crew_notes": "1 (E model), 2 (F model)",
+    "max_speed_mach": 1.8,
+    "max_speed_kmh": 1915,
+    "combat_radius_km": 722,
+    "ferry_range_km": 3330,
+    "service_ceiling_m": 15240,
+    "max_weapons_payload_kg": 8032,
+    "engines": "2x GE F414-GE-400 (22,000 lbf each)",
+    "armament": {
+      "cannon": "1x M61A2 20mm Vulcan",
+      "air_to_air": ["AIM-120 AMRAAM", "AIM-9X Sidewinder"],
+      "air_to_ground": ["JDAM", "JSOW", "SLAM-ER", "AGM-84 Harpoon", "AGM-88 HARM"],
+      "pods": ["AN/ASQ-228 ATFLIR", "SHARP"]
+    },
+    "first_operational": 1999,
+    "role_in_operations": "USN carrier-based strike and air defense. Launched from carriers in the Gulf/Eastern Med to intercept Iranian drones and cruise missiles during True Promise operations.",
+    "key_features": [
+      "Carrier-based — operates from Nimitz/Ford-class CVNs",
+      "33% more internal fuel than legacy Hornet",
+      "AN/APG-79 AESA radar for BVR engagement",
+      "Primary USN fleet defense fighter"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Boeing_F/A-18E/F_Super_Hornet",
+      "https://www.navy.mil/Resources/Fact-Files/Display-FactFiles/Article/2166235/"
+    ]
+  },
+  {
+    "id": "typhoon_fgr4",
+    "system_name": "Eurofighter Typhoon FGR4",
+    "nato_designation": "Typhoon",
+    "aliases": ["Typhoon FGR4", "EF2000"],
+    "operator": "United Kingdom (Royal Air Force)",
+    "country": "GB",
+    "type": "twin-engine multirole fighter",
+    "manufacturer": "Eurofighter GmbH (BAE Systems / Airbus / Leonardo)",
+    "crew": 1,
+    "max_speed_mach": 2.0,
+    "max_speed_kmh": 2495,
+    "combat_radius_km": 1390,
+    "ferry_range_km": 3790,
+    "service_ceiling_m": 19812,
+    "max_weapons_payload_kg": 7500,
+    "engines": "2x Eurojet EJ200 turbofans",
+    "supercruise": true,
+    "armament": {
+      "cannon": "1x 27mm Mauser BK-27",
+      "air_to_air": ["AIM-132 ASRAAM", "AIM-120 AMRAAM", "MBDA Meteor"],
+      "air_to_ground": ["Paveway IV", "Brimstone 2", "Storm Shadow"],
+      "pods": ["Litening III"]
+    },
+    "first_operational": 2003,
+    "role_in_operations": "RAF deployed Typhoons from RAF Akrotiri (Cyprus) and bases in Qatar. Successfully shot down multiple Iranian Shahed drones during True Promise I (April 2024) and 2026 operations.",
+    "key_features": [
+      "Supercruise capability (>Mach 1 without afterburner)",
+      "MBDA Meteor beyond-visual-range missile",
+      "Deployed from RAF Akrotiri and Qatar for Iranian drone interception",
+      "CAPTOR-E AESA radar (Tranche 3)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Eurofighter_Typhoon",
+      "https://www.raf.mod.uk/aircraft/current-aircraft/typhoon-fgr41/"
+    ]
+  },
+  {
+    "id": "f16cd_usaf",
+    "system_name": "F-16C/D Block 50/52 (USAF)",
+    "nato_designation": "F-16C/D",
+    "aliases": ["Viper", "Fighting Falcon"],
+    "operator": "United States (USAF)",
+    "country": "US",
+    "type": "single-engine multirole fighter",
+    "manufacturer": "Lockheed Martin (General Dynamics)",
+    "crew": [1, 2],
+    "crew_notes": "1 (C model), 2 (D model)",
+    "max_speed_mach": 2.02,
+    "max_speed_kmh": 2414,
+    "combat_radius_km": 580,
+    "ferry_range_km": 3940,
+    "service_ceiling_m": 15240,
+    "max_weapons_payload_kg": 5640,
+    "engines": "1x GE F110-GE-129 (Block 50) or P&W F100-PW-229 (Block 52)",
+    "armament": {
+      "cannon": "1x M61A1 20mm Vulcan",
+      "air_to_air": ["AIM-120 AMRAAM", "AIM-9X Sidewinder"],
+      "air_to_ground": ["JDAM", "JSOW", "AGM-65 Maverick", "AGM-88 HARM", "CBU-87/97"],
+      "pods": ["LANTIRN", "Sniper XR"]
+    },
+    "first_operational": 1993,
+    "role_in_operations": "USAF deployed F-16s from regional bases (Al Udeid, Al Dhafra, others) for air defense, CAP, and SEAD missions in support of coalition interception during True Promise operations.",
+    "key_features": [
+      "Most-produced Western fighter (4,600+ built)",
+      "Block 50/52 HARM Targeting System for SEAD",
+      "Widely deployed across CENTCOM bases"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon",
+      "https://www.af.mil/About-Us/Fact-Sheets/Display/Article/104505/f-16-fighting-falcon/"
+    ]
+  },
+  {
+    "id": "f16_rjaf",
+    "system_name": "F-16A/B MLU (RJAF)",
+    "nato_designation": "F-16A/B",
+    "aliases": ["Fighting Falcon (Jordanian)"],
+    "operator": "Jordan (Royal Jordanian Air Force)",
+    "country": "JO",
+    "type": "single-engine multirole fighter",
+    "manufacturer": "Lockheed Martin (General Dynamics)",
+    "crew": [1, 2],
+    "crew_notes": "1 (A model), 2 (B model)",
+    "max_speed_mach": 2.0,
+    "max_speed_kmh": 2414,
+    "combat_radius_km": 550,
+    "ferry_range_km": 3890,
+    "service_ceiling_m": 15240,
+    "max_weapons_payload_kg": 5443,
+    "engines": "1x GE F110-GE-100",
+    "armament": {
+      "cannon": "1x M61A1 20mm Vulcan",
+      "air_to_air": ["AIM-120 AMRAAM", "AIM-9L/M Sidewinder"],
+      "air_to_ground": ["JDAM", "AGM-65 Maverick", "Paveway LGBs"],
+      "pods": ["AN/AAQ-28 LITENING"]
+    },
+    "first_operational": 1997,
+    "fleet_size": 61,
+    "fleet_notes": "43x F-16A + 18x F-16B; Block 70/72 with APG-83 AESA on order",
+    "role_in_operations": "Jordan scrambled F-16s to intercept Iranian drones transiting Jordanian airspace en route to Israel during True Promise I (April 2024). Intercepted a significant number of the 170+ drones, demonstrating Jordanian-Israeli defense cooperation.",
+    "key_features": [
+      "Mid-Life Update (MLU) with modernized avionics",
+      "Block 70/72 (F-16V) order will give AESA radar capability",
+      "Key role in TP1 drone interception over Jordanian airspace"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Royal_Jordanian_Air_Force",
+      "https://en.wikipedia.org/wiki/April_2024_Iranian_strikes_on_Israel"
+    ]
+  }
+]
