@@ -1,8 +1,12 @@
 [
   {
     "id": "arrow_3",
+    "slug": "arrow-3",
     "system_name": "Arrow-3",
-    "aliases": ["Hetz-3"],
+    "name_hebrew": "חץ-3",
+    "aliases": [
+      "Hetz-3"
+    ],
     "operator": "Israel (IAF)",
     "classification": "Exoatmospheric anti-ballistic missile",
     "intercept_phase": "exoatmospheric",
@@ -12,7 +16,11 @@
     },
     "range_km": 2400,
     "kill_mechanism": "Hit-to-kill (kinetic)",
-    "targets": ["MRBM", "IRBM", "ICBM"],
+    "targets": [
+      "MRBM",
+      "IRBM",
+      "ICBM"
+    ],
     "developer": "IAI / Boeing",
     "first_operational": 2017,
     "first_combat_use": "2024-04-13",
@@ -24,8 +32,12 @@
   },
   {
     "id": "arrow_2",
+    "slug": "arrow-2",
     "system_name": "Arrow-2",
-    "aliases": ["Hetz-2"],
+    "name_hebrew": "חץ-2",
+    "aliases": [
+      "Hetz-2"
+    ],
     "operator": "Israel (IAF)",
     "classification": "Endo/exoatmospheric anti-ballistic missile",
     "intercept_phase": "upper-endoatmospheric",
@@ -35,7 +47,10 @@
     },
     "range_km": 90,
     "kill_mechanism": "Blast fragmentation warhead",
-    "targets": ["MRBM", "SRBM"],
+    "targets": [
+      "MRBM",
+      "SRBM"
+    ],
     "developer": "IAI / Boeing",
     "first_operational": 2000,
     "first_combat_use": "2024-04-13",
@@ -47,8 +62,13 @@
   },
   {
     "id": "davids_sling",
+    "slug": "davids-sling",
     "system_name": "David's Sling",
-    "aliases": ["Magic Wand", "Sharvit Ksamim"],
+    "name_hebrew": "קלע דוד",
+    "aliases": [
+      "Magic Wand",
+      "Sharvit Ksamim"
+    ],
     "operator": "Israel (IAF)",
     "classification": "Medium-range air defense",
     "intercept_phase": "endoatmospheric",
@@ -59,7 +79,12 @@
     "range_km": 300,
     "interceptor": "Stunner (SkyCeptor)",
     "kill_mechanism": "Hit-to-kill (kinetic)",
-    "targets": ["SRBM", "cruise_missile", "large_rocket", "aircraft"],
+    "targets": [
+      "SRBM",
+      "cruise_missile",
+      "large_rocket",
+      "aircraft"
+    ],
     "developer": "Rafael / Raytheon",
     "first_operational": 2017,
     "first_combat_use": "2023-05",
@@ -71,8 +96,12 @@
   },
   {
     "id": "iron_dome",
+    "slug": "iron-dome",
     "system_name": "Iron Dome",
-    "aliases": ["Kipat Barzel"],
+    "name_hebrew": "כיפת ברזל",
+    "aliases": [
+      "Kipat Barzel"
+    ],
     "operator": "Israel (IAF)",
     "classification": "Short-range air defense",
     "intercept_phase": "endoatmospheric (terminal)",
@@ -83,7 +112,12 @@
     "range_km": 70,
     "interceptor": "Tamir",
     "kill_mechanism": "Proximity-fused fragmentation",
-    "targets": ["short_range_rocket", "mortar", "UAV", "cruise_missile"],
+    "targets": [
+      "short_range_rocket",
+      "mortar",
+      "UAV",
+      "cruise_missile"
+    ],
     "developer": "Rafael",
     "first_operational": 2011,
     "first_combat_use": "2011-04",
@@ -95,8 +129,12 @@
   },
   {
     "id": "thaad",
+    "slug": "thaad",
     "system_name": "THAAD",
-    "aliases": ["Terminal High Altitude Area Defense"],
+    "name_hebrew": null,
+    "aliases": [
+      "Terminal High Altitude Area Defense"
+    ],
     "operator": "United States (US Army)",
     "classification": "Terminal-phase anti-ballistic missile",
     "intercept_phase": "upper-endoatmospheric / exoatmospheric",
@@ -106,7 +144,11 @@
     },
     "range_km": 200,
     "kill_mechanism": "Hit-to-kill (kinetic)",
-    "targets": ["MRBM", "SRBM", "IRBM"],
+    "targets": [
+      "MRBM",
+      "SRBM",
+      "IRBM"
+    ],
     "developer": "Lockheed Martin",
     "first_operational": 2008,
     "first_combat_use": "2024-04-13",
@@ -118,8 +160,13 @@
   },
   {
     "id": "patriot_pac3",
+    "slug": "patriot-pac3",
     "system_name": "Patriot PAC-3",
-    "aliases": ["Patriot", "MIM-104 Patriot"],
+    "name_hebrew": null,
+    "aliases": [
+      "Patriot",
+      "MIM-104 Patriot"
+    ],
     "operator": "United States / Saudi Arabia / Kuwait / others",
     "classification": "Medium-range air and missile defense",
     "intercept_phase": "endoatmospheric (terminal)",
@@ -129,7 +176,12 @@
     },
     "range_km": 160,
     "kill_mechanism": "Hit-to-kill (PAC-3) / blast-frag (PAC-2 GEM+)",
-    "targets": ["SRBM", "cruise_missile", "aircraft", "UAV"],
+    "targets": [
+      "SRBM",
+      "cruise_missile",
+      "aircraft",
+      "UAV"
+    ],
     "developer": "Raytheon / Lockheed Martin",
     "first_operational": 2002,
     "first_combat_use": "2003 (Iraq War)",
@@ -141,8 +193,14 @@
   },
   {
     "id": "aegis_sm3",
+    "slug": "aegis-sm3",
     "system_name": "Aegis BMD / SM-3",
-    "aliases": ["SM-3", "Standard Missile-3", "Aegis Ballistic Missile Defense"],
+    "name_hebrew": null,
+    "aliases": [
+      "SM-3",
+      "Standard Missile-3",
+      "Aegis Ballistic Missile Defense"
+    ],
     "operator": "United States (US Navy)",
     "classification": "Sea-based exoatmospheric anti-ballistic missile",
     "intercept_phase": "exoatmospheric",
@@ -152,7 +210,11 @@
     },
     "range_km": 700,
     "kill_mechanism": "Hit-to-kill (kinetic warhead)",
-    "targets": ["MRBM", "IRBM", "SRBM"],
+    "targets": [
+      "MRBM",
+      "IRBM",
+      "SRBM"
+    ],
     "developer": "Raytheon / Aerojet Rocketdyne",
     "first_operational": 2004,
     "first_combat_use": "2024-04-13",
@@ -164,8 +226,13 @@
   },
   {
     "id": "aegis_sm2",
+    "slug": "aegis-sm2",
     "system_name": "Aegis / SM-2",
-    "aliases": ["SM-2", "Standard Missile-2"],
+    "name_hebrew": null,
+    "aliases": [
+      "SM-2",
+      "Standard Missile-2"
+    ],
     "operator": "United States (US Navy)",
     "classification": "Sea-based medium-range air defense",
     "intercept_phase": "endoatmospheric",
@@ -175,7 +242,12 @@
     },
     "range_km": 170,
     "kill_mechanism": "Blast fragmentation",
-    "targets": ["cruise_missile", "aircraft", "UAV", "SRBM_terminal"],
+    "targets": [
+      "cruise_missile",
+      "aircraft",
+      "UAV",
+      "SRBM_terminal"
+    ],
     "developer": "Raytheon",
     "first_operational": 1981,
     "notes": "Primary fleet air defense missile. Used to engage drones and cruise missiles. Semi-active radar homing with Aegis illumination.",

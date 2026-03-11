@@ -1,7 +1,9 @@
 [
   {
     "id": "emad",
+    "slug": "emad",
     "system_name": "Emad",
+    "name_farsi": "عماد",
     "aliases": [
       "Emad-1"
     ],
@@ -48,12 +50,15 @@
     ],
     "sources": [
       "https://missilethreat.csis.org/missile/emad/",
-      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/emad/"
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/emad/",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "ghadr",
+    "slug": "ghadr",
     "system_name": "Ghadr",
+    "name_farsi": "قدر",
     "aliases": [
       "Ghadr-1",
       "Ghadr-101",
@@ -111,12 +116,15 @@
     "sources": [
       "https://missilethreat.csis.org/missile/emad/",
       "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/ghadr-110/",
-      "https://en.wikipedia.org/wiki/Ghadr-110"
+      "https://en.wikipedia.org/wiki/Ghadr-110",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "sejjil",
+    "slug": "sejjil",
     "system_name": "Sejjil",
+    "name_farsi": "سجیل",
     "aliases": [
       "Sejjil-1",
       "Sejjil-2",
@@ -166,12 +174,15 @@
     ],
     "sources": [
       "https://missilethreat.csis.org/missile/sejjil/",
-      "https://en.wikipedia.org/wiki/Sejjil"
+      "https://en.wikipedia.org/wiki/Sejjil",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "kheibar_shekan",
+    "slug": "kheibar-shekan",
     "system_name": "Kheibar Shekan",
+    "name_farsi": "خیبرشکن",
     "name_translation": "Kheibar Breaker",
     "aliases": [
       "Kheibar Shekan MaRV"
@@ -225,12 +236,15 @@
     ],
     "sources": [
       "https://www.globalsecurity.org/wmd/world/iran/kheibar-shekan.htm",
-      "https://en.wikipedia.org/wiki/Kheibar_Shekan"
+      "https://en.wikipedia.org/wiki/Kheibar_Shekan",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "fattah_1",
+    "slug": "fattah-1",
     "system_name": "Fattah-1",
+    "name_farsi": "فتاح-۱",
     "name_translation": "Conqueror",
     "aliases": [
       "Fattah"
@@ -284,12 +298,15 @@
     ],
     "sources": [
       "https://en.wikipedia.org/wiki/Fattah-1",
-      "https://www.armyrecognition.com/military-products/army/missiles/hypersonic-missiles/fattah-1-hypersonic-missile"
+      "https://www.armyrecognition.com/military-products/army/missiles/hypersonic-missiles/fattah-1-hypersonic-missile",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "fattah_2",
+    "slug": "fattah-2",
     "system_name": "Fattah-2",
+    "name_farsi": "فتاح-۲",
     "name_translation": "Conqueror",
     "aliases": [],
     "nato_designation": null,
@@ -340,12 +357,15 @@
     ],
     "sources": [
       "https://en.wikipedia.org/wiki/Fattah-2",
-      "https://militarywatchmagazine.com/article/iran-launches-first-hypersonic-glide-strike-fattah2"
+      "https://militarywatchmagazine.com/article/iran-launches-first-hypersonic-glide-strike-fattah2",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "shahed_136",
+    "slug": "shahed-136",
     "system_name": "Shahed-136",
+    "name_farsi": "شاهد-۱۳۶",
     "manufacturer": "HESA / Shahed Aviation Industries",
     "aliases": [
       "Geran-2"
@@ -401,7 +421,9 @@
   },
   {
     "id": "shahed_238",
+    "slug": "shahed-238",
     "system_name": "Shahed-238",
+    "name_farsi": "شاهد-۲۳۸",
     "manufacturer": "HESA / Shahed Aviation Industries",
     "aliases": [
       "Geran-3"
@@ -459,7 +481,9 @@
   },
   {
     "id": "shahed_131",
+    "slug": "shahed-131",
     "system_name": "Shahed-131",
+    "name_farsi": "شاهد-۱۳۱",
     "aliases": [
       "Geran-1"
     ],
@@ -506,7 +530,9 @@
   },
   {
     "id": "mohajer_6",
+    "slug": "mohajer-6",
     "system_name": "Mohajer-6",
+    "name_farsi": "مهاجر-۶",
     "aliases": [
       "Mohajer-6 UCAV"
     ],
@@ -555,7 +581,9 @@
   },
   {
     "id": "paveh",
+    "slug": "paveh",
     "system_name": "Paveh",
+    "name_farsi": "پاوه",
     "aliases": [
       "Paveh cruise missile"
     ],
@@ -603,7 +631,9 @@
   },
   {
     "id": "khorramshahr_4",
+    "slug": "khorramshahr-4",
     "system_name": "Khorramshahr-4",
+    "name_farsi": "خرمشهر-۴",
     "name_translation": "Khorramshahr (city name)",
     "aliases": [
       "Khorramshahr-4"
@@ -652,13 +682,18 @@
     ],
     "sources": [
       "https://missilethreat.csis.org/missile/khorramshahr/",
-      "https://en.wikipedia.org/wiki/Khorramshahr_(missile)"
+      "https://en.wikipedia.org/wiki/Khorramshahr_(missile)",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "shahab_1",
+    "slug": "shahab-1",
     "system_name": "Shahab-1",
-    "aliases": ["Scud-B (Iranian copy)"],
+    "name_farsi": "شهاب-۱",
+    "aliases": [
+      "Scud-B (Iranian copy)"
+    ],
     "nato_designation": "SS-1C Scud-B",
     "type_key": "shahab_1_used",
     "classification": "Short-Range Ballistic Missile (SRBM)",
@@ -700,13 +735,19 @@
     ],
     "sources": [
       "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/shahab-1/",
-      "https://missilethreat.csis.org/country_tax/iran/"
+      "https://missilethreat.csis.org/country_tax/iran/",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "shahab_2",
+    "slug": "shahab-2",
     "system_name": "Shahab-2",
-    "aliases": ["Scud-C (Iranian copy)", "Hwasong-6 derivative"],
+    "name_farsi": "شهاب-۲",
+    "aliases": [
+      "Scud-C (Iranian copy)",
+      "Hwasong-6 derivative"
+    ],
     "nato_designation": "SS-1D Scud-C",
     "type_key": "shahab_2_used",
     "classification": "Short-Range Ballistic Missile (SRBM)",
@@ -748,13 +789,18 @@
     ],
     "sources": [
       "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/shahab-2/",
-      "https://missilethreat.csis.org/country_tax/iran/"
+      "https://missilethreat.csis.org/country_tax/iran/",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "shahab_3",
+    "slug": "shahab-3",
     "system_name": "Shahab-3",
-    "aliases": ["Nodong-1 derivative"],
+    "name_farsi": "شهاب-۳",
+    "aliases": [
+      "Nodong-1 derivative"
+    ],
     "nato_designation": null,
     "western_reference": "Shahab-3 (No Dong derivative)",
     "type_key": "shahab_3_used",
@@ -797,13 +843,19 @@
     ],
     "sources": [
       "https://missilethreat.csis.org/missile/shahab-3/",
-      "https://en.wikipedia.org/wiki/Shahab-3"
+      "https://en.wikipedia.org/wiki/Shahab-3",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "fateh_110",
+    "slug": "fateh-110",
     "system_name": "Fateh-110",
-    "aliases": ["Fateh A-110", "M-600 (export)"],
+    "name_farsi": "فاتح-۱۱۰",
+    "aliases": [
+      "Fateh A-110",
+      "M-600 (export)"
+    ],
     "nato_designation": null,
     "western_reference": "Fateh-110",
     "type_key": "fateh_110_used",
@@ -847,12 +899,15 @@
     ],
     "sources": [
       "https://missilethreat.csis.org/missile/fateh-110/",
-      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/fateh-110/"
+      "https://www.missiledefenseadvocacy.org/missile-threat-and-proliferation/todays-missile-threat/iran/fateh-110/",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "fateh_313",
+    "slug": "fateh-313",
     "system_name": "Fateh-313",
+    "name_farsi": "فاتح-۳۱۳",
     "aliases": [],
     "nato_designation": null,
     "western_reference": "Fateh-313",
@@ -898,13 +953,18 @@
     ],
     "sources": [
       "https://en.wikipedia.org/wiki/Fateh-313",
-      "https://missilethreat.csis.org/missile/fateh-110/"
+      "https://missilethreat.csis.org/missile/fateh-110/",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   },
   {
     "id": "zolfaghar",
+    "slug": "zolfaghar",
     "system_name": "Zolfaghar",
-    "aliases": ["Zulfiqar"],
+    "name_farsi": "ذوالفقار",
+    "aliases": [
+      "Zulfiqar"
+    ],
     "nato_designation": null,
     "western_reference": "Zolfaghar",
     "type_key": "zolfaghar_used",
@@ -948,7 +1008,8 @@
     ],
     "sources": [
       "https://missilethreat.csis.org/missile/zolfaghar/",
-      "https://en.wikipedia.org/wiki/Zolfaghar_(missile)"
+      "https://en.wikipedia.org/wiki/Zolfaghar_(missile)",
+      "https://www.iranwatch.org/our-publications/weapon-program-background-report/table-irans-missile-arsenal"
     ]
   }
 ]

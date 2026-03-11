@@ -1,6 +1,7 @@
 [
   {
     "id": "tamir",
+    "slug": "tamir",
     "name": "Tamir",
     "parent_system": "iron_dome",
     "type": "blast_fragmentation",
@@ -15,7 +16,12 @@
     "guidance": "Electro-optical + active radar seeker",
     "warhead_type": "Proximity-fused blast fragmentation",
     "kill_mechanism": "blast_fragmentation",
-    "targets": ["short_range_rocket", "mortar", "UAV", "cruise_missile"],
+    "targets": [
+      "short_range_rocket",
+      "mortar",
+      "UAV",
+      "cruise_missile"
+    ],
     "unit_cost_usd": {
       "estimate": 50000,
       "range": "40000-100000",
@@ -33,6 +39,7 @@
   },
   {
     "id": "stunner",
+    "slug": "stunner",
     "name": "Stunner (SkyCeptor)",
     "parent_system": "davids_sling",
     "type": "kinetic_kill",
@@ -47,7 +54,12 @@
     "guidance": "Multi-mode seeker: IIR + active RF radar; dual-pulse motor",
     "warhead_type": "Hit-to-kill (no warhead)",
     "kill_mechanism": "kinetic_kill",
-    "targets": ["SRBM", "cruise_missile", "large_rocket", "aircraft"],
+    "targets": [
+      "SRBM",
+      "cruise_missile",
+      "large_rocket",
+      "aircraft"
+    ],
     "unit_cost_usd": {
       "estimate": 1000000,
       "range": "1000000-3500000",
@@ -65,6 +77,7 @@
   },
   {
     "id": "arrow_2_interceptor",
+    "slug": "arrow-2-interceptor",
     "name": "Arrow-2 interceptor",
     "parent_system": "arrow_2",
     "type": "blast_fragmentation",
@@ -79,7 +92,10 @@
     "guidance": "Command-guided midcourse; active radar terminal seeker",
     "warhead_type": "Directional high-explosive blast fragmentation",
     "kill_mechanism": "blast_fragmentation",
-    "targets": ["MRBM", "SRBM"],
+    "targets": [
+      "MRBM",
+      "SRBM"
+    ],
     "unit_cost_usd": {
       "estimate": 3000000,
       "range": "2000000-3000000",
@@ -97,6 +113,7 @@
   },
   {
     "id": "arrow_3_interceptor",
+    "slug": "arrow-3-interceptor",
     "name": "Arrow-3 interceptor",
     "parent_system": "arrow_3",
     "type": "kinetic_kill",
@@ -111,7 +128,11 @@
     "guidance": "Two-stage booster + detachable exoatmospheric kill vehicle (EKV) with IIR seeker",
     "warhead_type": "Hit-to-kill (no warhead)",
     "kill_mechanism": "kinetic_kill",
-    "targets": ["MRBM", "IRBM", "ICBM"],
+    "targets": [
+      "MRBM",
+      "IRBM",
+      "ICBM"
+    ],
     "unit_cost_usd": {
       "estimate": 3000000,
       "range": "2000000-3500000",
@@ -129,6 +150,7 @@
   },
   {
     "id": "sm3_block_ia",
+    "slug": "sm3-block-ia",
     "name": "SM-3 Block IA",
     "parent_system": "aegis_sm3",
     "type": "kinetic_kill",
@@ -143,7 +165,10 @@
     "guidance": "GPS-aided INS midcourse; LEAP kinetic warhead IIR terminal seeker",
     "warhead_type": "Hit-to-kill (LEAP kinetic warhead)",
     "kill_mechanism": "kinetic_kill",
-    "targets": ["MRBM", "SRBM"],
+    "targets": [
+      "MRBM",
+      "SRBM"
+    ],
     "unit_cost_usd": {
       "estimate": 10000000,
       "range": "10000000-12000000",
@@ -161,6 +186,7 @@
   },
   {
     "id": "sm3_block_iia",
+    "slug": "sm3-block-iia",
     "name": "SM-3 Block IIA",
     "parent_system": "aegis_sm3",
     "type": "kinetic_kill",
@@ -175,7 +201,11 @@
     "guidance": "GPS-aided INS midcourse; improved LEAP kinetic warhead with larger IIR seeker",
     "warhead_type": "Hit-to-kill (improved LEAP kinetic warhead)",
     "kill_mechanism": "kinetic_kill",
-    "targets": ["MRBM", "IRBM", "ICBM"],
+    "targets": [
+      "MRBM",
+      "IRBM",
+      "ICBM"
+    ],
     "unit_cost_usd": {
       "estimate": 36000000,
       "range": "28000000-36000000",
@@ -193,6 +223,7 @@
   },
   {
     "id": "pac3_mse",
+    "slug": "pac3-mse",
     "name": "PAC-3 MSE",
     "parent_system": "patriot_pac3",
     "type": "kinetic_kill",
@@ -207,7 +238,11 @@
     "guidance": "Ka-band active radar seeker; 180 attitude control motors",
     "warhead_type": "Hit-to-kill (no warhead)",
     "kill_mechanism": "kinetic_kill",
-    "targets": ["SRBM", "cruise_missile", "aircraft"],
+    "targets": [
+      "SRBM",
+      "cruise_missile",
+      "aircraft"
+    ],
     "unit_cost_usd": {
       "estimate": 4000000,
       "range": "4000000-6000000",
@@ -225,6 +260,7 @@
   },
   {
     "id": "pac2_gem_plus",
+    "slug": "pac2-gem-plus",
     "name": "PAC-2 GEM+",
     "parent_system": "patriot_pac3",
     "type": "blast_fragmentation",
@@ -239,7 +275,12 @@
     "guidance": "Semi-active radar homing; TVM (Track-via-Missile)",
     "warhead_type": "70 kg blast fragmentation",
     "kill_mechanism": "blast_fragmentation",
-    "targets": ["aircraft", "cruise_missile", "UAV", "SRBM"],
+    "targets": [
+      "aircraft",
+      "cruise_missile",
+      "UAV",
+      "SRBM"
+    ],
     "unit_cost_usd": {
       "estimate": 3000000,
       "range": "2000000-4000000",
@@ -256,6 +297,7 @@
   },
   {
     "id": "thaad_interceptor",
+    "slug": "thaad-interceptor",
     "name": "THAAD interceptor",
     "parent_system": "thaad",
     "type": "kinetic_kill",
@@ -270,7 +312,11 @@
     "guidance": "Midcourse INS/GPS; terminal IIR seeker on kill vehicle",
     "warhead_type": "Hit-to-kill (no warhead)",
     "kill_mechanism": "kinetic_kill",
-    "targets": ["MRBM", "SRBM", "IRBM"],
+    "targets": [
+      "MRBM",
+      "SRBM",
+      "IRBM"
+    ],
     "unit_cost_usd": {
       "estimate": 12000000,
       "range": "10000000-15000000",
@@ -288,6 +334,7 @@
   },
   {
     "id": "sm2_block_iiia",
+    "slug": "sm2-block-iiia",
     "name": "SM-2 Block IIIA",
     "parent_system": "aegis_sm2",
     "type": "blast_fragmentation",
@@ -302,7 +349,11 @@
     "guidance": "Inertial midcourse; semi-active radar terminal (Aegis illumination); IR terminal seeker (Block IIIB)",
     "warhead_type": "61 kg blast fragmentation",
     "kill_mechanism": "blast_fragmentation",
-    "targets": ["cruise_missile", "aircraft", "UAV"],
+    "targets": [
+      "cruise_missile",
+      "aircraft",
+      "UAV"
+    ],
     "unit_cost_usd": {
       "estimate": 2100000,
       "range": "1800000-2500000",
@@ -319,6 +370,7 @@
   },
   {
     "id": "iron_beam",
+    "slug": "iron-beam",
     "name": "Iron Beam",
     "parent_system": null,
     "type": "directed_energy",
@@ -333,7 +385,11 @@
     "guidance": "Beam tracking / electro-optical",
     "warhead_type": "High-energy laser (100 kW class)",
     "kill_mechanism": "directed_energy",
-    "targets": ["short_range_rocket", "mortar", "UAV"],
+    "targets": [
+      "short_range_rocket",
+      "mortar",
+      "UAV"
+    ],
     "unit_cost_usd": {
       "estimate": 2,
       "range": "2-4",
