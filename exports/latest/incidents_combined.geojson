@@ -1427,7 +1427,7 @@
           "CY"
         ],
         "casualties_killed": 9,
-        "casualties_wounded": 40,
+        "casualties_wounded": 50,
         "launch_site_description": "Western Iran",
         "layer": "launch_site",
         "generic_location": true
@@ -2625,6 +2625,40 @@
         "probable_launch_time": "2026-03-10T17:40:00Z",
         "conflict_day": 11,
         "payload": "Ballistic missile(s) targeting central Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 40,
+        "wave_number": 40,
+        "wave_id": "tp4_w40",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T22:51:00Z",
+        "probable_launch_time": "2026-03-10T22:35:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles targeting central Israel and Jerusalem area",
         "drones_used": false,
         "ballistic_missiles_used": true,
         "cruise_missiles_used": false,
@@ -5465,7 +5499,7 @@
           "CY"
         ],
         "casualties_killed": 9,
-        "casualties_wounded": 40,
+        "casualties_wounded": 50,
         "launch_site_description": "Western Iran",
         "layer": "target",
         "target_index": 0,
@@ -8666,6 +8700,132 @@
         "target_type": "israeli",
         "target_hit": true,
         "generic_location": "Beit Shemesh (open area)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 40,
+        "wave_number": 40,
+        "wave_id": "tp4_w40",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T22:51:00Z",
+        "probable_launch_time": "2026-03-10T22:35:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles targeting central Israel and Jerusalem area",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Central Israel",
+        "target_type": "israeli",
+        "target_hit": false,
+        "generic_location": "Central Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.24,
+          31.78
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 40,
+        "wave_number": 40,
+        "wave_id": "tp4_w40",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T22:51:00Z",
+        "probable_launch_time": "2026-03-10T22:35:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles targeting central Israel and Jerusalem area",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Jerusalem area",
+        "target_type": "israeli",
+        "target_hit": false,
+        "generic_location": "Jerusalem area"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 40,
+        "wave_number": 40,
+        "wave_id": "tp4_w40",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-10T22:51:00Z",
+        "probable_launch_time": "2026-03-10T22:35:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles targeting central Israel and Jerusalem area",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": false,
+        "generic_location": "Northern Israel"
       }
     }
   ]
