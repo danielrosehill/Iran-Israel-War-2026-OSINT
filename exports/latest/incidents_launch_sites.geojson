@@ -2477,7 +2477,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2142,
+          33.5525
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 35,
@@ -2504,14 +2510,20 @@
         ],
         "casualties_killed": 2,
         "casualties_wounded": 3,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Khorramabad (Imam Ali) Missile Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3284,
+          32.6131
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 36,
@@ -2538,14 +2550,20 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Dezful Missile Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.189,
+          34.435
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 37,
@@ -2572,14 +2590,20 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Kermanshah Missile Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.3284,
+          32.6131
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 38,
@@ -2606,14 +2630,20 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Dezful Missile Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.2142,
+          33.5525
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 39,
@@ -2640,14 +2670,20 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Khorramabad (Imam Ali) Missile Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.8735,
+          34.4419
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 40,
@@ -2674,14 +2710,20 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Kangavar Missile Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.2356,
+          34.3583
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 41,
@@ -2708,9 +2750,9 @@
         ],
         "casualties_killed": null,
         "casualties_wounded": null,
-        "launch_site_description": "Iran (specific site unknown)",
+        "launch_site_description": "Panj Pelleh Underground Base (approximate OSINT location)",
         "layer": "launch_site",
-        "generic_location": true
+        "generic_location": false
       }
     }
   ]
