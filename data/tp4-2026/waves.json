@@ -4,10 +4,10 @@
     "operation_name": "Operation True Promise 4",
     "operation_name_farsi": "عملیات وعده صادق ۴",
     "version": "2.1",
-    "incident_count": 41,
+    "incident_count": 42,
     "date_range": {
       "start": "2026-02-28",
-      "end": "2026-03-11"
+      "end": "2026-03-12"
     },
     "canonical_format": "json",
     "source_csv_columns": 75,
@@ -7595,6 +7595,271 @@
         ]
       },
       "iranian_media_claims": null
+    },
+    {
+      "uuid": "308313d6-ebf0-40e9-9740-6326e752d700",
+      "operation": "tp4",
+      "sequence": 42,
+      "wave_number": 42,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "description": "Forty-second wave of Operation True Promise 4. Day 13 (March 12), overnight into Wednesday. IRGC announced its 'most intense and heaviest operation' since the start of the war. Multiple ballistic missile salvos fired at Israel throughout the night, triggering sirens in central Israel at approximately 11:30 PM (March 11), 12:50 AM, 3:40 AM, and 4:40 AM (March 12). Coordinated with Hezbollah, which launched approximately 150 rockets at northern Israel. Khorramshahr-4 heavy ballistic missiles confirmed alongside Fattah hypersonic and Kheibar Shekan missiles. Cluster munition warheads deployed; two construction workers killed in Yehud (east of Tel Aviv) by submunitions from a cluster-equipped missile that penetrated defences. Iran also targeted US bases in Kuwait and Bahrain and struck at Gulf state targets including Qatar, Saudi Arabia, and the UAE. Israeli media reported all missiles intercepted, though cluster submunitions caused casualties on the ground.",
+      "timing": {
+        "announced_utc": "2026-03-11T21:30:00Z",
+        "announced_utc_note": "First salvo at 11:30 PM Israel time (March 11 local). Subsequent salvos at 12:50 AM, 3:40 AM, and 4:40 AM March 12 local. Per Haaretz and Times of Israel liveblog reporting.",
+        "announcement_source": "IDF / Haaretz / Times of Israel",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-11T21:15:00Z",
+        "launch_time_israel": "2026-03-11T23:30:00+0200",
+        "launch_time_iran": "2026-03-12T01:00:00+0330",
+        "solar_phase_launch_site": 0,
+        "solar_phase_target": 0,
+        "conflict_day": 13,
+        "hours_since_last_incident": 9.75,
+        "incident_duration_minutes": 310,
+        "elapsed_minutes_since_last": 585.0
+      },
+      "weapons": {
+        "payload": "Multiple salvos of ballistic missiles including Khorramshahr-4 heavy missiles with 1.5-ton warheads, Fattah hypersonic missiles, and Kheibar Shekan missiles. Cluster munition warheads confirmed on approximately half of missiles. Coordinated with Hezbollah rockets and drones from Lebanon.",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": true,
+          "fattah_used": true,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
+          "khorramshahr_4_used": true
+        },
+        "categories": {
+          "bm_liquid_fueled": true,
+          "bm_solid_fueled": true,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": true,
+          "bm_cluster_warhead": true
+        },
+        "cluster_warhead": {
+          "confirmed": true,
+          "carrier_missile": "Khorramshahr-4",
+          "submunition_count": null,
+          "submunition_explosive_kg": null,
+          "dispersal_radius_km": 10.0,
+          "dispersal_altitude_ft": null
+        }
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "targets": "Central Israel from Netanya to Ashdod. Multiple salvos targeting Tel Aviv metropolitan area and surrounding cities. Also targeted US bases in Kuwait and Bahrain, and Gulf state infrastructure in Qatar, Saudi Arabia, and UAE.",
+        "landings_countries": [
+          "IL",
+          "KW",
+          "BH",
+          "QA",
+          "SA",
+          "AE"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": false,
+          "targeted_eilat": false
+        },
+        "us_bases": [
+          {
+            "name": "Camp Arifjan",
+            "country_code": "KW"
+          },
+          {
+            "name": "Naval Support Activity Bahrain",
+            "country_code": "BH"
+          }
+        ],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.07,
+          "lon": 34.78,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        },
+        "target_hit": true,
+        "target_locations": [
+          {
+            "name": "Central Israel (Netanya to Ashdod)",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Yehud (east of Tel Aviv)",
+            "type": "israeli",
+            "hit": true
+          },
+          {
+            "name": "Prince Sultan Air Base (Saudi Arabia)",
+            "type": "us_base",
+            "hit": null
+          },
+          {
+            "name": "Kuwait",
+            "type": "us_base",
+            "hit": null
+          },
+          {
+            "name": "Bahrain",
+            "type": "us_base",
+            "hit": null
+          }
+        ]
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        },
+        {
+          "actor": "Hezbollah",
+          "subunit": null
+        }
+      ],
+      "launch_site": {
+        "description": "Western Iran (multiple launch sites)",
+        "lat": 33.5,
+        "lon": 47.0,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "David's Sling",
+          "Iron Dome",
+          "Patriot PAC-3"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": true,
+          "uk": null,
+          "jordan": null,
+          "other": [
+            "Saudi Arabia",
+            "Kuwait",
+            "UAE"
+          ]
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": true,
+        "endoatmospheric_interception": true,
+        "interception_report": "Israeli media reported all ballistic missiles targeting Israel were intercepted. However, cluster submunitions from at least one missile dispersed over the Yehud area east of Tel Aviv, killing two and injuring one. Saudi Arabia intercepted 6 missiles near Prince Sultan Air Base. Kuwait shot down 8 drones. UAE intercepted drones and missiles. Bahrain activated air raid sirens."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "Cluster submunitions from an Iranian missile struck a construction site in Yehud, east of Tel Aviv. Two construction workers killed outdoors (not in shelters) — one killed immediately, second died the following day. One worker seriously injured by shrapnel. Interceptor fragments fell in several areas across central Israel.",
+        "fatalities": 2,
+        "injuries": 1,
+        "civilian_casualties": 3,
+        "military_casualties": 0
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": true,
+        "description": "Hezbollah launched approximately 150 rockets at northern Israel in a coordinated 'joint and integrated operation' with IRGC. Hezbollah targeted over 50 sites including northern Israeli communities. Initial barrage of ~100 rockets shortly after 8 PM, with additional waves throughout the night."
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.haaretz.com/israel-news/israel-security/2026-03-11/ty-article/sleepless-in-tel-aviv-iranian-missiles-trigger-consecutive-overnight-sirens/0000019c-dbb3-d3be-a7fd-fff339a00000",
+          "https://www.timesofisrael.com/liveblog-march-11-2026/",
+          "https://www.aljazeera.com/news/2026/3/11/iran-war-what-is-happening-on-day-12-of-us-israel-attacks",
+          "https://www.euronews.com/2026/03/11/iran-unleashes-intense-waves-of-strikes-across-gulf-as-hormuz-crisis-deepens"
+        ]
+      },
+      "iranian_media_claims": null,
+      "events": [
+        {
+          "uuid": "1c0ccf7f-10f2-4881-a245-9003f3f2bc64",
+          "event_type": "strike",
+          "outcome_status": "confirmed",
+          "location_name": "Yehud (east of Tel Aviv)",
+          "lat": 32.03,
+          "lon": 34.89,
+          "country_code": "IL",
+          "weapon_type": "khorramshahr_4",
+          "defense_system": null,
+          "interception_method": null,
+          "interceptor_munition": null,
+          "intercept_phase": null,
+          "intercepting_force": null,
+          "fatalities": 2,
+          "injuries": 1,
+          "damage_description": "Cluster submunitions from a Khorramshahr-4 missile struck a construction site. Two workers killed outdoors (not in shelters), one seriously injured by shrapnel. Submunitions dispersed over approximately 10 km radius.",
+          "target_type": "civilian",
+          "source_url": "https://www.haaretz.com/israel-news/israel-security/2026-03-11/ty-article/sleepless-in-tel-aviv-iranian-missiles-trigger-consecutive-overnight-sirens/0000019c-dbb3-d3be-a7fd-fff339a00000",
+          "confidence": "confirmed",
+          "iranian_claim": "IRGC announced 'most intense and heaviest operation' since the start of the war, claiming hits on military and strategic targets in Israel",
+          "israeli_claim": "All ballistic missiles intercepted; casualties caused by cluster submunitions from intercepted missile",
+          "us_claim": null,
+          "bda": null,
+          "narrative": null,
+          "thumbnail": null,
+          "images": []
+        },
+        {
+          "uuid": "5c5597fd-8e67-4025-8334-cef261fd0842",
+          "event_type": "interception",
+          "outcome_status": "confirmed",
+          "location_name": "Central Israel (over Tel Aviv area)",
+          "lat": 32.07,
+          "lon": 34.78,
+          "country_code": "IL",
+          "weapon_type": "fattah_1",
+          "defense_system": "Arrow-3",
+          "interception_method": "surface_to_air_missile",
+          "interceptor_munition": "Arrow-3 interceptor",
+          "intercept_phase": "exoatmospheric",
+          "intercepting_force": "Israel",
+          "fatalities": 0,
+          "injuries": 0,
+          "damage_description": "Multiple Fattah hypersonic missiles intercepted over central Israel during overnight salvos. Interceptor fragments fell in several areas.",
+          "target_type": null,
+          "source_url": "https://www.timesofisrael.com/liveblog-march-11-2026/",
+          "confidence": "probable",
+          "iranian_claim": null,
+          "israeli_claim": "All missiles intercepted",
+          "us_claim": null,
+          "bda": null,
+          "narrative": null,
+          "thumbnail": null,
+          "images": []
+        }
+      ]
     }
   ]
 }
