@@ -6,6 +6,13 @@
       "env": {
         "NEWSAPI_KEY": "${NEWSAPI_KEY}"
       }
+    },
+    "gemini-grounding": {
+      "command": "npx",
+      "args": ["-y", "gemini-grounding"],
+      "env": {
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+      }
     }
   }
 }
