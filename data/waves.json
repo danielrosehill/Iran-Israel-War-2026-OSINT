@@ -9489,7 +9489,7 @@
           "ghadr_used": null,
           "sejjil_used": null,
           "kheibar_shekan_used": null,
-          "fattah_used": null,
+          "fattah_used": true,
           "shahed_136_used": false,
           "shahed_238_used": false,
           "shahed_131_used": false,
@@ -10374,6 +10374,169 @@
         }
       },
       "iranian_media_claims": "IRGC Public Relations announced the twentieth wave of Operation Promised Truth 4 began with a combined missile and drone operation along with a barrage of Khaibar-breaking (Kheibar Shekan) missiles against targets in the heart of Tel Aviv on the evening of the birth of Imam Hasan al-Mujtaba, with the code 'Ya Mo'izz al-Mu'minin'."
+    },
+    {
+      "operation": "tp4",
+      "sequence": 41,
+      "wave_number": 41,
+      "wave_codename_farsi": null,
+      "wave_codename_english": null,
+      "description": "Forty-first wave of Operation True Promise 4. Day 12 (March 11), afternoon. After a nine-hour pause, IRGC launched a fresh ballistic missile salvo from Iran targeting central and northern Israel at approximately 1:45 PM local time. Al Jazeera reported heavy, multi-warhead projectiles with interceptions observed over Israel. At least one missile reportedly reached the Tel Aviv area. Sirens sounded in central and northern Israel.",
+      "timing": {
+        "announced_utc": "2026-03-11T11:45:00Z",
+        "announced_utc_note": "1:45 PM Israel time (March 11 local). Per Times of Israel report of fresh ballistic missile launch from Iran after nine-hour pause.",
+        "announcement_source": "IDF / Times of Israel",
+        "announcement_x_url": null,
+        "probable_launch_time": "2026-03-11T11:30:00Z",
+        "launch_time_israel": "2026-03-11T13:45:00+0200",
+        "launch_time_iran": "2026-03-11T15:15:00+0330",
+        "solar_phase_launch_site": 1,
+        "solar_phase_target": 1,
+        "conflict_day": 12,
+        "hours_since_last_incident": 9.0,
+        "incident_duration_minutes": null,
+        "elapsed_minutes_since_last": 540.0
+      },
+      "weapons": {
+        "payload": "Ballistic missiles with heavy, multi-warhead projectiles targeting central and northern Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "types": {
+          "emad_used": null,
+          "ghadr_used": null,
+          "sejjil_used": null,
+          "kheibar_shekan_used": null,
+          "fattah_used": null,
+          "shahed_136_used": false,
+          "shahed_238_used": false,
+          "shahed_131_used": false,
+          "shahed_107_used": false,
+          "shahed_129_used": false,
+          "mohajer_6_used": false,
+          "khorramshahr_4_used": null
+        },
+        "categories": {
+          "bm_liquid_fueled": null,
+          "bm_solid_fueled": null,
+          "bm_marv_equipped": null,
+          "bm_hypersonic": false,
+          "bm_cluster_warhead": null
+        },
+        "cluster_warhead": null
+      },
+      "targets": {
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "targets": "Central Israel and northern Israel. Sirens in central and northern Israel. At least one missile reportedly reached Tel Aviv area.",
+        "landings_countries": [
+          "IL"
+        ],
+        "israeli_locations": {
+          "targeted_tel_aviv": true,
+          "targeted_jerusalem": false,
+          "targeted_haifa": false,
+          "targeted_negev_beersheba": false,
+          "targeted_northern_periphery": true,
+          "targeted_eilat": false
+        },
+        "us_bases": [],
+        "us_naval_vessels": [],
+        "target_coordinates": {
+          "lat": 32.07,
+          "lon": 34.78,
+          "generic_location": true
+        },
+        "critical_infrastructure": {
+          "targeted_airport": null,
+          "targeted_energy": null,
+          "targeted_port": null,
+          "targeted_government": null,
+          "targeted_industrial": null,
+          "targeted_telecom_data": null,
+          "targeted_diplomatic": null,
+          "targeted_research": null
+        },
+        "target_hit": null,
+        "target_locations": [
+          {
+            "name": "Central Israel",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Northern Israel",
+            "type": "israeli",
+            "hit": null
+          },
+          {
+            "name": "Tel Aviv area",
+            "type": "israeli",
+            "hit": true
+          }
+        ]
+      },
+      "attacking_force": [
+        {
+          "actor": "Iran",
+          "subunit": "IRGC Aerospace Force"
+        }
+      ],
+      "launch_site": {
+        "description": "Iran (specific site unknown)",
+        "lat": null,
+        "lon": null,
+        "generic_location": true
+      },
+      "interception": {
+        "intercepted": true,
+        "interception_systems": [
+          "Arrow-2",
+          "Arrow-3",
+          "David's Sling"
+        ],
+        "intercepted_by": {
+          "israel": true,
+          "us": null,
+          "uk": null,
+          "jordan": null,
+          "other": []
+        },
+        "estimated_intercept_count": null,
+        "estimated_intercept_rate": null,
+        "exoatmospheric_interception": null,
+        "endoatmospheric_interception": null,
+        "interception_report": "Interceptions observed over Israel. At least one missile reportedly reached the Tel Aviv area. Heavy, multi-warhead projectiles reported by Al Jazeera."
+      },
+      "munitions": {
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "cumulative_total": null
+      },
+      "impact": {
+        "damage": "At least one missile reportedly reached Tel Aviv area. Full damage assessment pending.",
+        "fatalities": null,
+        "injuries": null,
+        "civilian_casualties": null,
+        "military_casualties": null
+      },
+      "escalation": {
+        "new_country_targeted": false,
+        "new_weapon_first_use": false
+      },
+      "proxy": {
+        "involvement": null,
+        "description": null
+      },
+      "sources": {
+        "idf_statement": null,
+        "urls": [
+          "https://www.timesofisrael.com/liveblog-march-11-2026/",
+          "https://www.aljazeera.com/news/2026/3/11/iran-israel-war-live"
+        ]
+      },
+      "iranian_media_claims": null
     }
   ]
 }

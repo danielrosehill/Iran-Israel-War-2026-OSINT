@@ -6149,6 +6149,132 @@
         "target_hit": false,
         "generic_location": "Northern Israel"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 41,
+        "wave_number": 41,
+        "wave_id": "tp4_w41",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-11T11:45:00Z",
+        "probable_launch_time": "2026-03-11T11:30:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles with heavy, multi-warhead projectiles targeting central and northern Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Central Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Central Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5,
+          32.85
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 41,
+        "wave_number": 41,
+        "wave_id": "tp4_w41",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-11T11:45:00Z",
+        "probable_launch_time": "2026-03-11T11:30:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles with heavy, multi-warhead projectiles targeting central and northern Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Northern Israel",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Northern Israel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 41,
+        "wave_number": 41,
+        "wave_id": "tp4_w41",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-11T11:45:00Z",
+        "probable_launch_time": "2026-03-11T11:30:00Z",
+        "conflict_day": 12,
+        "payload": "Ballistic missiles with heavy, multi-warhead projectiles targeting central and northern Israel",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": 0,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": false,
+        "landing_countries": [
+          "IL"
+        ],
+        "casualties_killed": null,
+        "casualties_wounded": null,
+        "launch_site_description": "Iran (specific site unknown)",
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Tel Aviv area",
+        "target_type": "israeli",
+        "target_hit": true,
+        "generic_location": "Tel Aviv area"
+      }
     }
   ]
 }
