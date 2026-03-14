@@ -2,7 +2,6 @@
   "timestamp": "20260310T001538Z",
   "structure": {
     "json": "Combined and per-operation wave JSON files",
-    "sqlite": "SQLite database with all tables and reference data",
     "geojson": "GeoJSON layers for GIS tools (QGIS, Mapbox, Leaflet, kepler.gl)",
     "arcgis": "ArcGIS Online / StoryMap optimized exports with enriched properties"
   },
@@ -16,8 +15,6 @@
     "json/tp3_waves.json",
     "json/tp4_waves.json",
     "json/wave.schema.json",
-    "json/waves_all.json",
-    "sqlite/README.md",
-    "sqlite/iran_israel_war.db"
+    "json/waves_all.json"
   ]
 }

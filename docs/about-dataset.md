@@ -78,34 +78,18 @@ Always cross-reference against primary sources before drawing conclusions.
 
 ## Database and File Formats
 
-The primary data store is a **SQLite database** at `data/iran_israel_war.db`. This is the recommended way to query the data — it contains all wave data, international reactions, reference tables (weapon specs, defense systems, armed forces, base locations, naval vessels), and junction tables for many-to-many relationships (landing countries, interception systems, US bases targeted, source URLs). Rebuild from source with `python3 scripts/build_db.py`.
+The primary database is a **Neo4j graph database** that models the war as a property graph — a network of relationships between actors, weapons, targets, defense systems, and international reactions. Rebuild from source with `python3 scripts/build_neo4j.py --clear`.
 
-Key tables:
+The graph model represents Wars, Rounds (operations), and Salvos (waves) as nodes, with relationships connecting them to Side/Actor hierarchies, weapon systems, defense systems, targets, and international reactions. This structure naturally captures the many-to-many relationships inherent in the data (e.g., which defense systems engaged in each wave, which countries' munitions landed in, which bases were targeted).
 
-| Table | Rows | Description |
-|-------|-----:|-------------|
-| `waves` | 53 | One row per attack wave — timing, weapons, targets, interception, impact, escalation |
-| `international_reactions` | 210 | One row per country/org diplomatic response |
-| `reaction_statements` | 630+ | Individual head-of-state, head-of-government, and foreign ministry statements |
-| `wave_landing_countries` | 102+ | Countries where munitions landed, per wave |
-| `wave_interception_systems` | 116+ | Defense systems used, per wave |
-| `wave_us_bases_targeted` | 18+ | US/coalition bases targeted, per wave |
-| `wave_events` | varies | Granular interception/strike/impact events within waves |
-| `iranian_weapons` | 11 | Iranian missile and drone specifications |
-| `defense_systems` | 8 | Coalition BMD and air defense system specifications |
-| `entities` | 210 | Country/org reference with EU membership and combatant status |
-| `reaction_types` | 9 | Stance classification reference with spectrum scores |
-
-The SQLite database normalises many-to-many relationships that are flattened into comma-separated strings in the CSV/Parquet exports. For example, the `wave_interception_systems` junction table lets you query which defense systems were used in each wave without parsing strings.
-
-Flattened exports are also available for platforms that don't support SQLite directly:
+Flattened exports are also available in CSV and Parquet formats:
 
 | Format | Files | Best For |
 |--------|-------|----------|
 | **Parquet** | `kaggle/waves.parquet`, `kaggle/international_reactions.parquet` | Python/pandas, Spark — compact, typed, fast |
 | **CSV** | `kaggle/waves.csv`, `kaggle/international_reactions.csv` | Excel, R, any tabular tool |
 
-The CSV and Parquet files are flattened exports of the SQLite data: many-to-many relationships (interception systems, landing countries, source URLs) are joined into comma-separated strings, and statement blocks are prefixed (`hos_`, `hog_`, `fm_`).
+The CSV and Parquet files are flattened exports of the JSON source data: many-to-many relationships (interception systems, landing countries, source URLs) are joined into comma-separated strings, and statement blocks are prefixed (`hos_`, `hog_`, `fm_`).
 
 ## Data Dictionary
 

@@ -2,10 +2,10 @@ Generate a new timestamped export bundle and update exports/latest/.
 
 ## Instructions
 
-1. Rebuild the SQLite database from JSON sources:
+1. Rebuild the Neo4j graph database from JSON sources:
 
 ```bash
-source .venv/bin/activate && python3 scripts/build_db.py
+source .venv/bin/activate && python3 scripts/build_neo4j.py --clear
 ```
 
 2. Generate the export bundle (creates timestamped snapshot + overwrites latest/):

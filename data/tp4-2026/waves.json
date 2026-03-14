@@ -7973,9 +7973,9 @@
         }
       ],
       "launch_site": {
-        "description": "Multiple sites in Iran",
-        "lat": null,
-        "lon": null,
+        "description": "Multiple IRGC sites in western Iran",
+        "lat": 33.5,
+        "lon": 48.5,
         "generic_location": true
       },
       "interception": {
@@ -8185,9 +8185,9 @@
         }
       ],
       "launch_site": {
-        "description": "Multiple sites in Iran",
-        "lat": null,
-        "lon": null,
+        "description": "Multiple IRGC sites in western Iran (Kermanshah region)",
+        "lat": 34.31,
+        "lon": 47.07,
         "generic_location": true
       },
       "interception": {
@@ -8404,9 +8404,9 @@
         }
       ],
       "launch_site": {
-        "description": "Multiple sites in Iran; Hezbollah from Lebanon",
-        "lat": null,
-        "lon": null,
+        "description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
+        "lat": 34.31,
+        "lon": 47.07,
         "generic_location": true
       },
       "interception": {
@@ -8609,9 +8609,9 @@
         }
       ],
       "launch_site": {
-        "description": "Multiple sites in Iran",
-        "lat": null,
-        "lon": null,
+        "description": "Multiple IRGC sites in western Iran",
+        "lat": 33.5,
+        "lon": 48.5,
         "generic_location": true
       },
       "interception": {
@@ -8794,9 +8794,9 @@
         }
       ],
       "launch_site": {
-        "description": "Multiple sites in Iran",
-        "lat": null,
-        "lon": null,
+        "description": "Multiple IRGC sites in western Iran",
+        "lat": 33.5,
+        "lon": 48.5,
         "generic_location": true
       },
       "interception": {
@@ -8995,9 +8995,9 @@
         }
       ],
       "launch_site": {
-        "description": "Multiple sites in Iran; Hezbollah from Lebanon",
-        "lat": null,
-        "lon": null,
+        "description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
+        "lat": 33.5,
+        "lon": 48.5,
         "generic_location": true
       },
       "interception": {

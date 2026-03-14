@@ -67,7 +67,7 @@ labels: new-data
 
 ## Build verification
 
-- [ ] I ran `python3 scripts/build_db.py` and it completed without errors
+- [ ] I ran `python3 scripts/build_neo4j.py --clear` and it completed without errors
 - [ ] Row counts in the build summary look correct
 
 ## Additional context

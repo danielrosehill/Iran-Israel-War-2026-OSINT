@@ -4,7 +4,6 @@ Build a timestamped export bundle for release.
 
 Creates exports/<timestamp>/ with subfolders:
   json/     — Combined + per-operation JSON files
-  sqlite/   — SQLite database
   geojson/  — GeoJSON layers (launch sites, targets, combined)
   arcgis/   — ArcGIS StoryMap-optimized exports (GeoJSON + CSV)
 
@@ -68,10 +67,9 @@ def main():
 
     # Create subfolders
     json_dir = os.path.join(export_dir, 'json')
-    sqlite_dir = os.path.join(export_dir, 'sqlite')
     geojson_dir = os.path.join(export_dir, 'geojson')
     arcgis_dir = os.path.join(export_dir, 'arcgis')
-    for d in [json_dir, sqlite_dir, geojson_dir, arcgis_dir]:
+    for d in [json_dir, geojson_dir, arcgis_dir]:
         os.makedirs(d, exist_ok=True)
 
     print(f"Building export: {export_dir}\n")
@@ -86,18 +84,7 @@ def main():
         shutil.copy2(path, dest)
         print(f"  {dest}")
 
-    # 3. SQLite database
-    print("\nSQLite:")
-    db_src = os.path.join(REPO, 'data', 'iran_israel_war.db')
-    if os.path.exists(db_src):
-        db_dest = os.path.join(sqlite_dir, 'iran_israel_war.db')
-        shutil.copy2(db_src, db_dest)
-        size_kb = os.path.getsize(db_dest) / 1024
-        print(f"  {db_dest} ({size_kb:.0f} KB)")
-    else:
-        print("  WARNING: database not found, run build_db.py first")
-
-    # 4. GeoJSON
+    # 3. GeoJSON
     print("\nGeoJSON:")
     result = subprocess.run(
         ['python3', os.path.join(REPO, 'build_geojson.py'),
@@ -108,7 +95,7 @@ def main():
     if result.returncode != 0:
         print(f"  ERROR: {result.stderr}")
 
-    # 5. ArcGIS StoryMap exports
+    # 4. ArcGIS StoryMap exports
     print("ArcGIS:")
     result = subprocess.run(
         ['python3', os.path.join(REPO, 'build_arcgis.py'),
@@ -119,55 +106,24 @@ def main():
     if result.returncode != 0:
         print(f"  ERROR: {result.stderr}")
 
-    # 6. Auto-generate SQLite schema documentation
-    print("\nSchema:")
-    if os.path.exists(os.path.join(sqlite_dir, 'iran_israel_war.db')):
-        import sqlite3
-        conn = sqlite3.connect(os.path.join(sqlite_dir, 'iran_israel_war.db'))
-        cur = conn.cursor()
-        schema_lines = ["# Database Schema\n"]
-        schema_lines.append(f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}\n")
-        cur.execute("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")
-        tables = [r[0] for r in cur.fetchall()]
-        for table in tables:
-            cur.execute(f"SELECT COUNT(*) FROM [{table}]")
-            count = cur.fetchone()[0]
-            schema_lines.append(f"\n## {table} ({count} rows)\n")
-            cur.execute(f"PRAGMA table_info([{table}])")
-            cols = cur.fetchall()
-            schema_lines.append("| # | Column | Type | Nullable | Default |")
-            schema_lines.append("|--:|--------|------|----------|---------|")
-            for col in cols:
-                cid, name, ctype, notnull, default, pk = col
-                nullable = "NO" if notnull else "YES"
-                default_str = str(default) if default is not None else ""
-                pk_str = " **PK**" if pk else ""
-                schema_lines.append(f"| {cid} | `{name}`{pk_str} | {ctype} | {nullable} | {default_str} |")
-        conn.close()
-        schema_path = os.path.join(export_dir, 'SCHEMA.md')
-        with open(schema_path, 'w') as f:
-            f.write('\n'.join(schema_lines) + '\n')
-        print(f"  {schema_path} ({len(tables)} tables)")
-
-    # 7. Copy JSON schema into export
+    # 5. Copy JSON schema into export
     schema_src = os.path.join(REPO, 'data', 'schema', 'wave.schema.json')
     if os.path.exists(schema_src):
         shutil.copy2(schema_src, os.path.join(json_dir, 'wave.schema.json'))
         print(f"  Copied wave.schema.json to {json_dir}")
 
-    # 8. Copy README files into subfolders
+    # 6. Copy README files into subfolders
     readme_dir = os.path.join(REPO, 'exports', 'latest')
-    for subdir in ['json', 'sqlite', 'geojson', 'arcgis']:
+    for subdir in ['json', 'geojson', 'arcgis']:
         readme_src = os.path.join(readme_dir, subdir, 'README.md')
         if os.path.exists(readme_src):
             shutil.copy2(readme_src, os.path.join(export_dir, subdir, 'README.md'))
 
-    # 9. Write manifest
+    # 7. Write manifest
     manifest = {
         "timestamp": timestamp,
         "structure": {
             "json": "Combined and per-operation incident JSON files",
-            "sqlite": "SQLite database with all tables and reference data",
             "geojson": "GeoJSON layers for GIS tools (QGIS, Mapbox, Leaflet, kepler.gl)",
             "arcgis": "ArcGIS Online / StoryMap optimized exports with enriched properties",
         },
@@ -177,7 +133,7 @@ def main():
     with open(manifest_path, 'w') as f:
         json.dump(manifest, f, indent=2)
 
-    # 10. Copy to latest/
+    # 8. Copy to latest/
     if os.path.exists(latest_dir):
         shutil.rmtree(latest_dir)
     shutil.copytree(export_dir, latest_dir)

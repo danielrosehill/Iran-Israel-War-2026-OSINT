@@ -49,14 +49,6 @@ The dataset is available as a **property graph** on [Neo4j Aura](https://neo4j.c
 
 Rebuild: `python3 scripts/build_neo4j.py --clear`
 
-### SQLite Database
-
-**[`data/iran_israel_war.db`](data/iran_israel_war.db)** — all wave data, reference tables, and junction tables in a single queryable file. Flattened relational schema for tabular analysis and export.
-
-Rebuild from JSON: `python3 scripts/build_db.py`
-
-Compatible with Python `sqlite3`, DuckDB, [Datasette](https://datasette.io/), DB Browser for SQLite, and any SQL client.
-
 ### JSON Source Files
 
 | File | Content |
@@ -82,7 +74,6 @@ Compatible with Python `sqlite3`, DuckDB, [Datasette](https://datasette.io/), DB
 
 ```
 data/
-  iran_israel_war.db         # SQLite database (all data combined)
   tp1-2024/waves.json        # Round 1 (2 waves)
   tp2-2024/waves.json        # Round 2 (2 waves)
   tp3-2025/waves.json        # Round 3 (22 waves)
@@ -91,8 +82,7 @@ data/
   reference/                 # Shared reference data
   schema/wave.schema.json    # JSON Schema for validation
 scripts/
-  build_db.py                # Rebuild SQLite from JSON sources
-  build_neo4j.py             # Export to Neo4j graph database
+  build_neo4j.py             # Rebuild Neo4j graph database (primary DB)
   build_kaggle.py            # Build Kaggle CSV/Parquet exports
   build_export.py            # Build timestamped export bundles
   build_geojson.py           # Build GeoJSON exports

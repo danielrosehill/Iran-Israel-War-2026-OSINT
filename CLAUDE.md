@@ -11,17 +11,16 @@ OSINT dataset tracking Iranian missile/drone attack waves against Israel and US/
 
 ## Data Access
 
-### SQLite Database (preferred for queries)
+### Neo4j Graph Database (primary database)
 
-`data/iran_israel_war.db` — single queryable database with all wave data, reference tables, and junction tables. Rebuild with `python3 scripts/build_db.py`.
+Property graph on Neo4j Aura modelling the war as a network of relationships between actors, weapons, targets, defense systems, and international reactions. Rebuild with `python3 scripts/build_neo4j.py --clear`.
 
-Key tables: `operations` (4), `waves` (53 rows, 76 columns), `wave_landing_countries`, `wave_interception_systems`, `wave_us_bases_targeted`, `iranian_weapons`, `defense_systems`, `armed_forces`, `us_bases`, `us_naval_vessels`.
+Graph model: War -> Round -> Salvo, with Side/Actor hierarchy, weapons, defense systems, targets, and international reactions.
 
 ### JSON Source Files
 
 ```
 data/
-  iran_israel_war.db       # SQLite database (all data combined)
   tp1-2024/waves.json      # TP1 (2 waves, Apr 2024)
   tp2-2024/waves.json      # TP2 (2 waves, Oct 2024)
   tp3-2025/waves.json      # TP3 (22 waves, Jun 2025)
@@ -45,7 +44,7 @@ Frontend syncing is done manually by the user when needed — do not auto-sync a
 
 After updating wave data (adding waves, correcting fields, backfilling), always offer to sync to distribution platforms:
 
-1. **Rebuild DB**: `python3 scripts/build_db.py`
+1. **Rebuild Neo4j**: `python3 scripts/build_neo4j.py --clear`
 2. **Rebuild Kaggle exports**: `python3 scripts/build_kaggle.py`
 3. **Push to Kaggle**: `python3 scripts/upload_kaggle.py`
 4. **Sync to HF + Kaggle**: `python3 scripts/sync_platforms.py`

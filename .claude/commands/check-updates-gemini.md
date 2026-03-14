@@ -5,13 +5,13 @@ Query Gemini 3.1 Flash Lite with Google Search grounding to check for new attack
 1. Read the current state of the database to determine the latest wave number, timestamp, and identify data gaps (missing munitions counts, casualties, codenames):
 
 ```bash
-sqlite3 data/iran_israel_war.db "SELECT operation, wave_number, announced_utc, wave_codename_english, estimated_munitions_count, fatalities, injuries FROM waves ORDER BY announced_utc DESC LIMIT 15;"
+python3 -c "import json; waves=json.load(open('data/tp4-2026/waves.json'))['incidents']; [print(f'Wave {w[\"wave_number\"]}: {w.get(\"timing\",{}).get(\"announced_utc\",\"?\")} — {w.get(\"wave_codename_english\",\"\")}') for w in sorted(waves, key=lambda x: x.get('timing',{}).get('announced_utc',''), reverse=True)[:15]]"
 ```
 
 2. Also find waves with missing `estimated_munitions_count`:
 
 ```bash
-sqlite3 data/iran_israel_war.db "SELECT operation, wave_number, announced_utc, wave_codename_english FROM waves WHERE estimated_munitions_count IS NULL ORDER BY announced_utc DESC;"
+python3 -c "import json; waves=json.load(open('data/tp4-2026/waves.json'))['incidents']; [print(f'Wave {w[\"wave_number\"]}: {w.get(\"timing\",{}).get(\"announced_utc\",\"?\")} — {w.get(\"wave_codename_english\",\"\")}') for w in waves if not w.get('munitions',{}).get('estimated_munitions_count')]"
 ```
 
 3. Call Gemini 3.1 Flash Lite with search grounding using `GOOGLE_API_KEY` from `.env` (also in `~/.bashrc`). Activate the project venv first (`source .venv/bin/activate`). Use this Python pattern:

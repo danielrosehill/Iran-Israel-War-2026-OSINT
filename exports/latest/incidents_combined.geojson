@@ -3368,7 +3368,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 43,
@@ -3397,7 +3403,7 @@
         ],
         "casualties_killed": 1,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -3412,7 +3418,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 44,
@@ -3442,7 +3454,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -3457,7 +3469,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.07,
+          34.31
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 45,
@@ -3486,7 +3504,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -3504,7 +3522,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 46,
@@ -3533,7 +3557,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -3548,7 +3572,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 47,
@@ -3576,7 +3606,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -3591,7 +3621,13 @@
     },
     {
       "type": "Feature",
-      "geometry": null,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
       "properties": {
         "operation": "tp4",
         "sequence": 48,
@@ -3618,7 +3654,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11397,7 +11433,7 @@
         ],
         "casualties_killed": 1,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11445,7 +11481,7 @@
         ],
         "casualties_killed": 1,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11494,7 +11530,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11543,7 +11579,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11598,7 +11634,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11647,7 +11683,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11696,7 +11732,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11745,7 +11781,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region)",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11799,7 +11835,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11850,7 +11886,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11901,7 +11937,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -11952,7 +11988,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12003,7 +12039,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12054,7 +12090,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran (Kermanshah region); Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12111,7 +12147,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12159,7 +12195,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12207,7 +12243,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12255,7 +12291,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12303,7 +12339,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12356,7 +12392,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12409,7 +12445,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12462,7 +12498,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 0,
-        "launch_site_description": "Multiple sites in Iran",
+        "launch_site_description": "Multiple IRGC sites in western Iran",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12514,7 +12550,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12561,7 +12597,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12608,7 +12644,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12661,7 +12697,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12714,7 +12750,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12767,7 +12803,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [
@@ -12814,7 +12850,7 @@
         ],
         "casualties_killed": 0,
         "casualties_wounded": 3,
-        "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "launch_site_description": "Multiple IRGC sites in western Iran; Hezbollah from southern Lebanon",
         "attacking_force_actor": "Iran",
         "attacking_force_branch": "irgc",
         "attacking_force_actors": [

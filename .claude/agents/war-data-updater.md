@@ -52,7 +52,7 @@ Each wave object follows the schema at `data/schema/wave.schema.json` and includ
 ```bash
 cd ~/repos/github/Iran-Israel-War-2026-Data/
 source .venv/bin/activate
-python3 scripts/build_db.py          # SQLite database
+python3 scripts/build_neo4j.py --clear  # Neo4j graph database
 python3 scripts/build_geojson.py     # GeoJSON for interactive maps (CRITICAL)
 python3 scripts/build_kaggle.py      # Kaggle/CSV exports
 ```

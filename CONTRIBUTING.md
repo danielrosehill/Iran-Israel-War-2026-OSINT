@@ -29,7 +29,7 @@ Use this when you are adding new information — new wave events, new BDA assess
 - **Requirements:**
   - Follow the JSON schema in `data/schema/wave.schema.json`
   - Cite OSINT sources for all new data
-  - Run `python3 scripts/build_db.py` and confirm it builds without errors
+  - Run `python3 scripts/build_neo4j.py --clear` and confirm it builds without errors
   - For new waves: populate all required fields (`wave_number`, `timing`, `weapons`, `targets`)
   - For new events: include `event_type`, `location_name`, `confidence`, and `outcome_status`
 
@@ -99,7 +99,7 @@ data/
 3. **Make your changes** following the data standards
 4. **Run the build** to verify:
    ```bash
-   python3 build_db.py
+   python3 build_neo4j.py --clear
    ```
 5. **Open a pull request** using the appropriate template:
    - Data correction: select the "Data Correction" template

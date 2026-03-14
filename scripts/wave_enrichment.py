@@ -1,5 +1,5 @@
 """
-Shared incident enrichment logic used by build_arcgis.py, build_db.py, and build_kaggle.py.
+Shared incident enrichment logic used by build_arcgis.py and build_kaggle.py.
 
 Provides:
   - classify_target_types(incident) → dict of 10 target-type booleans

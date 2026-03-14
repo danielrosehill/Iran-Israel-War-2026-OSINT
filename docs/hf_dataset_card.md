@@ -95,7 +95,7 @@ Always cross-reference against primary sources before drawing conclusions.
 
 **GitHub**: [danielrosehill/Iran-Israel-War-2026-OSINT-Data](https://github.com/danielrosehill/Iran-Israel-War-2026-OSINT-Data)
 
-The GitHub repo contains the full nested JSON source files, SQLite database, GeoJSON/KML exports, reference data (weapon specs, defense systems, base locations), and JSON Schema for validation.
+The GitHub repo contains the full nested JSON source files, Neo4j graph database, GeoJSON/KML exports, reference data (weapon specs, defense systems, base locations), and JSON Schema for validation.
 
 **Kaggle**: [danielrosehill/iran-israel-war-2026](https://www.kaggle.com/datasets/danielrosehill/iran-israel-war-2026)
 
