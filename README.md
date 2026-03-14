@@ -41,9 +41,17 @@ Full field reference: [`docs/data-dictionary.md`](docs/data-dictionary.md) | Sch
 
 ## Data Access
 
-### SQLite Database (recommended)
+### Neo4j Graph Database
 
-**[`data/iran_israel_war.db`](data/iran_israel_war.db)** — all wave data, reference tables, and junction tables in a single queryable file.
+The dataset is available as a **property graph** on [Neo4j Aura](https://neo4j.com/cloud/aura-free/), modelling the war as a network of relationships between actors, weapons, targets, defense systems, and international reactions. Graph queries enable relationship-driven analysis — e.g. "which defense systems intercepted Fattah missiles?" or "all salvos where Artesh participated" — that are cumbersome in flat/relational formats.
+
+**Graph model**: War → Round → Salvo, with Side/Actor hierarchy (Israel/Coalition vs Iran/Axis of Resistance), weapons, defense systems, targets, and 210 entity international reactions. Uses neutral "Round" terminology; Iranian operational designations stored as properties.
+
+Rebuild: `python3 scripts/build_neo4j.py --clear`
+
+### SQLite Database
+
+**[`data/iran_israel_war.db`](data/iran_israel_war.db)** — all wave data, reference tables, and junction tables in a single queryable file. Flattened relational schema for tabular analysis and export.
 
 Rebuild from JSON: `python3 scripts/build_db.py`
 
@@ -84,10 +92,12 @@ data/
   schema/wave.schema.json    # JSON Schema for validation
 scripts/
   build_db.py                # Rebuild SQLite from JSON sources
+  build_neo4j.py             # Export to Neo4j graph database
   build_kaggle.py            # Build Kaggle CSV/Parquet exports
   build_export.py            # Build timestamped export bundles
   build_geojson.py           # Build GeoJSON exports
   build_arcgis.py            # Build ArcGIS-compatible exports
+  normalization.py           # Centralized lookup tables (actors, weapons, defense)
   sync_platforms.py          # Sync to Kaggle + Hugging Face
   upload_kaggle.py           # Upload to Kaggle
   wave_enrichment.py         # Shared wave enrichment utilities
