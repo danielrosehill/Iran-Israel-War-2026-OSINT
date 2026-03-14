@@ -37,6 +37,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites across Iran; Shahed drones also launched from Iraq and Yemen by proxies",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 1,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -77,6 +85,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 32,
         "launch_site_description": "IRGC Aerospace Force launch sites in western and central Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 2,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -119,6 +135,14 @@
         "casualties_killed": 1,
         "casualties_wounded": 4,
         "launch_site_description": "IRGC Aerospace Force launch sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 1,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -161,6 +185,14 @@
         "casualties_killed": 1,
         "casualties_wounded": 4,
         "launch_site_description": "IRGC Aerospace Force launch sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 2,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -201,6 +233,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 1,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -241,6 +281,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 2,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -281,6 +329,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 3,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -321,6 +377,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 4,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -361,6 +425,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 5,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -401,6 +473,14 @@
         "casualties_killed": 9,
         "casualties_wounded": 200,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 6,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -441,6 +521,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 7,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -481,6 +569,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 8,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -521,6 +617,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 9,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -561,6 +665,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 10,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -601,6 +713,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 11,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -641,6 +761,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Central/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 12,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -681,6 +809,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 13,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -721,6 +857,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 14,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -761,6 +905,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 15,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -801,6 +953,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 16,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -841,6 +1001,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 17,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -881,6 +1049,14 @@
         "casualties_killed": 3,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 18,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -921,6 +1097,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 19,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -961,6 +1145,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Central/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 20,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1001,6 +1193,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Central/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 21,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1041,6 +1241,14 @@
         "casualties_killed": 4,
         "casualties_wounded": 20,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 22,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1087,6 +1295,14 @@
         "casualties_killed": 2,
         "casualties_wounded": 21,
         "launch_site_description": "Multiple sites in western Iran including Kermanshah and Tabriz regions",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 1,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -1128,6 +1344,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 2,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -1174,6 +1398,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western and southwestern Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 3,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -1216,6 +1448,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 4,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -1258,6 +1498,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran, IRGC naval positions",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 5,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1298,6 +1546,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 6,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -1343,6 +1599,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran, IRGC naval positions",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 7,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1385,6 +1649,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 8,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1429,6 +1701,14 @@
         "casualties_killed": 9,
         "casualties_wounded": 50,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 9,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1470,6 +1750,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 10,
         "launch_site_description": "Central Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 10,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1518,6 +1807,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 11,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1562,6 +1860,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "IRGC naval positions, western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 12,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1602,6 +1909,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "IRGC positions",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 13,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1643,6 +1959,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "IRGC naval positions",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 14,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1687,6 +2012,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 15,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1733,6 +2067,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Western Iran, IRGC ground force positions",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 16,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1773,6 +2116,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Central/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 17,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1814,6 +2166,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 18,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1857,6 +2218,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 19,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1897,6 +2267,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 20,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1937,6 +2316,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 21,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -1979,6 +2367,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 22,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2024,6 +2421,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 23,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2064,6 +2470,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 5,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 24,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2105,6 +2520,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 25,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2147,6 +2571,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 26,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2188,6 +2621,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": null,
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 27,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2229,6 +2671,15 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 28,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2269,6 +2720,15 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 29,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2309,6 +2769,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 30,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2350,6 +2818,15 @@
         "casualties_killed": 1,
         "casualties_wounded": 3,
         "launch_site_description": "Iran — IRGC Aerospace Force and IRGC Navy",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Iran"
+        ],
+        "actor_salvo_number": 31,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2390,6 +2867,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 32,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2431,6 +2916,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Iran — IRGC Aerospace Force",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 33,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2471,6 +2964,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 16,
         "launch_site_description": "Southern Lebanon",
+        "attacking_force_actor": "Hezbollah",
+        "attacking_force_branch": "hezbollah",
+        "attacking_force_actors": [
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 1,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2511,6 +3012,14 @@
         "casualties_killed": 2,
         "casualties_wounded": 3,
         "launch_site_description": "Khorramabad (Imam Ali) Missile Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "IRGC Aerospace Force"
+        ],
+        "actor_salvo_number": 34,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2551,6 +3060,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Dezful Missile Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "IRGC Aerospace Force"
+        ],
+        "actor_salvo_number": 35,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2591,6 +3108,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Kermanshah Missile Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "IRGC Aerospace Force"
+        ],
+        "actor_salvo_number": 36,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2631,6 +3156,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Dezful Missile Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "artesh",
+        "attacking_force_actors": [
+          "Iranian Army"
+        ],
+        "actor_salvo_number": 37,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2671,6 +3204,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Khorramabad (Imam Ali) Missile Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "IRGC Aerospace Force"
+        ],
+        "actor_salvo_number": 38,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2711,6 +3252,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Kangavar Missile Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 39,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2751,6 +3300,14 @@
         "casualties_killed": null,
         "casualties_wounded": null,
         "launch_site_description": "Panj Pelleh Underground Base (approximate OSINT location)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 40,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": false
       }
@@ -2796,6 +3353,15 @@
         "casualties_killed": 2,
         "casualties_wounded": 1,
         "launch_site_description": "Western Iran (multiple launch sites)",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 41,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2832,6 +3398,14 @@
         "casualties_killed": 1,
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 42,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2869,6 +3443,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 43,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2905,6 +3487,17 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Iran",
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 44,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2941,6 +3534,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 45,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -2976,6 +3577,14 @@
         "casualties_killed": 0,
         "casualties_wounded": 0,
         "launch_site_description": "Multiple sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 46,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }
@@ -3010,6 +3619,15 @@
         "casualties_killed": 0,
         "casualties_wounded": 3,
         "launch_site_description": "Multiple sites in Iran; Hezbollah from Lebanon",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran",
+          "Hezbollah"
+        ],
+        "actor_salvo_number": 47,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
         "layer": "launch_site",
         "generic_location": true
       }

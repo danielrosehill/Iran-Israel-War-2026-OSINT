@@ -28,6 +28,11 @@ import sys
 import argparse
 from datetime import datetime
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from normalization import Normalizer
+
+_normalizer = Normalizer()
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 WAVE_FILES = [
@@ -103,15 +108,105 @@ def load_reference_data():
     return israeli_by_name, us_by_name
 
 
+def _get_primary_actor(w):
+    """Return the top-level actor for an incident (e.g. 'Iran', 'Hezbollah').
+
+    Uses the Normalizer to resolve subunits to their state-level actor.
+    """
+    af_list = w.get('attacking_force', [])
+    if isinstance(af_list, dict):
+        af_list = [af_list]
+    if not af_list:
+        return 'Unknown'
+    raw = af_list[0].get('actor', 'Unknown')
+    return _normalizer.actor_top_level(raw)
+
+
+def _parse_launch_time(w):
+    """Parse probable_launch_time to a datetime, or None."""
+    t = w.get('timing', {}).get('probable_launch_time')
+    if not t:
+        return None
+    try:
+        return datetime.fromisoformat(t.replace('Z', '+00:00'))
+    except (ValueError, TypeError):
+        return None
+
+
+def compute_derived_fields(all_incidents_by_op):
+    """Compute actor_salvo_number and coordinated_attack for all incidents.
+
+    Returns:
+        coord_map: {(op, wn): (bool, int|None)}
+        actor_seq_map: {(op, wn): int}
+    """
+    coord_map = {}
+    actor_seq_map = {}
+
+    for op_id, incidents in all_incidents_by_op.items():
+        actor_counts = {}
+        for w in incidents:
+            wn = w['wave_number']
+            actor = _get_primary_actor(w)
+            actor_counts[actor] = actor_counts.get(actor, 0) + 1
+            actor_seq_map[(op_id, wn)] = actor_counts[actor]
+
+        for i, w in enumerate(incidents):
+            wn = w['wave_number']
+            if (op_id, wn) in coord_map:
+                continue
+            actor_i = _get_primary_actor(w)
+            time_i = _parse_launch_time(w)
+            if not time_i:
+                coord_map[(op_id, wn)] = (False, None)
+                continue
+
+            paired = False
+            for j, w2 in enumerate(incidents):
+                if i == j:
+                    continue
+                actor_j = _get_primary_actor(w2)
+                if actor_j == actor_i:
+                    continue
+                time_j = _parse_launch_time(w2)
+                if not time_j:
+                    continue
+                if abs((time_i - time_j).total_seconds()) / 60.0 <= 15:
+                    wn2 = w2['wave_number']
+                    coord_map[(op_id, wn)] = (True, wn2)
+                    coord_map[(op_id, wn2)] = (True, wn)
+                    paired = True
+                    break
+            if not paired:
+                coord_map[(op_id, wn)] = (False, None)
+
+    return coord_map, actor_seq_map
+
+
 def load_all_incidents():
     """Load incidents from all operation JSON files."""
+    all_by_op = {}
     incidents = []
     for op, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
+        op_incidents = []
         for w in data['incidents']:
             w['_operation'] = op
+            op_incidents.append(w)
             incidents.append(w)
+        all_by_op[op] = op_incidents
+
+    # Compute and attach derived fields
+    coord_map, actor_seq_map = compute_derived_fields(all_by_op)
+    for w in incidents:
+        op = w['_operation']
+        wn = w['wave_number']
+        coordinated, coord_with = coord_map.get((op, wn), (False, None))
+        w['_coordinated_attack'] = coordinated
+        w['_coordinated_with_salvo'] = coord_with
+        w['_actor_salvo_number'] = actor_seq_map.get((op, wn))
+
     return incidents
 
 
@@ -156,6 +251,15 @@ def incident_properties(w):
         "casualties_killed": impact.get('fatalities'),
         "casualties_wounded": impact.get('injuries'),
         "launch_site_description": w.get('launch_site', {}).get('description'),
+        # Actor & coordination fields
+        "attacking_force_actor": _get_primary_actor(w),
+        "attacking_force_branch": _normalizer.actor_branch(
+            (w.get('attacking_force') or [{}])[0].get('actor') if isinstance(w.get('attacking_force'), list) else None
+        ),
+        "attacking_force_actors": [a.get('actor') for a in (w.get('attacking_force') or []) if isinstance(a, dict)],
+        "actor_salvo_number": w.get('_actor_salvo_number'),
+        "coordinated_attack": w.get('_coordinated_attack', False),
+        "coordinated_with_salvo": w.get('_coordinated_with_salvo'),
     }
 
 

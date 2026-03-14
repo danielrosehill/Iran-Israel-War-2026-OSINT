@@ -18,6 +18,7 @@ from wave_enrichment import (
     classify_target_types, get_cluster_munitions, countries_iso_to_names,
     get_wave_uid, WAVE_NARRATIVES,
 )
+from normalization import Normalizer
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(REPO, 'data', 'iran_israel_war.db')
@@ -158,6 +159,12 @@ def create_schema(cur):
         -- Attacking force
         attacking_force_actor   TEXT,    -- top-level: Iran, Hezbollah, Ansar Allah (Houthis), Islamic Resistance in Iraq
         attacking_force_subunit TEXT,    -- specific branch: IRGC Aerospace Force, IRGC Navy, etc.
+
+        -- Coordination & actor sequencing
+        attacking_force_branch  TEXT,     -- normalized: irgc, artesh, hezbollah, houthis, etc.
+        coordinated_attack      INTEGER,  -- 0/1: different actors within 15 min of each other
+        coordinated_with_salvo  INTEGER,  -- wave_number of paired salvo
+        actor_salvo_number      INTEGER,  -- per-actor sequential count within this operation
 
         -- Launch site
         launch_site_description TEXT,
@@ -541,12 +548,109 @@ def load_operations(cur):
         ))
 
 
+_normalizer = Normalizer()
+
+
+def _get_primary_actor(w):
+    """Return the top-level actor for an incident (e.g. 'Iran', 'Hezbollah').
+
+    Uses the Normalizer to resolve subunits to their state-level actor.
+    """
+    af_list = w.get('attacking_force', [])
+    if isinstance(af_list, dict):
+        af_list = [af_list]
+    if not af_list:
+        return 'Unknown'
+    raw = af_list[0].get('actor', 'Unknown')
+    return _normalizer.actor_top_level(raw)
+
+
+def _parse_launch_time(w):
+    """Parse probable_launch_time to a datetime, or None."""
+    from datetime import datetime, timezone
+    t = w.get('timing', {}).get('probable_launch_time')
+    if not t:
+        return None
+    try:
+        # Handle ISO 8601 with timezone
+        return datetime.fromisoformat(t.replace('Z', '+00:00'))
+    except (ValueError, TypeError):
+        return None
+
+
+def _compute_coordination_and_sequencing(all_incidents_by_op):
+    """Compute actor_salvo_number and coordinated_attack flags.
+
+    all_incidents_by_op: dict of {op_id: [wave_dicts]} sorted by wave_number.
+
+    Returns:
+        coord_map: {(op, wn): (coordinated_attack_bool, coordinated_with_salvo_int)}
+        actor_seq_map: {(op, wn): actor_salvo_number_int}
+    """
+    coord_map = {}
+    actor_seq_map = {}
+
+    for op_id, incidents in all_incidents_by_op.items():
+        # --- Actor salvo numbering ---
+        actor_counts = {}  # actor -> running count
+        for w in incidents:
+            wn = w['wave_number']
+            actor = _get_primary_actor(w)
+            actor_counts[actor] = actor_counts.get(actor, 0) + 1
+            actor_seq_map[(op_id, wn)] = actor_counts[actor]
+
+        # --- Coordinated attack detection (different actors, ≤15 min) ---
+        for i, w in enumerate(incidents):
+            wn = w['wave_number']
+            if (op_id, wn) in coord_map:
+                continue  # already paired
+            actor_i = _get_primary_actor(w)
+            time_i = _parse_launch_time(w)
+            if not time_i:
+                coord_map[(op_id, wn)] = (False, None)
+                continue
+
+            paired = False
+            for j, w2 in enumerate(incidents):
+                if i == j:
+                    continue
+                actor_j = _get_primary_actor(w2)
+                if actor_j == actor_i:
+                    continue  # same actor, not coordinated
+                time_j = _parse_launch_time(w2)
+                if not time_j:
+                    continue
+                delta_min = abs((time_i - time_j).total_seconds()) / 60.0
+                if delta_min <= 15:
+                    wn2 = w2['wave_number']
+                    coord_map[(op_id, wn)] = (True, wn2)
+                    coord_map[(op_id, wn2)] = (True, wn)
+                    paired = True
+                    break
+            if not paired:
+                coord_map[(op_id, wn)] = (False, None)
+
+    return coord_map, actor_seq_map
+
+
 def load_incidents(cur):
+    # First pass: load all incidents grouped by operation
+    all_incidents_by_op = {}
     for op_id, path in WAVE_FILES:
         with open(path) as f:
             data = json.load(f)
-
+        incidents = []
         for w in data['incidents']:
+            w.setdefault('operation', op_id)
+            incidents.append(w)
+        all_incidents_by_op[op_id] = incidents
+
+    # Compute derived fields
+    coord_map, actor_seq_map = _compute_coordination_and_sequencing(all_incidents_by_op)
+
+    # Second pass: insert
+    for op_id, incidents in all_incidents_by_op.items():
+        for w in incidents:
             op = w.get('operation', op_id)
             wn = w['wave_number']
             t = w.get('timing', {})
@@ -572,15 +676,18 @@ def load_incidents(cur):
             wave_uid = get_wave_uid(op, wn)
             tt = classify_target_types(w)
 
+            coordinated, coord_with = coord_map.get((op, wn), (False, None))
+            actor_seq = actor_seq_map.get((op, wn))
+
             cur.execute("""
                 INSERT OR REPLACE INTO incidents VALUES (
-                    ?,?,?,?,?,?,?,
-                    ?,?,?,?,?,?,?,?,?,?,?,?,
+                    ?,?,?,?,?,?,?,?,
+                    ?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,
-                    ?,?,
+                    ?,?,?,?,?,?,
                     ?,?,?,?,
                     ?,?,?,?,?,?,?,?,?,?,
                     ?,?,?,?,
@@ -663,6 +770,11 @@ def load_incidents(cur):
                 # attacking force
                 af.get('actor'),
                 af.get('subunit'),
+                # coordination & actor sequencing
+                _normalizer.actor_branch(af.get('actor')),
+                bool_to_int(coordinated),
+                coord_with,
+                actor_seq,
                 # launch site
                 ls.get('description'),
                 ls.get('lat'),

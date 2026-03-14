@@ -74,6 +74,18 @@
         "proxy": { "$ref": "#/$defs/proxy" },
         "sources": { "$ref": "#/$defs/sources" },
         "reactions": { "$ref": "#/$defs/reactions" },
+        "coordinated_attack": {
+          "type": ["boolean", "null"],
+          "description": "True when this salvo is part of a coordinated multi-actor attack (different attacking forces launching within 15 minutes of each other)"
+        },
+        "coordinated_with_salvo": {
+          "type": ["integer", "null"],
+          "description": "Wave number of the paired salvo in a coordinated attack. Null if not coordinated."
+        },
+        "actor_salvo_number": {
+          "type": ["integer", "null"],
+          "description": "Per-actor sequential count within this operation. E.g. if this is Hezbollah's 4th salvo in TP4, value is 4. Computed at build time."
+        },
         "events": {
           "type": "array",
           "description": "Granular interception and strike events within this wave",
