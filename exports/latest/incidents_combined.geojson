@@ -3673,6 +3673,254 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 49,
+        "wave_number": 49,
+        "wave_id": "tp4_w49",
+        "wave_codename_english": "Ya Rasool Allah (PBUH)",
+        "wave_codename_farsi": "یا رسول الله",
+        "announced_utc": "2026-03-14T18:00:00Z",
+        "probable_launch_time": "2026-03-14T17:45:00Z",
+        "conflict_day": 15,
+        "payload": "Missiles, drones, and loitering munitions targeting US air base infrastructure including Patriot radar systems, control towers, and hangars.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Navy positions in southern/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 48,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 50,
+        "wave_number": 50,
+        "wave_id": "tp4_w50",
+        "wave_codename_english": "Ya Zahra (Peace Be Upon Her)",
+        "wave_codename_farsi": "یا زهرا",
+        "announced_utc": "2026-03-14T20:06:00Z",
+        "probable_launch_time": "2026-03-14T19:30:00Z",
+        "conflict_day": 15,
+        "payload": "Precision-guided and loitering drones (IRGC Aerospace Force). Drones conducted ISR before striking targets.",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "KW",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Aerospace Force positions in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 49,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 51,
+        "wave_number": 51,
+        "wave_id": "tp4_w51",
+        "wave_codename_english": "Ya Ali ibn Musa al-Reza (Peace Be Upon Him)",
+        "wave_codename_farsi": "مقدس: یا علی بن موسی الرضا",
+        "announced_utc": "2026-03-14T20:40:00Z",
+        "probable_launch_time": "2026-03-14T20:30:00Z",
+        "conflict_day": 15,
+        "payload": "Combined launch of solid-fuel and liquid-fuel ballistic missiles.",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "SA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC missile sites in western/central Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 50,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 52,
+        "wave_number": 52,
+        "wave_id": "tp4_w52",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-15T03:00:00Z",
+        "probable_launch_time": "2026-03-15T02:45:00Z",
+        "conflict_day": 16,
+        "payload": "Heavy missiles targeting Israeli industrial areas; missiles and/or drones targeting US troop assembly centers.",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 51,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.5,
+          33.5
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 53,
+        "wave_number": 53,
+        "wave_id": "tp4_w53",
+        "wave_codename_english": "Ya Javad al-A'imma Adrikni",
+        "wave_codename_farsi": "مقدس: یا جواد الائمه ادرکنی",
+        "announced_utc": "2026-03-15T06:22:00Z",
+        "probable_launch_time": "2026-03-15T06:00:00Z",
+        "conflict_day": 16,
+        "payload": "10 Fattah hypersonic missiles, Ghadr liquid-fuel missiles, and explosive drones.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 10,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC missile and drone launch sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 52,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "launch_site",
+        "generic_location": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           34.82,
           31.21
         ]
@@ -12866,6 +13114,816 @@
         "target_type": "israeli",
         "target_hit": null,
         "generic_location": "Golan Heights"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 49,
+        "wave_number": 49,
+        "wave_id": "tp4_w49",
+        "wave_codename_english": "Ya Rasool Allah (PBUH)",
+        "wave_codename_farsi": "یا رسول الله",
+        "announced_utc": "2026-03-14T18:00:00Z",
+        "probable_launch_time": "2026-03-14T17:45:00Z",
+        "conflict_day": 15,
+        "payload": "Missiles, drones, and loitering munitions targeting US air base infrastructure including Patriot radar systems, control towers, and hangars.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Navy positions in southern/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 48,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Al-Dhafra Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Dhafra Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.59,
+          25.92
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 49,
+        "wave_number": 49,
+        "wave_id": "tp4_w49",
+        "wave_codename_english": "Ya Rasool Allah (PBUH)",
+        "wave_codename_farsi": "یا رسول الله",
+        "announced_utc": "2026-03-14T18:00:00Z",
+        "probable_launch_time": "2026-03-14T17:45:00Z",
+        "conflict_day": 15,
+        "payload": "Missiles, drones, and loitering munitions targeting US air base infrastructure including Patriot radar systems, control towers, and hangars.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Navy positions in southern/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 48,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Sheikh Isa Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Sheikh Isa Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.31,
+          25.12
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 49,
+        "wave_number": 49,
+        "wave_id": "tp4_w49",
+        "wave_codename_english": "Ya Rasool Allah (PBUH)",
+        "wave_codename_farsi": "یا رسول الله",
+        "announced_utc": "2026-03-14T18:00:00Z",
+        "probable_launch_time": "2026-03-14T17:45:00Z",
+        "conflict_day": 15,
+        "payload": "Missiles, drones, and loitering munitions targeting US air base infrastructure including Patriot radar systems, control towers, and hangars.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "QA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Navy positions in southern/western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 48,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Al-Udeid Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Udeid Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 50,
+        "wave_number": 50,
+        "wave_id": "tp4_w50",
+        "wave_codename_english": "Ya Zahra (Peace Be Upon Her)",
+        "wave_codename_farsi": "یا زهرا",
+        "announced_utc": "2026-03-14T20:06:00Z",
+        "probable_launch_time": "2026-03-14T19:30:00Z",
+        "conflict_day": 15,
+        "payload": "Precision-guided and loitering drones (IRGC Aerospace Force). Drones conducted ISR before striking targets.",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "KW",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Aerospace Force positions in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 49,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Al-Dhafra Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Dhafra Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 50,
+        "wave_number": 50,
+        "wave_id": "tp4_w50",
+        "wave_codename_english": "Ya Zahra (Peace Be Upon Her)",
+        "wave_codename_farsi": "یا زهرا",
+        "announced_utc": "2026-03-14T20:06:00Z",
+        "probable_launch_time": "2026-03-14T19:30:00Z",
+        "conflict_day": 15,
+        "payload": "Precision-guided and loitering drones (IRGC Aerospace Force). Drones conducted ISR before striking targets.",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "KW",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Aerospace Force positions in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 49,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Fujairah",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Fujairah"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 50,
+        "wave_number": 50,
+        "wave_id": "tp4_w50",
+        "wave_codename_english": "Ya Zahra (Peace Be Upon Her)",
+        "wave_codename_farsi": "یا زهرا",
+        "announced_utc": "2026-03-14T20:06:00Z",
+        "probable_launch_time": "2026-03-14T19:30:00Z",
+        "conflict_day": 15,
+        "payload": "Precision-guided and loitering drones (IRGC Aerospace Force). Drones conducted ISR before striking targets.",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "KW",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Aerospace Force positions in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 49,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "NSA Bahrain / Jufair",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "NSA Bahrain / Jufair"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.52,
+          29.35
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 50,
+        "wave_number": 50,
+        "wave_id": "tp4_w50",
+        "wave_codename_english": "Ya Zahra (Peace Be Upon Her)",
+        "wave_codename_farsi": "یا زهرا",
+        "announced_utc": "2026-03-14T20:06:00Z",
+        "probable_launch_time": "2026-03-14T19:30:00Z",
+        "conflict_day": 15,
+        "payload": "Precision-guided and loitering drones (IRGC Aerospace Force). Drones conducted ISR before striking targets.",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "KW",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Aerospace Force positions in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 49,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Ali Al-Salem Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 50,
+        "wave_number": 50,
+        "wave_id": "tp4_w50",
+        "wave_codename_english": "Ya Zahra (Peace Be Upon Her)",
+        "wave_codename_farsi": "یا زهرا",
+        "announced_utc": "2026-03-14T20:06:00Z",
+        "probable_launch_time": "2026-03-14T19:30:00Z",
+        "conflict_day": 15,
+        "payload": "Precision-guided and loitering drones (IRGC Aerospace Force). Drones conducted ISR before striking targets.",
+        "drones_used": true,
+        "ballistic_missiles_used": false,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "BH",
+          "KW",
+          "JO"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC Aerospace Force positions in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 49,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 4,
+        "target_name": "Al-Azraq Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Azraq Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 51,
+        "wave_number": 51,
+        "wave_id": "tp4_w51",
+        "wave_codename_english": "Ya Ali ibn Musa al-Reza (Peace Be Upon Him)",
+        "wave_codename_farsi": "مقدس: یا علی بن موسی الرضا",
+        "announced_utc": "2026-03-14T20:40:00Z",
+        "probable_launch_time": "2026-03-14T20:30:00Z",
+        "conflict_day": 15,
+        "payload": "Combined launch of solid-fuel and liquid-fuel ballistic missiles.",
+        "drones_used": false,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": 0,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": false,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "SA"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC missile sites in western/central Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 50,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Al-Kharj Air Base (Prince Sultan Air Base)",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Kharj Air Base (Prince Sultan Air Base)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.38,
+          36.54
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 52,
+        "wave_number": 52,
+        "wave_id": "tp4_w52",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-15T03:00:00Z",
+        "probable_launch_time": "2026-03-15T02:45:00Z",
+        "conflict_day": 16,
+        "payload": "Heavy missiles targeting Israeli industrial areas; missiles and/or drones targeting US troop assembly centers.",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 51,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Harir Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Harir Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.52,
+          29.35
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 52,
+        "wave_number": 52,
+        "wave_id": "tp4_w52",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-15T03:00:00Z",
+        "probable_launch_time": "2026-03-15T02:45:00Z",
+        "conflict_day": 16,
+        "payload": "Heavy missiles targeting Israeli industrial areas; missiles and/or drones targeting US troop assembly centers.",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 51,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Ali Al-Salem Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Ali Al-Salem Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.1,
+          28.93
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 52,
+        "wave_number": 52,
+        "wave_id": "tp4_w52",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-15T03:00:00Z",
+        "probable_launch_time": "2026-03-15T02:45:00Z",
+        "conflict_day": 16,
+        "payload": "Heavy missiles targeting Israeli industrial areas; missiles and/or drones targeting US troop assembly centers.",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 51,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Camp Arifjan",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Camp Arifjan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77,
+          32.07
+        ]
+      },
+      "properties": {
+        "operation": "tp4",
+        "sequence": 52,
+        "wave_number": 52,
+        "wave_id": "tp4_w52",
+        "wave_codename_english": null,
+        "wave_codename_farsi": null,
+        "announced_utc": "2026-03-15T03:00:00Z",
+        "probable_launch_time": "2026-03-15T02:45:00Z",
+        "conflict_day": 16,
+        "payload": "Heavy missiles targeting Israeli industrial areas; missiles and/or drones targeting US troop assembly centers.",
+        "drones_used": null,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": null,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "IL",
+          "IQ",
+          "KW"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC sites in western Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 51,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 3,
+        "target_name": "Tel Aviv (industrial zones)",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Tel Aviv (industrial zones)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 53,
+        "wave_number": 53,
+        "wave_id": "tp4_w53",
+        "wave_codename_english": "Ya Javad al-A'imma Adrikni",
+        "wave_codename_farsi": "مقدس: یا جواد الائمه ادرکنی",
+        "announced_utc": "2026-03-15T06:22:00Z",
+        "probable_launch_time": "2026-03-15T06:00:00Z",
+        "conflict_day": 16,
+        "payload": "10 Fattah hypersonic missiles, Ghadr liquid-fuel missiles, and explosive drones.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 10,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC missile and drone launch sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 52,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 0,
+        "target_name": "Al-Dhafra Air Base",
+        "target_type": "us_base",
+        "target_hit": null,
+        "generic_location": "Al-Dhafra Air Base"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 53,
+        "wave_number": 53,
+        "wave_id": "tp4_w53",
+        "wave_codename_english": "Ya Javad al-A'imma Adrikni",
+        "wave_codename_farsi": "مقدس: یا جواد الائمه ادرکنی",
+        "announced_utc": "2026-03-15T06:22:00Z",
+        "probable_launch_time": "2026-03-15T06:00:00Z",
+        "conflict_day": 16,
+        "payload": "10 Fattah hypersonic missiles, Ghadr liquid-fuel missiles, and explosive drones.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 10,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC missile and drone launch sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 52,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 1,
+        "target_name": "Israeli command-and-control centers",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Israeli command-and-control centers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "operation": "tp4",
+        "sequence": 53,
+        "wave_number": 53,
+        "wave_id": "tp4_w53",
+        "wave_codename_english": "Ya Javad al-A'imma Adrikni",
+        "wave_codename_farsi": "مقدس: یا جواد الائمه ادرکنی",
+        "announced_utc": "2026-03-15T06:22:00Z",
+        "probable_launch_time": "2026-03-15T06:00:00Z",
+        "conflict_day": 16,
+        "payload": "10 Fattah hypersonic missiles, Ghadr liquid-fuel missiles, and explosive drones.",
+        "drones_used": true,
+        "ballistic_missiles_used": true,
+        "cruise_missiles_used": false,
+        "estimated_munitions_count": 10,
+        "munitions_targeting_israel": null,
+        "munitions_targeting_us_bases": null,
+        "interception_rate": null,
+        "intercepted_count": null,
+        "israel_targeted": true,
+        "us_bases_targeted": true,
+        "landing_countries": [
+          "AE",
+          "IL"
+        ],
+        "casualties_killed": 0,
+        "casualties_wounded": 0,
+        "launch_site_description": "IRGC missile and drone launch sites in Iran",
+        "attacking_force_actor": "Iran",
+        "attacking_force_branch": "irgc",
+        "attacking_force_actors": [
+          "Iran"
+        ],
+        "actor_salvo_number": 52,
+        "coordinated_attack": false,
+        "coordinated_with_salvo": null,
+        "layer": "target",
+        "target_index": 2,
+        "target_name": "Israeli home-front management facilities",
+        "target_type": "israeli",
+        "target_hit": null,
+        "generic_location": "Israeli home-front management facilities"
       }
     }
   ]
